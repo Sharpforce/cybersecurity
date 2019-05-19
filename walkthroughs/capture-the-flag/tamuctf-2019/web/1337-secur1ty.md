@@ -42,8 +42,6 @@ Le message possède l'id 2 présent en paramètre de l'URL. Le champ des possibl
 
 La taille de la réponse permet de voir que l'id 1 est un message valide :
 
-![](../../../../.gitbook/assets/image%20%281%29.png)
-
 Intéressant, les cookies ne doivent pas être si sécurisés que cela. On tente maintenant de détecter une injection SQL. Après plusieurs essais, on identifie l'injection grâce à un `sleep(10)`. De plus, il faut faire attention au paramètre qui ne semble pas être un entier comme on peut s'y attendre pour un id :
 
 ![](../../../../.gitbook/assets/d4be1c819151cfdd6a9b167564aecd66.png)
