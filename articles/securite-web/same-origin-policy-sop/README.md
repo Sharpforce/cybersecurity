@@ -1,5 +1,5 @@
 ---
-description: 'Dernière mise à jour : xx/xx/xxxx'
+description: 'Dernière mise à jour : 20/08/2019'
 ---
 
 # Same-Origin Policy \(SOP\)
