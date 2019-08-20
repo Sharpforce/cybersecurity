@@ -18,7 +18,21 @@
     * [Types d'autorisation \(extensions\)](articles/gestion-didentite/oauth-2.0/types-dautorisation-extensions.md)
     * [Notions avancées](articles/gestion-didentite/oauth-2.0/notions-avancees.md)
     * [Recommandations de sécurité](articles/gestion-didentite/oauth-2.0/recommandations-de-securite.md)
-* [Sécurité Web](articles/securite-web.md)
+* [Sécurité Web](articles/securite-web/README.md)
+  * [Same-Origin Policy \(SOP\)](articles/securite-web/same-origin-policy-sop/README.md)
+    * [Qu'est ce qu'une origine](articles/securite-web/same-origin-policy-sop/quest-ce-que-sop.md)
+    * [Types de requêtes](articles/securite-web/same-origin-policy-sop/untitled/README.md)
+      * [Interactions de type lecture](articles/securite-web/same-origin-policy-sop/untitled/lecture-cross-origin.md)
+      * [Interactions de type écriture](articles/securite-web/same-origin-policy-sop/untitled/ecriture-cross-origin.md)
+      * [Interactions de type embarqué](articles/securite-web/same-origin-policy-sop/untitled/embarques.md)
+      * [Methodes HTTP et encodages](articles/securite-web/same-origin-policy-sop/untitled/limite-des-requetes.md)
+    * [Modification de l'origine](articles/securite-web/same-origin-policy-sop/modifier-lorigine.md)
+    * [Requêtes inter-site avec JSONP](articles/securite-web/same-origin-policy-sop/requete-inter-site-avec-jsonp.md)
+    * [La méthode window.postMessage](articles/securite-web/same-origin-policy-sop/la-methode-window.postmessage.md)
+    * [Flash et le fichier crossdomain.xml](articles/securite-web/same-origin-policy-sop/flash-et-le-fichier-domain.xml.md)
+    * [Silverlight et le fichier clientaccess-policy.xml](articles/securite-web/same-origin-policy-sop/silverlight-et-le-fichier-clientaccess-policy.xml.md)
+    * [Websockets](articles/securite-web/same-origin-policy-sop/websockets.md)
+    * [Erreurs d'implémentation](articles/securite-web/same-origin-policy-sop/erreurs-dimplementation.md)
 
 ## Outils
 
