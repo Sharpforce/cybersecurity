@@ -6,7 +6,7 @@ description: 'Dernière mise à jour : xx/xx/xxxx'
 
 ## Introduction
 
-SOP \(pour Same-Origin Policy\) est un concept de sécurité implémenté au niveau des clients web \(le navigateur\) qui permet de restreindre les possibilités d’interactions d'une page \(ou d'un script\) chargée depuis une origine A \(par exemple `htpp://domainA.com`\) avec d'autres ressources présentes sur des origines différentes \(par exemple `http://domainB.com`\).
+SOP \(pour Same-Origin Policy\) est un concept de sécurité implémenté au niveau des clients web \(le navigateur\) qui permet de restreindre les possibilités d’interactions d'une page \(ou d'un script\) chargée depuis une origine A \(par exemple `http://domainA.com`\) avec d'autres ressources présentes sur des origines différentes \(par exemple `http://domainB.com`\).
 
 SOP a été introduit à partir de Netscape 2.0 en 1995. 
 
