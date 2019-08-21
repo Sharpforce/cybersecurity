@@ -2,11 +2,11 @@
 description: 'Walkthrough de la machine Metasploit: 1'
 ---
 
-# Metasploit: 1
+# Metasploitable: 1
 
 ## Détails de la machine
 
-**Nom :** Metasploit: 1  
+**Nom :** Metasploitable: 1  
 **Date de sortie :** 19 Mai 2010  
 **Lien de téléchargement :** [https://download.vulnhub.com/metasploitable/Metasploitable.zip](https://download.vulnhub.com/metasploitable/Metasploitable.zip)  
 **Niveau :** Facile  

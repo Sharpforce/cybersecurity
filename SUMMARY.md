@@ -61,6 +61,6 @@
   * [LAMPSecurity: CTF4](walkthroughs/vulnhub/lampsecurity-ctf4.md)
   * [LAMPSecurity: CTF5](walkthroughs/vulnhub/lampsecurity-ctf5.md)
   * [LAMPSecurity: CTF6](walkthroughs/vulnhub/lampsecurity-ctf6.md)
-  * [Metasploit: 1](walkthroughs/vulnhub/metasploit-1.md)
+  * [Metasploitable: 1](walkthroughs/vulnhub/metasploit-1.md)
   * [pWnOS 1.0](walkthroughs/vulnhub/pwnos-1.0.md)
 
