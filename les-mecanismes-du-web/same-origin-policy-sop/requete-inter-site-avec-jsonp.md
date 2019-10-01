@@ -25,7 +25,7 @@ Sur `poc1.cybersecurirty.com` , le serveur héberge la page `jsonp.php` suivante
 
 En résumé, on construit une payload JSON qui contient les informations de l'utilisateur \(à condition qu'il soit authentifié\). Si l'utilisateur visite directement cette page, la directive `echo` va afficher le nom de la fonction ainsi que la payload JSON. Comme on le verra par la suite, il s'agit en fait d'un appel à la fonction `myFunc()` à qui on fournit comme paramètre la payload JSON construite auparavant :
 
-![](../../../.gitbook/assets/9be4777886239ec562d231354330c32c.png)
+![](../../.gitbook/assets/9be4777886239ec562d231354330c32c.png)
 
 ### Côté client
 
@@ -56,7 +56,7 @@ Cette page embarque donc la ressource `poc1.cybersecurity.com/same-origin-policy
 
 Lorsque l'utilisateur visite cette page à l'adresse `http://poc2.cybersecurity.com/same-origin-policy/lecture_jsonp.html` son profil s'affiche :
 
-![](../../../.gitbook/assets/ab1f17d3938a5623712ade915c85a6b8.png)
+![](../../.gitbook/assets/ab1f17d3938a5623712ade915c85a6b8.png)
 
 `poc2.cybersecurity.com` peut donc récupérer des informations relatives à l'utilisateur, comme si une lecture était faite sur `http://poc1.cybersecurity.com/same-origin-policy/profile.php`.
 
@@ -113,17 +113,17 @@ if(isset($_GET['callback']) && $_GET['callback'] == "username") {
 
 Une petite surprise attendra l'utilisateur \(possédant un compte sur la tierce partie\) visitant la page appelant la fonction de callback :
 
-![](../../../.gitbook/assets/f5872ef26eb2230bd852526ad45d5d2e.png)
+![](../../.gitbook/assets/f5872ef26eb2230bd852526ad45d5d2e.png)
 
 #### Cas d'un utilisateur malveillant
 
 Prenons le cas maintenant d'un utilisateur malveillant qui a repéré les différents appels ainsi que les données transitant entre la tierce partie et le client. Il décide de changer son prénom \(stocké dans le profil au niveau de la tierce partie\) afin d'inclure un script malicieux :
 
-![](../../../.gitbook/assets/84d7670ab9afb181e966b004cfc615aa.png)
+![](../../.gitbook/assets/84d7670ab9afb181e966b004cfc615aa.png)
 
 Afin de déclencher l'injection il lui suffit de visiter la page cliente :
 
-![](../../../.gitbook/assets/a145e1f1abae1fc3d1e44e3dd3a86d2e.png)
+![](../../.gitbook/assets/a145e1f1abae1fc3d1e44e3dd3a86d2e.png)
 
 {% hint style="info" %}
 Bien sur ici il s'injecte lui même, mais il lui suffira de trouver un moyen de l'exploiter contre une victime \(ici il s'agit d'une donnée stockée, donc un livre d'or, forum ou autre suffira amplement pour cela\)
@@ -159,11 +159,11 @@ Qu'est ce qui empêche un attaquant d'héberger une page malicieuse effectuant u
 
 Lorsque la victime va visiter la page malicieuse, l'attaquant va alors récupérer les données de son profil \(à condition que la victime soit authentifié sur le site vulnérable\) :
 
-![](../../../.gitbook/assets/e8394316afb45b2752466d3528249aaa.png)
+![](../../.gitbook/assets/e8394316afb45b2752466d3528249aaa.png)
 
 En effet, lorsque la victime visite la page malicieuse, son cookie de session est automatiquement envoyé dans la requête :
 
-![](../../../.gitbook/assets/2967fddc07bd101f898f95947ea738e3.png)
+![](../../.gitbook/assets/2967fddc07bd101f898f95947ea738e3.png)
 
 {% hint style="info" %}
 Il est possible de mettre en place une protection anti-CSRF en implémentant un jeton aléatoire qui devra être vérifier côté serveur, mais cette protection n'est pas optimale car le jeton est passé en paramètre GET \(JSONP n'est possible qu'avec des requêtes GET\).

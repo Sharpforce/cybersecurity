@@ -21,7 +21,7 @@ Un tableau récapitulatif \(merci [Mozilla](https://developer.mozilla.org/fr/doc
 
 Ou alors en image :
 
-![](../../../.gitbook/assets/605cf6d3e2afa79a367f78d7b577c8b6.png)
+![](../../.gitbook/assets/605cf6d3e2afa79a367f78d7b577c8b6.png)
 
 ## Spécificité d'Internet Explorer
 
@@ -40,11 +40,11 @@ Par défaut Internet Explorer ne tient pas compte du port dans le calcul de l'or
 
 Une requête provenant de la page `http://store.company.com:81/same-origin-policy/lecture_same-origin_ajax.php` effectuant une lecture \(requête XHR en **`GET`**\) vers la page `http://store.company.com/same-origin-policy/profile.php` sera bien autorisée par Internet Explorer \(pour preuve, la console affiche bien la réponse de la requête XHR\) :
 
-![](../../../.gitbook/assets/fd824c1cec30507195a4dd9b2f7d2d4c%20%281%29.png)
+![](../../.gitbook/assets/fd824c1cec30507195a4dd9b2f7d2d4c%20%281%29.png)
 
 Le test effectué ci-dessus a été fait sur une plateforme Windows 7 avec la version Internet Explorer suivante :
 
-![](../../../.gitbook/assets/9e591ff33d5c07f9bddacc0854b93844.png)
+![](../../.gitbook/assets/9e591ff33d5c07f9bddacc0854b93844.png)
 
 {% hint style="warning" %}
 Attention, ce fonctionnement n'est pas reproductible sur les dernières versions d'Internet Explorer 11
@@ -52,11 +52,11 @@ Attention, ce fonctionnement n'est pas reproductible sur les dernières versions
 
 Il m'a par contre été impossible de reproduire ce comportement sur une plateforme Windows 10 et Internet Explorer en version :
 
-![](../../../.gitbook/assets/f0820bb0edf8a5b76df21b0c1f7ef182.png)
+![](../../.gitbook/assets/f0820bb0edf8a5b76df21b0c1f7ef182.png)
 
 En effet, cette fois, Internet Explorer indique une erreur visible dans la console :
 
-![](../../../.gitbook/assets/4e0e2a0fe1d041ced210dc8ab89bfe4c.png)
+![](../../.gitbook/assets/4e0e2a0fe1d041ced210dc8ab89bfe4c.png)
 
 Un patch a donc dû modifier le comportement de calcul d'origine entre ces deux versions \(mais impossible de trouver lequel exactement\).
 
@@ -64,15 +64,15 @@ Un patch a donc dû modifier le comportement de calcul d'origine entre ces deux 
 
 Internet Explorer introduit la notion de zone \(Paramètres -&gt; Options Internet -&gt; Sécurité\) qui peut influencer sur le fonctionnement des requêtes cross-origin :
 
-![](../../../.gitbook/assets/6b0bbf7ab4e11f54ca2a36ca88a67ca4.png)
+![](../../.gitbook/assets/6b0bbf7ab4e11f54ca2a36ca88a67ca4.png)
 
 Si deux sites sont présents dans la zone de confiance "Sites de confiance" avec un niveau de sécurité "Basse" \(_highly trusted zone_\), alors les requêtes cross-origin sont possibles \(l'entête Origin n'est pas envoyé dans la requête\) :
 
-![](../../../.gitbook/assets/b6bcb31f494afb4119bbca3725d21d59.png)
+![](../../.gitbook/assets/b6bcb31f494afb4119bbca3725d21d59.png)
 
 Cela vient du fait que la sécurité "Basse" autorise implicitement \(visible via la fenêtre "Personnaliser le niveau"\) les requêtes cross-origin :
 
-![](../../../.gitbook/assets/391ef6a8e9aadce033f6a469b14fe335.png)
+![](../../.gitbook/assets/391ef6a8e9aadce033f6a469b14fe335.png)
 
 
 

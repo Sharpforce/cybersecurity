@@ -50,13 +50,13 @@ Par contre il est tout à fait possible de spécifier un autre verbe HTTP \(**`P
 
 Mais dans ce cas, lorsque l'utilisateur va visiter la page effectuant la requête cross-origin, le navigateur va afficher un second warning \(dans la console\) :
 
-![](../../../../.gitbook/assets/cf3f0a647c71d1327425b512964b73ce.png)
+![](../../../.gitbook/assets/cf3f0a647c71d1327425b512964b73ce.png)
 
 Sans rentrer dans les détails, si la requête utilise un verbe ou un encodage non supporté par la spécification HTML alors le navigateur effectue tout d'abord une requête préliminaire afin de savoir si cette requête est légitime ou non. 
 
 Cette requête est effectuée avec le verbe **`OPTIONS`**, elle est nommée `preflight request`:
 
-![](../../../../.gitbook/assets/96de939e403dc27f24a6bec14db3dcd3.png)
+![](../../../.gitbook/assets/96de939e403dc27f24a6bec14db3dcd3.png)
 
 Par défaut, ces requêtes ne sont pas autorisées par le serveur cible \(qui héberge la ressource\), sauf s'il implémente les entêtes spécifiques à [CORS](https://developer.mozilla.org/fr/docs/Web/HTTP/CORS).
 

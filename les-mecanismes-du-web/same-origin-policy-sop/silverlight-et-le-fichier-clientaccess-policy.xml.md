@@ -6,7 +6,7 @@ Silverlight est une technologie développée par Microsoft qui permet de créer 
 
 L'application Silverlight permettant de tester les requêtes cross-origin utilisée dans cet article est disponible sur [GitHub](https://github.com/nccgroup/CrossSiteContentHijacking). Elle est développée par "nccgroup" :
 
-![](../../../.gitbook/assets/e2632be5625fef64d9a1ff52e3e7dd5f.png)
+![](../../.gitbook/assets/e2632be5625fef64d9a1ff52e3e7dd5f.png)
 
 Elle est facilement réutilisable en téléchargeant le dossier `ContentHijacking` et en appelant \(via le navigateur\) le fichier `index.html`.
 
@@ -71,15 +71,15 @@ Lorsque le site détenteur de la ressource désirée possède un fichier `client
 
 Alors seul le domaine autorisé peut requêter la ressource :
 
-![](../../../.gitbook/assets/bcb84a0eeaa443da649b83ce6cf91156.png)
+![](../../.gitbook/assets/bcb84a0eeaa443da649b83ce6cf91156.png)
 
 Les requêtes effectuées pendant cet échange indiquent bien la récupération du fichier `clientaccesspolicy.xml` suivi de la requête vers la page de profil :
 
-![](../../../.gitbook/assets/98e578ad9116750bc6c940375506bfd5.png)
+![](../../.gitbook/assets/98e578ad9116750bc6c940375506bfd5.png)
 
 Si la requête provenait non pas du domaine principal mais d'un sous-domaine, alors la requête vers la ressource serait rejetée. Ici un exemple avec le domaine `poc1.otherdomain.com` :
 
-![](../../../.gitbook/assets/9deebba4282a9adf031a5e2ab2a59556.png)
+![](../../.gitbook/assets/9deebba4282a9adf031a5e2ab2a59556.png)
 
 ### Autorisation d'un sous-domaine
 
@@ -102,15 +102,15 @@ Il est également possible de n'autoriser seulement qu'un sous-domaine spécifiq
 
 Alors seul le sous-domaine spécifié peut accéder à la ressource :
 
-![](../../../.gitbook/assets/180eda4e3ca28da74f1bfecc440046c0.png)
+![](../../.gitbook/assets/180eda4e3ca28da74f1bfecc440046c0.png)
 
 Par contre il n'est pas possible pour un autre sous-domaine \(`poc2.otherdomain.com`\) d'accéder à la ressource :
 
-![](../../../.gitbook/assets/f9451a9264127d27c46876c1ef597716.png)
+![](../../.gitbook/assets/f9451a9264127d27c46876c1ef597716.png)
 
 Ni même au domaine principal `otherdomain.com` :
 
-![](../../../.gitbook/assets/f0d37a38f688fb419cb434a7dd245191.png)
+![](../../.gitbook/assets/f0d37a38f688fb419cb434a7dd245191.png)
 
 {% hint style="info" %}
 Contrairement à Flash, la requête du domaine principal serait également rejetée si le fichier de politique autorisait tous les sous domaines :
@@ -126,7 +126,7 @@ Contrairement à Flash, la requête du domaine principal serait également rejet
 
 Lorsqu'un domaine \(`otherdomain.com`\) tente d'accéder à une ressource \(hébergée sur `cybersecurity.com`\) via Silverlight mais que le fichier `clientaccesspolicy.xml` est absent, alors l'application va tenter de récupérer le fichier `crossdomain.xml` \(il s'agit du fichier utilisé par Flash\). En effet, Silverlight peut s'appuyer également sur ce fichier pour fonctionner \(cela a pour avantage de ne pas avoir à maintenir deux fichiers distincts lorsque le site accepte Flash et Silverlight\) :
 
-![](../../../.gitbook/assets/32f58a86670209518d6c41ef2aa40b09.png)
+![](../../.gitbook/assets/32f58a86670209518d6c41ef2aa40b09.png)
 
 {% hint style="info" %}
 Cette technique semble avoir quelques limites car Silverlight acceptera la requête seulement si le fichier `crossdomain.xml` autorise tous les domaines \(grâce au symbole "\*"\)
@@ -136,27 +136,27 @@ Cette technique semble avoir quelques limites car Silverlight acceptera la requ�
 
 Une origine se calcul à en se basant sur le domaine, le port ainsi que le schéma. Lorsque la requête s'effectue sur un port différent, alors la requête est considérée comme étant d'origine différente \(respect du principe de SOP\) :
 
-![](../../../.gitbook/assets/4a97ce9e0e1d46afce74e0f37514964f.png)
+![](../../.gitbook/assets/4a97ce9e0e1d46afce74e0f37514964f.png)
 
 Cela implique donc la recherche du fichier `clientaccesspolicy.xml` :
 
-![](../../../.gitbook/assets/e23cdfdc654f9a6ec81dc552c608d9af.png)
+![](../../.gitbook/assets/e23cdfdc654f9a6ec81dc552c608d9af.png)
 
 **Requête même domaine mais de schéma différent**
 
 Lorsque le schéma est différent \(que cela soit `HTTP` vers `HTTPS` ou inversement\) la ressource n'est pas récupérée auprès de l'hébergeur **:**
 
-![](../../../.gitbook/assets/5cdbacd8e8945171180b8b4b94c894a5.png)
+![](../../.gitbook/assets/5cdbacd8e8945171180b8b4b94c894a5.png)
 
 La raison est que le fichier de politique est d'abord recherché ce qui signifie que Silverlight considère la requête comme étant une requête cross-origin :
 
-![](../../../.gitbook/assets/4cd308c95218543ad5cdcc7fdcb56af5.png)
+![](../../.gitbook/assets/4cd308c95218543ad5cdcc7fdcb56af5.png)
 
 ## Entête Origin
 
 A l'instar de Flash, les requêtes cross-origin provenant d'une application Silverlight ne contiennent pas l'entête `Origin` :
 
-![](../../../.gitbook/assets/b28f81f10901419dfc914dceaceb99b3.png)
+![](../../.gitbook/assets/b28f81f10901419dfc914dceaceb99b3.png)
 
 ## Problématiques de sécurité
 

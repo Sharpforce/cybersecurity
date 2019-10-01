@@ -17,7 +17,7 @@ Il est vivement recommandé d’utiliser un navigateur extérieur \(le navigateu
 
 ### Diagramme de séquence
 
-![](../../../.gitbook/assets/66eba863b189354d5ccc3017309ea805.png)
+![](../../.gitbook/assets/66eba863b189354d5ccc3017309ea805.png)
 
 1. Le client doit tout d’abord générer un secret \(qu’il doit également stocker\) nommé **code\_verifier** et également calculer un dérivé de ce secret \(grâce à une fonction de hachage par exemple\) nommé **code\_challenge**. L’application cliente ouvre le navigateur internet de l’utilisateur en spécifiant l’URL du endpoint d’autorisation du serveur d’autorisation en transmettant également le **code\_challenge** ainsi que la méthode de transformation utilisée
 2. Le serveur d’autorisation reçoit la requête d’autorisation, enregistre le **code\_challenge** ainsi que la méthode transformation et authentifie l’utilisateur \(cela peut être via un SSO par exemple\) et obtient son autorisation
@@ -75,7 +75,7 @@ Ce type de flux permet de récupérer l’autorisation d’un utilisateur à un 
 
 ### Diagramme de séquence
 
-![](../../../.gitbook/assets/3fc8d0511f5a1c23011ce4802900177e.png)
+![](../../.gitbook/assets/3fc8d0511f5a1c23011ce4802900177e.png)
 
 
 

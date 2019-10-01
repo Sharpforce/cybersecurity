@@ -12,7 +12,7 @@ Le format du jeton évolue donc avec l'ajout d'une troisième partie qu'est la s
 
 Il est possible de signer le jeton JWT grâce à une clé symétrique. Ce mécanisme permet de s'assurer de l'intégrité des données contenues dans le jeton mais ne permet pas d'authentifier l'émetteur du jeton, car toutes les entités devant traiter le jeton \(délivrer ou vérifier les jetons\) doivent posséder la clé partagée \(donc sont potentiellement en mesure de créer et de signer un jeton\).
 
-![](../../../.gitbook/assets/ec1de0fe3572792e7b007c68ceff1a7d.png)
+![](../../.gitbook/assets/ec1de0fe3572792e7b007c68ceff1a7d.png)
 
 L'ajout de la signature à base de clés symétriques apporte quelques modification au niveau du jeton JWT. Tout d'abord dans l'entête du jeton le champ `alg` va contenir le nom de l'algorithme utilisé. Par exemple : HS256 \(soit HMAC + SHA256\) :
 
@@ -39,7 +39,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6Imp3dCJ9.eyJ1c2VybmFtZSI6IkFub255bWUiLCJyb2xlIjoiVXN
 
 La signature à base de cryptographie asymétrique \(utilisant donc une biclé privée/publique\) permet, en de plus de s'assurer de l'intégrité des données du jeton, d'authentifier le fournisseur de celui-ci. Le fournisseur du jeton possède la clé privée et les services devant vérifier le jeton possède \(ou du moins ont accès à\) la clé publique.
 
-![](../../../.gitbook/assets/af3eaeef01665f0742276cb047b9d215.png)
+![](../../.gitbook/assets/af3eaeef01665f0742276cb047b9d215.png)
 
 Seul la valeur de l'algorithme au niveau du header du jeton JWT change. Par exemple en se basant sur un algorithme de type RSA accompagné de l'algorithme de hachage SHA256 :
 

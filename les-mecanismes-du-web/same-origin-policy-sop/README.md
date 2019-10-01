@@ -12,7 +12,7 @@ SOP a été introduit à partir de Netscape 2.0 en 1995.
 
 Une chose importante à propos de SOP est qu'il n'existe pas de standard bien défini même si les différents acteurs du web tendent à implémenter sensiblement les mêmes protections.
 
-![](../../../.gitbook/assets/7178bc6e345f2abf560908ca64a75a91.jpg)
+![](../../.gitbook/assets/7178bc6e345f2abf560908ca64a75a91.jpg)
 
 ## Sources
 

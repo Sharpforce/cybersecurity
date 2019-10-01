@@ -113,7 +113,7 @@ Content-Type: application/json
 
 ### Diagramme de séquence
 
-![](../../../.gitbook/assets/be54b847ac468b1cff7525ccc15e6708.png)
+![](../../.gitbook/assets/be54b847ac468b1cff7525ccc15e6708.png)
 
 1. \(OPTIONNEL\) : Le client récupère un jeton d’accès permettant d’accéder au endpoint d’enregistrement dynamique
 2. \(OPTIONNEL\) : Le client récupère une assertion \(JWT par exemple\) signé  permettant d’accéder au endpoint d’enregistrement dynamique

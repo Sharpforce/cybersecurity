@@ -42,23 +42,23 @@ Lors de la visite de la page `cybersecurity.com/same-origin-policy/websocket/cli
 
 Le cas d'utilisation est simple ici. Le visiteur s'authentifie tout d'abord sur le site et reçois en retour son cookie de session :
 
-![](../../../.gitbook/assets/4376085317793672acaf665213991542.png)
+![](../../.gitbook/assets/4376085317793672acaf665213991542.png)
 
 Il navigue sur le site jusqu’à visiter la page client.html :
 
-![](../../../.gitbook/assets/0a634c30324002374e552e8eb476f02e.png)
+![](../../.gitbook/assets/0a634c30324002374e552e8eb476f02e.png)
 
 Cette page initie la connexion au websocket \(socket sur le port 9000\) :
 
-![](../../../.gitbook/assets/4dd21f1de857508f42a5cc9b7d13ca95.png)
+![](../../.gitbook/assets/4dd21f1de857508f42a5cc9b7d13ca95.png)
 
 Le serveur pousse au client le profil de l'utilisateur grâce aux websockets :
 
-![](../../../.gitbook/assets/98752fcfd26c1a7bd62697a47f61cb2a.png)
+![](../../.gitbook/assets/98752fcfd26c1a7bd62697a47f61cb2a.png)
 
 Le client affiche finalement le profile du visiteur dans la console :
 
-![](../../../.gitbook/assets/2586d7fb64aa11a346e45b4e16eec53a.png)
+![](../../.gitbook/assets/2586d7fb64aa11a346e45b4e16eec53a.png)
 
 ## Problématiques de sécurité
 
@@ -80,17 +80,17 @@ Dans l'exemple ci-dessus, admettons qu'un site malicieux \(`malicious.com`\) ten
 
 Lorsque la victime visite la page malicieuse \(en s'étant authentifié au préalable sur le site `cybersecurity.com`\), son cookie de session est envoyé dans la requête de connexion au websocket :
 
-![](../../../.gitbook/assets/d1a0185e9bf0044fb9e9f71e88e5b9b0.png)
+![](../../.gitbook/assets/d1a0185e9bf0044fb9e9f71e88e5b9b0.png)
 
 Le serveur légitime approuve la connexion et envoi par websocket le profil de l'utilisateur \(récupéré donc par l'attaquant\) :
 
-![](../../../.gitbook/assets/51fcc1d06b5ec2d2f78a69b35f7911de.png)
+![](../../.gitbook/assets/51fcc1d06b5ec2d2f78a69b35f7911de.png)
 
 **Protection**
 
 Pour se protéger de ****cela, il faut que le serveur vérifie la valeur du champ `Origin` présente dans la requête client lors de la demande de connexion au websocket :
 
-![](../../../.gitbook/assets/b1ef568e2f7f9235c75ce7096560a194.png)
+![](../../.gitbook/assets/b1ef568e2f7f9235c75ce7096560a194.png)
 
 Si cette valeur ne correspond pas à l'origine légitime \(ici l'origine A / `cybersecurity.com`\) alors la connexion doit être refusée.
 

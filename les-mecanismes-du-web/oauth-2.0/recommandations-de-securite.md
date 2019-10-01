@@ -16,7 +16,7 @@ Si cela est mal implémenté, alors il est possible à un utilisateur malicieux 
 
 Cela permettra par exemple de récupérer un code d’autorisation ou jeton d’accès :
 
-![](../../../.gitbook/assets/ba12a98d25db0fa94571a3d9ebc6bd13.png)
+![](../../.gitbook/assets/ba12a98d25db0fa94571a3d9ebc6bd13.png)
 
 ## Code d'autorisation \(authorization code\)
 

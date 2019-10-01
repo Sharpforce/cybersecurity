@@ -4,7 +4,7 @@ Il existe plusieurs types d’autorisation différents avec OAuth 2.0. Le type �
 
 Le schéma suivant permet de connaitre le type d’autorisation à utiliser selon le profil de l’application cliente :
 
-![](../../../.gitbook/assets/4c2b151abc293ee720e9367d764920cb.png)
+![](../../.gitbook/assets/4c2b151abc293ee720e9367d764920cb.png)
 
 ## Authorization Code Grant
 
@@ -18,7 +18,7 @@ Il est tout de même possible \(selon la RFC\) de récupérer un code d’autori
 
 ### Diagramme de séquence
 
-![](../../../.gitbook/assets/3a94c169a526f72c549437e4ee90ceb6.png)
+![](../../.gitbook/assets/3a94c169a526f72c549437e4ee90ceb6.png)
 
 1. Le client initie la demande d’autorisation en redirigeant le détenteur de données \(via le navigateur\) vers le endpoint du serveur d’autorisation. Dans cette **redirection**, le client inclut son **client\_id**, le type d’autorisation demandé, ici **code**, le **scope** demandé, un paramètre **state** ainsi que l’**URL de redirection**
 2. Le serveur d’autorisation authentifie le détenteur de données et lui demande s’il autorise l’application cliente à accéder aux ressources demandées
@@ -133,7 +133,7 @@ L’autorisation implicite ne comprend pas de phase d’authentification du clie
 
 ### Diagramme de séquence
 
-![](../../../.gitbook/assets/f583378cf3f6e920cf81c2458b9e5f01.png)
+![](../../.gitbook/assets/f583378cf3f6e920cf81c2458b9e5f01.png)
 
 1. Le client initie la demande d’autorisation en redirigeant le détenteur de données \(via le navigateur\) vers le endpoint du serveur d’autorisation. Dans cette **redirection**, le client inclut son **client\_id**, le type d’autorisation demandé \(ici **token**\), le **scope** demandé, un paramètre **state** ainsi que l’**URL de redirection**
 2. Le serveur d’autorisation authentifie le détenteur de données \(via le navigateur\) et lui demande s’il autorise l’application cliente à accéder aux ressources demandées
@@ -218,7 +218,7 @@ Ce type d’autorisation convient pour les clients qui sont en mesures d’obten
 
 ### Diagramme de séquence
 
-![](../../../.gitbook/assets/85d51b40584922bd3cd02782ccad9c51.png)
+![](../../.gitbook/assets/85d51b40584922bd3cd02782ccad9c51.png)
 
 1. Le détenteur de ressources fournit ses identifiants à l’application cliente
 2. L’application demande un jeton d’accès au serveur d’autorisation. Elle s’authentifie au serveur d’autorisation \(**client\_id** / **client\_secret**\) et fournit également les identifiants du détenteur de ressources
@@ -277,7 +277,7 @@ Pragma: no-cache
 
 Le client peut demander via une requête un jeton d’accès en utilisant seulement ses identifiants clients \(**client\_id** et **client\_secret**\) si les données à protéger sont sous son contrôle.
 
-![](../../../.gitbook/assets/cff0557e1ad44e701547da26a53368e6.png)
+![](../../.gitbook/assets/cff0557e1ad44e701547da26a53368e6.png)
 
 1. Le client s’authentifie auprès du serveur d’autorisation en fournissant ses identifiants \(**client\_id** et **client\_secret**\) et demande un jeton d’accès
 2. Le serveur d’autorisation authentifie le client et fournit le jeton d’accès

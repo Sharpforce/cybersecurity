@@ -62,11 +62,11 @@ Ainsi quand le nom d'utilisateur de `poc2.cybersecurity.com` est reçu, le profi
 
 Le visiteur se connecte sur `poc2.cybersecurity.com`, la page lui indique son nom d'utilisateur :
 
-![](../../../.gitbook/assets/9c7fb9023e49e4f388db613ae49c686c.png)
+![](../../.gitbook/assets/9c7fb9023e49e4f388db613ae49c686c.png)
 
 Cela ouvre également une nouvelle page pointant vers sa page de profile sur `poc1.cybersecurity.com`. L'utilisateur peut ainsi voir que son profil a bien été lié à son nom d'utilisateur `poc2.cybersecurity.com` :
 
-![](../../../.gitbook/assets/45a35bc517ab82c1cd73af98b12efecf.png)
+![](../../.gitbook/assets/45a35bc517ab82c1cd73af98b12efecf.png)
 
 Il y a donc bien eu une communication cross-origin entre `poc2.cybersecurity.com` et `poc1.cybersecurity.com`.
 
@@ -103,11 +103,11 @@ Dans l'exemple précédent, tout entité peut envoyer un message à l’émetteu
 
 Lorsque l'utilisateur visitera le site malicieux :
 
-![](../../../.gitbook/assets/e37e9369861eabb9a819dd2376cd5949.png)
+![](../../.gitbook/assets/e37e9369861eabb9a819dd2376cd5949.png)
 
 Alors son profil sur `poc1.cybersecurity.com` sera mis à jour :
 
-![](../../../.gitbook/assets/0b2be88b9172e52a16a88e1b172d10c4.png)
+![](../../.gitbook/assets/0b2be88b9172e52a16a88e1b172d10c4.png)
 
 Afin de corriger ce problème, l'émetteur doit vérifier l'origine du message et ne traiter seulement que l' origine désirée \(ici `poc2.cybersecurity.com`\). Cette vérification s'effectue grâce à l'attribut `origin` de l'objet `event` :  
 
@@ -158,7 +158,7 @@ Une autre vulnérabilité peut survenir si les données reçues ne sont pas vali
 
 Lorsque l'utilisateur visite le site malicieux, la payload malicieuse est envoyée puis exécutée sur `poc1.cybersecurity.com` :
 
-![](../../../.gitbook/assets/136acf5a93d056ce12f204fda14d894f.png)
+![](../../.gitbook/assets/136acf5a93d056ce12f204fda14d894f.png)
 
 Il faut donc traiter les données reçues par `postMessage()` comme n'importe quelles autres données provenant d'une tierce partie : il s'agit de données non fiables devant être validées puis assainies.
 
@@ -190,7 +190,7 @@ Le code suivant ouvre une iframe possédant une taille à "0" afin que la victim
 
 Lorsque la victime va visiter le site, la popup contenant la valeur du cookie va s'afficher mais aucune nouvelle fenêtre ne sera ouverte vers `poc1.cybersecurity.com` :
 
-![](../../../.gitbook/assets/5ba0e3bdf72c9afcede0cdb032d86050.png)
+![](../../.gitbook/assets/5ba0e3bdf72c9afcede0cdb032d86050.png)
 
 
 

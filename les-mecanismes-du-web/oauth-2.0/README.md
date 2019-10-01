@@ -15,7 +15,7 @@ La version actuelle du protocole OAuth est la version 2.0. Voici les différente
 * Avril 2010 : Standardisation d’OAuth 1.0a \(RFC 5849\)
 * Octobre 2010 : Standardisation d’OAuth 2.0 \(RFC 6749 et 6750\)
 
-![](../../../.gitbook/assets/bda10cf8a148b6da09cb93dc093bf669.png)
+![](../../.gitbook/assets/bda10cf8a148b6da09cb93dc093bf669.png)
 
 ## Sources
 

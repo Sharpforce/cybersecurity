@@ -31,15 +31,15 @@ Si la requête XHR réussit, alors le script affiche simplement la réponse asso
 
 Deux requêtes sont observables en sortie du navigateur de l'utilisateur. La première est l'accès à la page `http://poc1.cybersecurity.com/same-origin-policy/lecture_same-origin_ajax.php` \(que l'utilisateur souhaite visiter\) , la seconde est la requête effectuée par le site afin de récupérer les informations de l'utilisateur :
 
-![](../../../../.gitbook/assets/98cf6b96720b6c017419ab196f8ee1ab.png)
+![](../../../.gitbook/assets/98cf6b96720b6c017419ab196f8ee1ab.png)
 
 Voici les entêtes HTTP de la requête XHR :
 
-![](../../../../.gitbook/assets/d42f901abc47b8de9ba3053669f4fc7f.png)
+![](../../../.gitbook/assets/d42f901abc47b8de9ba3053669f4fc7f.png)
 
 Dans la console du navigateur, le contenu de la page `poc1.cybersecurity.com/same-origin-policy/profile.php` est bien présent :
 
-![](../../../../.gitbook/assets/1a3237a5b4580f5800fa26d3bae343b1.png)
+![](../../../.gitbook/assets/1a3237a5b4580f5800fa26d3bae343b1.png)
 
 La lecture d'une réponse d'une requête provenant de la même origine que la ressource désirée fonctionne donc bien. En effet, si l'on se réfère au tableau récapitulatif des requêtes soumises à la politique SOP, la requête est légitime car le schéma, l'hôte ainsi que le port sont les mêmes.
 
@@ -53,15 +53,15 @@ Admettons que la page `lecture_same-origin_ajax.php` utilisée précédemment ne
 
 Les deux requêtes sont bien effectuées par le navigateur lorsque l'utilisateur visite la page `http://poc2.cybersecurity.com/same-origin-policy/lecture_subdomain_ajax.php` et obtiennent un **`200 OK`** de la part du serveur :
 
-![](../../../../.gitbook/assets/6d380a65e0cd603d5b5b74af64570b43.png)
+![](../../../.gitbook/assets/6d380a65e0cd603d5b5b74af64570b43.png)
 
 La requête XHR complète est :
 
-![](../../../../.gitbook/assets/79f0217e0702bf0425a3c426f4b9e3b8.png)
+![](../../../.gitbook/assets/79f0217e0702bf0425a3c426f4b9e3b8.png)
 
 Un entête HTTP supplémentaire est présent par rapport à la requête de type same-origin : il s'agit de l'entête `Origin` qui a pour valeur le domaine exécutant la requête. Par contre, le navigateur n'affiche pas la réponse de la requête XHR mais seulement un warning indiquant que la politique SOP interdit la lecture de la ressources distante présente à l'adresse `http://poc1.cybersecurity.com/same-origin-policy/profile.php` :
 
-![](../../../../.gitbook/assets/0c7cf33fc7dbaf4ee2137026798b3ac5.png)
+![](../../../.gitbook/assets/0c7cf33fc7dbaf4ee2137026798b3ac5.png)
 
 Un sous-domaine A ne peut donc pas récupérer des informations \(lecture\) d'une ressource d'un sous domaine B \(appartenant au même domaine\) car les origines sont différentes selon SOP.
 
@@ -73,11 +73,11 @@ La page effectuant la requête XHR est maintenant disponible à l'adresse `http:
 
 Lorsque l'utilisateur visite cette nouvelle page, deux requêtes sont bien envoyées par le navigateur :
 
-![](../../../../.gitbook/assets/ce0a83e1b31e137b4af8ceba2a76d3a5.png)
+![](../../../.gitbook/assets/ce0a83e1b31e137b4af8ceba2a76d3a5.png)
 
 Les entêtes HTTP de la requête XHR sont les suivants :
 
-![](../../../../.gitbook/assets/3fccc56ad8094c7dd35ff85c1277a757.png)
+![](../../../.gitbook/assets/3fccc56ad8094c7dd35ff85c1277a757.png)
 
 {% hint style="info" %}
 Bien noter l'entête `Origin` qui contient le domaine du site effectuant la requête, soit ici `http://poc1.malicious.com`
@@ -85,7 +85,7 @@ Bien noter l'entête `Origin` qui contient le domaine du site effectuant la requ
 
 Encore une fois le navigateur interdit la lecture de la réponse XHR pour le domaine `poc1.malicious.com` :
 
-![](../../../../.gitbook/assets/6681c04b24658656de244e8c209bb724.png)
+![](../../../.gitbook/assets/6681c04b24658656de244e8c209bb724.png)
 
 Un domaine B ne peut donc lire la réponse d'une requête effectuée vers un domaine A \(car origine différente\). En effet, si c'était le cas, cela entraînerai une énorme faille de sécurité \(imaginez qu'un site malicieux puisse lire la réponse à une requête sur votre compte en banque, récupérant ainsi votre numéro de compte, son solde, vos dernières opérations etc\).
 
