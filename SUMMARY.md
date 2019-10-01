@@ -4,7 +4,7 @@
 
 ## Comprendre
 
-* [Gestion d'identité](comprendre/gestion-didentite/README.md)
+* [La Gestion des Identités et des Accès](comprendre/gestion-didentite/README.md)
   * [JSON Web Token \(JWT\)](comprendre/gestion-didentite/json-web-token-jwt/README.md)
     * [Un jeton JWT c'est quoi ?](comprendre/gestion-didentite/json-web-token-jwt/un-jeton-jwt-cest-quoi.md)
     * [Mécanismes de sécurité](comprendre/gestion-didentite/json-web-token-jwt/mecanismes-de-securite.md)

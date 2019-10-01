@@ -5,7 +5,7 @@ description: >-
   applications (merci Wikipedia)
 ---
 
-# Gestion d'identité
+# La Gestion des Identités et des Accès
 
 ![](../../.gitbook/assets/56de78d97a914e06031c0c2139acb855.png)
 
