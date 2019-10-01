@@ -1,8 +1,8 @@
 ---
 description: >-
-  La sécurité des sites Web est l'acte/la pratique de protéger les sites web
-  contre l'accès, l'utilisation, la modification, la destruction ou la
-  perturbation non autorisés (merci MDN)
+  Que cela soit pour développer une application ou tester la sécurité d'une
+  plateforme, comprendre les mécanismes du Web est primordial afin de travailler
+  plus efficacement
 ---
 
 # Les mécanismes du Web
