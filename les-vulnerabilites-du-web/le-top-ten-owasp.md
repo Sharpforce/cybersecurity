@@ -1,2 +1,0 @@
-# Le Top Ten OWASP
-

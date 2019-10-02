@@ -8,8 +8,6 @@
   * [Un jeton JWT c'est quoi ?](les-mecanismes-du-web/json-web-token-jwt/un-jeton-jwt-cest-quoi.md)
   * [Mécanismes de sécurité](les-mecanismes-du-web/json-web-token-jwt/mecanismes-de-securite.md)
   * [Recommandations de sécurité](les-mecanismes-du-web/json-web-token-jwt/recommandations-de-securite.md)
-  * [Attaques sur les jetons JWT](les-mecanismes-du-web/json-web-token-jwt/attaques-sur-les-jetons-jwt.md)
-  * [Challenges et Writeups](les-mecanismes-du-web/json-web-token-jwt/challenges-et-writeups.md)
   * [Outils](les-mecanismes-du-web/json-web-token-jwt/outils.md)
 * [OAuth 2.0](les-mecanismes-du-web/oauth-2.0/README.md)
   * [Principes de base](les-mecanismes-du-web/oauth-2.0/principes-de-base.md)
@@ -30,12 +28,15 @@
   * [Flash et le fichier crossdomain.xml](les-mecanismes-du-web/same-origin-policy-sop/flash-et-le-fichier-domain.xml.md)
   * [Silverlight et le fichier clientaccess-policy.xml](les-mecanismes-du-web/same-origin-policy-sop/silverlight-et-le-fichier-clientaccess-policy.xml.md)
   * [Websockets](les-mecanismes-du-web/same-origin-policy-sop/websockets.md)
-  * [Erreurs d'implémentation](les-mecanismes-du-web/same-origin-policy-sop/erreurs-dimplementation.md)
 
 ## Les vulnérabilités du Web
 
-* [Le Top Ten OWASP](les-vulnerabilites-du-web/le-top-ten-owasp.md)
-* [Autres attaques](les-vulnerabilites-du-web/autres-attaques.md)
+* [JSON Web Token \(JWT\)](les-vulnerabilites-du-web/le-top-ten-owasp/README.md)
+  * [JWS - Alg "None" Attack](les-vulnerabilites-du-web/le-top-ten-owasp/attaques-sur-les-jetons-jwt.md)
+  * [JWS - Weak HMAC Keys](les-vulnerabilites-du-web/le-top-ten-owasp/jws-weak-hmac-keys.md)
+  * [JWS - RS256 Public-Key as HS256 Secret Attack](les-vulnerabilites-du-web/le-top-ten-owasp/jws-rs256-public-key-as-hs256-secret-attack.md)
+  * [Substitution Attacks](les-vulnerabilites-du-web/le-top-ten-owasp/substitution-attacks.md)
+  * [S’entraîner](les-vulnerabilites-du-web/le-top-ten-owasp/challenges-et-writeups.md)
 
 ## Outillage
 
