@@ -15,6 +15,8 @@ Ces attaques sont les suivantes :
 
 
 
+![](../../.gitbook/assets/4230f51669a39cd303b9102995e9cdd2.png)
+
 
 
 
