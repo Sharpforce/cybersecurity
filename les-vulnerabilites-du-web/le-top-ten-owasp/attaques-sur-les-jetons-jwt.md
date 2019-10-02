@@ -1,4 +1,4 @@
-# JWS - Alg "None" Attack
+# JWS - "Alg: None" Attack
 
 Cette attaque consiste à faire passer un jeton signé pour un jeton non signé afin de pouvoir en modifier son contenu. Par exemple, voici un jeton légitime signé reçu par l'attaquant :
 

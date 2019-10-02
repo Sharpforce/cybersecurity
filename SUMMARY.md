@@ -32,7 +32,7 @@
 ## Les vulnérabilités du Web
 
 * [JSON Web Token \(JWT\)](les-vulnerabilites-du-web/le-top-ten-owasp/README.md)
-  * [JWS - Alg "None" Attack](les-vulnerabilites-du-web/le-top-ten-owasp/attaques-sur-les-jetons-jwt.md)
+  * [JWS - "Alg: None" Attack](les-vulnerabilites-du-web/le-top-ten-owasp/attaques-sur-les-jetons-jwt.md)
   * [JWS - Weak HMAC Keys](les-vulnerabilites-du-web/le-top-ten-owasp/jws-weak-hmac-keys.md)
   * [JWS - RS256 Public-Key as HS256 Secret Attack](les-vulnerabilites-du-web/le-top-ten-owasp/jws-rs256-public-key-as-hs256-secret-attack.md)
   * [Substitution Attacks](les-vulnerabilites-du-web/le-top-ten-owasp/substitution-attacks.md)
