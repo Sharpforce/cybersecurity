@@ -2,7 +2,7 @@
 description: Orienté pentesting / sécu web
 ---
 
-# Les extensions navigateurs
+# Extensions navigateurs
 
 La liste d'extensions \(pour Chrome\) proposée ci-dessous est loin d'être exhaustive, il s'agit seulement des extensions que j'utilise lors de me tests. D'autres extensions, absentes ici, peuvent tout de même être utiles, mais font doublon avec l'utilisation de l'outil Burp. Etant donné que je lance Burp dès le début de mes tests, je préfère ne pas surcharger mon navigateur d'extensions que je n'utiliserai pas.
 

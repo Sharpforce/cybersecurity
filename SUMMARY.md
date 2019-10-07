@@ -41,7 +41,7 @@
 ## Outillage
 
 * [Sécurité Web](outillage/les-extensions-navigateurs/README.md)
-  * [Les extensions navigateurs](outillage/les-extensions-navigateurs/les-extensions-navigateurs.md)
+  * [Extensions navigateurs](outillage/les-extensions-navigateurs/les-extensions-navigateurs.md)
 
 ## Livres
 
