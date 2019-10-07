@@ -1,4 +1,4 @@
-# Recommandations de sécurité
+# Considérations de sécurité
 
 ## HTTPS
 
