@@ -6,7 +6,7 @@
 
 * [JSON Web Token \(JWT\)](les-mecanismes-du-web/json-web-token-jwt/README.md)
   * [Un jeton JWT c'est quoi ?](les-mecanismes-du-web/json-web-token-jwt/un-jeton-jwt-cest-quoi.md)
-  * [Mécanismes de sécurité](les-mecanismes-du-web/json-web-token-jwt/mecanismes-de-securite.md)
+  * [Signature et chiffrement](les-mecanismes-du-web/json-web-token-jwt/signature-et-chiffrement.md)
   * [Considérations de sécurité](les-mecanismes-du-web/json-web-token-jwt/considerations-de-securite.md)
   * [Outillage](les-mecanismes-du-web/json-web-token-jwt/outillage.md)
 * [OAuth 2.0](les-mecanismes-du-web/oauth-2.0/README.md)

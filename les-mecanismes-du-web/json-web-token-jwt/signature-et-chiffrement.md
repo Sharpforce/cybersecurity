@@ -1,4 +1,4 @@
-# Mécanismes de sécurité
+# Signature et chiffrement
 
 ## Signature \(JWS\)
 
