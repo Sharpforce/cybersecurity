@@ -1,3 +1,7 @@
+---
+description: 'Dernière mise à jour : 08/10/2019'
+---
+
 # Cookies HTTP
 
 ## Introduction
