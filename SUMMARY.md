@@ -4,6 +4,12 @@
 
 ## Les mécanismes du Web
 
+* [Cookies HTTP](les-mecanismes-du-web/cookies-http/README.md)
+  * [Qu'est ce qu'un cookie ?](les-mecanismes-du-web/cookies-http/quest-ce-quun-cookie.md)
+  * [Utilisation et attributs](les-mecanismes-du-web/cookies-http/utilisation-et-attributs.md)
+  * [Cookies tierces parties](les-mecanismes-du-web/cookies-http/cookies-tierces-parties.md)
+  * [Cookies Zombie et Evercookies](les-mecanismes-du-web/cookies-http/cookies-zombie-et-evercookies.md)
+  * [Considérations de sécurité](les-mecanismes-du-web/cookies-http/considerations-de-securite.md)
 * [JSON Web Token \(JWT\)](les-mecanismes-du-web/json-web-token-jwt/README.md)
   * [Un jeton JWT c'est quoi ?](les-mecanismes-du-web/json-web-token-jwt/un-jeton-jwt-cest-quoi.md)
   * [Signature et chiffrement](les-mecanismes-du-web/json-web-token-jwt/signature-et-chiffrement.md)
