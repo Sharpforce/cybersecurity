@@ -28,10 +28,10 @@ En plus d'implémenter les bonnes pratiques de développement concernant cette v
 
 La vulnérabilité XSSI repose sur le même principe que la vulnérabilité CSRF. L'attaquant va se servir du fait que les cookies de la victime sont envoyés lors de l'utilisation de requêtes Cross-Origin. 
 
-A la place de faire effectuer une action à la victime, l'attaquant va récupérer des données potentiellement sensibles disponibles dans certains types de fichiers et cela grâce à l'utilisation de la balise `script` :
+Au lieu de faire effectuer une action à la victime, l'attaquant va récupérer des données potentiellement sensibles disponibles dans certains types de fichiers et cela grâce à l'utilisation de la balise `script` :
 
 ```markup
-<script src="http://sitevulnerable/fichier-sensible.hs></script>
+<script src="http://sitevulnerable/fichier-sensible.js></script>
 ```
 
 ## Identifiants de session faible
