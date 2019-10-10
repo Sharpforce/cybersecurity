@@ -68,6 +68,7 @@
   * [Holynix: v2](walkthroughs/vulnhub/holynix-v2.md)
   * [Kioptrix: Level 1](walkthroughs/vulnhub/kioptrix-level-1.md)
   * [Kioptrix: Level 2](walkthroughs/vulnhub/kioptrix-level-2.md)
+  * [Kioptrix: Level 3](walkthroughs/vulnhub/kioptrix-level-3.md)
   * [LAMPSecurity: CTF4](walkthroughs/vulnhub/lampsecurity-ctf4.md)
   * [LAMPSecurity: CTF5](walkthroughs/vulnhub/lampsecurity-ctf5.md)
   * [LAMPSecurity: CTF6](walkthroughs/vulnhub/lampsecurity-ctf6.md)
