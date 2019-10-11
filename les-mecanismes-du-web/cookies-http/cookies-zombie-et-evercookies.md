@@ -2,7 +2,7 @@
 
 ## Cookie Zombie
 
-Un **cookie Zombie** ou **Evercookie** est un cookie difficilement supprimable car même après son effacement le cookie sera régénéré de façon automatique. Techniquement, le cookie \(du moins ce qui permet de le régénérer\) est stocké en dehors de la zone traditionnel de stockage de cookies.
+Un **cookie Zombie** est un cookie difficilement supprimable car même après son effacement le cookie sera régénéré de façon automatique. Techniquement, le cookie \(du moins ce qui permet de le régénérer\) est stocké en dehors de la zone traditionnel de stockage de cookies.
 
 Selon [Wikipedia](https://en.wikipedia.org/wiki/Zombie_cookie), voici la liste où un **cookie Zombie** peut se cacher :
 
