@@ -74,4 +74,5 @@
   * [LAMPSecurity: CTF6](walkthroughs/vulnhub/lampsecurity-ctf6.md)
   * [Metasploitable: 1](walkthroughs/vulnhub/metasploit-1.md)
   * [pWnOS 1.0](walkthroughs/vulnhub/pwnos-1.0.md)
+  * [pWnOS 2.0 \(Pre-Release\)](walkthroughs/vulnhub/pwnos-2.0-pre-release.md)
 
