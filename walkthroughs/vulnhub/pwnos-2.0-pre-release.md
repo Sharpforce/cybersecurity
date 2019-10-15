@@ -7,7 +7,7 @@
 **Lien de téléchargement :** [http://pwnos.com/files/pWnOS\_v2.0.7z](http://pwnos.com/files/pWnOS_v2.0.7z)  
 **Niveau :** Facile  
 **Objectif\(s\) :** obtenir un accès "root"  
-Description :  
+**Description :**  
 `pWnOS v2.0 is a Virutal Machine Image which hosts a server to pratice penetration testing. It will test your ability to exploit the server and contains multiple entry points to reach the goal (root). It was design to be used with WMWare Workstation 7.0, but can also be used with most other virtual machine software.  
   
 Server's Network Settings:  

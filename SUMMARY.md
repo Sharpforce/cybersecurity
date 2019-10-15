@@ -64,6 +64,7 @@
       * [1337 Secur1ty](walkthroughs/capture-the-flag/tamuctf-2019/web/1337-secur1ty.md)
 * [VulnHub](walkthroughs/vulnhub/README.md)
   * [GoatseLinux: 1](walkthroughs/vulnhub/goatselinux-1.md)
+  * [Hackademic: RTB1](walkthroughs/vulnhub/hackademic-rtb1.md)
   * [Holynix: v1](walkthroughs/vulnhub/holynix-1.md)
   * [Holynix: v2](walkthroughs/vulnhub/holynix-v2.md)
   * [Kioptrix: Level 1](walkthroughs/vulnhub/kioptrix-level-1.md)
