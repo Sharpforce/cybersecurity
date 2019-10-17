@@ -16,7 +16,7 @@ Les jetons sont des chaines de caractères qui sont envoyés dans la requête pa
 * **Access Token** \(Jeton d’accès\) : Ce jeton est récupéré auprès du serveur d’autorisation et doit être joint aux requêtes effectuées par le client afin d'accéder aux ressources. Pour simplifier, il est possible de voir un jeton d’accès comme étant un mot de passe. Si le jeton est valide, alors le client peut accéder à la ressource. Il a une durée de vie limitée qui est définit par le serveur d’autorisation
 * **Refresh Token** \(Jeton de renouvellement\) : Ce jeton est optionnel et est délivré en même temps que le jeton d’accès. Il n’a pas besoin d’être joint à chaque requête effectué par l’application car il sert simplement à demander un nouveau jeton d’accès quand le premier arrive à expiration
 
-## Les périmètres \(scope\)
+## Les périmètres \(scopes\)
 
 Le jeton d’accès n’est pas forcément valable pour toutes les ressources de l'utilisateur, les scopes permettent de définir la liste de ces ressources. Par exemple un jeton d’accès pour accéder à Facebook peut permettre seulement d’accéder aux informations du profil \(nom, prénom, etc\) mais pas aux photos de l’utilisateur. Les scopes sont définit par le serveur d’autorisation et il doit également être renseigné dans la requête effectuée par le client.
 
