@@ -277,6 +277,8 @@ Pragma: no-cache
 
 Le client peut demander via une requête un jeton d’accès en utilisant seulement ses identifiants clients \(**client\_id** et **client\_secret**\) si les données à protéger sont sous son contrôle.
 
+### Diagramme de séquence
+
 ![](../../.gitbook/assets/cff0557e1ad44e701547da26a53368e6.png)
 
 1. Le client s’authentifie auprès du serveur d’autorisation en fournissant ses identifiants \(**client\_id** et **client\_secret**\) et demande un jeton d’accès

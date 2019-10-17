@@ -2,7 +2,7 @@
 
 ## Utiliser un jeton de rafraîchissement
 
-Si le serveur d’autorisation fournit un jeton de rafraîchissement \(**refresh token**\) alors le client peut effectuer une requête au token endpoint afin d’obtenir un nouveau jeton d’accès. Voici les paramètres à renseigner dans une telle requête : 
+Si le serveur d’autorisation fournit un jeton de rafraîchissement \(**refresh token**\) alors le client peut effectuer une requête au **token endpoint** afin d’obtenir un nouveau jeton d’accès. Voici les paramètres à renseigner dans une telle requête : 
 
 * **grant\_type** \(OBLIGATOIRE\) : la valeur doit être « refresh\_token »
 * **refresh\_token** \(OBLIGATOIRE\) : le jeton de rafraîchissement

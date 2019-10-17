@@ -39,7 +39,7 @@ Le client effectue une requête au serveur d’autorisation en ajoutant les para
 
 #### Requête de demande de jeton d’accès \(étape 5\)
 
-Lorsque le client demande le jeton d ‘accès en fournissant le code d’autorisation, il transmet également le secret généré précédemment nommé **code\_verifier**.
+Lorsque le client demande le jeton d ‘accès en fournissant le code d’autorisation, il transmet également le secret généré précédemment nommé **code\_verifier** :
 
 * **code\_verifier** \(OBLIGATOIRE\) : la valeur du secret « code\_verifier »
 

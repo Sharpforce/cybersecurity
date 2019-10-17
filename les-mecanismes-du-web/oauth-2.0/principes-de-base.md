@@ -86,7 +86,7 @@ grant_type=refresh_token&refresh_token=tGzv3JOkF0XG5Qx2TlKWIA&client_id=s6BhdRkq
 Le processus d’autorisation utilise au moins deux endpoints \(ressources HTTP\) différents :
 
 * **Authorization endpoint** : utilisé par le client pour obtenir l’autorisation de la part du détenteur de données \(authentification de l’utilisateur final\) en utilisant une redirection HTTP. Il est utilisé pour les types d’autorisation **authorization code grant** ainsi que **implicit grant**
-* **Token enpoint** : utilisé par le client pour récupérer le jeton d’accès permettant d’accéder aux ressources protégées. Ne sert pas pour le type **implicit grant**
+* **Token endpoint** : utilisé par le client pour récupérer le jeton d’accès permettant d’accéder aux ressources protégées. Ne sert pas pour le type **implicit grant**
 
 Le client possède également un endpoint : 
 
