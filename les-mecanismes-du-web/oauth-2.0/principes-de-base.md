@@ -24,7 +24,7 @@ Le jeton d’accès n’est pas forcément valable pour toutes les ressources de
 
 Le paramètre d’état est présent dans les requêtes et réponses effectuées ou reçues par le client. Le client est en mesure de fixer sa valeur lors de la requête et cette même valeur sera retournée par le serveur d’autorisation lors de la redirection. Il peut donc être utilisé par le client pour « garder en mémoire » un état spécifique de l’application ou de l’utilisateur final. 
 
-Une autre utilisation est de s’en servir comme jeton anti-CSRF \(voir partie Recommandations de sécurité\).
+Une autre utilisation est de s’en servir comme jeton anti-CSRF \(voir partie Considérations de sécurité\).
 
 ## Le client
 
