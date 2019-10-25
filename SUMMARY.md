@@ -61,11 +61,12 @@
 ## Walkthroughs
 
 * [Capture The Flag](walkthroughs/capture-the-flag/README.md)
+  * [Hack.lu CTF 2019](walkthroughs/capture-the-flag/hack.lu-ctf-2019/README.md)
+    * [Nucular Power Plant](walkthroughs/capture-the-flag/hack.lu-ctf-2019/nucular-power-plant.md)
   * [TAMUctf 2019](walkthroughs/capture-the-flag/tamuctf-2019/README.md)
-    * [Web](walkthroughs/capture-the-flag/tamuctf-2019/web/README.md)
-      * [Science!](walkthroughs/capture-the-flag/tamuctf-2019/web/science.md)
-      * [Bird Box Challenge](walkthroughs/capture-the-flag/tamuctf-2019/web/bird-box-challenge.md)
-      * [1337 Secur1ty](walkthroughs/capture-the-flag/tamuctf-2019/web/1337-secur1ty.md)
+    * [1337 Secur1ty](walkthroughs/capture-the-flag/tamuctf-2019/1337-secur1ty.md)
+    * [Bird Box Challenge](walkthroughs/capture-the-flag/tamuctf-2019/bird-box-challenge.md)
+    * [Science!](walkthroughs/capture-the-flag/tamuctf-2019/science.md)
 * [VulnHub](walkthroughs/vulnhub/README.md)
   * [GoatseLinux: 1](walkthroughs/vulnhub/goatselinux-1.md)
   * [Hackademic: RTB1](walkthroughs/vulnhub/hackademic-rtb1.md)
