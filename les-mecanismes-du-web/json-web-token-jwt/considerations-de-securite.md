@@ -8,11 +8,19 @@ De plus, étant donné que les données sont seulement encodées, il est décons
 
 ## Cross-Site Request Forgery \(CSRF\)
 
-Si le jeton JWT est stocké en cookie, alors une attaque CSRF peut être possible si l'application consommatrice n'implémente pas de protection adéquate. Il faut donc, dans ce cas, veiller à bien implémenter les mesures de protections anti-CSRF. Si le jeton JWT n'est pas stocké en tant que cookie alors les attaques CSRF ne sont plus possible. 
+Si le jeton JWT est stocké en cookie, alors une attaque CSRF peut être possible si l'application consommatrice n'implémente pas de protection adéquate. Il faut donc, dans ce cas, veiller à bien implémenter les mesures de protections anti-CSRF. 
+
+Si le jeton JWT n'est pas stocké en tant que cookie alors les attaques CSRF ne sont plus possible, mais cela amène d'autres problématiques comme XSS. 
 
 ## Cross-Site Scripting \(XSS\)
 
-Si le jeton JWT est stocké dans le local storage ou le session storage, il devient alors possible pour un attaquant de récupérer son contenu si l'application consommatrice est vulnérable à la faille XSS. L'application qui nécessite le jeton doit donc faire attention à être protégée contre ce type de failles.
+Si le jeton JWT n'est pas stocké dans un cookie, il est alors stocké dans le local storage ou le session storage. Cette technique est utilisée afin de pouvoir ajouter le jeton dans l'entête HTTP `Authorization` afin d'effectuer des appels \(vers une API par exemple\) :
+
+`Authorization: Bearer <token>`
+
+Cela protège des failles CSRF mais il devient alors possible pour un attaquant de récupérer le contenu du jeton si l'application consommatrice est vulnérable à la faille XSS \(ou un script malicieux/rendu malicieux provenant d'une tierce partie\). Exit donc la protection offerte par l'option **HttpOnly** qui protège contre un vol de session sur une mécanique de session par cookie. 
+
+L'application qui nécessite le jeton doit donc faire attention à être protégée contre ce type de failles.
 
 ## Révocation d'un jeton JWT
 
