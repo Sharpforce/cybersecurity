@@ -16,7 +16,11 @@ De cette façon, le serveur peut retrouver la session de l'utilisateur et reteni
 
 ## Attributs
 
-Il existe plusieurs attributs optionnels liés au cookie \(selon la [RFC](https://tools.ietf.org/html/rfc6265#page-8), un cookie peut à minima ne posséder que le couple **nom=valeur**\) :
+Il existe plusieurs attributs optionnels liés au cookie \(selon la [RFC](https://tools.ietf.org/html/rfc6265#page-8), un cookie peut à minima ne posséder seulement que le l'infirmation **nom=valeur**\). 
+
+Voici un [tableau récapitulatif](https://developer.mozilla.org/fr/docs/Web/HTTP/Headers/Set-Cookie) des principaux attributs en fonction des navigateurs :
+
+![](../../.gitbook/assets/d0d62cfa816e864ec81cf39d595a4134.png)
 
 ### Expire
 

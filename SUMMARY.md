@@ -7,6 +7,7 @@
 * [Cookies HTTP](les-mecanismes-du-web/cookies-http/README.md)
   * [Qu'est ce qu'un cookie ?](les-mecanismes-du-web/cookies-http/quest-ce-quun-cookie.md)
   * [Utilisation et attributs](les-mecanismes-du-web/cookies-http/utilisation-et-attributs.md)
+  * [Cookies prefixes](les-mecanismes-du-web/cookies-http/cookies-prefixes.md)
   * [Cookies tierces parties](les-mecanismes-du-web/cookies-http/cookies-tierces-parties.md)
   * [Cookies Zombie et Evercookies](les-mecanismes-du-web/cookies-http/cookies-zombie-et-evercookies.md)
   * [Considérations de sécurité](les-mecanismes-du-web/cookies-http/considerations-de-securite.md)
