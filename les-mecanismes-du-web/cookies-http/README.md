@@ -1,5 +1,5 @@
 ---
-description: 'Dernière mise à jour : 08/10/2019'
+description: 'Dernière mise à jour : 02/11/2019'
 ---
 
 # Cookies HTTP
