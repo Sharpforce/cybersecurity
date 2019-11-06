@@ -1,5 +1,5 @@
 ---
-description: 'Dernière mise à jour : 15/04/2019'
+description: 'Dernière mise à jour : 06/11/2019'
 ---
 
 # JSON Web Token \(JWT\)
