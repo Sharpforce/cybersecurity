@@ -1,6 +1,6 @@
 # Signature et chiffrement
 
-## Signature \(JWS\)
+## JSON Web Signatures \(JWS\)
 
 Le mécanisme de signature permet à l'entité qui délivre le jeton JWT de le signer et à l'entité destinataire de vérifier cette signature. Suivant le type de signature utilisé, il est possible de s'assurer à minima de l'intégrité des données contenues dans le jeton, voir de s'assurer de l'identité de l'entité émettrice.
 
@@ -139,7 +139,7 @@ Voici la liste des algorithmes supportés selon le [RFC 7518](https://tools.ietf
       <td style="text-align:center">Facultatif</td>
     </tr>
   </tbody>
-</table>## Chiffrement \(JWE\)
+</table>## JSON Web Encryption \(JWE\)
 
 Le chiffrement du jeton JWT apporte le principe de sécurité supplémentaire qu'est la confidentialité \(rendre illisible le jeton par les personnes n'ayant pas l'autorisation de le lire\). Un jeton JWT chiffré \(JWE\) comporte plusieurs parties supplémentaires, ce qui amène le jeton à six parties au total :
 
@@ -299,5 +299,64 @@ Voici la liste des algorithmes supportés selon le [RFC 7518](https://tools.ietf
       <td style="text-align:left">Facultatif</td>
     </tr>
   </tbody>
-</table>## 
+</table>## JSON Web Keys \(JWK\)
+
+La spécification [JWK](https://tools.ietf.org/html/rfc7517) permet de représenter, grâce à un format normalisé utilisant la notation JSON, des clés cryptographiques utilisées pour la signature et pour le chiffrement.
+
+Voici un exemple d'un JWK :
+
+`{   
+  "kty":"EC",  
+  "crv":"P-256",  
+  "x":"f83OJ3D2xF1Bg8vub9tLe1gHMzV76e8Tus9uPHvRVEU",  
+  "y":"x_FEzRu9m36HLN_tue659LNpXW6pCyStikYjKIWI5a0",  
+  "use":"enc"  
+  "kid":"un identifiant"  
+}`
+
+`kty` \([key type](https://www.iana.org/assignments/jose/jose.xhtml#web-key-types)\) : spécifie le type d'algorithme utilisé et peut prendre les valeurs suivantes.
+
+![](../../.gitbook/assets/5021f6d5e110f33e2e6411b3cb53b066.png)
+
+`crv` \([curve](https://www.iana.org/assignments/jose/jose.xhtml#web-key-elliptic-curve)\) : il s'agit du nom de la courbe utilisée si l'algorithme est une courbe elliptique.
+
+![](../../.gitbook/assets/d6978c8092d3a2ecc33b688273453fd6.png)
+
+`x` et `y` : ce sont les coordonnées du point représentant la clé publique lorsque l'algorithme est une courbe elliptique. Il se peut qu'un autre paramètre, nommé `d`, soit présent. Il s'agit dans ce cas de la clé privée.
+
+`use` \([use](https://www.iana.org/assignments/jose/jose.xhtml#web-key-use)\) : Permet de spécifier l'objectif de la clé. La valeur peut être `enc` pour un usage de chiffrement ou `sig` pour un usage de signature.
+
+![](../../.gitbook/assets/129a6777c7faf2a01c95df23ff9f99bc.png)
+
+`kid` \([key ID](https://tools.ietf.org/html/rfc7517#section-4.5)\) : il s'agit d'un identifiant concernant la clé, ce champ est au format libre. 
+
+Il existe d'autres attributs comme `x5c` \(certificat X.509 ou une chaîne de certificats\) , `x5t` \(empreinte d'un certificat X.509\) ou encore `x5u` \(URL pointant vers un certificat X.509\). Les détails de ces attributs sont disponibles dans la [section 4.6](https://tools.ietf.org/html/rfc7517#section-4.6) de la RFC.
+
+Il est tout autant possible d'utiliser un JWK représentant une clé utilisée à des fins de cryptographie symétrique. Par exemple, pour une clé \(secret\) partagé `k` :
+
+`{  
+  "kty":"oct",  
+  "k":"c7WsUB6msAgIxDfl34S4",  
+  "kid":"shared key for ..."  
+}`
+
+Pour terminer, il est également possible qu'un JWK représente plusieurs clés avec un tableau `keys` :
+
+`{"keys":   
+  [  
+    {   
+      "kty":"EC",  
+      "crv":"P-256",  
+      "x":"f83OJ3D2xF1Bg8vub9tLe1gHMzV76e8Tus9uPHvRVEU",  
+      "y":"x_FEzRu9m36HLN_tue659LNpXW6pCyStikYjKIWI5a0",  
+      "use":"enc"  
+      "kid":"un identifiant"  
+    },  
+    {   
+      "kty":"oct",  
+      "k":"c7WsUB6msAgIxDfl34S4",  
+      "kid":"un autre identifiant"  
+    }  
+  ]  
+}`
 
