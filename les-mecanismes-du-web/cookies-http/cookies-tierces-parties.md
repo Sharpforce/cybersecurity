@@ -10,27 +10,23 @@ Un cookie dont le domaine est le même que celui de la page visité par l'utilis
 
 Dans l'exemple suivant, le site `cybersecurity.com` met en place un premier cookie lors de la visite de l'utilisateur sur le site :
 
-{% code-tabs %}
-{% code-tabs-item title="http://cybersecurity.com/cookies/cookie.php" %}
+{% code title="http://cybersecurity.com/cookies/cookie.php" %}
 ```php
 <?php
     setcookie("cookie-interne", "une_valeur", time()+3600);
 ?>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Il embarque également une image provenant du site `otherdomain.com` :
 
-{% code-tabs %}
-{% code-tabs-item title="http://cybersecurity.com/cookies/cookie.php" %}
+{% code title="http://cybersecurity.com/cookies/cookie.php" %}
 ```markup
 <p>
   <img src="http://otherdomain.com/cookies/road-220058_640.jpg" />
 </p>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Soit le résultat suivant :
 
