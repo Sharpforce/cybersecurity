@@ -10,7 +10,7 @@ On génère donc quelques cookies, nommés pour l'occasion "dvwaSession" :
 
 dont les valeurs semblent se suivre en commençant par la valeur "1", puis "2", puis "3" et ainsi de suite.
 
-Si ce jeton était un jeton de session, il suffirait alors de tester tous les jetons avant le notre \(en admettant qu'on ait reçu la valeur "15" alors il suffira de tester tous les jetons de "1" à "14"\) pour sans doute pouvoir usurper la session d'un utilisateur \(à condition que sa session soit toujours active\).
+Si ce jeton était un jeton de session, il suffirait alors de tester tous les jetons avant le notre \(en admettant qu'on ait reçu la valeur "15" alors il suffira de tester tous les jetons de "1" à "14"\) pour sans doute pouvoir détourner la session d'un utilisateur \(à condition que sa session soit toujours active\).
 
 Burp et son Sequencer nous permet de calculer l'entropie d'un jeton de session. Pour cela, il est nécessaire de sélectionner la requête de génération du jeton \(dans l'historique de Burp\) et de l'envoyer dans l'outil en question :
 

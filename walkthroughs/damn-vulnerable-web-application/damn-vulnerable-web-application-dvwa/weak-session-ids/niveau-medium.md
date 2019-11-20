@@ -8,7 +8,7 @@ Cette suite est reconnaissable à son format, il s'agit d'un timestamp UNIX :
 
 ![](../../../../.gitbook/assets/d1b226b62a4010844515e1791563aca9.png)
 
-Afin d'usurper l'identité d'une personne il suffira donc de tester les sessions passées avec, une certaine chance que les sessions les plus récentes soient encore actives.
+Afin d'usurper la session d'une personne il suffira donc de tester les sessions passées avec, une certaine chance que les sessions les plus récentes soient encore actives.
 
 Voyons ce qu'en dit le Sequencer de Burp :
 

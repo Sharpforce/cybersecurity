@@ -23,7 +23,7 @@ Il s'agit de l'empreinte du nombre "18" :
 
 Il s'agit donc en fait de la même mécanique de génération que le niveau "Low" à laquelle on a ensuite appliquée une méthode de hashage.
 
-Pour usurper la session d'un utilisateur il suffit donc de tester le hash d'un nombre inférieur au notre et de croiser les doigts.
+Pour détourner la session d'un utilisateur il suffit donc de tester le hash d'un nombre inférieur au notre et de croiser les doigts.
 
 Burp va t'il être capable de reconnaître que se cache une suite simple sous ces empreintes :
 
