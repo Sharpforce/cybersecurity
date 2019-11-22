@@ -38,15 +38,15 @@ Pour l'exploitation, on utilise le mode "raw" afin de soumettre l'URL à DVWA :
 
 ![](../../../../.gitbook/assets/95f6e25ce122eccbf6fea456fa91fdbf.png)
 
-Cela va nous permettre d'utiliser un biais de la liste blanche imposée par DVWA en utilisant une fonctionnalité de pastebin :
+Ce qui nous permet de faire exécuter un script contrôlé par nos soins tout en respectant la liste blanche imposée par DVWA :
 
 ![](../../../../.gitbook/assets/072bf6bc8bdd3c9cd0d964b3f5f0fd69.png)
 
-On adapte notre payload afin de récupérer le jeton de notre victime :
+Il suffit d'adapter notre payload malicieux afin de récupérer le jeton de notre victime :
 
 ![](../../../../.gitbook/assets/f553280d21b7d08019c14bdb7584c2f3.png)
 
-Il reste maintenant à savoir comment s'y prendre pour que notre attaque affecte un autre utilisateur. En effet, la requête n'est pas de type **`GET`** mais de type **`POST`**, ce qui nous empêche de partager facilement un lien forgé par nos soins à notre victime : 
+Reste maintenant à savoir comment s'y prendre pour que notre attaque affecte un autre utilisateur. En effet, la requête n'est pas de type **`GET`** mais de type **`POST`**, ce qui nous empêche de partager facilement un lien forgé à notre victime : 
 
 ![](../../../../.gitbook/assets/26904d65167ec3365c6c78f8fb603a0f.png)
 
@@ -74,7 +74,7 @@ Puis de fournir à notre victime le lien permettant d'accéder à notre page, pa
 
 ![](../../../../.gitbook/assets/7fa84faa90d73ff547b4b042fe15240a.png)
 
-La victime, obligatoirement authentifiée, sera redirigée vers le site du challenge CSP de DVWA et l'attaquant  réceptionnera son jeton :
+La victime, obligatoirement authentifiée, sera redirigée \(ce qui déclenchera l'exécution de notre script\) vers le site du challenge CSP de DVWA et l'attaquant réceptionnera son jeton :
 
 ![](../../../../.gitbook/assets/22eb6eb75298fced197214c1f6f963fc.png)
 

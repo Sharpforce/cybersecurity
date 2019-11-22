@@ -26,9 +26,9 @@ Le problème est qu'il n'est pas possible de soumettre notre payload à la victi
 
 ![](../../../../.gitbook/assets/f9b5e242aa1f34ade2d68c1f6327903b.png)
 
-Etant bloqué mais voulant aller plus loin, je suis allé voir ce que d'autres personnes ont réussi à faire. Je suis donc tombé sur ce [writeup](http://halazi.xin/2019/01/09/DVWA-CSP-BYPASS/) qui suit la démarche suivante :
+Etant bloqué mais voulant aller plus loin, je suis allé voir ce que d'autres personnes avaient réussi à faire. Je suis tombé sur ce [writeup](http://halazi.xin/2019/01/09/DVWA-CSP-BYPASS/) qui suit la démarche suivante :
 
-* Analyser les sources du challenge permet d'identifier un endpoint de type **`POST`** permet d'inclure une donnée dans le page csp :
+* Analyser les sources du challenge permet d'identifier un endpoint de type **`POST`** autorisant d'inclure une donnée dans le page csp :
 
 ![](../../../../.gitbook/assets/ccf82f8a7c8b4513a015b1dcd13c8c9f.png)
 
@@ -88,7 +88,7 @@ Bien que l'auteur du writeup n'indique pas comment, il faut maintenant trouver u
 Attention à l'encodage de certains caractères spéciaux au niveau de la valeur à envoyer
 {% endhint %}
 
-Lorsque la victime visite notre page malicieuse, l'attaquant reçoit subtilise son jeton de session :
+Lorsque la victime \(authentifiée\) visite notre page malicieuse, l'attaquant subtilise son jeton de session :
 
 ![](../../../../.gitbook/assets/07f3f7439e05a98dcb2a5eb628e005f6.png)
 
