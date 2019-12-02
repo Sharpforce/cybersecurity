@@ -49,6 +49,27 @@
   * [Substitution Attacks](les-vulnerabilites-du-web/json-web-token-jwt/substitution-attacks.md)
   * [S’entraîner](les-vulnerabilites-du-web/json-web-token-jwt/sentrainer.md)
 
+## Reverse-Engineering
+
+* [Architecture x86 \(32 bits\) & x86\_64 \(64 bits\)](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/README.md)
+  * [Architecture x86](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/architecture-x86/README.md)
+    * [Architecture Processeur](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/architecture-x86/architecture-processeur.md)
+    * [L'assembleur](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/architecture-x86/lassembleur.md)
+  * [Du C à l'assembleur](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/du-c-a-lassembleur/README.md)
+    * [Introduction](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/du-c-a-lassembleur/introduction.md)
+    * [Les variables](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/du-c-a-lassembleur/les-variables.md)
+    * [Les opérations mathématiques](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/du-c-a-lassembleur/les-operations-mathematiques.md)
+    * [Les opérateurs logiques](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/du-c-a-lassembleur/les-operateurs-logiques.md)
+    * [Les conditions](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/du-c-a-lassembleur/les-conditions.md)
+    * [Les boucles](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/du-c-a-lassembleur/les-boucles.md)
+    * [Les fonctions](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/du-c-a-lassembleur/les-fonctions.md)
+    * [Les structures](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/du-c-a-lassembleur/les-structures.md)
+  * [Aller plus loin](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/aller-plus-loin/README.md)
+    * [Alignement mémoire](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/aller-plus-loin/alignement-memoire.md)
+    * [Executable and Linkable Format](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/aller-plus-loin/executable-and-linkable-format.md)
+    * [Les binaires "stripped"](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/aller-plus-loin/les-binaires-stripped.md)
+    * [De x86 à x64](reverse-engineering/architecture-x86-32-bits-and-x86_64-64-bits/aller-plus-loin/de-x86-a-x64.md)
+
 ## Outillage
 
 * [Sécurité Web](outillage/securite-web/README.md)
