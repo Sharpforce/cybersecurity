@@ -21,7 +21,7 @@ As with the other two, this challenge is geared towards the beginner. It is howe
 
 La machine étant en DHCP il nous faut tout d'abord récupérer son adresse IP :
 
-![](../../.gitbook/assets/2deb7203ebaf8282be37f5b5c566da05.png)
+![](../../../.gitbook/assets/2deb7203ebaf8282be37f5b5c566da05.png)
 
 Comme indiqué dans la consigne du challenge, la machine a besoin d'une résolution DNS avec le nom `kioptrix3.com`. Direction donc le fichier `/etc/hosts` :
 
@@ -31,7 +31,7 @@ Comme indiqué dans la consigne du challenge, la machine a besoin d'une résolut
 
 Le `nmap` habituel, afin de déterminer les services exposés par la machine :
 
-![](../../.gitbook/assets/205a03d8a77e3eda16e25c1447f7583e.png)
+![](../../../.gitbook/assets/205a03d8a77e3eda16e25c1447f7583e.png)
 
 Peu de services puisque seul un service SSH et un serveur HTTP sont exposés.
 
@@ -39,33 +39,33 @@ Peu de services puisque seul un service SSH et un serveur HTTP sont exposés.
 
 Pas de vulnérabilité notable pour cette version de SSH, ça ne sera sans doute pas notre porte d'entrée :
 
-![](../../.gitbook/assets/4aeb07eae3f4a5743e45a741ab7e1fe8.png)
+![](../../../.gitbook/assets/4aeb07eae3f4a5743e45a741ab7e1fe8.png)
 
 ### Serveur HTTP
 
 Le `nmap` nous apprend que le serveur HTTP est un Apache 2.2.8 utilisant PHP en version 5.2.4. Ajoutons à cela les résultats d'un `nikto` :
 
-![](../../.gitbook/assets/acba11cde47bf0cc7aa3a4b96d66634b.png)
+![](../../../.gitbook/assets/acba11cde47bf0cc7aa3a4b96d66634b.png)
 
 Le scan nous apprend la présence d'un phpMyAdmin. La consultation du fichier `changelog.php` nous indique son numéro de version :
 
-![](../../.gitbook/assets/2545c9cd63d702ea68f6cc394345308a.png)
+![](../../../.gitbook/assets/2545c9cd63d702ea68f6cc394345308a.png)
 
 Je ne mets pas la sortie du `dirb` car cela ne donne pas grand chose.
 
 Passons maintenant à l'analyse des pages web hébergées par le service. Tout d'abord la page d'accueil :
 
-![](../../.gitbook/assets/e3f3136cda2c6480eebe477ad90a07c9.png)
+![](../../../.gitbook/assets/e3f3136cda2c6480eebe477ad90a07c9.png)
 
 La mire de login est intéressante car elle nous informe du CMS utilisé :
 
-![](../../.gitbook/assets/7173a10a17abc6ab810f7da6a3bebd85.png)
+![](../../../.gitbook/assets/7173a10a17abc6ab810f7da6a3bebd85.png)
 
 LotusCMS était un CMS open-source écrit en 2007/2008. Le code source est encore disponible sur [GitHub](https://github.com/kevinbluett/LotusCMS-Content-Management-System) \(hébergé à l'origine sur [sourceforge](http://sourceforge.net/projects/arboroiancms/%20)\).
 
 Mon premier but était d'identifier la version utilisée, j'ai donc récupéré le code source afin de repérer les différents fichiers pouvant contenir cette information. Le titre du fichier `install.html` présent dans le répertoire `/style/comps/admin/` nous rend ce service :
 
-![](../../.gitbook/assets/0a7d7315353be9fb05d96c32190f0256.png)
+![](../../../.gitbook/assets/0a7d7315353be9fb05d96c32190f0256.png)
 
 LotusCMS en version 3.0 possède une vulnérabilité de type LFI pouvant amener à une RCE \([CVE-2011-0518](https://www.cvedetails.com/cve/CVE-2011-0518/)\). Pour faire court, le système de post de commentaires sur le blog permet en fait l'écriture de fichiers sur le disque, puis la faille LFI permet de les charger.
 
@@ -75,37 +75,37 @@ LotusCMS en version 3.0 possède une vulnérabilité de type LFI pouvant amener 
 
 Un module `metasploit` existe concernant cette vulnérabilité :
 
-![](../../.gitbook/assets/a1890c95c8818d0bf8cc7f3a7bc535ff.png)
+![](../../../.gitbook/assets/a1890c95c8818d0bf8cc7f3a7bc535ff.png)
 
 L'exploitation sera donc plutôt aisée :
 
-![](../../.gitbook/assets/2988561f2435318f7427a3c3768b174c.png)
+![](../../../.gitbook/assets/2988561f2435318f7427a3c3768b174c.png)
 
 ## Élévation de privilèges
 
 La phase de reconnaissance permet de récupérer la liste des utilisateurs de la machine :
 
-![](../../.gitbook/assets/2c3f30bda9d912122fe4e1957260e240.png)
+![](../../../.gitbook/assets/2c3f30bda9d912122fe4e1957260e240.png)
 
 Deux comptes sont des utilisateurs de la machine : **dreg** et **loneferret**. Après avoir fouillé dans le `/home` de **loneferret** :
 
-![](../../.gitbook/assets/c5b0eda6c53681648b49e1c8f970edf3.png)
+![](../../../.gitbook/assets/c5b0eda6c53681648b49e1c8f970edf3.png)
 
 Le fichier `CompanyPolicy.README` \(ainsi que le `.bash_history`\) indique l'utilisation d'un programme nommé `ht`. Après quelques recherches, il s'agit d'un éditeur de texte. Chose intéressante, le binaire possède le **suid** à 1 :
 
-![](../../.gitbook/assets/c5e239b32f7331685e26d9e96aa25bc0.png)
+![](../../../.gitbook/assets/c5e239b32f7331685e26d9e96aa25bc0.png)
 
 Je tente donc de lancer le binaire :
 
-![](../../.gitbook/assets/07676563dbfc28b8a2447d27aa1f7039.png)
+![](../../../.gitbook/assets/07676563dbfc28b8a2447d27aa1f7039.png)
 
 Je suis pas un grand connaisseur des erreurs XTERM et compagnie. Je tente un peu à l'aveugle quelques commandes trouvées ici et là, par exemple :
 
-![](../../.gitbook/assets/00f9b4c7c13114c658f7c0f472698099.png)
+![](../../../.gitbook/assets/00f9b4c7c13114c658f7c0f472698099.png)
 
 Cela améliore sensiblement les choses, à savoir que je peux maintenant lancer le binaire mais ce n'est toujours pas utilisable \(la saisie de caractères écrit tout simplement sur l'interface\) :
 
-![](../../.gitbook/assets/6b0c60d0c0bc18120c7c034dc721d701.png)
+![](../../../.gitbook/assets/6b0c60d0c0bc18120c7c034dc721d701.png)
 
 Après un certain temps à tourner en rond, j'ai décidé de rétropédaler et d'approfondir la reconnaissance du système.
 
@@ -113,59 +113,59 @@ Mon premier objectif est d'avoir accès à la partie administration de LotusCMS.
 
 Après quelques recherches il se trouve que le mot de passe est présent dans un fichier distinct pour chaque utilisateur. Dans notre cas il s'agit de l'administrateur :
 
-![](../../.gitbook/assets/380aae7f14e17ac297e227f92c0780fe.png)
+![](../../../.gitbook/assets/380aae7f14e17ac297e227f92c0780fe.png)
 
 Après une lecture du code source, il se trouve que le mot de passe, avant d'être haché en SHA1, est tout d'abord concaténé avec un sel statique. Ce sel est présent dans le fichier /data/config/salt.dat :
 
-![](../../.gitbook/assets/5dd5d4f39ca30c4520b36b8e5b4b4381.png)
+![](../../../.gitbook/assets/5dd5d4f39ca30c4520b36b8e5b4b4381.png)
 
 John va nous aider à cracker ce mot de passe, mais il faut bien prendre en compte le sel utilisé. J'ajoute donc le hash dans un fichier sous le format `username:hash$sel` :
 
-![](../../.gitbook/assets/abdc00f93c7dbe14060e4aa7c4f3a9d4.png)
+![](../../../.gitbook/assets/abdc00f93c7dbe14060e4aa7c4f3a9d4.png)
 
 Il ne faut pas oublier d'indiquer le format \(ici `dynamic_24`\) dans notre ligne de commande :
 
-![](../../.gitbook/assets/a7299ae089a9a30c4ea1c1f906a66d21.png)
+![](../../../.gitbook/assets/a7299ae089a9a30c4ea1c1f906a66d21.png)
 
 Tout cela nous donne accès à la partie administration de LotusCMS :
 
-![](../../.gitbook/assets/e4c88163fa456c0f2fd3e190a8acc3fe.png)
+![](../../../.gitbook/assets/e4c88163fa456c0f2fd3e190a8acc3fe.png)
 
 Malheureusement, impossible d'aller plus loin dans la compromission de la machine par ce vecteur, je me penche alors sur l'accès shell.
 
 La recherche de mot de passe en plaintext porte ses fruits au niveau du répertoire `/gallery` :
 
-![](../../.gitbook/assets/522a3d5f14bea3929868e3676a3f0935.png)
+![](../../../.gitbook/assets/522a3d5f14bea3929868e3676a3f0935.png)
 
 Cela nous permet d'avoir accès à la base MySQL avec le compte root/fuckeyou. Pour une analyse plus facile du contenu de la base de données, je passe par le phpMyAdmin.
 
 Nous avons donc un premier mot de passe dans la table `gallarific_users` :
 
-![](../../.gitbook/assets/395cef4fc251ed7ef313d36062b0da48.png)
+![](../../../.gitbook/assets/395cef4fc251ed7ef313d36062b0da48.png)
 
 Et deux autres mots de passe \(cette fois hashés\) pour les utilisateurs **dreg** et **loneferret** dans la table `dev_accounts` :
 
-![](../../.gitbook/assets/8b492cfedeb8f61b28c6978d024e7bda.png)
+![](../../../.gitbook/assets/8b492cfedeb8f61b28c6978d024e7bda.png)
 
 On tente de récupérer les mots de passe en clair :
 
-![](../../.gitbook/assets/c1fce2e38ed6841b010536035e7fa937.png)
+![](../../../.gitbook/assets/c1fce2e38ed6841b010536035e7fa937.png)
 
 Cela nous permet de se connecter en SSH avec le compte de **loneferret** :
 
-![](../../.gitbook/assets/6ac743790d4e460ef50b7b0661ceb8d5.png)
+![](../../../.gitbook/assets/6ac743790d4e460ef50b7b0661ceb8d5.png)
 
 Etant donné que `ht` possède le bit suid à 1, il est possible d'éditer des fichiers avec les droits root. On modifie alors le fichier `/etc/sudoers` :
 
-![](../../.gitbook/assets/0d7ea31987d0a4a1e312a93a5b4a5ca4.png)
+![](../../../.gitbook/assets/0d7ea31987d0a4a1e312a93a5b4a5ca4.png)
 
 afin d'ajouter le droit su à notre utilisateur **loneferret** :
 
-![](../../.gitbook/assets/743a0c067215825e0d3a98017dd1b66b%20%282%29.png)
+![](../../../.gitbook/assets/743a0c067215825e0d3a98017dd1b66b%20%282%29.png)
 
 Un petit `sudo` su plut tard, nous voilà root :
 
-![](../../.gitbook/assets/fa187d718ea2ce9be51246ea929a9e6b.png)
+![](../../../.gitbook/assets/fa187d718ea2ce9be51246ea929a9e6b.png)
 
 ## Conclusion
 
