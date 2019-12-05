@@ -6,7 +6,7 @@ Ces quelques pages me servent surtout de pense-bête ou de mémo, en effet, j'ai
 
 Si vous avez des questions ou que vous apercevez des erreurs \(qu'elles soient techniques ou de français 😜\) n'hésitez pas :
 
-![](.gitbook/assets/mail.png)
+![](.gitbook/assets/mail%20%281%29.png)
 
 ![](.gitbook/assets/c60b329b5419139f45551c4324ef2dd9.png)
 
