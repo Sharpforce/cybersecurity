@@ -4,7 +4,7 @@
 
 ## Sécurité Web
 
-* [Les mécanismes](les-mecanismes/README.md)
+* [Les mécanismes du Web](les-mecanismes/README.md)
   * [Cookies HTTP](les-mecanismes/cookies-http/README.md)
     * [Qu'est ce qu'un cookie ?](les-mecanismes/cookies-http/quest-ce-quun-cookie.md)
     * [Utilisation et attributs](les-mecanismes/cookies-http/utilisation-et-attributs.md)
@@ -40,7 +40,7 @@
     * [Flash et le fichier crossdomain.xml](les-mecanismes/same-origin-policy-sop/flash-et-le-fichier-crossdomain.xml.md)
     * [Silverlight et le fichier clientaccess-policy.xml](les-mecanismes/same-origin-policy-sop/silverlight-et-le-fichier-clientaccess-policy.xml.md)
     * [Websockets](les-mecanismes/same-origin-policy-sop/websockets.md)
-* [Les vulnérabilités](les-vulnerabilites/README.md)
+* [Les vulnérabilités du Web](les-vulnerabilites/README.md)
   * [JSON Web Token \(JWT\)](les-vulnerabilites/json-web-token-jwt/README.md)
     * [JWS - "Alg: None" Attack](les-vulnerabilites/json-web-token-jwt/jws-alg-none-attack.md)
     * [JWS - Weak HMAC Keys](les-vulnerabilites/json-web-token-jwt/jws-weak-hmac-keys.md)
