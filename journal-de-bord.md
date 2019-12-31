@@ -1,5 +1,9 @@
 # Journal de bord
 
+## 31 Déc 2019
+
+Ajout du writeup de la machine [CORS vulnerable Lab](https://github.com/incredibleindishell/CORS-vulnerable-Lab) permettant de s'exercer à exploiter des faiblesses de configuration CORS.
+
 ## 7 Déc 2019
 
 Je commence ce petit journal de bord afin de faire savoir plus rapidement ce qui a bougé sur ce site.
