@@ -2,9 +2,9 @@
 
 ## 7 Déc 2019
 
-Je commence ce petit journal de bord pour permettre de savoir plus rapidement ce qui a bougé sur ce site.
+Je commence ce petit journal de bord afin de faire savoir plus rapidement ce qui a bougé sur ce site.
 
-J'en profite également pour annoncer la sortie de la machine MyExpense sur [Vulnhub](https://www.vulnhub.com/entry/myexpense-1,405/) :\) Have Fun !
+J'en profite également pour annoncer la sortie de ma première machine "MyExpense" sur [Vulnhub](https://www.vulnhub.com/entry/myexpense-1,405/) :\) Have Fun !
 
 
 
