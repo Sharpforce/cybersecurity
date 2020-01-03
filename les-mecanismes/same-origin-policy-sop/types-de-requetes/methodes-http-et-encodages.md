@@ -2,7 +2,7 @@
 
 ## Formulaire HTML
 
-Le [standard HTML](https://www.w3.org/TR/html5/sec-forms.html#element-attrdef-form-method) ne supporte que les méthodes HTTP **`GET`** et **`POST`** ainsi que les encodage suivants :
+Le [standard HTML](https://www.w3.org/TR/html5/sec-forms.html#element-attrdef-form-method) ne supporte que les méthodes HTTP **`GET`** et **`POST`** \(et également **`HEAD`**\) ainsi que les encodage suivants :
 
 * `application/x-www-form-urlencoded`
 * `multipart/form-data`

