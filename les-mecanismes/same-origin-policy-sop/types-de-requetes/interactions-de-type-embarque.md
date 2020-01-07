@@ -197,13 +197,17 @@ body {
 }
 ```
 
-Ce qui donne un paragraphe avec la font spécifiée :
+Ce qui donne le paragraphe suivant :
 
 ![](../../../.gitbook/assets/3a71973fa36a78dbcc4ea7fcf8794d7f.png)
 
 Au niveau de la requête cross-origin ayant pour origine `http://poc1.malicious.com`, le cookie de l'utilisateur n'est, cette fois, pas envoyé dans la requête :
 
 ![](../../../.gitbook/assets/b23dea2da32dc286ca6f3a5a161afb98.png)
+
+En fait la font n'est pas appliquée car SOP interdit le chargement :
+
+![](../../../.gitbook/assets/3ae2460d37f3909dbc52316332fcc4ae.png)
 
 ## Iframes, balises &lt;iframe&gt;
 
