@@ -205,7 +205,7 @@ Au niveau de la requête cross-origin ayant pour origine `http://poc1.malicious.
 
 ![](../../../.gitbook/assets/b23dea2da32dc286ca6f3a5a161afb98.png)
 
-En fait la font n'est pas appliquée car SOP interdit le chargement :
+En fait la font n'est pas appliquée car SOP interdit le chargement \(plus exactement car le serveur hébergeant la font n'implémente pas les bon entêtes CORS\) :
 
 ![](../../../.gitbook/assets/3ae2460d37f3909dbc52316332fcc4ae.png)
 
