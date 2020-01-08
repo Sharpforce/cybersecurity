@@ -6,6 +6,8 @@ CORS est un mécanisme permettant d'assouplir la politique SOP \(Same-Origin Pol
 
 La [spécification CORS](https://fetch.spec.whatwg.org/#http-cors-protocol) est maintenue par le groupe WHATWG \(Web Hypertext Application Technology Working Group\).
 
+![](../../.gitbook/assets/542b2478a4909f5f258233eba8a9d93c.png)
+
 ## Sources
 
 * [https://fr.wikipedia.org/wiki/Cross-origin\_resource\_sharing](https://fr.wikipedia.org/wiki/Cross-origin_resource_sharing)
