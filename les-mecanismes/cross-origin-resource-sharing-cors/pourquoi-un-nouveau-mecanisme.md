@@ -1,6 +1,6 @@
 # Quelques rappels sur SOP
 
-CORS permet d'étendre la politique SOP et ainsi donner plus de libertés aux développeurs et consommateurs de ressources, mais pourquoi ce besoin ?
+CORS permet d'étendre la politique SOP et ainsi donner plus de libertés aux développeurs et aux consommateurs de ressources, mais pourquoi ce besoin ?
 
 Le Web évolue et les usages aussi, la nécessité de partager de l'information entre plusieurs domaines distincts ou à un plus large public se fait ressentir. Prenons l'exemple d'une nouvelle API qui a pour objectif d'être consommée par d'autres sites web. Cette API est publique et ne contient pas de données sensibles. Mais que se passe t'il actuellement \(c'est à dire en étant soumis à la politique SOP\) si un domaine tente une lecture de cette API ? La lecture de la réponse à la requête **`GET`** sera impossible, mais CORS permet de répondre à ces problématiques.
 
