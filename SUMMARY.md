@@ -168,6 +168,7 @@
   * [VulnHub](walkthroughs/damn-vulnerable-web-application/vulnhub/README.md)
     * [GoatseLinux: 1](walkthroughs/damn-vulnerable-web-application/vulnhub/goatselinux-1.md)
     * [Hackademic: RTB1](walkthroughs/damn-vulnerable-web-application/vulnhub/hackademic-rtb1.md)
+    * [Hackademic: RTB2](walkthroughs/damn-vulnerable-web-application/vulnhub/hackademic-rtb2.md)
     * [Holynix: v1](walkthroughs/damn-vulnerable-web-application/vulnhub/holynix-1.md)
     * [Holynix: v2](walkthroughs/damn-vulnerable-web-application/vulnhub/holynix-v2.md)
     * [Kioptrix: Level 1](walkthroughs/damn-vulnerable-web-application/vulnhub/kioptrix-level-1.md)

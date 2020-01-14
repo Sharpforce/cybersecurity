@@ -4,13 +4,13 @@
 
 **Nom :** Hackademic: RTB1  
 **Date de sortie :** 6 Septembre 2011  
-**Lien de téléchargement :** [http://pwnos.com/files/pWnOS\_v2.0.7z](https://download.vulnhub.com/hackademic/Hackademic.RTB1.zip)  
+**Lien de téléchargement :** [https://download.vulnhub.com/hackademic/Hackademic.RTB1.zip](https://download.vulnhub.com/hackademic/Hackademic.RTB1.zip)  
 **Niveau :** Facile  
-**Objectif\(s\) :** obtenir un accès "root" et lire le flag situé dans le fichier `/root/key.txt`  
+**Objectif\(s\) :** obtenir un accès "root" et lire le flag situé dans le fichier `/root/Key.txt`  
 **Description :**  
 `This is the first realistic hackademic challenge (root this box) by mr.pr0n  
 Download the target and get root.  
-After all, try to read the contents of the file 'key.txt' in the root directory.  
+After all, try to read the contents of the file 'key.txt' in the root directory.  
 Enjoy!`
 
 ## Reconnaissance
