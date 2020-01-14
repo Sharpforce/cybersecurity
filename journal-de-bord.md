@@ -1,5 +1,9 @@
 # Journal de bord
 
+## 14 Jan 2020
+
+Ajout du writeup de la machine Hackademic: RTB2 chez Vulnhub
+
 ## 08 Jan 2020
 
 Ajout de l'article sur le mécanisme du Web : Cross-Origin Resource Sharing \(CORS\)
