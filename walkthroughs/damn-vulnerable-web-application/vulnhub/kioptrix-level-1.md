@@ -2,7 +2,7 @@
 description: 'Walkthrough de la machine Kioptrix: Level 1'
 ---
 
-# Kioptrix: Level 1
+# Kioptrix: Level 1 \(\#1\)
 
 ## Détails de la machine
 
