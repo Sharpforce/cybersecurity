@@ -102,5 +102,13 @@ La valeur **Lax** permet un compromis entre sécurité et facilité d'usage. Le 
 
 Comme l'indique la documentation de Mozilla, Les cookies **SameSite** sont encore expérimentaux et ne sont pas encore supportés par tous les navigateurs.
 
+#### None
+
+Il existe en fait une troisième valeur à l'attribut **SameSite** : **None**. C'est le comportement par défaut d'un cookie ne possédant pas explicitement l'attribut **SameSite** et permet un envoi vers des parties tierces.
+
+A noter qu'à partir de février 2020, Chrome \(qui sera en version 80\) ne va plus considérer un cookie ne possédant pas l'attribut **SameSite** comme étant un cookie **SameSite : None** mais comme étant un cookie **SameSite : Lax**. Pour contourner cela sans changer le comportement de l'application, il faudra alors modifier les attributs des cookies en explicitant l'attribut **SameSite** à **None** et également apposer l’attribut **Secure**.
+
+Mozilla et Microsoft ont également annoncé suivre la même voix et de considérer par défaut les cookies comme étant **SamSite=Lax**.
+
 
 
