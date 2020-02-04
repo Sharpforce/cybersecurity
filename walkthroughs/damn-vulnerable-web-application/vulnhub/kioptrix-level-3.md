@@ -6,7 +6,7 @@ description: 'Walkthrough de la machine Kioptrix: Level 3'
 
 ## Détails de la machine
 
-**Nom :** Kioptrix: Level 3  
+**Nom :** Kioptrix: Level 1.2 \(\#3\)  
 **Date de sortie :** 11 Février 2011  
 **Lien de téléchargement :** [http://www.kioptrix.com/dlvm/KVM3.rar](http://www.kioptrix.com/dlvm/KVM3.rar)  
 **Niveau :** Facile  

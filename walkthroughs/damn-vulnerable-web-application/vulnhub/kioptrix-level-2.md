@@ -6,7 +6,7 @@ description: 'Walkthrough de la machine Kioptrix: Level 2'
 
 ## Détails de la machine
 
-**Nom :** Kioptrix: Level 2  
+**Nom :** Kioptrix: Level 1.1 \(\#2\)  
 **Date de sortie :** 11 Février 2011  
 **Lien de téléchargement :** [http://www.kioptrix.com/dlvm/Kioptrix\_Level\_2.rar](http://www.kioptrix.com/dlvm/Kioptrix_Level_2.rar)  
 **Niveau :** Facile  

@@ -174,6 +174,7 @@
     * [Kioptrix: Level 1 \(\#1\)](walkthroughs/damn-vulnerable-web-application/vulnhub/kioptrix-level-1.md)
     * [Kioptrix: Level 1.1 \(\#2\)](walkthroughs/damn-vulnerable-web-application/vulnhub/kioptrix-level-2.md)
     * [Kioptrix: Level 1.2 \(\#3\)](walkthroughs/damn-vulnerable-web-application/vulnhub/kioptrix-level-3.md)
+    * [Kioptrix: Level 1.3 \(\#4\)](walkthroughs/damn-vulnerable-web-application/vulnhub/kioptrix-level-1.3-4.md)
     * [LAMPSecurity: CTF4](walkthroughs/damn-vulnerable-web-application/vulnhub/lampsecurity-ctf4.md)
     * [LAMPSecurity: CTF5](walkthroughs/damn-vulnerable-web-application/vulnhub/lampsecurity-ctf5.md)
     * [LAMPSecurity: CTF6](walkthroughs/damn-vulnerable-web-application/vulnhub/lampsecurity-ctf6.md)
