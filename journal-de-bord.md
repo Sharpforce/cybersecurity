@@ -1,5 +1,9 @@
 # Journal de bord
 
+## 04 Fév 2020
+
+Ajout du writeup de la machine Kioptrix: Level 1.3 \(\#4\) chez Vulnhub
+
 ## 14 Jan 2020
 
 Ajout du writeup de la machine Hackademic: RTB2 chez Vulnhub
