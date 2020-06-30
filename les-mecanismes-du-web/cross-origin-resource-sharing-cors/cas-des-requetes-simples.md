@@ -37,7 +37,7 @@ L'entête `Origin` , indiquant une requête Cross-Origin est bien présent dans 
 
 ![](../../.gitbook/assets/bdcd672586b84761fa192255bbe8a13c.png)
 
-Il est bien sur possible de n'autoriser seulement que le domaine \(ou une liste de domaines\) souhaité\(s\) :
+Il est bien sur possible de n'autoriser seulement que le domaine souhaité :
 
 ```text
 add_header 'Access-Control-Allow-Origin' 'http://192.168.56.181:8080'

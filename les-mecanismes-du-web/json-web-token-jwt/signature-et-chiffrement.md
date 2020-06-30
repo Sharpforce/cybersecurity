@@ -139,7 +139,9 @@ Voici la liste des algorithmes supportés selon le [RFC 7518](https://tools.ietf
       <td style="text-align:center">Facultatif</td>
     </tr>
   </tbody>
-</table>## JSON Web Encryption \(JWE\)
+</table>
+
+## JSON Web Encryption \(JWE\)
 
 Le chiffrement du jeton JWT apporte le principe de sécurité supplémentaire qu'est la confidentialité \(rendre illisible le jeton par les personnes n'ayant pas l'autorisation de le lire\). Un jeton JWT chiffré \(JWE\) comporte plusieurs parties supplémentaires, ce qui amène le jeton à six parties au total :
 
@@ -299,7 +301,9 @@ Voici la liste des algorithmes supportés selon le [RFC 7518](https://tools.ietf
       <td style="text-align:left">Facultatif</td>
     </tr>
   </tbody>
-</table>## JSON Web Keys \(JWK\)
+</table>
+
+## JSON Web Keys \(JWK\)
 
 La spécification [JWK](https://tools.ietf.org/html/rfc7517) permet de représenter, grâce à un format normalisé utilisant la notation JSON, des clés cryptographiques utilisées pour la signature et pour le chiffrement.
 

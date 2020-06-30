@@ -5,6 +5,8 @@
 
 ## Sécurité Web
 
+---
+
 * [Les mécanismes du Web](les-mecanismes-du-web/README.md)
   * [Cookies HTTP](les-mecanismes-du-web/cookies-http/README.md)
     * [Qu'est ce qu'un cookie ?](les-mecanismes-du-web/cookies-http/quest-ce-quun-cookie.md)

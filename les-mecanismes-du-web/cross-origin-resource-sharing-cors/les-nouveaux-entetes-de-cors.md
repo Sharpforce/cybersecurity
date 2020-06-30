@@ -16,7 +16,7 @@ L'entête principal se nomme `Access-Control-Allow-Origin` et permet de dresser 
 
   > Note : si l'entête contient le signe `*` alors le navigateur interdira l'envoi des informations d'authentification même si cela est explicitement demandé
 
-* `<origin>` : il est également possible de spécifier une liste de domaines autorisés, dans ce cas, le serveur doit également inclure un entête `Vary` à la valeur `Origin` :
+* `<origin>` : il est également possible de spécifier un domaine autorisé, dans ce cas, le serveur doit également inclure un entête `Vary` à la valeur `Origin` :
 
   ```text
   Access-Control-Allow-Origin: https://example.com
