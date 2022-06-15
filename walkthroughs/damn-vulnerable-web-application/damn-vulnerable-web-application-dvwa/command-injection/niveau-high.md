@@ -2,7 +2,7 @@
 
 Le ping semble fonctionner toujours de la même manière pour ce niveau "High" :
 
-![](../../../../.gitbook/assets/4a5a279f278e5d0ebb27a28c0a2f4112%20%282%29.png)
+![](<../../../../.gitbook/assets/4a5a279f278e5d0ebb27a28c0a2f4112 (4).png>)
 
 En testant toutes les possibilités, aucun enchaînement de commandes ne semble fonctionner. Mais ici, la petite astuce est d'utiliser un pipe sans ajouter d'espace entre ce pipe et la seconde commande :
 
@@ -12,7 +12,7 @@ La même attaque mais contenant des espaces ne fonctionne pas :
 
 ![](../../../../.gitbook/assets/ff700d3a303d372e3b52b18418b90cf1.png)
 
-Ce fonctionnement provient d'une petite erreur laissée par le développeur lors de la mise en place de sa liste noire. L'occurrence filtrée ici n'est pas `"|"` mais `"| "` \(bien noter l'espace\) :
+Ce fonctionnement provient d'une petite erreur laissée par le développeur lors de la mise en place de sa liste noire. L'occurrence filtrée ici n'est pas `"|"` mais `"| "` (bien noter l'espace) :
 
 ![](../../../../.gitbook/assets/7c74130f14e3bba322695cfa6e9e41ae.png)
 
@@ -20,7 +20,7 @@ Une autre solution peut être l'utilisation d'un saut de ligne entre les deux co
 
 ![](../../../../.gitbook/assets/71d3699455b827c13dd31bde87a4c1f2.png)
 
-Pour exploiter cela, il suffit de transformer notre champ `<input>` en champ `<textarea>` \(via la console par exemple\) :
+Pour exploiter cela, il suffit de transformer notre champ `<input>` en champ `<textarea>` (via la console par exemple) :
 
 ![](../../../../.gitbook/assets/0433b8b1411219701c3d400f10c634c7.png)
 
@@ -35,8 +35,6 @@ Il est tout à fait possible d'utiliser Burp en mode Interception ou Repeater po
 {% hint style="info" %}
 Cela ne s'arrête pas là mais les possibilités sont vastes : récupération d'un shell plus complet, maintien de l'accès, tentative d'élévation de privilèges, pivotage, ...
 {% endhint %}
-
-
 
 
 

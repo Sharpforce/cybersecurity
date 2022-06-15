@@ -4,12 +4,12 @@ Le niveau "High" met en place un jeton de session qui semble plus complexe de pr
 
 ![](../../../../.gitbook/assets/beb72e331bb44b2b4f78ff4c54ca8e69.png)
 
-Le format du jeton est toutefois reconnaissable et il s'agit ici sans doute d'une empreinte md5 \(32 caractères\). Deux approches ici :
+Le format du jeton est toutefois reconnaissable et il s'agit ici sans doute d'une empreinte md5 (32 caractères). Deux approches ici :
 
-1. Soit on détermine ce qui a pu donner cette empreinte \(notre adresse IP, le timestamp, notre nom d'utilisateur etc\)
+1. Soit on détermine ce qui a pu donner cette empreinte (notre adresse IP, le timestamp, notre nom d'utilisateur etc)
 2. Soit on tente de la reverser et on voit ce que cela donne
 
-Je suggère la seconde approche et si elle échoue on passera à la première 😋 :
+Je suggère la seconde approche et si elle échoue on passera à la première :yum: :
 
 ![](../../../../.gitbook/assets/252a8368d2191db6848c54bde3f79301.png)
 
@@ -29,7 +29,5 @@ Burp va t'il être capable de reconnaître que se cache une suite simple sous ce
 
 ![](../../../../.gitbook/assets/57ed8689c98fa3fcf2e8f5219971b807.png)
 
-En fait non, Burp analyse l'aléa des jetons comme ayant une entropie de 115 bits. Je propose donc de conclure par : "Rien ne remplacera l'humain 😉 ".
-
-
+En fait non, Burp analyse l'aléa des jetons comme ayant une entropie de 115 bits. Je propose donc de conclure par : "Rien ne remplacera l'humain :wink: ".
 

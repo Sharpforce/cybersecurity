@@ -1,6 +1,6 @@
-# Level 9 \(practice\)
+# Level 9 (practice)
 
-## Challenge \#1
+## Challenge #1
 
 ### Description
 
@@ -22,7 +22,7 @@ C'est plutôt difficile de trouver exactement les filtres en place ici, mais la 
 
 ![](../../../.gitbook/assets/609e1e26d092facf4fb4f78887fc679c.png)
 
-## Challenge \#2
+## Challenge #2
 
 ### Description
 
@@ -32,15 +32,15 @@ Appeler la fonction `fancyHuman()` avec la chaîne de caractères `"rm2zma4i1v6"
 
 ### Résolution
 
-Nous avons à priori de la chance car seul le caractère `"4"` semble être filtré. La chaîne est inversée, mais nous commençons à avoir l'habitude de cela 😛 :
+Nous avons à priori de la chance car seul le caractère `"4"` semble être filtré. La chaîne est inversée, mais nous commençons à avoir l'habitude de cela :stuck\_out\_tongue: :
 
 ![](../../../.gitbook/assets/752d0273870fa3d3f4a42af34733419b.png)
 
-Une opération mathématique et un reverse après \(hmm plutôt light pour un level 9 non ? 😁 \) :
+Une opération mathématique et un reverse après (hmm plutôt light pour un level 9 non ? :grin: ) :
 
 ![](../../../.gitbook/assets/3ece5e347fb610bd3c03238a4187d489.png)
 
-## Challenge \#3
+## Challenge #3
 
 ### Description
 
@@ -54,11 +54,11 @@ J'ai bien tenté ma chance en renseignant ma payload sans tenir compte des filtr
 
 ![](../../../.gitbook/assets/f31b764522eee691edd796134683b3dc.png)
 
-Alors ici j'ai expérimenté pas mal de choses ici. Dans un premier temps, le `"H"` ou `"h"` semblent être filtrés mais pas forcément au même endroit. Puis vient le tour de s'apercevoir du filtre sur l'occurrence `"//"` \(je m'en servais pour commenter la fin de ligne\). Il y a sans doute plus simple et je suis loin d'être sûr de moi quant aux filtres réellement en place, mais le challenge est tout de même validé 😁 :
+Alors ici j'ai expérimenté pas mal de choses ici. Dans un premier temps, le `"H"` ou `"h"` semblent être filtrés mais pas forcément au même endroit. Puis vient le tour de s'apercevoir du filtre sur l'occurrence `"//"` (je m'en servais pour commenter la fin de ligne). Il y a sans doute plus simple et je suis loin d'être sûr de moi quant aux filtres réellement en place, mais le challenge est tout de même validé :grin: :
 
 ![](../../../.gitbook/assets/7addae512fff6918b65ea57e85b32391.png)
 
-## Challenge \#4
+## Challenge #4
 
 ### Description
 
@@ -72,11 +72,9 @@ Je tente ici de fermer la première balise `<script></script>` afin de ne pas av
 
 ![](../../../.gitbook/assets/565dcaf7a99216e30362b85a1aa5e9f8.png)
 
- Etant donné qu'il nous faut contourner le filtre sur la parenthèse ouvrante nous allons utiliser la balise `<svg>` afin de pouvoir utiliser son équivalent HTML entities. Le caractère `"h"`, qui est également filtré, possède un `"8"` dans son unicode, nous passons alors également par son équivalent HTML entities :
+&#x20;Etant donné qu'il nous faut contourner le filtre sur la parenthèse ouvrante nous allons utiliser la balise `<svg>` afin de pouvoir utiliser son équivalent HTML entities. Le caractère `"h"`, qui est également filtré, possède un `"8"` dans son unicode, nous passons alors également par son équivalent HTML entities :
 
 ![](../../../.gitbook/assets/44464d254ed2b28c5fca9d0c016ae9f6.png)
-
-
 
 
 

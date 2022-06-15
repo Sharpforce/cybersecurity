@@ -8,7 +8,7 @@ La première chose à faire est d'étudier le comportement de l'application en r
 
 ![](../../../../.gitbook/assets/06d6e13cd7524489e12b62fc16b77c8c.png)
 
-La réponse pour un id valide remonte plusieurs informations : le `First name` ainsi que le `Surname`, soit à minima 2 colonnes. Concernant l’`id` il peut soit être  récupéré depuis la réponse à la requête SQL \(donc une troisième colonne\) ou alors être la réflexion de la donnée renseignée en entrée.
+La réponse pour un id valide remonte plusieurs informations : le `First name` ainsi que le `Surname`, soit à minima 2 colonnes. Concernant l’`id` il peut soit être  récupéré depuis la réponse à la requête SQL (donc une troisième colonne) ou alors être la réflexion de la donnée renseignée en entrée.
 
 Il faut bien sur également tester une requête non valide, c'est-à-dire un `id` inexistant :
 
@@ -38,7 +38,7 @@ L'exploitation de la vulnérabilité peut maintenant réellement commencer. On r
 
 ![](../../../../.gitbook/assets/239580b27e02172e74c281875032a234.png)
 
-On récupère ensuite les noms des tables de la base `dvwa` \(le premier apostrophe est ajouté seulement pour la coloration syntaxique\) :
+On récupère ensuite les noms des tables de la base `dvwa` (le premier apostrophe est ajouté seulement pour la coloration syntaxique) :
 
 ```sql
 '6' UNION SELECT table_name,2 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dvwa' -- 
@@ -62,7 +62,6 @@ Puis finalement, on récupère les entrées pour les colonnes `user` et `passwor
 
 ![](../../../../.gitbook/assets/0972536dd708ca239a89054f65b5b4c7.png)
 
-Une fois fait, la dernière étape reste de cracker les hash md5 \(32 caractères\) des mots de passe en utilisant par exemple [crackstation.net](https://crackstation.net/) :
+Une fois fait, la dernière étape reste de cracker les hash md5 (32 caractères) des mots de passe en utilisant par exemple [crackstation.net](https://crackstation.net/) :
 
-![](../../../../.gitbook/assets/80ef0f7a16a8a069f943e801429ef8f7%20%281%29.png)
-
+![](../../../../.gitbook/assets/80ef0f7a16a8a069f943e801429ef8f7.png)

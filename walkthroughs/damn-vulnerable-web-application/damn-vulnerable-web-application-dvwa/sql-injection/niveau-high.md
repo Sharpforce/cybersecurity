@@ -48,7 +48,6 @@ L'injection présente ici est une injection nommée "second ordre", et sans l'in
 Sous `SQLmap` il est possible d'utiliser l'option `--second-order` pour ce type d'injection
 {% endhint %}
 
-Une fois fait, la dernière étape reste de cracker les hash md5 \(32 caractères\) des mots de passe en utilisant par exemple [crackstation.net](https://crackstation.net/) :
+Une fois fait, la dernière étape reste de cracker les hash md5 (32 caractères) des mots de passe en utilisant par exemple [crackstation.net](https://crackstation.net/) :
 
-![](../../../../.gitbook/assets/80ef0f7a16a8a069f943e801429ef8f7%20%281%29.png)
-
+![](../../../../.gitbook/assets/80ef0f7a16a8a069f943e801429ef8f7.png)

@@ -1,12 +1,12 @@
-# Level 5 \(practice\)
+# Level 5 (practice)
 
-## Challenge \#1
+## Challenge #1
 
 ### Description
 
 Appeler la fonction `prettyHuman()` avec la chaîne de caractères `"m5lccw"` en argument :
 
-![](../../../.gitbook/assets/fb47e14cc50b2150eefeb8f5a70473f7.png)
+![](<../../../.gitbook/assets/fb47e14cc50b2150eefeb8f5a70473f7 (1).png>)
 
 ### Résolution
 
@@ -18,7 +18,7 @@ Il est possible de contourner le filtrage du caractère `"c"` en passant par un 
 
 ![](../../../.gitbook/assets/f57fe3417e199719c0c63b030528c50f.png)
 
-## Challenge \#2
+## Challenge #2
 
 ### Description
 
@@ -36,7 +36,7 @@ Concernant le `"on"` de `onerror` on peut passer par le balise `<script></<scrip
 
 ![](../../../.gitbook/assets/be28df2a6a27f4a6ac51cc82d483c447.png)
 
-## Challenge \#3
+## Challenge #3
 
 ### Description
 
@@ -54,5 +54,4 @@ Etant donné que le `"u"` est filtré, il n'est pas possible d'utiliser l'encoda
 
 ![](../../../.gitbook/assets/3b161555d0facb03956540bec8f16573.png)
 
-Je me suis rendu compte seulement après, mais le filtrage sur le `"o"` est contournable en le doublant \(par exemple `"oo"`\).
-
+Je me suis rendu compte seulement après, mais le filtrage sur le `"o"` est contournable en le doublant (par exemple `"oo"`).

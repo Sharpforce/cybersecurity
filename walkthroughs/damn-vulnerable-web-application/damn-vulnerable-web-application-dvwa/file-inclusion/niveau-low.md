@@ -16,15 +16,15 @@ Ainsi que de "file3.php" :
 
 ![](../../../../.gitbook/assets/a701d84bd50ba8b731ee7c735e68f7ce.png)
 
-\*\*\*\*
+****
 
-**Local File Inclusion \(LFI\)**
+**Local File Inclusion (LFI)**
 
-Ce qui est important de ****repérer ****ici, c'est que le nom du fichier à inclure se retrouve en tant que valeur du paramètre `page` présent dans l'URL :
+Ce qui est important de **** repérer **** ici, c'est que le nom du fichier à inclure se retrouve en tant que valeur du paramètre `page` présent dans l'URL :
 
 ![](../../../../.gitbook/assets/3a508a736095328be32d907b97cb7749.png)
 
-\_\_
+__
 
 _Inclusion d'un fichier local du même niveau d'arborescence_
 
@@ -32,11 +32,11 @@ Une première attaque va consister à inclure des pages localement présentes, s
 
 ![](../../../../.gitbook/assets/d6b64cb00929508c36c0d672cd144f56.png)
 
-\_\_
+__
 
 _Inclusion d'un fichier local en utilisant une attaque de type path traversal_
 
-Ou alors, de sortir du niveau courant de l'arborescence et d'utiliser dans le même temps une autre attaque nommée path traversal \(ou directory traversal\). Cette attaque consiste à injecter des occurrences de type `../` \(ou équivalent\) afin de remonter l’arborescence du système vulnérable :
+Ou alors, de sortir du niveau courant de l'arborescence et d'utiliser dans le même temps une autre attaque nommée path traversal (ou directory traversal). Cette attaque consiste à injecter des occurrences de type `../` (ou équivalent) afin de remonter l’arborescence du système vulnérable :
 
 ![](../../../../.gitbook/assets/90195f7432883cf0d78823d0f5c7aeeb.png)
 
@@ -48,7 +48,7 @@ Il est possible sous DVWA en niveau "Low" d'utiliser directement la syntaxe `?pa
 
 _Utilisation des wrappers PHP_
 
-Lorsqu'une vulnérabilité LFI est détectée, il peut être utile, si cela est possible, d'utiliser les wrappers PHP afin d'avoir plus d'impact. Par exemple, le wrapper `php://filter` peut être utilisé pour récupérer le code source des pages `.php` . Dans l'exemple suivant, on récupère le code source \(en haut de la page, encodé en base64\) de la page `include.php` :
+Lorsqu'une vulnérabilité LFI est détectée, il peut être utile, si cela est possible, d'utiliser les wrappers PHP afin d'avoir plus d'impact. Par exemple, le wrapper `php://filter` peut être utilisé pour récupérer le code source des pages `.php` . Dans l'exemple suivant, on récupère le code source (en haut de la page, encodé en base64) de la page `include.php` :
 
 ```http
 ?page=php://filter/convert.base64-encode/resource=include.php
@@ -56,7 +56,7 @@ Lorsqu'une vulnérabilité LFI est détectée, il peut être utile, si cela est 
 
 ![](../../../../.gitbook/assets/df136bf6f7dfc8bc478d6d12001362e5.png)
 
-Une fois décodée \(il s'agit juste d'un extrait\) :
+Une fois décodée (il s'agit juste d'un extrait) :
 
 ![](../../../../.gitbook/assets/ecc0129a677c8961d5f67ff64613be82.png)
 
@@ -64,7 +64,7 @@ D'autres wrappers sont intéressants à exploiter et peuvent mener à une RCE.
 
 
 
-**Remote File Inclusion \(RFI\)**
+**Remote File Inclusion (RFI)**
 
 Une RFI survient quand il est possible d'injecter/d'inclure un fichier distant. Ici un exemple simple est l'inclusion de la page `google.fr` :
 
@@ -74,7 +74,7 @@ Une RFI survient quand il est possible d'injecter/d'inclure un fichier distant. 
 
 ![](../../../../.gitbook/assets/d275ac6038a70e54f0a0e18ec0b2daa8.png)
 
-Cette attaque peut permettre d'inclure un script malicieux distant \(hébergée sur une machine contrôlée par l'attaquant\). L'exemple ici ne fera que retourner le nom de la machine \(qui est, dans notre cas, l'identifiant de l'instance docker\) :
+Cette attaque peut permettre d'inclure un script malicieux distant (hébergée sur une machine contrôlée par l'attaquant). L'exemple ici ne fera que retourner le nom de la machine (qui est, dans notre cas, l'identifiant de l'instance docker) :
 
 {% code title="malicious.php" %}
 ```php
@@ -91,4 +91,3 @@ Cela mène donc à une prise de contrôle du serveur.
 {% hint style="info" %}
 Cela ne s'arrête pas là mais les possibilités sont vastes : récupération d'un shell plus complet, maintien de l'accès, tentative d'élévation de privilèges, pivotage, ...
 {% endhint %}
-

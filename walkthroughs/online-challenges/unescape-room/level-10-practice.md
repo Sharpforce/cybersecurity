@@ -1,6 +1,6 @@
-# Level 10 \(practice\)
+# Level 10 (practice)
 
-## Challenge \#1
+## Challenge #1
 
 ### Description
 
@@ -18,7 +18,7 @@ Une fois la chaîne inversée, on s’aperçoit qu'un filtrage est également r�
 
 ![](../../../.gitbook/assets/7acac40e097a9559b9e00badf954d944.png)
 
-## Challenge \#2
+## Challenge #2
 
 ### Description
 
@@ -34,29 +34,29 @@ Le but ici est de fermer la balise `<style>` puis d'injecter notre script. Une d
 
 Aucun autre filtre ne s'active une fois notre chaîne inversée. Par contre nous devons insérer une balise `<svg>` afin de pouvoir remplacer la parenthèse par son équivalent HTML entities :
 
-![](../../../.gitbook/assets/bfb82e7af1cdf2cf32d077660c9fb043%20%281%29.png)
+![](../../../.gitbook/assets/bfb82e7af1cdf2cf32d077660c9fb043.png)
 
 Le caractère `"d"` est filtré mais également le caractère `"0"`. Manque de chance, son équivalent unicode est `\u0046` et son équivelent HTML entities est `&#100;` ...
 
-![](../../../.gitbook/assets/bfb82e7af1cdf2cf32d077660c9fb043.png)
+![](<../../../.gitbook/assets/bfb82e7af1cdf2cf32d077660c9fb043 (1).png>)
 
 Pour contourner cela j'utilise en plus la fonction `eval()` ainsi qu'un `toLowerCase()` sur le `"D"` :
 
 ![](../../../.gitbook/assets/9a3bc2a01d562f965912ea5ea6ffdbb7.png)
 
-La payload dépassant du champ `<input>` voici sa version complète et non inversée 🙂 :
+La payload dépassant du champ `<input>` voici sa version complète et non inversée :slight\_smile: :
 
-```text
+```
 blue;}</style><svg><script>eval('kin'+'D'.toLowerCase(&#41;+'Function("JmRBD96amXGY"&#41;'&#41;</script>
 ```
 
-## Challenge \#3
+## Challenge #3
 
 ### Description
 
 Appeler la fonction `kindHuman()` avec la chaîne de caractères `"Eph040Cwo0gt"` en argument au sein de la valeur d'une variable Javascript :
 
-![](../../../.gitbook/assets/85d348bc01c64534db5473d123e5d5ff.png)
+![](<../../../.gitbook/assets/85d348bc01c64534db5473d123e5d5ff (1).png>)
 
 ### Résolution
 
@@ -68,17 +68,17 @@ En effet, on remplace le caractère par son équivalent unicode et on valide cet
 
 ![](../../../.gitbook/assets/23741d75db3a61f30ad5c760153b600f.png)
 
-## Challenge \#4
+## Challenge #4
 
 ### Description
 
 Appeler la fonction `prettyFunction()` avec la chaîne de caractères `"MRRjzgB2zCHk"` en argument mais cette fois en valeur d'une donnée JSON stockée dans la variable `window.appData` :
 
-![](../../../.gitbook/assets/74b903ce731295485a4edf96195a257e%20%281%29.png)
+![](<../../../.gitbook/assets/74b903ce731295485a4edf96195a257e (1).png>)
 
 ### Résolution
 
-Pas mal de filtres pour ce dernier challenge et j'avoue l'avoir passé avec de la chance et surtout, avec beaucoup de tentatives. Le mot clé `"script"` est filtré mais contournable en utilisant un contournement bien connu comme `"scrscriptipt"` auquel on ajoute des majuscules pour passer quelques autres filtres. 
+Pas mal de filtres pour ce dernier challenge et j'avoue l'avoir passé avec de la chance et surtout, avec beaucoup de tentatives. Le mot clé `"script"` est filtré mais contournable en utilisant un contournement bien connu comme `"scrscriptipt"` auquel on ajoute des majuscules pour passer quelques autres filtres.&#x20;
 
 L'occurrence `"on"` , présent dans le nom de la fonction, est filtré, mais il est possible de contourner cette limitation en utilisant l'occurrence `"oonn"` . De plus, dans un premier temps j'ai du ajouter des caractères aléatoires au niveau du paramètre de la fonction pour récupérer une sortie lisible :
 
@@ -87,8 +87,6 @@ L'occurrence `"on"` , présent dans le nom de la fonction, est filtré, mais il 
 A noter ici que dans la chaîne passée en argument, les caractères `"a"`, `"b"` et `"\"` sont filtrés. Cela m'a permis de modifier la longueur de la chaîne sans en modifier son contenu et ainsi, de récupérer une sortie lisible afin de valider ce dernier challenge :
 
 ![](../../../.gitbook/assets/22d0beaf8915d8ba9c9c8ba937e53583.png)
-
-
 
 
 

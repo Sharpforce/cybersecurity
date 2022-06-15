@@ -8,7 +8,7 @@ La seule chose facilement réalisable est l'accès à la page cachée :
 
 ![](../../../../.gitbook/assets/fe24d097dc3d31bc633ce1d0c82663bd.png)
 
-Il est sans doute possible qu'un filtre vérifie la présence du mot "file" dans le paramètre d'inclusion. L'idée du développeur était sans doute ici de ne pouvoir inclure seulement les fichiers `file*.php` . 
+Il est sans doute possible qu'un filtre vérifie la présence du mot "file" dans le paramètre d'inclusion. L'idée du développeur était sans doute ici de ne pouvoir inclure seulement les fichiers `file*.php` .&#x20;
 
 On tente un premier contournement mais sans succès :
 
@@ -22,5 +22,4 @@ Ou alors, en utilisant le schéma `file://` qui permet d'accéder facilement au 
 
 ![](../../../../.gitbook/assets/5d1fa13aa88a23e7dbed07e60fdd8642.png)
 
- Je n'ai pas réussi à effectuer une RFI ici, mais cela ne veut pas dire que ce n'est pas possible 🙃 
-
+&#x20;Je n'ai pas réussi à effectuer une RFI ici, mais cela ne veut pas dire que ce n'est pas possible :upside\_down:&#x20;

@@ -4,7 +4,7 @@ Le formulaire est légèrement modifié ici puisque l'application nous présente
 
 ![](../../../../.gitbook/assets/01cdc18d716ae4bddce7d1c64bb83075.png)
 
-Pour un soucis de simplicité, j'utilise ici l'extension Web Developer \(possible via Burp également\) qui va convertir ce nouveau formulaire en champ de type `<input>` :
+Pour un soucis de simplicité, j'utilise ici l'extension Web Developer (possible via Burp également) qui va convertir ce nouveau formulaire en champ de type `<input>` :
 
 ![](../../../../.gitbook/assets/50601a1b929aae8bcc75f6023ff5fc6d.png)
 
@@ -12,9 +12,9 @@ On tente d'injecter notre caractère spécial `"'"` afin de générer une erreur
 
 ![](../../../../.gitbook/assets/0af6ed1e681ffc6f5b9b95c97ca44859.png)
 
-L'erreur nous informe sur la présence d'une protection car le caractère `"'"` est échappé \(via le caractère `"\"`\). De plus, l'erreur nous indique qu'il s'agit sans doute d'une injection de type numérique et non plus de type String \(nombre de `"'"` entourant notre donnée\).
+L'erreur nous informe sur la présence d'une protection car le caractère `"'"` est échappé (via le caractère `"\"`). De plus, l'erreur nous indique qu'il s'agit sans doute d'une injection de type numérique et non plus de type String (nombre de `"'"` entourant notre donnée).
 
-Sans reprendre toutes les étapes de reconnaissance \(déjà effectuées pour le niveau "Low"\), voici l'exploitation de l'injection dans les grandes lignes :
+Sans reprendre toutes les étapes de reconnaissance (déjà effectuées pour le niveau "Low"), voici l'exploitation de l'injection dans les grandes lignes :
 
 ```sql
 1 UNION SELET 1,2
@@ -22,7 +22,7 @@ Sans reprendre toutes les étapes de reconnaissance \(déjà effectuées pour le
 
 ![](../../../../.gitbook/assets/8a1a58636b34849d9a72d55aedb3d7a3.png)
 
-L'échappement effectué par l'application est un peu embêtant car il nous empêche d'effectuer notre clause `WHERE` : 
+L'échappement effectué par l'application est un peu embêtant car il nous empêche d'effectuer notre clause `WHERE` :&#x20;
 
 ```sql
 6 UNION SELECT table_name,2 FROM INFORMATION_SCHEMA.tables WHERE TABLE_SCHEMA = 'dvwa' -- 
@@ -54,7 +54,6 @@ Puis finalement :
 
 ![](../../../../.gitbook/assets/d564f4efc9dd1d64a60832cbd563ab3d.png)
 
-Une fois fait, la dernière étape reste de cracker les hash md5 \(32 caractères\) des mots de passe en utilisant par exemple [crackstation.net](https://crackstation.net/) :
+Une fois fait, la dernière étape reste de cracker les hash md5 (32 caractères) des mots de passe en utilisant par exemple [crackstation.net](https://crackstation.net/) :
 
-![](../../../../.gitbook/assets/80ef0f7a16a8a069f943e801429ef8f7%20%281%29.png)
-
+![](../../../../.gitbook/assets/80ef0f7a16a8a069f943e801429ef8f7.png)

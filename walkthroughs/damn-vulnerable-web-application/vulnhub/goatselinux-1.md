@@ -6,19 +6,19 @@ description: 'Walkthrough de la machine GoatseLinux: 1'
 
 ## Détails de la machine
 
-**Nom :** GoatseLinux: 1  
-**Date de sortie :** 27 Juin 2009  
-**Lien de téléchargement :** [http://neutronstar.org/tmp/GoatseLinux\_1.0\_VM.rar](http://neutronstar.org/tmp/GoatseLinux_1.0_VM.rar)  
-**Niveau :** Facile  
-**Objectif\(s\) :** obtenir un accès "root"  
-**Description :**`GoatseLinux v1.0 pentest lab Virtual MachineSteve Pordon  
-2009.06.27  
-Feel free to distribute this far and wide under the gnu license.  
-This is specifically built for VMware 6.5 compatibility.  
-WARNING: GoatseLinux is intentionally unsecure. It was designed as a laboratory box to practice penetration testing on. Due to the wide open nature of nearly every program installed on it, I would strongly advise against setting your VM network to anything other than "host-based," unless you enjoy your VMs being used as zombie spamboxes.  
-Notes:  
-Built on the Slax 5.0.7 distro.  
-Source: readme.txt`  
+**Nom :** GoatseLinux: 1\
+**Date de sortie :** 27 Juin 2009\
+**Lien de téléchargement :** [http://neutronstar.org/tmp/GoatseLinux\_1.0\_VM.rar](http://neutronstar.org/tmp/GoatseLinux\_1.0\_VM.rar)\
+**Niveau :** Facile\
+**Objectif(s) :** obtenir un accès "root"\
+**Description :**`GoatseLinux v1.0 pentest lab Virtual MachineSteve Pordon`\
+`2009.06.27`\
+`Feel free to distribute this far and wide under the gnu license.`\
+`This is specifically built for VMware 6.5 compatibility.`\
+`WARNING: GoatseLinux is intentionally unsecure. It was designed as a laboratory box to practice penetration testing on. Due to the wide open nature of nearly every program installed on it, I would strongly advise against setting your VM network to anything other than "host-based," unless you enjoy your VMs being used as zombie spamboxes.`\
+`Notes:`\
+`Built on the Slax 5.0.7 distro.`\
+`Source: readme.txt`\
 
 
 ## Reconnaissance
@@ -33,7 +33,7 @@ Le listing des services via `nmap` pour l'adresse IP 192.168.1.28 :
 
 ### Service HTTP
 
-Rien de très intéressant sur le service web \(qui est en cours de construction\) disponible sur le port 80 malgré un `nikto` et un `dirb`.
+Rien de très intéressant sur le service web (qui est en cours de construction) disponible sur le port 80 malgré un `nikto` et un `dirb`.
 
 Résultat du `nikto` :
 
@@ -59,7 +59,7 @@ Toutes les version inférieures à 1.290 sont vulnérables à un Arbitrary File 
 
 ## Exploitation
 
-### Webmin \(CVE-2006-3392\)
+### Webmin (CVE-2006-3392)
 
 L'exploitation reste très simple avec un script PHP existant. On récupère un premier fichier qui est "/etc/passwd" :
 
@@ -81,7 +81,7 @@ On récupère quatre des cinq mots de passe possibles
 
 ## Élévation de privilèges
 
-On se connecte avec chacun des comptes en SSH \(à noter l'utilisation de quelques options SSH car la machine cible commence à se faire vieille\) :
+On se connecte avec chacun des comptes en SSH (à noter l'utilisation de quelques options SSH car la machine cible commence à se faire vieille) :
 
 ![](../../../.gitbook/assets/442a348df6358e910d38cfc44fa83133.png)
 
@@ -93,5 +93,4 @@ Travail terminé
 
 ## Conclusion
 
-Aucune difficulté ici car le Webmin était déjà connu grâce à d'autres machines et l'élévation de privilèges ne requiert aucune recherche particulière \(sauf se connecter sur tous les comptes pour connaitre celui qui possède les droits `sudo`\).
-
+Aucune difficulté ici car le Webmin était déjà connu grâce à d'autres machines et l'élévation de privilèges ne requiert aucune recherche particulière (sauf se connecter sur tous les comptes pour connaitre celui qui possède les droits `sudo`).

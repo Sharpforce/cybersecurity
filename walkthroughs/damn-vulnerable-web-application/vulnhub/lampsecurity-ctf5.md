@@ -6,14 +6,14 @@ description: 'Walkthrough de la machine LAMPSecurity: CTF5'
 
 ## Détails de la machine
 
-**Nom :** LAMPSecurity: CTF5  
-**Date de sortie :** 10 Mai 2009  
-**Lien de téléchargement :** [http://sourceforge.net/projects/lampsecurity/files/CaptureTheFlag/CTF5/ctf5.zip/download](http://sourceforge.net/projects/lampsecurity/files/CaptureTheFlag/CTF5/ctf5.zip/download)  
-**Niveau :** Facile  
-**Objectif\(s\) :** obtenir un accès "root"  
-**Description :**`This is the fifth capture the flag exercise. It includes the target virtual virutal machine image as well as a PDF of instructions. The username and password for the targer are deliberately not provided! The idea of the exercise is to compromise the target WITHOUT knowing the username and password. Note that there are other capture the flag exercises. If you like this one, download and try out the others. If you have any questions e-mail me at justin AT madirish DOT net.`  
-****`The LAMPSecurity project is an effort to produce training and benchmarking tools that can be used to educate information security professionals and test products. Please note there are other capture the flag exercises (not just the latest one). Check the SourceForge site to find other exercises available (http://sourceforge.net/projects/lampsecurity/files/CaptureTheFlag/).  
-These exercises can be used for training purposes by following this documentation. Alternatively you may wish to test new tools, using the CTF virtual machines as targets. This is especially helpful in evaluating the effectiveness of vulnerability discovery or penetration testing tools.`
+**Nom :** LAMPSecurity: CTF5\
+**Date de sortie :** 10 Mai 2009\
+**Lien de téléchargement :** [http://sourceforge.net/projects/lampsecurity/files/CaptureTheFlag/CTF5/ctf5.zip/download](http://sourceforge.net/projects/lampsecurity/files/CaptureTheFlag/CTF5/ctf5.zip/download)\
+**Niveau :** Facile\
+**Objectif(s) :** obtenir un accès "root"\
+**Description :**`This is the fifth capture the flag exercise. It includes the target virtual virutal machine image as well as a PDF of instructions. The username and password for the targer are deliberately not provided! The idea of the exercise is to compromise the target WITHOUT knowing the username and password. Note that there are other capture the flag exercises. If you like this one, download and try out the others. If you have any questions e-mail me at justin AT madirish DOT net.`\
+****`The LAMPSecurity project is an effort to produce training and benchmarking tools that can be used to educate information security professionals and test products. Please note there are other capture the flag exercises (not just the latest one). Check the SourceForge site to find other exercises available (http://sourceforge.net/projects/lampsecurity/files/CaptureTheFlag/).`\
+`These exercises can be used for training purposes by following this documentation. Alternatively you may wish to test new tools, using the CTF virtual machines as targets. This is especially helpful in evaluating the effectiveness of vulnerability discovery or penetration testing tools.`
 
 ## Reconnaissance
 
@@ -40,7 +40,7 @@ Je n'ai rien trouvé d'intéressant autre que cette énumération, il y avait bi
 On s'attaque ici logiquement à la plus grosse partie des machines de type "LAMPSecurity", le serveur web. Je ne vais pas ajouter une impression écran pour chaque page/service disponible, car il y en a pas mal, mais voici la liste :
 
 * La racine du site nous amène vers la page d'accueil de la "Phake Organization"
-* Un blog est disponible à l'adresse "~andy"
+* Un blog est disponible à l'adresse "\~andy"
 * Un premier webmail "SquirrelMail" en version 1.4.11 sur "/mail"
 * Un gestionnaire d’événements sur "/event"
 * Une page d'enregistrement sur "/list"
@@ -55,11 +55,11 @@ Un seul paramètre de disponible sur cette page et c'est déjà une première fa
 
 #### Andy Carp's Blog
 
-Il s'agit ici d'un blog qui se base sur un CMS du nom de "NanoCMS". Pour continuer notre reconnaissance, nous devons récupérer la version de ce CMS afin d'identifier de possibles vulnérabilités. Un petit tour sur Google nous apprend que la version \(et bien plus encore\) est disponible à la page "/data/pagesdata.txt" :
+Il s'agit ici d'un blog qui se base sur un CMS du nom de "NanoCMS". Pour continuer notre reconnaissance, nous devons récupérer la version de ce CMS afin d'identifier de possibles vulnérabilités. Un petit tour sur Google nous apprend que la version (et bien plus encore) est disponible à la page "/data/pagesdata.txt" :
 
 ![](../../../.gitbook/assets/c548766dfbc5858b2fbc1872bc8e0684.png)
 
-En effet, ce fichier contient le numéro de version du CMS \(le dernier champ\) mais aussi tout simplement le nom de l'administrateur ainsi que le condensat de son mot de passe.
+En effet, ce fichier contient le numéro de version du CMS (le dernier champ) mais aussi tout simplement le nom de l'administrateur ainsi que le condensat de son mot de passe.
 
 #### phpMyAdmin
 
@@ -103,7 +103,7 @@ On peut également tenter de cracker le condensat du mot de passe présent dans 
 
 ### Code injection
 
-NanoCMS est également vulnérable à une injection de code, il suffit de créer une nouvelle page avec la payload PHP désirée. En ce qui concerne les différentes vulnérabilités de NanoCMS, je suis tombé sur ce très bon site \(en tout cas il y figure tout ce dont j'ai besoin\) : [http://www.madirish.net/304](http://www.madirish.net/304)
+NanoCMS est également vulnérable à une injection de code, il suffit de créer une nouvelle page avec la payload PHP désirée. En ce qui concerne les différentes vulnérabilités de NanoCMS, je suis tombé sur ce très bon site (en tout cas il y figure tout ce dont j'ai besoin) : [http://www.madirish.net/304](http://www.madirish.net/304)
 
 On utilise `msfvenom` afin de générer notre reverse shell en PHP :
 
@@ -119,7 +119,7 @@ Et on récupère notre shell `meterpreter` avec metasploit :
 
 Une recherche de l'occurrence "password" remonte la présence d'un "root password" au sein de fichiers Tomboy.
 
-Tomboy, que je connaissais pas \(non je ne parle pas du film 🙂 \) est un outil de prise de notes sur Linux. Il semblerait que l'utilisateur "Patrick" possède un post-it avec peut être le mot de passe "root" :
+Tomboy, que je connaissais pas (non je ne parle pas du film :slight\_smile: ) est un outil de prise de notes sur Linux. Il semblerait que l'utilisateur "Patrick" possède un post-it avec peut être le mot de passe "root" :
 
 ![](../../../.gitbook/assets/3bb3ff40e43e4bb00d67c2b77c59c703.png)
 
@@ -127,7 +127,7 @@ On tente donc d'afficher cette note :
 
 ![](../../../.gitbook/assets/6aa78237000ce17e576200439cfd7a21.png)
 
-Le mot de passe "root" est "50$cent" \(un fan de rap ?\)
+Le mot de passe "root" est "50$cent" (un fan de rap ?)
 
 ## Élévation de privilèges
 
@@ -140,6 +140,4 @@ Travail terminé
 ## Conclusion
 
 Machine plutôt facile. Bien que je ne connaissais pas Tomboy une recherche de mot de passe suffit pour trouver ce qui permettra l'élévation. A force de faire des machines, je commence à avoir mes routines une fois que je possède un point d'entrée sur le système : vérification des binaires suid, analyse des droits spécifiques sur certains fichiers, mot de passe faibles, listing des processus en exécution, etc. Rien de mieux que des petites cheat sheet faites par ses propres soins.
-
-
 

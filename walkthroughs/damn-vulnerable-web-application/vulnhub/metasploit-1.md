@@ -6,15 +6,15 @@ description: 'Walkthrough de la machine Metasploit: 1'
 
 ## Détails de la machine
 
-**Nom :** Metasploitable: 1  
-**Date de sortie :** 19 Mai 2010  
-**Lien de téléchargement :** [https://download.vulnhub.com/metasploitable/Metasploitable.zip](https://download.vulnhub.com/metasploitable/Metasploitable.zip)  
-**Niveau :** Facile  
-**Objectif\(s\) :** obtenir un accès "root"  
-**Description :**`One of the questions that we often hear is "What systems can i use to test against?" Based on this, we thought it would be a good idea throw together an exploitable VM that you can use for testing purposes.`  
-****`Metasploitable is an Ubuntu 8.04 server install on a VMWare 6.5 image. A number of vulnerable packages are included, including an install of tomcat 5.5 (with weak credentials), distcc, tikiwiki, twiki, and an older mysql.  
-You can use most VMware products to run it, and you'll want to make sure it's configured for Host-only networking unless it's in your lab - no need to throw another vulnerable machine on the corporate network. It's configured in non-persistent-disk mode, so you can simply reset it if you accidentally 'rm -rf' it.  
-Source:` [`http://web.archive.org/web/20100525233058/http://blog.metasploit.com/2010/05/introducing-metasploitable.html`](http://web.archive.org/web/20100525233058/http://blog.metasploit.com/2010/05/introducing-metasploitable.html)
+**Nom :** Metasploitable: 1\
+**Date de sortie :** 19 Mai 2010\
+**Lien de téléchargement :** [https://download.vulnhub.com/metasploitable/Metasploitable.zip](https://download.vulnhub.com/metasploitable/Metasploitable.zip)\
+**Niveau :** Facile\
+**Objectif(s) :** obtenir un accès "root"\
+**Description :**`One of the questions that we often hear is "What systems can i use to test against?" Based on this, we thought it would be a good idea throw together an exploitable VM that you can use for testing purposes.`\
+****`Metasploitable is an Ubuntu 8.04 server install on a VMWare 6.5 image. A number of vulnerable packages are included, including an install of tomcat 5.5 (with weak credentials), distcc, tikiwiki, twiki, and an older mysql.`\
+`You can use most VMware products to run it, and you'll want to make sure it's configured for Host-only networking unless it's in your lab - no need to throw another vulnerable machine on the corporate network. It's configured in non-persistent-disk mode, so you can simply reset it if you accidentally 'rm -rf' it.`\
+`Source:` [`http://web.archive.org/web/20100525233058/http://blog.metasploit.com/2010/05/introducing-metasploitable.html`](http://web.archive.org/web/20100525233058/http://blog.metasploit.com/2010/05/introducing-metasploitable.html)
 
 ## Reconnaissance
 
@@ -26,11 +26,11 @@ La machine "Metasploit: 1" possède donc l'adresse IP 192.168.1.12. Voici le ré
 
 ![](../../../.gitbook/assets/7d354cef77ea1547541819b70228e8c4.png)
 
-Beaucoup de services disponibles sur cette machine, la reconnaissance va sans doute être un peu plus long que d'habitude 🙂 
+Beaucoup de services disponibles sur cette machine, la reconnaissance va sans doute être un peu plus long que d'habitude :slight\_smile:&#x20;
 
 ### Service FTP
 
-La machine dispose d'un service FTP sur le port 21 et `nmap` nous indique qu'il s'agit d'un ProFTPd 1.3.1. Il semble qu'une exécution de code distant soit possible pour les version &lt; 1.3.3g, mais l'exploit nécessite un compte valide \(que nous n'avons pas à l'heure actuelle\), et surtout aucun exploit semble disponible.
+La machine dispose d'un service FTP sur le port 21 et `nmap` nous indique qu'il s'agit d'un ProFTPd 1.3.1. Il semble qu'une exécution de code distant soit possible pour les version < 1.3.3g, mais l'exploit nécessite un compte valide (que nous n'avons pas à l'heure actuelle), et surtout aucun exploit semble disponible.
 
 ![](../../../.gitbook/assets/335733064ff6797d0880893b9c402c19.png)
 
@@ -46,7 +46,7 @@ Un service Telnet ouvert, un login/mot de passe est demandé à la connexion :
 
 Au passage on note la version du système d'exploitation de la cible : Ubuntu 8.04.
 
-### Service HTTP \(port 80\)
+### Service HTTP (port 80)
 
 Ici on commence avec un `nikto` et un `dirb` qu'on laisse tourner pendant notre reconnaissance manuelle. Rien à noter puisqu'une seule page est disponible, celle par défaut du serveur Apache :
 
@@ -56,17 +56,17 @@ On passe à l'analyse du résultat de `niko` et `dirb` :
 
 ![](../../../.gitbook/assets/6e44100616c727dfd95ac9577a0e5b33.png)
 
-`nikto` nous remonte les version du serveur Apache \(soit 2.2.8\) et la version de PHP \(5.2.4\). Il identifie également une page nommée "phpinfo.php" qui exécute la méthode PHP `phpinfo()` :
+`nikto` nous remonte les version du serveur Apache (soit 2.2.8) et la version de PHP (5.2.4). Il identifie également une page nommée "phpinfo.php" qui exécute la méthode PHP `phpinfo()` :
 
 ![](../../../.gitbook/assets/4a486f027d980f7660f4e85bebb03af4.png)
 
 #### Tikiwiki
 
-Une URL "/tikiwiki" est également détectée, il s'agit d'une application web de type CMS et de travail collaboratif : 
+Une URL "/tikiwiki" est également détectée, il s'agit d'une application web de type CMS et de travail collaboratif :&#x20;
 
 ![](../../../.gitbook/assets/255e2a11128e839d8561be10397cab24.png)
 
-L'outil installé est en version 1.9.5. Cette version semble vulnérable à une fuite d'information avec la CVE-2006-5702 \(la CVE-2006-5703 concerne aussi cet outil pour cette version, mais il s'agit d'une vulnérabilité de type XSS\) :
+L'outil installé est en version 1.9.5. Cette version semble vulnérable à une fuite d'information avec la CVE-2006-5702 (la CVE-2006-5703 concerne aussi cet outil pour cette version, mais il s'agit d'une vulnérabilité de type XSS) :
 
 ![](../../../.gitbook/assets/a9de5e0f5e6b537bb957a7c6c6967917.png)
 
@@ -114,7 +114,7 @@ La version 3.0.20 est vulnérable à une exécution de code distant. Cette vuln�
 
 ![](../../../.gitbook/assets/7736cf24296386d04fbf57e29ab65ded.png)
 
-### Compilateur \(Distccd\)
+### Compilateur (Distccd)
 
 Il s'agit du serveur du compilateur Distccd en version 4.2.4 qui est vulnérable à une exécution de code distant. Le petit nom de la CVE en question est la CVE-2004-2687 :
 
@@ -126,17 +126,17 @@ Il s'agit du serveur du compilateur Distccd en version 4.2.4 qui est vulnérable
 
 ![](../../../.gitbook/assets/b6a5c56d09dd613c3fbfa5e86eee54f0.png)
 
-Il s'agit donc de la version 8.3.1. On voit également l'info "Post-Auth" indiquant que Metasploit a réussi à se connecter avec les credentials présents dans les options \(cela lui permet d'affiner la détection de version\), à savoir postgres/postgres. On peut tenter de s'y connecter afin de confirmer :
+Il s'agit donc de la version 8.3.1. On voit également l'info "Post-Auth" indiquant que Metasploit a réussi à se connecter avec les credentials présents dans les options (cela lui permet d'affiner la détection de version), à savoir postgres/postgres. On peut tenter de s'y connecter afin de confirmer :
 
 ![](../../../.gitbook/assets/e7f915f221f375059cd6e4a5258b07aa.png)
 
-### Serveur HTTP \(8180\)
+### Serveur HTTP (8180)
 
 Il s'agit ici d'un serveur Apache Tomcat en version 5.5. La page d'accueil est la page par défaut, ce qui peut laisser penser que le serveur est encore en cours de configuration :
 
 ![](../../../.gitbook/assets/b6d17eefcd54d1ee5931876856f8eb8f.png)
 
-Il faut donc penser ici à tester les credentials par défaut \(tomcat/tomcat\) :
+Il faut donc penser ici à tester les credentials par défaut (tomcat/tomcat) :
 
 ![](../../../.gitbook/assets/7f343a60811f4cdaadc1626d025a0122.png)
 
@@ -144,17 +144,17 @@ Nous avons accès à l'interface d'administration de Tomcat. Cela peut nous êtr
 
 ## Exploitation
 
-### Tikiwiki \(CVE-2006-5702\)
+### Tikiwiki (CVE-2006-5702)
 
 Un module Metasploit existe afin d'exploiter la vulnérabilité de Tikiwiki :
 
 ![](../../../.gitbook/assets/5937f039a0b7f06fae4dea3c0f3e449c.png)
 
-Connaissant les credentials de la base de données `mysql` il est possible maintenant de s'y connecter \(port 3306\) :
+Connaissant les credentials de la base de données `mysql` il est possible maintenant de s'y connecter (port 3306) :
 
 ![](../../../.gitbook/assets/e161cb79d25d07063818e2d032c52cbb.png)
 
-### Tikiwiki \(CVE-2007-5423\)
+### Tikiwiki (CVE-2007-5423)
 
 Il existe également un module Metasploit pour cette autre vulnérabilité de Tikiwiki :
 
@@ -162,13 +162,13 @@ Il existe également un module Metasploit pour cette autre vulnérabilité de Ti
 
 Nous possédons actuellement un compte à privilèges limités.
 
-### Samba \(CVE-2007-2447\)
+### Samba (CVE-2007-2447)
 
 ![](../../../.gitbook/assets/e9e955b57b4263ef445d972a428a1a82.png)
 
 Cette vulnérabilité de Samba est plus intéressante dans le sens ou aucune élévation de privilèges n'est nécessaire : nous sommes déjà "root".
 
-### Distcc \(CVE-2004-2687\)
+### Distcc (CVE-2004-2687)
 
 ![](../../../.gitbook/assets/c19f07c30b4a95b2360e5000c187f5e1.png)
 
@@ -176,7 +176,7 @@ Un compte limité "daemon" pour cette vulnérabilité sur Distcc.
 
 ### Autres exploitations
 
-Il y a encore d'autres exploitations à effectuer, que cela soit sur Twiki, PostgreSQL ou encore le serveur Apache Tomcat \(chargement d'une application malicieuse, par exemple un reverse shell généré avec `msfvenom`\) : tout cela peut se faire avec Metasploit.
+Il y a encore d'autres exploitations à effectuer, que cela soit sur Twiki, PostgreSQL ou encore le serveur Apache Tomcat (chargement d'une application malicieuse, par exemple un reverse shell généré avec `msfvenom`) : tout cela peut se faire avec Metasploit.
 
 ## Élévation de privilèges
 
@@ -200,9 +200,8 @@ Travail terminé, nous sommes "root".
 
 ## Conclusion
 
-La machine en soi n'est pas difficile, mais il y a tellement de services et de vulnérabilités à exploiter que cela en devient long. 
+La machine en soi n'est pas difficile, mais il y a tellement de services et de vulnérabilités à exploiter que cela en devient long.&#x20;
 
-J'ai identifié d'autres petites choses comme des weak credentials avec l'utilisateur user/user \(donc disponible pour du telnet, SSH etc\). Une vulnérabilité sur le PostgreSQL qui a les droits en écritures sur le "/tmp" et qui permet de récupérer un shell \(module Metasploit disponible\). Il doit y avoir encore pas mal de choses encore mais je pense avoir fait un bon petit bout déjà.
+J'ai identifié d'autres petites choses comme des weak credentials avec l'utilisateur user/user (donc disponible pour du telnet, SSH etc). Une vulnérabilité sur le PostgreSQL qui a les droits en écritures sur le "/tmp" et qui permet de récupérer un shell (module Metasploit disponible). Il doit y avoir encore pas mal de choses encore mais je pense avoir fait un bon petit bout déjà.
 
 J'ai également tenté d'exploiter les vulnérabilités sur le wiki d'entreprise Twiki grâce aux modules de Metasploit mais cela n'a pas fonctionné, je n'ai pas cherché plus loin que ça mais il me semble bien que le wiki soit vulnérable pourtant.
-

@@ -2,16 +2,16 @@
 
 ## Détails de la machine
 
-**Nom :** Hackademic: RTB1  
-**Date de sortie :** 6 Septembre 2011  
-**Lien de téléchargement :** [https://download.vulnhub.com/hackademic/Hackademic.RTB1.zip](https://download.vulnhub.com/hackademic/Hackademic.RTB1.zip)  
-**Niveau :** Facile  
-**Objectif\(s\) :** obtenir un accès "root" et lire le flag situé dans le fichier `/root/Key.txt`  
-**Description :**  
-`This is the first realistic hackademic challenge (root this box) by mr.pr0n  
-Download the target and get root.  
-After all, try to read the contents of the file 'key.txt' in the root directory.  
-Enjoy!`
+**Nom :** Hackademic: RTB1\
+**Date de sortie :** 6 Septembre 2011\
+**Lien de téléchargement :** [https://download.vulnhub.com/hackademic/Hackademic.RTB1.zip](https://download.vulnhub.com/hackademic/Hackademic.RTB1.zip)\
+**Niveau :** Facile\
+**Objectif(s) :** obtenir un accès "root" et lire le flag situé dans le fichier `/root/Key.txt`\
+**Description :**\
+****`This is the first realistic hackademic challenge (root this box) by mr.pr0n`\
+`Download the target and get root.`\
+`After all, try to read the contents of the file 'key.txt' in the root directory.`\
+`Enjoy!`
 
 ## Reconnaissance
 
@@ -23,7 +23,7 @@ On garde les mêmes habitudes avec un scan de services grâce à `nmap` :
 
 ![](../../../.gitbook/assets/7f43db7f25b63493ad897e7f93a6c111.png)
 
-Le port 22 \(service SSH\) est clos, il nous reste donc seulement le serveur HTTP sur le port 80.
+Le port 22 (service SSH) est clos, il nous reste donc seulement le serveur HTTP sur le port 80.
 
 ### Serveur Web
 
@@ -65,7 +65,7 @@ L'exploitation de l'injection SQL peut être nous permettre de récupérer des i
 Je ne sais pas si cela venait d'une instabilité de ma VM mais les codes HTTP renvoyés par l'application étaient des codes 500. Le contenu HTML étant bien renvoyé, l'injection reste donc possible mais j'ai dû ajouter l'option `--ignore-code=500` à `sqlmap`
 {% endhint %}
 
-L'exploitation de l'injection permet de récupérer certains logins/mots de passe \(table wp\_users\) :
+L'exploitation de l'injection permet de récupérer certains logins/mots de passe (table wp\_users) :
 
 ![](../../../.gitbook/assets/bd27d8eba5b7571ed8c1ba5d07d7e624.png)
 
@@ -73,7 +73,7 @@ La suite de l'attaque se poursuivra sans doute avec le compte GeorgeMiller car i
 
 ![](../../../.gitbook/assets/6703c5ecf1e52cb1f65c34e8e24115be.png)
 
-Le compte possède les droits d'édition sur certaines pages `.php` \(par exemple ici `wp-content/plugins/markdown.php`\) :
+Le compte possède les droits d'édition sur certaines pages `.php` (par exemple ici `wp-content/plugins/markdown.php`) :
 
 ![](../../../.gitbook/assets/df8ca090d7ddd83fbcfa634b830de656.png)
 
@@ -95,7 +95,7 @@ On active la payload en visitant la page malicieuse :
 
 La connexion est établie, nous sommes dans la place :
 
-![](../../../.gitbook/assets/66625727be0a50597c141037ae907fd9.png)
+![](<../../../.gitbook/assets/66625727be0a50597c141037ae907fd9 (1).png>)
 
 ## Élévation de privilèges
 
@@ -115,7 +115,7 @@ On termine par une recherche de mots de passe hardcodé autre que celui-ci ou en
 
 ![](../../../.gitbook/assets/6678b60fcb8e6e699f21c41ba4ad913b.png)
 
-Ici j'ai posé mon cerveau et j'ai simplement testé un à un tous les exploits possibles pour la version 2.6.31 en version x86 \(je ne dis pas que c'est la meilleure solution 🙃 \). Au bout d'un moment il s'avère que l'exploit RDS passe :
+Ici j'ai posé mon cerveau et j'ai simplement testé un à un tous les exploits possibles pour la version 2.6.31 en version x86 (je ne dis pas que c'est la meilleure solution :upside\_down: ). Au bout d'un moment il s'avère que l'exploit RDS passe :
 
 ![](../../../.gitbook/assets/983b98b1ac80673d879d646bdec360dd.png)
 
@@ -141,5 +141,4 @@ Travail terminé.
 
 La machine n'est pas difficile. L'injection SQL se trouve facilement et permet d'aller à la prochaine étape en possédant des comptes Wordpress valides. Récupérer un shell ne présente pas de soucis non plus et la technique d'exécution de code via une page php forgée pour l'occasion est maintenant une habitude.
 
-Là où je suis un peu moins fier de moi c'est l'élévation de privilèges ou j'ai bêtement testé tous les exploits existants pour la version appropriée. L'excuse était que la fatigue commençait à m'envahir et je voulais terminer la machine au plus vite 😋 . Je pense qu'il est possible de faire une première analyse afin de savoir quel exploit peut convenir le mieux sans avoir à tous les exécuter mais je suis pas un grand connaisseur dans ce domaine.
-
+Là où je suis un peu moins fier de moi c'est l'élévation de privilèges ou j'ai bêtement testé tous les exploits existants pour la version appropriée. L'excuse était que la fatigue commençait à m'envahir et je voulais terminer la machine au plus vite :yum: . Je pense qu'il est possible de faire une première analyse afin de savoir quel exploit peut convenir le mieux sans avoir à tous les exécuter mais je suis pas un grand connaisseur dans ce domaine.

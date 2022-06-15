@@ -2,19 +2,19 @@
 description: 'Walkthrough de la machine Kioptrix: Level 3'
 ---
 
-# Kioptrix: Level 1.2 \(\#3\)
+# Kioptrix: Level 1.2 (#3)
 
 ## Détails de la machine
 
-**Nom :** Kioptrix: Level 1.2 \(\#3\)  
-**Date de sortie :** 11 Février 2011  
-**Lien de téléchargement :** [http://www.kioptrix.com/dlvm/KVM3.rar](http://www.kioptrix.com/dlvm/KVM3.rar)  
-**Niveau :** Facile  
-**Objectif\(s\) :** obtenir un accès "root"  
-**Description :**`It's been a while since the last Kioptrix VM challenge. Life keeps getting the way of these things you know.`  
-****`After the seeing the number of downloads for the last two, and the numerous videos showing ways to beat these challenges. I felt that 1.2 (or just level 3) needed to come out. Thank you to all that downloaded and played the first two. And thank you to the ones that took the time to produce video solutions of them. Greatly appreciated.  
-  
-As with the other two, this challenge is geared towards the beginner. It is however different. Added a few more steps and a new skill set is required. Still being the realm of the beginner I must add. The same as the others, there’s more then one way to “pwn” this one. There’s easy and not so easy. Remember… the sense of “easy” or “difficult” is always relative to ones own skill level. I never said these things were exceptionally hard or difficult, but we all need to start somewhere. And let me tell you, making these vulnerable VMs is not as easy as it looks…`  
+**Nom :** Kioptrix: Level 1.2 (#3)\
+**Date de sortie :** 11 Février 2011\
+**Lien de téléchargement :** [http://www.kioptrix.com/dlvm/KVM3.rar](http://www.kioptrix.com/dlvm/KVM3.rar)\
+**Niveau :** Facile\
+**Objectif(s) :** obtenir un accès "root"\
+**Description :**`It's been a while since the last Kioptrix VM challenge. Life keeps getting the way of these things you know.`\
+****`After the seeing the number of downloads for the last two, and the numerous videos showing ways to beat these challenges. I felt that 1.2 (or just level 3) needed to come out. Thank you to all that downloaded and played the first two. And thank you to the ones that took the time to produce video solutions of them. Greatly appreciated.`\
+``\
+`As with the other two, this challenge is geared towards the beginner. It is however different. Added a few more steps and a new skill set is required. Still being the realm of the beginner I must add. The same as the others, there’s more then one way to “pwn” this one. There’s easy and not so easy. Remember… the sense of “easy” or “difficult” is always relative to ones own skill level. I never said these things were exceptionally hard or difficult, but we all need to start somewhere. And let me tell you, making these vulnerable VMs is not as easy as it looks…`\
 ****
 
 ## Reconnaissance
@@ -25,7 +25,7 @@ La machine étant en DHCP il nous faut tout d'abord récupérer son adresse IP :
 
 Comme indiqué dans la consigne du challenge, la machine a besoin d'une résolution DNS avec le nom `kioptrix3.com`. Direction donc le fichier `/etc/hosts` :
 
-```text
+```
 192.168.56.53	kioptrix3.com
 ```
 
@@ -61,13 +61,13 @@ La mire de login est intéressante car elle nous informe du CMS utilisé :
 
 ![](../../../.gitbook/assets/7173a10a17abc6ab810f7da6a3bebd85.png)
 
-LotusCMS était un CMS open-source écrit en 2007/2008. Le code source est encore disponible sur [GitHub](https://github.com/kevinbluett/LotusCMS-Content-Management-System) \(hébergé à l'origine sur [sourceforge](http://sourceforge.net/projects/arboroiancms/%20)\).
+LotusCMS était un CMS open-source écrit en 2007/2008. Le code source est encore disponible sur [GitHub](https://github.com/kevinbluett/LotusCMS-Content-Management-System) (hébergé à l'origine sur [sourceforge](http://sourceforge.net/projects/arboroiancms/)).
 
 Mon premier but était d'identifier la version utilisée, j'ai donc récupéré le code source afin de repérer les différents fichiers pouvant contenir cette information. Le titre du fichier `install.html` présent dans le répertoire `/style/comps/admin/` nous rend ce service :
 
 ![](../../../.gitbook/assets/0a7d7315353be9fb05d96c32190f0256.png)
 
-LotusCMS en version 3.0 possède une vulnérabilité de type LFI pouvant amener à une RCE \([CVE-2011-0518](https://www.cvedetails.com/cve/CVE-2011-0518/)\). Pour faire court, le système de post de commentaires sur le blog permet en fait l'écriture de fichiers sur le disque, puis la faille LFI permet de les charger.
+LotusCMS en version 3.0 possède une vulnérabilité de type LFI pouvant amener à une RCE ([CVE-2011-0518](https://www.cvedetails.com/cve/CVE-2011-0518/)). Pour faire court, le système de post de commentaires sur le blog permet en fait l'écriture de fichiers sur le disque, puis la faille LFI permet de les charger.
 
 ## Exploitation
 
@@ -91,7 +91,7 @@ Deux comptes sont des utilisateurs de la machine : **dreg** et **loneferret**. A
 
 ![](../../../.gitbook/assets/c5b0eda6c53681648b49e1c8f970edf3.png)
 
-Le fichier `CompanyPolicy.README` \(ainsi que le `.bash_history`\) indique l'utilisation d'un programme nommé `ht`. Après quelques recherches, il s'agit d'un éditeur de texte. Chose intéressante, le binaire possède le **suid** à 1 :
+Le fichier `CompanyPolicy.README` (ainsi que le `.bash_history`) indique l'utilisation d'un programme nommé `ht`. Après quelques recherches, il s'agit d'un éditeur de texte. Chose intéressante, le binaire possède le **suid** à 1 :
 
 ![](../../../.gitbook/assets/c5e239b32f7331685e26d9e96aa25bc0.png)
 
@@ -103,7 +103,7 @@ Je suis pas un grand connaisseur des erreurs XTERM et compagnie. Je tente un peu
 
 ![](../../../.gitbook/assets/00f9b4c7c13114c658f7c0f472698099.png)
 
-Cela améliore sensiblement les choses, à savoir que je peux maintenant lancer le binaire mais ce n'est toujours pas utilisable \(la saisie de caractères écrit tout simplement sur l'interface\) :
+Cela améliore sensiblement les choses, à savoir que je peux maintenant lancer le binaire mais ce n'est toujours pas utilisable (la saisie de caractères écrit tout simplement sur l'interface) :
 
 ![](../../../.gitbook/assets/6b0c60d0c0bc18120c7c034dc721d701.png)
 
@@ -123,7 +123,7 @@ John va nous aider à cracker ce mot de passe, mais il faut bien prendre en comp
 
 ![](../../../.gitbook/assets/abdc00f93c7dbe14060e4aa7c4f3a9d4.png)
 
-Il ne faut pas oublier d'indiquer le format \(ici `dynamic_24`\) dans notre ligne de commande :
+Il ne faut pas oublier d'indiquer le format (ici `dynamic_24`) dans notre ligne de commande :
 
 ![](../../../.gitbook/assets/a7299ae089a9a30c4ea1c1f906a66d21.png)
 
@@ -143,7 +143,7 @@ Nous avons donc un premier mot de passe dans la table `gallarific_users` :
 
 ![](../../../.gitbook/assets/395cef4fc251ed7ef313d36062b0da48.png)
 
-Et deux autres mots de passe \(cette fois hashés\) pour les utilisateurs **dreg** et **loneferret** dans la table `dev_accounts` :
+Et deux autres mots de passe (cette fois hashés) pour les utilisateurs **dreg** et **loneferret** dans la table `dev_accounts` :
 
 ![](../../../.gitbook/assets/8b492cfedeb8f61b28c6978d024e7bda.png)
 
@@ -161,7 +161,7 @@ Etant donné que `ht` possède le bit suid à 1, il est possible d'éditer des f
 
 afin d'ajouter le droit su à notre utilisateur **loneferret** :
 
-![](../../../.gitbook/assets/743a0c067215825e0d3a98017dd1b66b%20%282%29.png)
+![](<../../../.gitbook/assets/743a0c067215825e0d3a98017dd1b66b (2).png>)
 
 Un petit `sudo` su plut tard, nous voilà root :
 
@@ -171,7 +171,6 @@ Un petit `sudo` su plut tard, nous voilà root :
 
 Très facile jusqu’à la récupération d'un shell, la machine se corse en ce qui concerne l'élévation de privilèges. J'ai passé un sacré bout de temps à tenter de faire fonctionner `ht` avec le compte **www-data** avant d'explorer d'autres solutions.
 
-J'ai apprécié de pouvoir/devoir étudier le code source du CMS afin de connaitre les emplacements des données intéressantes et également son fonctionnement \(notamment sur la façon de stocker ses mots de passe\).
+J'ai apprécié de pouvoir/devoir étudier le code source du CMS afin de connaitre les emplacements des données intéressantes et également son fonctionnement (notamment sur la façon de stocker ses mots de passe).
 
 La leçon à retenir est de ne pas oublier d'explorer les autres pistes quand on est bloqué à une étape afin de collecter un maximum de données. Je m’aperçois que je dois fortement m'améliorer en ce qui concerne la phase de reconnaissance post compromission.
-

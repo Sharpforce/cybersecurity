@@ -1,6 +1,6 @@
 # Niveau "High"
 
-L’analyse du formulaire indique la présence d’un champ caché nommé "user\_token" \(il s'agit d'un jeton anti-CSRF\). La valeur de ce champ est régénérée pour chaque requête :
+L’analyse du formulaire indique la présence d’un champ caché nommé "user\_token" (il s'agit d'un jeton anti-CSRF). La valeur de ce champ est régénérée pour chaque requête :
 
 ![](../../../../.gitbook/assets/0c0892194f080f693dd38eeb63b57a68.png)
 
@@ -14,12 +14,12 @@ Les premiers tests à faire sont sans doute de vérifier la bonne implémentatio
 
 
 
-Une faille XSS permet de contourner une protection basée sur un jeton anti-CSRF \(qu'il soit per-request ou per-session\). Cela se fait en deux étapes :
+Une faille XSS permet de contourner une protection basée sur un jeton anti-CSRF (qu'il soit per-request ou per-session). Cela se fait en deux étapes :
 
 * Une première requête va permettre de récupérer un jeton CSRF présent sur la page du challenge
 * Une seconde requête, comprenant le jeton fraîchement récupéré, va modifier le mot de passe de la victime
 
-\*\*\*\*
+****
 
 **Exploitation via des iframes**
 
@@ -29,7 +29,7 @@ Nous affichons une première `<iframe>` qui va afficher la page du challenge afi
 <iframe src="http://192.168.56.203:8080/vulnerabilities/csrf" onload="readFrame1()" id="frame1"></iframe>
 ```
 
-Voici la fonction `readFrame1()` \(hébergée dans un fichier nommé "csrf.js" sur un serveur malicieux\) :
+Voici la fonction `readFrame1()` (hébergée dans un fichier nommé "csrf.js" sur un serveur malicieux) :
 
 {% code title="csrf.js" %}
 ```javascript
@@ -51,7 +51,7 @@ Cette `<iframe>` sera appelée de cette façon :
 
 Ci-dessous la payload ainsi que son affichage lors de l'exécution. Bien penser à injecter la payload en mode "Low" mais de repasser en mode "High" pour son exploitation :
 
-![](../../../../.gitbook/assets/3b6e8a0ec33f5961bef8be1b5f820505%20%281%29.png)
+![](<../../../../.gitbook/assets/3b6e8a0ec33f5961bef8be1b5f820505 (1).png>)
 
 {% hint style="info" %}
 Afin de rendre l'attaque plus discrète, il est possible de ne pas afficher les `<iframe>` grâce au style CSS `style="display:none"`
@@ -61,7 +61,7 @@ Une fois que l'administrateur visitera la page du challenge XSS, son mot de pass
 
 ![](../../../../.gitbook/assets/1fb2b3663d21dad270b6c81e9e61e79c.png)
 
-\*\*\*\*
+****
 
 **Exploitation via des requêtes XHR**
 
@@ -82,7 +82,7 @@ xhr.onload = function () {
 xhr.send();
 ```
 
-Et la seconde, d'effectuer le changement de mot de passe une fois la première requête exécutée \(et le jeton récupéré\) :
+Et la seconde, d'effectuer le changement de mot de passe une fois la première requête exécutée (et le jeton récupéré) :
 
 > ```javascript
 >    // Requête 2
@@ -95,13 +95,11 @@ La mise en place de la payload s'effectue toujours en se servant de la vulnérab
 
 ![](../../../../.gitbook/assets/7cf8487e2619f973ab30e38f5ea8f209.png)
 
-Lorsque la victime exécutera la payload XSS cela va déclencher l'attaque CSRF \(repasser en "High"\) :
+Lorsque la victime exécutera la payload XSS cela va déclencher l'attaque CSRF (repasser en "High") :
 
 ![](../../../../.gitbook/assets/8016744e58ba30e8ff427294598eacfc.png)
 
-Le mot de passe de l'administrateur a bien été changé suite à sa visite \(du challenge XSS\) :
+Le mot de passe de l'administrateur a bien été changé suite à sa visite (du challenge XSS) :
 
 ![](../../../../.gitbook/assets/94ceb456695bfa0da35e85c676d73400.png)
-
-
 

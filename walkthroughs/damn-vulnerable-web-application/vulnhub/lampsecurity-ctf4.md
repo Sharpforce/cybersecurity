@@ -6,19 +6,19 @@ description: 'Walkthrough de la machine LAMPSecurity: CTF4'
 
 ## Détails de la machine
 
-**Nom :** LAMPSecurity: CTF4  
-**Date de sortie :** 10 Mars 2009  
-**Lien de téléchargement :** [http://sourceforge.net/projects/lampsecurity/files/CaptureTheFlag/CTF4/ctf4.zip/download](http://sourceforge.net/projects/lampsecurity/files/CaptureTheFlag/CTF4/ctf4.zip/download)  
-**Niveau :** Facile  
-**Objectif\(s\) :** obtenir un accès "root"  
-**Description :**   
-`Updated to set default runlevel to 3 (no X windows) and fixed DHCP.  
-  
-This is the fourth capture the flag exercise. It includes the target virtual virutal machine image as well as a PDF of instructions. The username and password for the targer are deliberately not provided! The idea of the exercise is to compromise the target WITHOUT knowing the username and password. Note that there are other capture the flag exercises. If you like this one, download and try out the others. If you have any questions e-mail me at justin AT madirish DOT net.  
-  
-The LAMPSecurity project is an effort to produce training and benchmarking tools that can be used to educate information security professionals and test products. Please note there are other capture the flag exercises (not just the latest one). Check the SourceForge site to find other exercises available (http://sourceforge.net/projects/lampsecurity/files/CaptureTheFlag/).  
-  
-These exercises can be used for training purposes by following this documentation. Alternatively you may wish to test new tools, using the CTF virtual machines as targets. This is especially helpful in evaluating the effectiveness of vulnerability discovery or penetration testing tools.`
+**Nom :** LAMPSecurity: CTF4\
+**Date de sortie :** 10 Mars 2009\
+**Lien de téléchargement :** [http://sourceforge.net/projects/lampsecurity/files/CaptureTheFlag/CTF4/ctf4.zip/download](http://sourceforge.net/projects/lampsecurity/files/CaptureTheFlag/CTF4/ctf4.zip/download)\
+**Niveau :** Facile\
+**Objectif(s) :** obtenir un accès "root"\
+**Description :** \
+****`Updated to set default runlevel to 3 (no X windows) and fixed DHCP.`\
+``\
+`This is the fourth capture the flag exercise. It includes the target virtual virutal machine image as well as a PDF of instructions. The username and password for the targer are deliberately not provided! The idea of the exercise is to compromise the target WITHOUT knowing the username and password. Note that there are other capture the flag exercises. If you like this one, download and try out the others. If you have any questions e-mail me at justin AT madirish DOT net.`\
+``\
+`The LAMPSecurity project is an effort to produce training and benchmarking tools that can be used to educate information security professionals and test products. Please note there are other capture the flag exercises (not just the latest one). Check the SourceForge site to find other exercises available (http://sourceforge.net/projects/lampsecurity/files/CaptureTheFlag/).`\
+``\
+`These exercises can be used for training purposes by following this documentation. Alternatively you may wish to test new tools, using the CTF virtual machines as targets. This is especially helpful in evaluating the effectiveness of vulnerability discovery or penetration testing tools.`
 
 ## Reconnaissance
 
@@ -42,7 +42,7 @@ Nous avons donc un service OpenSSH en version 4.3 sur le port 22, un service SMT
 
 ![](../../../.gitbook/assets/442d8a3758d7a05dc868fb15ef5cbdce.png)
 
-Il nous sera possible d’énumérer les comptes valides grâce à l'exploit "45939.py" \(CVE-2018-15473\) si besoin, mais cela nécessite de fournir une liste d'utilisateurs en entrée.
+Il nous sera possible d’énumérer les comptes valides grâce à l'exploit "45939.py" (CVE-2018-15473) si besoin, mais cela nécessite de fournir une liste d'utilisateurs en entrée.
 
 ### Service SMTP
 
@@ -50,11 +50,11 @@ Il nous sera possible d’énumérer les comptes valides grâce à l'exploit "45
 
 ![](../../../.gitbook/assets/56c1e964f0838614c49a8051485bb890.png)
 
-Il semble qu'un exploit nommé "Remote Signal Handling \(POC\)", soit en fait la CVE-2006-0058, existe pour cette version en question et permet une exécution de code arbitraire :
+Il semble qu'un exploit nommé "Remote Signal Handling (POC)", soit en fait la CVE-2006-0058, existe pour cette version en question et permet une exécution de code arbitraire :
 
 ![](../../../.gitbook/assets/e51eaeeb7d5d3835190a8da19c7e2414.png)
 
-L'outil `smtp-user-enum` peut nous permettre d’énumérer les utilisateurs existants mais il nécessite au préalable une liste d'utilisateurs en entrée. En effet, le service SMTP va répondre si oui non l'utilisateur spécifié existe. 
+L'outil `smtp-user-enum` peut nous permettre d’énumérer les utilisateurs existants mais il nécessite au préalable une liste d'utilisateurs en entrée. En effet, le service SMTP va répondre si oui non l'utilisateur spécifié existe.&#x20;
 
 ### Serveur HTTP
 
@@ -66,13 +66,13 @@ On navigue sur le site, puis en modifiant le paramètre "page" on identifie une 
 
 ![](../../../.gitbook/assets/dfbcee0aef6d0b25c52531047b4e584e.png)
 
-La modification du paramètre "page" n'engendre pas une erreur PHP mais seulement une page vide. Pour confirmer la vulnérabilité il a donc ici fallu faire quelques tests et tenter par exemple de récupérer un fichier \(ici le fichier "/etc/passwd"\). De plus, il faut ici utiliser une seconde vulnérabilité qui est un Null byte injection, soit l'injection du caractère "NULL" représenté par "%00" permettant d'indiquer une fin de chaîne. En effet, le développeur a ici concaténé le nom du fichier \(par exemple "blog"\) à la chaîne de caractères ".php". Si nous tentons d'inclure tout simplement "/etc/passwd", la fonction `include()` recevra en fait :
+La modification du paramètre "page" n'engendre pas une erreur PHP mais seulement une page vide. Pour confirmer la vulnérabilité il a donc ici fallu faire quelques tests et tenter par exemple de récupérer un fichier (ici le fichier "/etc/passwd"). De plus, il faut ici utiliser une seconde vulnérabilité qui est un Null byte injection, soit l'injection du caractère "NULL" représenté par "%00" permettant d'indiquer une fin de chaîne. En effet, le développeur a ici concaténé le nom du fichier (par exemple "blog") à la chaîne de caractères ".php". Si nous tentons d'inclure tout simplement "/etc/passwd", la fonction `include()` recevra en fait :
 
 ```php
 include($file . ".php"); // $file sera égale ici à /etc/passwd
 ```
 
-Il y a sans doute également la concaténation d'un \(ou plusieurs\) répertoire avant l'inclusion du fichier, c'est pour cette raison qu'il faut effectuer une attaque de type path transversal pour récupérer le fichier désiré. En conclusion, le développeur doit avoir développé quelque chose comme ceci :  
+Il y a sans doute également la concaténation d'un (ou plusieurs) répertoire avant l'inclusion du fichier, c'est pour cette raison qu'il faut effectuer une attaque de type path transversal pour récupérer le fichier désiré. En conclusion, le développeur doit avoir développé quelque chose comme ceci : &#x20;
 
 ```php
 include("/chemin/vers/" . $file . ".php");
@@ -82,7 +82,7 @@ La lecture d'un article du blog nous permet de voir un paramètre intéressant n
 
 ![](../../../.gitbook/assets/f9c854833b15357f0f7fa41ff17bd0c5.png)
 
-Pour confirmer la vulnérabilité il suffit de faire en sorte que la partie après le "AND" soit fausse \(en logique  `vrai ET faux` donne `faux`\) :
+Pour confirmer la vulnérabilité il suffit de faire en sorte que la partie après le "AND" soit fausse (en logique  `vrai ET faux` donne `faux`) :
 
 ![](../../../.gitbook/assets/776372ba1d5ba0bbf32f459c38658b70.png)
 
@@ -94,7 +94,7 @@ Le répertoire "/mail" amène à un webmail SquirrelMail en version 1.4.17 :
 
 ![](../../../.gitbook/assets/b4683639729e9c71194c10843bf0c92b.png)
 
-Un `searchsploit` indique une possibilité de RCE \(Remote Code Execution, CVE-2017-7692\) grâce à l'exploit "41910.sh". En regardant de plus près cette exploit, on s'aperçoit qu'il faut un login / mot de passe valide pour l'exploiter, mais sait-on jamais :
+Un `searchsploit` indique une possibilité de RCE (Remote Code Execution, CVE-2017-7692) grâce à l'exploit "41910.sh". En regardant de plus près cette exploit, on s'aperçoit qu'il faut un login / mot de passe valide pour l'exploiter, mais sait-on jamais :
 
 ![](../../../.gitbook/assets/1339e3c8d68df8ab9c413e070311f290.png)
 
@@ -106,7 +106,7 @@ Le répertoire "/conf" renvoie une erreur HTTP 500, on ira pas plus loin par là
 
 ![](../../../.gitbook/assets/896db44fcecdb8d05c76395f3a597bc6.png)
 
-Le répertoire "/sql" quant à lui nous permet de récupérer un fichier ".sql" sans doute utilisé pour mettre en place la base de données du blog. La base de données porte le nom de "ehks" et possède 3 tables : "user", "blog" et "comment". Quelle idée de laisser traîner ce genre de choses 😒 :
+Le répertoire "/sql" quant à lui nous permet de récupérer un fichier ".sql" sans doute utilisé pour mettre en place la base de données du blog. La base de données porte le nom de "ehks" et possède 3 tables : "user", "blog" et "comment". Quelle idée de laisser traîner ce genre de choses :unamused: :
 
 ![](../../../.gitbook/assets/731c580cf725e3cf694627542d8e161b.png)
 
@@ -114,7 +114,7 @@ Le dernier répertoire présent est le "/admin", qui met souvent le sourire aux 
 
 ![](../../../.gitbook/assets/cc4699e98994900d39c144790c582655.png)
 
-Quelques tests rapides sur la mire d'authentification conduit à une possible injection SQL \(attention au javascript qui supprime certains caractères lors de l'envoi\) :
+Quelques tests rapides sur la mire d'authentification conduit à une possible injection SQL (attention au javascript qui supprime certains caractères lors de l'envoi) :
 
 ![](../../../.gitbook/assets/7cf62581105a7f90be9765ca5b7e380e.png)
 
@@ -124,31 +124,31 @@ Pendant tout ce temps tournait bien sur un `nikto` ainsi qu'un `dirb` :
 
 ![](../../../.gitbook/assets/9bf8dc69d8470fde3e1e1b3088723444.png)
 
-`nikto` __remonte une nouvelle URL à tester, le répertoire "/pages" que voici :
+`nikto` __ remonte une nouvelle URL à tester, le répertoire "/pages" que voici :
 
 ![](../../../.gitbook/assets/440c1d257ddcd63d5cd27ebe7db9db26.png)
 
-Et voici le résultat de `dirb` __\(la sortie est tronquée, je n'ai mis que ce qui me semblait intéressant\) :
+Et voici le résultat de `dirb` __ (la sortie est tronquée, je n'ai mis que ce qui me semblait intéressant) :
 
-![](../../../.gitbook/assets/9468037c1d7ca9d3745d13227be71d2d%20%281%29.png)
+![](<../../../.gitbook/assets/9468037c1d7ca9d3745d13227be71d2d (1).png>)
 
 `dirb` indique la présence d'un "/calendar" ainsi qu'un fichier "README". Sa consultation nous permet de connaitre la version du logiciel, soit la version 0.10 :
 
-![Le fichier README contient la version de calendar utilis&#xE9;e](../../../.gitbook/assets/acf2332fe48be2c09c5f90388c6aa0ef.png)
+![Le fichier README contient la version de calendar utilisée](../../../.gitbook/assets/acf2332fe48be2c09c5f90388c6aa0ef.png)
 
-Un `searchsploit`  indique une vulnérabilité de type Arbitrary File inclusion pour la version de php-calendar &lt; 0.10.1 \(CVE-2004-1423\) :
+Un `searchsploit`  indique une vulnérabilité de type Arbitrary File inclusion pour la version de php-calendar < 0.10.1 (CVE-2004-1423) :
 
 ![](../../../.gitbook/assets/a524cc0aa8994dc8e69f02ec7a6853e0.png)
 
-La phase de reconnaissance se termine ici, pas mal de choses à se mettre sous la dent pour la phase d'exploitation. 
+La phase de reconnaissance se termine ici, pas mal de choses à se mettre sous la dent pour la phase d'exploitation.&#x20;
 
 ## Exploitation
 
-Je laisse de côté l'énumération côté OpenSSH et SMTP, étant donné qu'on possède déjà le fichier "/etc/passwd". Dans un premier temps j'ai tenté d'exploiter la faille RCE du Sendmail mais sans succès \(l'exploit ne semble plus être fonctionnel en l'état\).
+Je laisse de côté l'énumération côté OpenSSH et SMTP, étant donné qu'on possède déjà le fichier "/etc/passwd". Dans un premier temps j'ai tenté d'exploiter la faille RCE du Sendmail mais sans succès (l'exploit ne semble plus être fonctionnel en l'état).
 
 ### Injection SQL
 
-Côté du serveur web on peut exploiter l'injection SQL afin de dumper la base et voir si elle contient des information intéressantes \(le mot de passe administrateur n'est plus vraiment un prérequis à cause de l'injection SQL sur la mire d'authentification\). Sqlmap est la pour nous aider et l'on tente de récupérer dans un premier temps le nom des bases de données existantes :
+Côté du serveur web on peut exploiter l'injection SQL afin de dumper la base et voir si elle contient des information intéressantes (le mot de passe administrateur n'est plus vraiment un prérequis à cause de l'injection SQL sur la mire d'authentification). Sqlmap est la pour nous aider et l'on tente de récupérer dans un premier temps le nom des bases de données existantes :
 
 * calendar
 * ehks
@@ -162,7 +162,7 @@ Bon la connexion à tous ces comptes est plus pour le fun qu'autre chose car cel
 
 ![](../../../.gitbook/assets/74033055d9afb452d585baec3bd70995.png)
 
-On sait donc qu'il est administrateur de la machine, et, étant donné qu'on possède son mot de passe du webmail et que ce webmail se base sans doute sur les utilisateurs systèmes ... . On sait également que "Andrew Chen" est lui aussi un administrateur du système \(et on possède aussi son mot de passe\). C'est du joli tout ça ! Si besoin de compiler un certain exploit, le système possède aussi un `gcc`.
+On sait donc qu'il est administrateur de la machine, et, étant donné qu'on possède son mot de passe du webmail et que ce webmail se base sans doute sur les utilisateurs systèmes ... . On sait également que "Andrew Chen" est lui aussi un administrateur du système (et on possède aussi son mot de passe). C'est du joli tout ça ! Si besoin de compiler un certain exploit, le système possède aussi un `gcc`.
 
 On termine avec la base "ehks" :
 
@@ -184,19 +184,19 @@ Travail terminé.
 
 ## Conclusion
 
-CTF facile puisque à la finale, une seule injection SQL suffit à devenir "root" \(plusieurs comptes sont en fait administrateur du système\).
+CTF facile puisque à la finale, une seule injection SQL suffit à devenir "root" (plusieurs comptes sont en fait administrateur du système).
 
-Pour ne pas alourdir le writeup je n'ai pas mis les essais que j'ai effectué sur le blog \(en se connectant grâce à l'injection SQL ou avec un compte récupéré via l'injection SQL\) mais la partie "/admin" ne semble pas apporter quelque chose \(à par des XSS\).
+Pour ne pas alourdir le writeup je n'ai pas mis les essais que j'ai effectué sur le blog (en se connectant grâce à l'injection SQL ou avec un compte récupéré via l'injection SQL) mais la partie "/admin" ne semble pas apporter quelque chose (à par des XSS).
 
-Je met quand même ci-dessous l'exploitation des deux vulnérabilités CVE-2004-1423 et CVE-2017-7692 \(respectivement concernant le php-calendar ainsi que le webmail\).
+Je met quand même ci-dessous l'exploitation des deux vulnérabilités CVE-2004-1423 et CVE-2017-7692 (respectivement concernant le php-calendar ainsi que le webmail).
 
-### PHP-Calendar \(CVE-2004-1423\)
+### PHP-Calendar (CVE-2004-1423)
 
 Cette vulnérabilité permet d'exécuter un script distant, dans notre cas un shell php généré par `msfvenom`. Le shell est hébergé sur notre machine d'attaque comme ceci : "/include/html.php"
 
 ![](../../../.gitbook/assets/400947470315986662efd88e178f406e.png)
 
-Il ne reste maintenant que l'élévation de privilèges \(puisque nous sommes connecté en tant que "apache"\). Premièrement un `uname -a` nous donne la version du noyau :
+Il ne reste maintenant que l'élévation de privilèges (puisque nous sommes connecté en tant que "apache"). Premièrement un `uname -a` nous donne la version du noyau :
 
 ![](../../../.gitbook/assets/f149ab679a9b1b3cae21d5eae73befb2.png)
 
@@ -204,7 +204,6 @@ Ce noyau est vulnérable à la CVE-2009-2698, son exploit est ici : [https://www
 
 ![](../../../.gitbook/assets/af9ee8e9571ad2f8f428dab9afda23cc.png)
 
-### SquirrelMail \(CVE-2017-7692\)
+### SquirrelMail (CVE-2017-7692)
 
 Une erreur sur l'exploit ne permet pas la RCE, je n'ai pas cherché plus loin étant donné que j'avais déjà rooté la machine.
-

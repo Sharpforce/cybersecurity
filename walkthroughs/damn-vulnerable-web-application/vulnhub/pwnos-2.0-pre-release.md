@@ -1,19 +1,19 @@
-# pWnOS 2.0 \(Pre-Release\)
+# pWnOS 2.0 (Pre-Release)
 
 ## Détails de la machine
 
-**Nom :** pWnOS 2.0 \(Pre-Release\)  
-**Date de sortie :** 4 Juillet 2011  
-**Lien de téléchargement :** [http://pwnos.com/files/pWnOS\_v2.0.7z](http://pwnos.com/files/pWnOS_v2.0.7z)  
-**Niveau :** Facile  
-**Objectif\(s\) :** obtenir un accès "root"  
-**Description :**  
-`pWnOS v2.0 is a Virutal Machine Image which hosts a server to pratice penetration testing. It will test your ability to exploit the server and contains multiple entry points to reach the goal (root). It was design to be used with WMWare Workstation 7.0, but can also be used with most other virtual machine software.  
-  
-Server's Network Settings:  
-IP: 10.10.10.100  
-Netmask: 255.255.255.0  
-Gateway: 10.10.10.15`
+**Nom :** pWnOS 2.0 (Pre-Release)\
+**Date de sortie :** 4 Juillet 2011\
+**Lien de téléchargement :** [http://pwnos.com/files/pWnOS\_v2.0.7z](http://pwnos.com/files/pWnOS\_v2.0.7z)\
+**Niveau :** Facile\
+**Objectif(s) :** obtenir un accès "root"\
+**Description :**\
+`pWnOS v2.0 is a Virutal Machine Image which hosts a server to pratice penetration testing. It will test your ability to exploit the server and contains multiple entry points to reach the goal (root). It was design to be used with WMWare Workstation 7.0, but can also be used with most other virtual machine software.`\
+``\
+`Server's Network Settings:`\
+`IP: 10.10.10.100`\
+`Netmask: 255.255.255.0`\
+`Gateway: 10.10.10.15`
 
 ## Reconnaissance
 
@@ -25,7 +25,7 @@ On commence directement par le scan de services via `nmap` :
 
 ![](../../../.gitbook/assets/1f6222a8a24ac1fd029c54628f1ff19a.png)
 
-Un service SSH \(port 22\) et un service Web \(port 80\). On ne peut pas faire plus simple.
+Un service SSH (port 22) et un service Web (port 80). On ne peut pas faire plus simple.
 
 ### Service SSH
 
@@ -47,7 +47,7 @@ Ces deux scans nous apprennent la présence d'une page `info.php` qui effectue u
 
 ![](../../../.gitbook/assets/d24253082253f33f3917010130ea0307.png)
 
-Cela étant fait, allons faire un tour sur le site proposé. La page d'accueil affiche un message de bienvenue et propose 3 liens \(à droite, dont le lien `Home` qui est la page courante\) :
+Cela étant fait, allons faire un tour sur le site proposé. La page d'accueil affiche un message de bienvenue et propose 3 liens (à droite, dont le lien `Home` qui est la page courante) :
 
 ![](../../../.gitbook/assets/515a26491044826578325bc04b416d2b.png)
 
@@ -63,7 +63,7 @@ Nous sommes authentifié, mais aucun lien supplémentaire ne nous est offert :
 
 ![](../../../.gitbook/assets/c7ac4885d84e40aee4e3a7bdabeb2ad9.png)
 
-Aucun lien du site ne l'affiche \(même en étant authentifié\), mais le scan `dirb` remonte également une entrée vers un blog via `/blog` :
+Aucun lien du site ne l'affiche (même en étant authentifié), mais le scan `dirb` remonte également une entrée vers un blog via `/blog` :
 
 ![](../../../.gitbook/assets/6cea206a447f388f9a5ff33cefaff289.png)
 
@@ -91,7 +91,7 @@ On va donc tenter de récupérer les informations de la base de données en expl
 
 ![](../../../.gitbook/assets/b77bffe730d7eb785dee822857ee3936.png)
 
-Le mot de passe est hashé en SHA1 \(40 caractères\), on tente de le cracker :
+Le mot de passe est hashé en SHA1 (40 caractères), on tente de le cracker :
 
 ![](../../../.gitbook/assets/cf0627b44f73e69fb881a86621297b43.png)
 
@@ -133,13 +133,13 @@ Je vais chercher le mot de passe qu'utilise l'application afin de se connecter �
 
 ![](../../../.gitbook/assets/bab38a17bbef8c27589c1d6341c3b18e.png)
 
-Malheureusement, le mot de passe "goodday" ne fonctionne pour aucun compte SSH \(dan ou root\). 
+Malheureusement, le mot de passe "goodday" ne fonctionne pour aucun compte SSH (dan ou root).&#x20;
 
-Un `cd ..` \(plutôt chanceux sur le coup\) plus tard on retrouve une copie du fichier `mysqli_connect.php`. Sans doute un backup ou une version antérieure/de test :
+Un `cd ..` (plutôt chanceux sur le coup) plus tard on retrouve une copie du fichier `mysqli_connect.php`. Sans doute un backup ou une version antérieure/de test :
 
 ![](../../../.gitbook/assets/b994308ce0f2cf9ba03168bc4a5635cd.png)
 
-Ce mot de passe \(indiquant bien qu'il s'agit du mot de passe root\) nous permet de se connecter en root à la machine :
+Ce mot de passe (indiquant bien qu'il s'agit du mot de passe root) nous permet de se connecter en root à la machine :
 
 ![](../../../.gitbook/assets/27214758cc7845b06d85a1b118a564c0.png)
 
@@ -148,4 +148,3 @@ Ce mot de passe \(indiquant bien qu'il s'agit du mot de passe root\) nous permet
 Aucune grosse difficulté pour cette machine. J'ai apprécié le fait que l'utilisateur de la base de données mysql possède le droit d'écriture en fichier afin d'uploader le webshell via sqlmap.
 
 Concernant l'élévation j'ai eu un coup de chance de voir le fichier à un niveau plus haut. Mais dans le cas contraire une recherche de mots de passe avec les habituels `find` et `grep` auraient fini par faire le travail.
-

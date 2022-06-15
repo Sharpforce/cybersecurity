@@ -6,7 +6,7 @@ description: Walkthrough du challenge "Nucular Power Plant"
 
 ## Détails du challenge
 
-"Nucular Power Plant!" est un challenge Web de niveau très facile \(baby plus exactement\). Son accès se fait via une adresse indiquée dans son énoncé :
+"Nucular Power Plant!" est un challenge Web de niveau très facile (baby plus exactement). Son accès se fait via une adresse indiquée dans son énoncé :
 
 ![](../../../.gitbook/assets/18d934334db3d49e9381bea4119aa36e.png)
 
@@ -40,7 +40,7 @@ L'erreur retournée renseigne sur le type de base de données utilisé tout en r
 
 ## Exploitation
 
-Il s'agit donc d'exploiter une injection SQL mais sur une base SQLite, ce qui va faire légèrement varier les requêtes par rapport à une habituelle base MySQL. Dans un premier temps, on confirme la présence de seulement 7 centrales électriques et qu'il n'existe pas de centrale secrète 😛 :
+Il s'agit donc d'exploiter une injection SQL mais sur une base SQLite, ce qui va faire légèrement varier les requêtes par rapport à une habituelle base MySQL. Dans un premier temps, on confirme la présence de seulement 7 centrales électriques et qu'il n'existe pas de centrale secrète :stuck\_out\_tongue: :
 
 ![](../../../.gitbook/assets/5706489061982e3fade549ad8774eee4.png)
 
@@ -71,8 +71,6 @@ La table "secret" contient le flag :
 ![](../../../.gitbook/assets/4ff28b85c711c663e6dd552d387fe061.png)
 
 Le flag permettant de valider le challenge est donc `flag{sqli_as_a_socket}`.
-
-
 
 
 

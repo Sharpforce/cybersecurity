@@ -1,20 +1,20 @@
-# Kioptrix: Level 1.3 \(\#4\)
+# Kioptrix: Level 1.3 (#4)
 
 ## Détails de la machine
 
-**Nom :** Kioptrix: Level 1.3 \(\#4\)  
-**Date de sortie :** 8 Février 2012  
-**Lien de téléchargement :** [http://www.kioptrix.com/dlvm/Kioptrix4\_vmware.rar](http://www.kioptrix.com/dlvm/Kioptrix4_vmware.rar)  
-**Niveau :** Facile  
-**Objectif\(s\) :** obtenir un accès "root"  
+**Nom :** Kioptrix: Level 1.3 (#4)\
+**Date de sortie :** 8 Février 2012\
+**Lien de téléchargement :** [http://www.kioptrix.com/dlvm/Kioptrix4\_vmware.rar](http://www.kioptrix.com/dlvm/Kioptrix4\_vmware.rar)\
+**Niveau :** Facile\
+**Objectif(s) :** obtenir un accès "root"\
 **Description :**
 
-`Again a long delay between VMs, but that cannot be helped. Work, family must come first. Blogs and hobbies are pushed down the list. These things aren’t as easy to make as one may think. Time and some planning must be put into these challenges, to make sure that:`  
-****`1. It’s possible to get root remotely [ Edit: sorry not what I meant ]  
-1a. It’s possible to remotely compromise the machine  
-  2. Stays within the target audience of this site  
-  3. Must be “realistic” (well kinda…)  
-  4. Should serve as a refresher for me. Be it PHP or MySQL usage etc. Stuff I haven’t done in a while.`
+`Again a long delay between VMs, but that cannot be helped. Work, family must come first. Blogs and hobbies are pushed down the list. These things aren’t as easy to make as one may think. Time and some planning must be put into these challenges, to make sure that:`\
+****`1. It’s possible to get root remotely [ Edit: sorry not what I meant ]`\
+`1a. It’s possible to remotely compromise the machine`\
+&#x20; `2. Stays within the target audience of this site`\
+&#x20; `3. Must be “realistic” (well kinda…)`\
+&#x20; `4. Should serve as a refresher for me. Be it PHP or MySQL usage etc. Stuff I haven’t done in a while.`
 
 ## Reconnaissance
 
@@ -26,7 +26,7 @@ Plusieurs services sont disponibles sur la machine : un serveur SSH, un serveur 
 
 ![](../../../.gitbook/assets/894a221970805858bda48459f925aee2.png)
 
-### 
+###
 
 ### Service SSH
 
@@ -64,7 +64,7 @@ On commence par récupérer la version de Samba grâce au script `Metasploit` :
 
 ![](../../../.gitbook/assets/17b6a47806f4dcd143ae2c5442a80648.png)
 
-La version 3.0.28a de Samba semble posséder plusieurs vulnérabilités permettant un contrôle à distance \(mais après quelques tests je n'ai aps réussi à faire fonctionner l'exploit\) :
+La version 3.0.28a de Samba semble posséder plusieurs vulnérabilités permettant un contrôle à distance (mais après quelques tests je n'ai aps réussi à faire fonctionner l'exploit) :
 
 ![](../../../.gitbook/assets/17d188baa65188a6e377aec4e45306a8.png)
 
@@ -76,7 +76,7 @@ La version 3.0.28a de Samba semble posséder plusieurs vulnérabilités permetta
 
 ### Injection SQL
 
-Grâce à l'énumération smb il est possible d'utiliser l'injection SQL afin de se connecter avec un utilisateur donné et de récupérer son mot de passe. Pour cela, l'injection dans le champ mot de passe peut être `' OR 1=1 --` 
+Grâce à l'énumération smb il est possible d'utiliser l'injection SQL afin de se connecter avec un utilisateur donné et de récupérer son mot de passe. Pour cela, l'injection dans le champ mot de passe peut être `' OR 1=1 --`&#x20;
 
 ![](../../../.gitbook/assets/45fbf9b8610a465db14bfbb3cb0861eb.png)
 
@@ -84,7 +84,7 @@ Par facilité, on utilise `sqlmap` afin de dump la totalité de la base :
 
 ![](../../../.gitbook/assets/1022555dc8bf17e08d931248a081673a.png)
 
-Rien de très intéressant, on retrouve seulement les mots de passe des utilisateurs john et robert. Il est possible de tenter de récupérer un shell via une injection SQL \(suivant les droits de l'utilisateur\). Tout d'abord il est possible de savoir quel compte s'y connecte :
+Rien de très intéressant, on retrouve seulement les mots de passe des utilisateurs john et robert. Il est possible de tenter de récupérer un shell via une injection SQL (suivant les droits de l'utilisateur). Tout d'abord il est possible de savoir quel compte s'y connecte :
 
 ![](../../../.gitbook/assets/773f46dd5d165df3ddc1082c9be1142d.png)
 
@@ -130,7 +130,6 @@ Il est dont maintenant possible d'effectuer des commandes grâce à `sudo` :
 
 ## Conclusion
 
-Début de VM sympathique mais l'élévation de privilèges était assez difficile \(je ne connaissais pas les UDF\) j'ai donc dû me rabattre à lire quelques autres writeups pour la terminer.
+Début de VM sympathique mais l'élévation de privilèges était assez difficile (je ne connaissais pas les UDF) j'ai donc dû me rabattre à lire quelques autres writeups pour la terminer.
 
 Sans en être sûr, il est peut être possible de continuer avec le webshell de `sqlmap` et de trouver un exploit existant sur cette version de Linux permettant une lpe.
-

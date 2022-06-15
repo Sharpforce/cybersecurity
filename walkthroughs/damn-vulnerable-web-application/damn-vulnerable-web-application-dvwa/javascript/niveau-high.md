@@ -6,7 +6,7 @@ Ce nouveau niveau offre le même formulaire que les deux précédents. Mais cett
 
 On tente directement de renseigner la valeur "success" même s'il n'y a aucune chance que cela fonctionne :
 
-![](../../../../.gitbook/assets/cab0e7b9f7faba4eff4b22fbfcd2e810%20%281%29.png)
+![](<../../../../.gitbook/assets/cab0e7b9f7faba4eff4b22fbfcd2e810 (1).png>)
 
 On s'y attendait. Une première chose étrange est que le jeton présent dans le champ caché n'est pas le même que celui présent dans la requête :
 
@@ -47,7 +47,7 @@ Par contre impossible de récupérer la valeur donnant l'empreinte présente dan
 
 ![](../../../../.gitbook/assets/ed47b86df85241ee0959689b7ebf8b7e.png)
 
-J'ai pas mal galéré ici à essayer de comprendre le code présent dans le fichier JS mais j'avoue avoir abandonné 😞 . J'ai donc commencé à lire le write up présent [ici](https://cysec148.hatenablog.com/entry/2019/11/25/183711) \(d'ailleurs c'est le seul que j'ai trouvé pour ce challenge en niveau "High"\). Nul besoin de le lire jusqu'au bout, car un gros indice suffit ensuite à réussir le challenge par nous même. Cet indice c'est le nom d'un outil permettant de désoffusquer du code Javascript :
+J'ai pas mal galéré ici à essayer de comprendre le code présent dans le fichier JS mais j'avoue avoir abandonné :disappointed: . J'ai donc commencé à lire le write up présent [ici](https://cysec148.hatenablog.com/entry/2019/11/25/183711) (d'ailleurs c'est le seul que j'ai trouvé pour ce challenge en niveau "High"). Nul besoin de le lire jusqu'au bout, car un gros indice suffit ensuite à réussir le challenge par nous même. Cet indice c'est le nom d'un outil permettant de désoffusquer du code Javascript :
 
 ![](../../../../.gitbook/assets/d0be6bf249670510b89b1eff5879290b.png)
 
@@ -55,7 +55,7 @@ J'ai pas mal galéré ici à essayer de comprendre le code présent dans le fich
 Si comme moi vous êtes bloqué, arrêtez votre lecture ici car grâce à cet outil vous devriez pouvoir terminer ce challenge sans soucis
 {% endhint %}
 
-On lui passe l'ensemble du script et il nous retourne du code tout beau tout propre, c'est magnifiquement facile 🤣\(je n'ai mis ici que la partie intéressante\) :
+On lui passe l'ensemble du script et il nous retourne du code tout beau tout propre, c'est magnifiquement facile :rofl:(je n'ai mis ici que la partie intéressante) :
 
 ```javascript
 function do_something(e) {
@@ -83,12 +83,12 @@ document.getElementById("send").addEventListener("click", token_part_3);
 token_part_1("ABCD", 44);
 ```
 
-Je ne connaissais pas cet outil mais il est dorénavant dans mes favoris pour une prochaine fois 😉 
+Je ne connaissais pas cet outil mais il est dorénavant dans mes favoris pour une prochaine fois :wink:&#x20;
 
-1. Le script appelle la méthode `token_part_1("ABCD", 44)` dont les paramètres ne sont en fait pas utilisés dans le corps de la méthode. Cette méthode attribue le résultat de la fonction `do_something("")` au champ `token` \(la valeur du champ phrase est bien une valeur vide assignée à la ligne 15\)
+1. Le script appelle la méthode `token_part_1("ABCD", 44)` dont les paramètres ne sont en fait pas utilisés dans le corps de la méthode. Cette méthode attribue le résultat de la fonction `do_something("")` au champ `token` (la valeur du champ phrase est bien une valeur vide assignée à la ligne 15)
 2. La méthode `do_something("")` effectue un reverse de la chaîne passée en paramètre, mais cela n' pas d'impact ici car notre chaîne est une chaîne vide
-3. La fonction `setTimout()` se lance et exécute la méthode `token_part_2("XX")` \(la valeur par défaut "YY" n'est pas utilisée car surchargée par "XX"\). Le champ `token` possède maintenant la valeur du retour de la fonction `sha256("XX")`. Cette valeur est bien l'empreinte présente dans le champ `token` au chargement de la page
-4. La soumission du formulaire déclenche l'appel à la méthode `token_part_3("ZZ")` \(le paramètre `t` n'est pas utilisé\). Le jeton envoyé dans la requête est le résultat de l'appel à la méthode `sha256(valeur_du_jeton_dans_le_champ + "ZZ")`, soit en fait `sha256(sha256("XX") + "ZZ")`
+3. La fonction `setTimout()` se lance et exécute la méthode `token_part_2("XX")` (la valeur par défaut "YY" n'est pas utilisée car surchargée par "XX"). Le champ `token` possède maintenant la valeur du retour de la fonction `sha256("XX")`. Cette valeur est bien l'empreinte présente dans le champ `token` au chargement de la page
+4. La soumission du formulaire déclenche l'appel à la méthode `token_part_3("ZZ")` (le paramètre `t` n'est pas utilisé). Le jeton envoyé dans la requête est le résultat de l'appel à la méthode `sha256(valeur_du_jeton_dans_le_champ + "ZZ")`, soit en fait `sha256(sha256("XX") + "ZZ")`
 
 ![](../../../../.gitbook/assets/ba157e241218b79c2210f3a9b2e00a8c.png)
 
@@ -105,7 +105,7 @@ sha256(sha256("XX" + "sseccus") + "ZZ") =
 ec7ef8687050b6fe803867ea696734c67b541dfafb286a0b1239f42ac5b0aa84
 ```
 
-Cette valeur est celle qui doit être présente dans la requête lors de la soumission du challenge \(il est possible d'effectuer la modification l'interceptant via Burp par exemple\). Par contre, la valeur du jeton qui doit être présent dans le champ caché est :
+Cette valeur est celle qui doit être présente dans la requête lors de la soumission du challenge (il est possible d'effectuer la modification l'interceptant via Burp par exemple). Par contre, la valeur du jeton qui doit être présent dans le champ caché est :
 
 ```javascript
 sha256("XX" + "sseccus") =
@@ -114,5 +114,4 @@ sha256("XX" + "sseccus") =
 
 ![](../../../../.gitbook/assets/300eaaef349d490c96a6666345d84a7c.png)
 
-Un peu déçu d'avoir dû consulter un writeup afin de connaitre l'outil de désoffuscation mais cela m'a permis d'avancer et de résoudre la seconde partie du challenge par moi-même \(la partie analyse de l'algorithme\), donc tout n'est pas perdu 😌 
-
+Un peu déçu d'avoir dû consulter un writeup afin de connaitre l'outil de désoffuscation mais cela m'a permis d'avancer et de résoudre la seconde partie du challenge par moi-même (la partie analyse de l'algorithme), donc tout n'est pas perdu :relieved:&#x20;

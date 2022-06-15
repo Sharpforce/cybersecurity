@@ -6,19 +6,19 @@ description: Walkthrough de la machine pWnOS 1.0
 
 ## Détails de la machine
 
-**Nom :** pWnOS 1.0  
-**Date de sortie :** 27 Juin 2008  
-**Lien de téléchargement :** [http://pwnos.com/files/pWnOS\_v1.0.zip](http://pwnos.com/files/pWnOS_v1.0.zip)  
-**Niveau :** Facile  
-**Objectif\(s\) :** obtenir un accès "root"  
-**Description :**   
-`Some of you may have noticed this new pWnOS forum section. I created pWnOS as a virtual machine and Grendel was nice enough to let me post about it here. Here's a bit of information on pWnOS.  
-It's a linux virtual machine intentionally configured with exploitable services to provide you with a path to r00t. :) Currently, the virtual machine NIC is configured in bridged networking, so it will obtain a normal IP address on the network you are connected to. You can easily change this to NAT or Host Only if you desire. A quick ping sweep will show the IP address of the virtual machine.  
-Sorry...no scenario/storyline with this one. I wasn't really planning to release it like this, so maybe for version 2.0 I'll be more creative. :) I'm anxious to get feedback so let me know how it goes or if you have questions. Thanks and good luck!`
+**Nom :** pWnOS 1.0\
+**Date de sortie :** 27 Juin 2008\
+**Lien de téléchargement :** [http://pwnos.com/files/pWnOS\_v1.0.zip](http://pwnos.com/files/pWnOS\_v1.0.zip)\
+**Niveau :** Facile\
+**Objectif(s) :** obtenir un accès "root"\
+**Description :** \
+`Some of you may have noticed this new pWnOS forum section. I created pWnOS as a virtual machine and Grendel was nice enough to let me post about it here. Here's a bit of information on pWnOS.`\
+`It's a linux virtual machine intentionally configured with exploitable services to provide you with a path to r00t. :) Currently, the virtual machine NIC is configured in bridged networking, so it will obtain a normal IP address on the network you are connected to. You can easily change this to NAT or Host Only if you desire. A quick ping sweep will show the IP address of the virtual machine.`\
+`Sorry...no scenario/storyline with this one. I wasn't really planning to release it like this, so maybe for version 2.0 I'll be more creative. :) I'm anxious to get feedback so let me know how it goes or if you have questions. Thanks and good luck!`
 
 ## Reconnaissance
 
-On commence par identifier notre cible grâce à l'outil `netdiscover` : 
+On commence par identifier notre cible grâce à l'outil `netdiscover` :&#x20;
 
 ![](../../../.gitbook/assets/f6a1dbcdd88ab149949cae9ffe6bfd89.png)
 
@@ -26,7 +26,7 @@ L'outil `nmap` va nous permettre de connaitre les services disponibles s'exécut
 
 ![](../../../.gitbook/assets/9dc25fa2442de4044eb45751e7cd17fb.png)
 
-Nous avons donc un service SSH \(port 22\), un serveur HTTP \(port 80\), des services NetBIOS/SMB \(port 139 et 445\) ainsi qu'un Webmin \(port 10000\).
+Nous avons donc un service SSH (port 22), un serveur HTTP (port 80), des services NetBIOS/SMB (port 139 et 445) ainsi qu'un Webmin (port 10000).
 
 ### Service SSH
 
@@ -34,7 +34,7 @@ Le service SSH est un OpenSSH en version 4.6p1, `searchsploit` donne un exploit 
 
 ![](../../../.gitbook/assets/442d8a3758d7a05dc868fb15ef5cbdce.png)
 
-En effet, il est possible d'effectuer une énumération de comptes grâce à la vulnérabilité CVE-2018-15473 et à l'exploit "OpenSSH &lt; 7.7 - User Enumeration \(2\)".
+En effet, il est possible d'effectuer une énumération de comptes grâce à la vulnérabilité CVE-2018-15473 et à l'exploit "OpenSSH < 7.7 - User Enumeration (2)".
 
 ### Serveur HTTP
 
@@ -68,7 +68,7 @@ Quand à `dirb` :
 
 ![](../../../.gitbook/assets/86a7db8a6178b48873aea57f45b95f95.png)
 
-Il nous indique également la présence de répertoire "/php" et nous avertit que le __listing directory __y est possible. Allons voir ce que cela donne :
+Il nous indique également la présence de répertoire "/php" et nous avertit que le __ listing directory __ y est possible. Allons voir ce que cela donne :
 
 ![](../../../.gitbook/assets/5c61da7887b99d38cc38b627ed85a923.png)
 
@@ -84,11 +84,11 @@ On commence par un `nbtscan` afin de connaître un peu mieux notre cible :
 
 ![](../../../.gitbook/assets/af17bbd9117f3421930bf6e7cf19d9b4.png)
 
-La troisième colonne indique que la machine partage \(ou est en mesure de le faire\) certains dossiers. On tente de se connecter grâce à `rpcclient` en tant qu'utilisateur anonyme :
+La troisième colonne indique que la machine partage (ou est en mesure de le faire) certains dossiers. On tente de se connecter grâce à `rpcclient` en tant qu'utilisateur anonyme :
 
 ![](../../../.gitbook/assets/58cbc1523720809d72788c48cbeba39c.png)
 
-Ce qui nous amène à l'énumération des utilisateurs Samba __et des répertoires partagés :
+Ce qui nous amène à l'énumération des utilisateurs Samba __ et des répertoires partagés :
 
 ![](../../../.gitbook/assets/fec6fe5bb71c5807d914c1221641f43c.png)
 
@@ -100,11 +100,11 @@ Aucun droit qui nous permet d'aller plus loin, mais l'énumération nous a donn�
 
 ### Webmin
 
-La navigation sur le port 10000 de la machine nous conduit à une page web demandent un login / mot de passe pour pouvoir accéder au service Webmin __:
+La navigation sur le port 10000 de la machine nous conduit à une page web demandent un login / mot de passe pour pouvoir accéder au service Webmin __ :
 
 ![](../../../.gitbook/assets/d387cbf387aa3cf0679fdf5db2cb46b5.png)
 
-Un `searchsploit` nous indique une vulnérabilité qui peut être intéressante \(Arbitrary File Disclosure\) :
+Un `searchsploit` nous indique une vulnérabilité qui peut être intéressante (Arbitrary File Disclosure) :
 
 ![](../../../.gitbook/assets/5af2cf2fd5bd367333f7025aac42ea6d.png)
 
@@ -112,9 +112,9 @@ La phase de reconnaissance est maintenant terminée, passons à l'exploitation.
 
 ## Exploitation
 
-### Webmin \(CVE-2006-3392\)
+### Webmin (CVE-2006-3392)
 
-On commence par exploiter la vulnérabilité la plus simple qui est celle de Webmin, en effet un module Metasploit existe pour nous faciliter la vie :p, mais elle est tellement simple que nous allons le faire manuellement. Afin d'accéder à un fichier présent sur le serveur il suffit d’accéder à cette URL \(le pattern est une répétition de "..%01"\) :
+On commence par exploiter la vulnérabilité la plus simple qui est celle de Webmin, en effet un module Metasploit existe pour nous faciliter la vie :p, mais elle est tellement simple que nous allons le faire manuellement. Afin d'accéder à un fichier présent sur le serveur il suffit d’accéder à cette URL (le pattern est une répétition de "..%01") :
 
 `http://target:port/unauthenticated/pattern/filename`
 
@@ -126,7 +126,7 @@ Il y a donc bien l'utilisateur "vmware" ainsi que "obama", "osama" et "yomama". 
 
 ![](../../../.gitbook/assets/ac2b9ea53eb6d6341ecdc4fe13461f34.png)
 
-Bingo ! Le service Webmin doit sans doute tourner avec les droits root pour pouvoir accéder en lecture à ce fichier. Tentons maintenant de casser ces mots de passe avec `john` \(ne pas oublier de faire un `unshadow` avant\) :
+Bingo ! Le service Webmin doit sans doute tourner avec les droits root pour pouvoir accéder en lecture à ce fichier. Tentons maintenant de casser ces mots de passe avec `john` (ne pas oublier de faire un `unshadow` avant) :
 
 ![](../../../.gitbook/assets/ac997be395e5d51b7d408c5d5fe2add6.png)
 
@@ -142,7 +142,7 @@ Un `uname -a` nous donne rapidement le numéro de version du noyau du système :
 
 Le script `Linux_Exploit_Suggester` nous permet de connaitre les potentiels exploits d'élévation de privilèges :
 
-![](../../../.gitbook/assets/f9144b5d0faaed3200da27ab1ede8368.png)
+![](<../../../.gitbook/assets/f9144b5d0faaed3200da27ab1ede8368 (1).png>)
 
 Un exploit qui a fonctionné est le "vmsplice1", soit la CVE-2008-0600. La machine n'ayant pas accès à internet dans mon cas, on copie l'exploit grâce à `scp` :
 
@@ -152,17 +152,15 @@ Sur la cible, on compile puis exécute l'exploit :
 
 ![](../../../.gitbook/assets/8dfd3d4087b9d6c9a0a2480d1b7456a9.png)
 
-Congratz ! Nous sommes "root" ****\(qui n'a d'ailleurs en fait pas de nom ;\) \)!
+Congratz ! Nous sommes "root" **** (qui n'a d'ailleurs en fait pas de nom ;) )!
 
 ## Conclusion
 
-Machine plutôt facile grâce à l'accès à n'importe quel fichier via la vulnérabilité sur le Webmin __qui tourne en "root" et qui permet de récupérer le fichier "/etc/shadow" :
+Machine plutôt facile grâce à l'accès à n'importe quel fichier via la vulnérabilité sur le Webmin __ qui tourne en "root" et qui permet de récupérer le fichier "/etc/shadow" :
 
 ![](../../../.gitbook/assets/86b7c88a10dbc3a7240a03da6c9c6c68.png)
 
-L'élévation de privilèges à partir du compte "vmware" n'a pas posée de problème, l'exploit utilisé fonctionnant du premier coup. 
+L'élévation de privilèges à partir du compte "vmware" n'a pas posée de problème, l'exploit utilisé fonctionnant du premier coup.&#x20;
 
-Je me demande si en passant un peu plus de temps sur le service smb il n'y a pas moyen d'obtenir plus d'information. De mémoire il n'y a pas de vulnérabilité intéressante concernant le phpmyadmin mais j'avoue ne pas avoir creuser beaucoup cette piste. A noter qu'il y a également une vulnérabilité d'OpenSSL \(voir [https://en.wikipedia.org/wiki/OpenSSL\#Predictable\_private\_keys\_\(Debian-specific\)](https://en.wikipedia.org/wiki/OpenSSL#Predictable_private_keys_%28Debian-specific%29)\) qui permet de se connecter en SSH en retrouvant certaines clés privées, mais je suis passé à côté de celle-ci.
-
-
+Je me demande si en passant un peu plus de temps sur le service smb il n'y a pas moyen d'obtenir plus d'information. De mémoire il n'y a pas de vulnérabilité intéressante concernant le phpmyadmin mais j'avoue ne pas avoir creuser beaucoup cette piste. A noter qu'il y a également une vulnérabilité d'OpenSSL (voir [https://en.wikipedia.org/wiki/OpenSSL#Predictable\_private\_keys\_(Debian-specific)](https://en.wikipedia.org/wiki/OpenSSL#Predictable\_private\_keys\_\(Debian-specific\))) qui permet de se connecter en SSH en retrouvant certaines clés privées, mais je suis passé à côté de celle-ci.
 

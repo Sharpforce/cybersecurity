@@ -2,7 +2,7 @@
 
 A priori, pas de changement dans la fonctionnalité de ping pour ce niveau :
 
-![](../../../../.gitbook/assets/4a5a279f278e5d0ebb27a28c0a2f4112%20%282%29.png)
+![](<../../../../.gitbook/assets/4a5a279f278e5d0ebb27a28c0a2f4112 (4).png>)
 
 Nous allons au plus simple en testant directement le séparateur de commandes `";"` :
 
@@ -16,7 +16,7 @@ Cela ne fonctionne pas. Il nous faut donc tester toutes les autres possibilités
 Cela ne s'arrête pas là mais les possibilités sont vastes : récupération d'un shell plus complet, maintien de l'accès, tentative d'élévation de privilèges, pivotage, ...
 {% endhint %}
 
-Attention, étant donné qu'il s'agit d'un opérateur OR, il faut impérativement que la première commande \(le ping\) se termine en erreur. Dans le cas contraire notre seconde commande ne sera pas exécutée :
+Attention, étant donné qu'il s'agit d'un opérateur OR, il faut impérativement que la première commande (le ping) se termine en erreur. Dans le cas contraire notre seconde commande ne sera pas exécutée :
 
 ![](../../../../.gitbook/assets/d1408ca550ee85ed0a90cea37298f6e0.png)
 
@@ -24,5 +24,4 @@ Attention, étant donné qu'il s'agit d'un opérateur OR, il faut impérativemen
 Cela ne s'arrête pas là mais les possibilités sont vastes : récupération d'un shell plus complet, maintien de l'accès, tentative d'élévation de privilèges, pivotage, ...
 {% endhint %}
 
-## 
-
+##
