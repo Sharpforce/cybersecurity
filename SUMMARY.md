@@ -2,6 +2,10 @@
 
 * [Cybersécurité](README.md)
 
+## Common Vulnerabilities and Exposures (CVE) <a href="#cve" id="cve"></a>
+
+* [2022](cve/2022.md)
+
 ## Livres
 
 * [Bug Bounty](livres/bug-bounty/README.md)
