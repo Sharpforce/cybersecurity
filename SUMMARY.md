@@ -4,7 +4,8 @@
 
 ## Common Vulnerabilities and Exposures (CVE) <a href="#cve" id="cve"></a>
 
-* [2022](cve/2022.md)
+* [2022](cve/2022/README.md)
+  * [CVE-2022-32442](cve/2022/cve-2022-32442.md)
 
 ## Livres
 

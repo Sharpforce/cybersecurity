@@ -22,7 +22,7 @@ On commence notre phase de reconnaissance par les habituels `netdiscover` et `nm
 
 La cible a pour adresse 192.168.1.14, regardons maintenant le résultat de `nmap` :
 
-![](../../../.gitbook/assets/1c76fcd47807677f85ff76bd90368fa2.png)
+![](<../../../.gitbook/assets/1c76fcd47807677f85ff76bd90368fa2 (1).png>)
 
 Ici un seul service semble être exposé sur la machine, à savoir un serveur HTTP sur le port 80.
 

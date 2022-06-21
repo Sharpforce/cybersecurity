@@ -142,7 +142,7 @@ Un `uname -a` nous donne rapidement le numéro de version du noyau du système :
 
 Le script `Linux_Exploit_Suggester` nous permet de connaitre les potentiels exploits d'élévation de privilèges :
 
-![](<../../../.gitbook/assets/f9144b5d0faaed3200da27ab1ede8368 (1).png>)
+![](../../../.gitbook/assets/f9144b5d0faaed3200da27ab1ede8368.png)
 
 Un exploit qui a fonctionné est le "vmsplice1", soit la CVE-2008-0600. La machine n'ayant pas accès à internet dans mon cas, on copie l'exploit grâce à `scp` :
 

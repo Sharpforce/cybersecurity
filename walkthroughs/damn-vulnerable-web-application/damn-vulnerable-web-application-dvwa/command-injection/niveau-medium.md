@@ -2,7 +2,7 @@
 
 A priori, pas de changement dans la fonctionnalité de ping pour ce niveau :
 
-![](<../../../../.gitbook/assets/4a5a279f278e5d0ebb27a28c0a2f4112 (4).png>)
+![](<../../../../.gitbook/assets/4a5a279f278e5d0ebb27a28c0a2f4112 (2) (1).png>)
 
 Nous allons au plus simple en testant directement le séparateur de commandes `";"` :
 

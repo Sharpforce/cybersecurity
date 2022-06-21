@@ -18,7 +18,7 @@ En essayant plusieurs payloads on se rend compte que le caractère `"5"` est ég
 
 La technique est ici alors d'utiliser la balise `<svg>`. Cette balise va permettre d'utiliser les HTML entities au sein de la balise `<script></script>` car la balise `<svg>` nous fait travailler dans un contexte XML :
 
-![](../../../.gitbook/assets/0fbca9cf35939074ad5b55ebb715f6a3.png)
+![](<../../../.gitbook/assets/0fbca9cf35939074ad5b55ebb715f6a3 (1).png>)
 
 ## Challenge #2
 

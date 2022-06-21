@@ -34,11 +34,11 @@ Le but ici est de fermer la balise `<style>` puis d'injecter notre script. Une d
 
 Aucun autre filtre ne s'active une fois notre chaîne inversée. Par contre nous devons insérer une balise `<svg>` afin de pouvoir remplacer la parenthèse par son équivalent HTML entities :
 
-![](../../../.gitbook/assets/bfb82e7af1cdf2cf32d077660c9fb043.png)
+![](<../../../.gitbook/assets/bfb82e7af1cdf2cf32d077660c9fb043 (1).png>)
 
 Le caractère `"d"` est filtré mais également le caractère `"0"`. Manque de chance, son équivalent unicode est `\u0046` et son équivelent HTML entities est `&#100;` ...
 
-![](<../../../.gitbook/assets/bfb82e7af1cdf2cf32d077660c9fb043 (1).png>)
+![](../../../.gitbook/assets/bfb82e7af1cdf2cf32d077660c9fb043.png)
 
 Pour contourner cela j'utilise en plus la fonction `eval()` ainsi qu'un `toLowerCase()` sur le `"D"` :
 
