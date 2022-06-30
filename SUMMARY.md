@@ -11,8 +11,7 @@
 
 ## Livres
 
-* [Bug Bounty](livres/bug-bounty/README.md)
-  * [Web Hacking 101: How to Make Money Hacking Ethically](livres/bug-bounty/web-hacking-101-how-to-make-money-hacking-ethically.md)
+* [Web Hacking 101: How to Make Money Hacking Ethically](livres/web-hacking-101-how-to-make-money-hacking-ethically.md)
 
 ## Walkthroughs
 
