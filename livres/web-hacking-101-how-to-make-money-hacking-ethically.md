@@ -6,7 +6,7 @@ description: Mon retour sur le livre Web Hacking 101
 
 ## Description du livre
 
-![](../../.gitbook/assets/5c8efa430ccfcd100bab965ed88e9165.png)
+![](../.gitbook/assets/5c8efa430ccfcd100bab965ed88e9165.png)
 
 **Titre :** Web Hacking 101: How to Make Money Hacking Ethically\
 **Auteur :** Peter Yaworski\
@@ -58,7 +58,7 @@ Le fait de s'appuyer sur des cas concrets est intéressant et surtout cela chang
 
 En plus de cela, nous avons le droit à un chapitre dédié au retour d'expérience de l'auteur, les erreurs à éviter et que lui à commises lors de ses débuts dans le monde de la chasse aux bugs. Un second chapitre sur les principaux outils utilisés ainsi qu'une liste de ressources pour approfondir notre lecture.
 
-Pour ma part j'ai lu le livre d'un bout à l'autre, mais suivant vos besoins vous pouvez piocher là où bon vous semble, si par exemple vous souhaitez approfondir vos connaissances sur une vulnérabilité particulière. De plus, les exemples sont assez concis, pas de fioritures, c'est est un bon point quand le temps nous manque, car cela permet d'arrêter plus facilement la lecture et de reprendre au prochain exemple ou à la prochaine vulnérabilité.
+Pour ma part j'ai lu le livre d'un bout à l'autre, mais suivant vos besoins vous pouvez piocher là où bon vous semble, si par exemple vous souhaitez approfondir vos connaissances sur une vulnérabilité particulière. De plus, les exemples sont assez concis, pas de fioritures, c'est un bon point quand le temps nous manque, car cela permet d'arrêter plus facilement la lecture et de reprendre au prochain exemple ou à la prochaine vulnérabilité.
 
 Je l'ai trouvé très abordable techniquement parlant, quelques petits tips à droite à gauche qui permettent de s'améliorer pour les prochains challenges. Mais selon moi, le but du livre n'est pas tant d'exposer des faits techniques que des manières de penser lors de la recherche de failles. Une chose soulevée assez fréquemment est de ne jamais abandonner la recherche, toujours creuser plus loin (ou alors autour, vous comprendrez à la lecture). En quelques mots "Never give up !".
 
