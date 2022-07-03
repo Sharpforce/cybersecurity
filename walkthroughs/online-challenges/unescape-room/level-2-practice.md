@@ -1,4 +1,4 @@
-# Level 2 \(practice\)
+# Level 2 (practice)
 
 ## Challenge
 
@@ -21,6 +21,4 @@ La balise `<script></script>` peut être écrite indépendamment de la casse uti
 Afin de contourner le filtre, il est possible d'utiliser le format de caractère unicode, soit ici `\u0072` :
 
 ![](../../../.gitbook/assets/417c22c48982f73c7dc7cc56568ea8d3.png)
-
-
 

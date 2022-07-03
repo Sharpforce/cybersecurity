@@ -1,6 +1,6 @@
-# Level 7 \(practice\)
+# Level 7 (practice)
 
-## Challenge \#1
+## Challenge #1
 
 ### Description
 
@@ -10,7 +10,7 @@ Appeler la fonction `tallHuman()` avec la chaîne de caractères `"9ultl0bs"` en
 
 ### Résolution
 
-Dans cet exercice, la chaîne semble être inversée et un filtrage est effectué sur le caractère `"t"` : 
+Dans cet exercice, la chaîne semble être inversée et un filtrage est effectué sur le caractère `"t"` :&#x20;
 
 ![](../../../.gitbook/assets/b805221344cd2a67c1ae3246154e9f3c.png)
 
@@ -18,7 +18,7 @@ L'idée va donc être de gérer dans un premier temps le filtrage sur le caract�
 
 ![](../../../.gitbook/assets/1b90a6e251c390791592eb6af289684d.png)
 
-## Challenge \#2
+## Challenge #2
 
 ### Description
 
@@ -36,7 +36,7 @@ Cela ne sert à rien de tenter de contourner le filtre sur le caractère `" " (e
 
 ![](../../../.gitbook/assets/56e99beff016ef220387065c9b635b26.png)
 
-## Challenge \#3
+## Challenge #3
 
 ### Description
 
@@ -54,7 +54,7 @@ On utilise donc le contournement par le jeu de majuscule/minuscule et l'encodage
 
 ![](../../../.gitbook/assets/e3792001b34cd2659f6d9edd850aa27a.png)
 
-## Challenge \#4
+## Challenge #4
 
 ### Description
 
@@ -72,7 +72,7 @@ On contourne le filtrage sur `"p"` dans les balises en utilisant `"P"`. Pour le 
 
 ![](../../../.gitbook/assets/c298dabe10e09a4d1c650317967ff21b.png)
 
-## Challenge \#5
+## Challenge #5
 
 ### Description
 
@@ -90,7 +90,7 @@ On remplace les caractères par la version HTML entities ou unicode selon le cas
 
 ![](../../../.gitbook/assets/46dd72f5d4a364332f26a894c982df39.png)
 
-## Challenge \#6
+## Challenge #6
 
 ### Description
 
@@ -100,7 +100,7 @@ Appeler la fonction `niceSuperHero()` avec la chaîne de caractères `"3hbw9yod"
 
 ### Résolution
 
-Un filtrage est effectué sur le caractère `"c"` \(ainsi que sur `"C"`\) ainsi que sur le caractère `"3"` . Finalement la chaîne est également inversée :
+Un filtrage est effectué sur le caractère `"c"` (ainsi que sur `"C"`) ainsi que sur le caractère `"3"` . Finalement la chaîne est également inversée :
 
 ![](../../../.gitbook/assets/519b02a07133e6d9d06ae8f4b37d2d22.png)
 
@@ -108,7 +108,7 @@ On est tenté d'appeler directement la fonction `niceSuperHero()` , mais étant 
 
 ![](../../../.gitbook/assets/474bb0091cd6a1cfbb5066eb05cad264.png)
 
-## Challenge \#7
+## Challenge #7
 
 ### Description
 
@@ -125,6 +125,4 @@ Pas de difficulté ici puisque seul le caractère `"9"` semble être filtré :
 Soit en utilisant une opération mathématique :
 
 ![](../../../.gitbook/assets/f4103b5cbd88d24a4edc8ad0ce53b79e.png)
-
-
 

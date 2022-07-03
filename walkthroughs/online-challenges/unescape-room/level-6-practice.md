@@ -1,6 +1,6 @@
-# Level 6 \(practice\)
+# Level 6 (practice)
 
-## Challenge \#1
+## Challenge #1
 
 ### Description
 
@@ -18,7 +18,7 @@ Difficile de pouvoir appeler la fonction `politeSuperHero()` sans pouvoir utilis
 
 ![](../../../.gitbook/assets/8b95268af04727ee2ea6cb1aa4c2355b.png)
 
-## Challenge \#2
+## Challenge #2
 
 ### Description
 
@@ -36,7 +36,7 @@ On réussi à contourner le filtre sur l'occurrence `"on"` en le répétant une 
 
 ![](../../../.gitbook/assets/ee9887a0682224aaa55b8f0674181cf9.png)
 
-## Challenge \#3
+## Challenge #3
 
 ### Description
 
@@ -52,15 +52,15 @@ Etant donné que nous sommes au sein d'un attribut `href` nous allons tenter d'u
 
 Il est possible de contourner le premier filtre en utilisant la majuscule, soit `"T"`. Pour les occurrences du caractère `"t"` présents dans le nom de la fonction il est possible d'utiliser l'encodage unicode, puis les HTML entities pour les deux `"'" (simple quote)` entourant la chaîne de caractère en argument :
 
-![](../../../.gitbook/assets/33aea2ee5da784bd3dca025acb4e2d45%20%282%29.png)
+![](<../../../.gitbook/assets/33aea2ee5da784bd3dca025acb4e2d45 (2).png>)
 
-## Challenge \#4
+## Challenge #4
 
 ### Description
 
 Appeler la fonction `tallSuperHero()` avec la chaîne de caractères `"rj7tfb1"` en argument mais cette fois sur la valeur de la propriété `background-color` du sélecteur `banner` :
 
-![](../../../.gitbook/assets/69f66f865b50058f5767b89f9fcb1c4d%20%281%29.png)
+![](<../../../.gitbook/assets/69f66f865b50058f5767b89f9fcb1c4d (1).png>)
 
 ### Résolution
 
@@ -72,7 +72,7 @@ Il est possible de contourner le filtre sur la chaîne `"script"` en mélangeant
 
 ![](../../../.gitbook/assets/c0e473bc849ebfa3b0a4045238fdc5ad.png)
 
-## Challenge \#5
+## Challenge #5
 
 ### Description
 
@@ -90,7 +90,7 @@ L'encodage unicode suffit à contourner cette limitation :
 
 ![](../../../.gitbook/assets/c07963d0ddae101e1d8fdcb8cbba3ffe.png)
 
-## Challenge \#6
+## Challenge #6
 
 ### Description
 
@@ -108,7 +108,7 @@ Pour réussir ce challenge, j'ai mis fin à la balise `<script>` et démarrer un
 
 ![](../../../.gitbook/assets/98b8c2f05325a1e9b8def94ec6b3bb85.png)
 
-## Challenge \#7
+## Challenge #7
 
 ### Description
 
@@ -125,8 +125,6 @@ Il nous faut ici sortir de la payload JSON. Le plus simple est sans doute de fer
 Après un nouvel essai, il n'est pas possible d'utiliser l'encodage unicode car le caractère `"0"` est aussi filtré. L'encodage base64 vient à notre rescousse, mais en fait non ... Les simples quotes `"'"` sont également filtrées. Je décide alors de tenter ma change avec la fonction `String.toLowerCase` et d'utiliser le `"G"` au lieu du `"g"` :
 
 ![](../../../.gitbook/assets/927f18816277f2aed331142c0687e057.png)
-
-
 
 
 
