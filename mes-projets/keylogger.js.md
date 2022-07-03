@@ -1,7 +1,3 @@
----
-layout: editorial
----
-
 # Keylogger.js
 
 ## Description
