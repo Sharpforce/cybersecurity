@@ -1,6 +1,6 @@
-# Level 3 (practice)
+# Level 3 \(practice\)
 
-## Challenge #1
+## Challenge \#1
 
 ### Description
 
@@ -18,7 +18,7 @@ De la même manière, il est donc possible de contourner le filtrage en place en
 
 ![](../../../.gitbook/assets/dce6d1f3ab8e38a73a96dbaa11981c61.png)
 
-## Challenge #2
+## Challenge \#2
 
 ### Description
 
@@ -36,7 +36,7 @@ Le filtrage sur le caractère `"u"` est un peu embêtant car il nous empêche d'
 
 ![](../../../.gitbook/assets/ebc88de4ef26d9ecceedffa1701fdec7.png)
 
-## Challenge #3
+## Challenge \#3
 
 ### Description
 
@@ -46,16 +46,17 @@ Appeler la fonction `kindSuperHero()` avec la chaîne de caractères `"929"` en 
 
 ### Résolution
 
-Au sein d'un attribut `href` il est possible d'utiliser la syntaxe `javascript:code` (par exemple `href="javascript:alert(1)"`) afin d'exploiter une XSS. Dans notre cas, seul le caractère `"9"`, présent dans le paramètre de la fonction, semble être filtré :
+Au sein d'un attribut `href` il est possible d'utiliser la syntaxe `javascript:code` \(par exemple `href="javascript:alert(1)"`\) afin d'exploiter une XSS. Dans notre cas, seul le caractère `"9"`, présent dans le paramètre de la fonction, semble être filtré :
 
 ![](../../../.gitbook/assets/8d73ff6586ae01746409b2d3e4584e01.png)
 
-Grâce à la concaténation (et à la conversion implicite), il est possible de représenter `"9"` par une autre opération mathématique :
+Grâce à la concaténation \(et à la conversion implicite\), il est possible de représenter `"9"` par une autre opération mathématique :
 
 ![](../../../.gitbook/assets/6cdb3d277edfa014252f5f2c8ec39248.png)
 
-Ne pas oublier de passer par la vue DOM (View DOM) et de cliquer sur le lien afin d'exécuter la payload :
+Ne pas oublier de passer par la vue DOM \(View DOM\) et de cliquer sur le lien afin d'exécuter la payload :
 
 ![](../../../.gitbook/assets/e78f7504ea6a54613e4b48862703cc82.png)
 
 ![](../../../.gitbook/assets/c6684d0a7d4336a02c904c93f08d5c80.png)
+
