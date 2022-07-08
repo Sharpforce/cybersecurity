@@ -16,23 +16,17 @@ Ainsi que de "file3.php" :
 
 ![](../../../../.gitbook/assets/a701d84bd50ba8b731ee7c735e68f7ce.png)
 
-****
-
 **Local File Inclusion (LFI)**
 
 Ce qui est important de **** repérer **** ici, c'est que le nom du fichier à inclure se retrouve en tant que valeur du paramètre `page` présent dans l'URL :
 
 ![](../../../../.gitbook/assets/3a508a736095328be32d907b97cb7749.png)
 
-__
-
 _Inclusion d'un fichier local du même niveau d'arborescence_
 
 Une première attaque va consister à inclure des pages localement présentes, soit une LFI. Avec, dans un premier temps, un fichier au même niveau de l’arborescence :
 
 ![](../../../../.gitbook/assets/d6b64cb00929508c36c0d672cd144f56.png)
-
-__
 
 _Inclusion d'un fichier local en utilisant une attaque de type path traversal_
 
@@ -44,7 +38,7 @@ Ou alors, de sortir du niveau courant de l'arborescence et d'utiliser dans le m�
 Il est possible sous DVWA en niveau "Low" d'utiliser directement la syntaxe `?page=/etc/passwd` mais cela peut ne pas fonctionner suivant l'application ou le système cible
 {% endhint %}
 
-
+__
 
 _Utilisation des wrappers PHP_
 

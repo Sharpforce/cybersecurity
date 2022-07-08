@@ -4,7 +4,7 @@
 
 L'affichage du prénom et du nom s'effectue ici de la même manière au sein d'une balise `<div></div>` :&#x20;
 
-![Formulaire et affichage du nom et prénom de l'utilisateur](<../../../../../.gitbook/assets/image (17).png>)
+![](<../../../../../.gitbook/assets/image (17).png>)
 
 Dont voici la requête :&#x20;
 
@@ -40,15 +40,15 @@ L'affichage des paramètres d'URL se faire directement au sein de la balise `<di
 
 Cela oblige donc à passer par l'insertion de nouvelles balises afin d'injecter du contenu. Dans ce niveau de difficulté, aucune balise ne semble être interprétée par l'application, que cela soit le classique `<script></script>` :&#x20;
 
-![Tentative d'injection des balises \<script>\</script>](<../../../../../.gitbook/assets/image (3).png>)
+![](<../../../../../.gitbook/assets/image (3).png>)
 
 L'exécution de Javascript dans un attribut HTML :&#x20;
 
-![Tentative d'injection avec attribut HTML onerror](<../../../../../.gitbook/assets/image (20).png>)
+![Ten](<../../../../../.gitbook/assets/image (20).png>)
 
 Ou également l'utilisation de balises customs :&#x20;
 
-![Tentative d'injection avec des balises customs](<../../../../../.gitbook/assets/image (18).png>)
+![](<../../../../../.gitbook/assets/image (18).png>)
 
 Pour réussir ce challenge il va donc falloir identifier un moyen de transmettre l'information sous une autre forme mais qui sera tout de même interprétée par l'application. Après plusieurs tentatives, l'encodage URL de l'injection semble fonctionner :&#x20;
 
@@ -60,7 +60,7 @@ Cookie: PHPSESSID=b6b6991fd6ae6e9926d4e8dab4692f15; security_level=1
 Connection: close
 ```
 
-![L'encodage URL de l'injection semble permettre de contourner la protection mise en place par l'application](<../../../../../.gitbook/assets/image (9).png>)
+![](<../../../../../.gitbook/assets/image (9).png>)
 
 ## Analyse du code source
 
@@ -139,4 +139,4 @@ Cookie: PHPSESSID=1596dd4de4ad3324f300dfed9d8523f5; security_level=1
 Connection: close
 ```
 
-![L'encodage URL des caractères < et > permet la réussie de l'injection](<../../../../../.gitbook/assets/image (15).png>)
+![](<../../../../../.gitbook/assets/image (15).png>)

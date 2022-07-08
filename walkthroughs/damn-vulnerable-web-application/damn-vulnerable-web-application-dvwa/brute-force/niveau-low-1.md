@@ -6,7 +6,7 @@ Le challenge nous présente l'équivalent d'une mire d'authentification :
 
 Après un certain nombre de tentatives, il est évident que l’application n’implémente aucune protection contre les attaques de type brute force.
 
-On utilise alors  `hydra` afin de retrouver le mot de passe de l'administrateur en utilisant une attaque par dictionnaire avec le fichier `rockyou.txt` \(fichier disponible sur Kali\) :
+On utilise alors  `hydra` afin de retrouver le mot de passe de l'administrateur en utilisant une attaque par dictionnaire avec le fichier `rockyou.txt` (fichier disponible sur Kali) :
 
 ![](../../../../.gitbook/assets/a64aa6f881e7695546747388c1f9f874.png)
 
@@ -17,6 +17,3 @@ Etant pas très lisible sur l'impression écran, voici la commande utilisée :
 Brute force réussit, le mot de passe de l'administrateur est présent dans notre dictionnaire :
 
 ![](../../../../.gitbook/assets/5ff11daad3b3614252032592c5b7b93a.png)
-
-## 
-

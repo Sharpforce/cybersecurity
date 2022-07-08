@@ -14,13 +14,13 @@ L'attaque précédente, effectuée pour le niveau "Low", doit donc toujours fonc
 
 
 
-Analysons la différence entre la requête légitime et celle générée par notre précédente \(tentative d'\) attaque :
+Analysons la différence entre la requête légitime et celle générée par notre précédente (tentative d') attaque :
 
 ![](../../../../.gitbook/assets/57e93dd720248cb62751c3e65862f417.png)
 
-La seule différence réside dans le contenu de l'entête HTTP `Referer`. L'application doit sans doute vérifier que cet entête possède la même valeur que l'hôte d'où elle est hébergée. Une technique permettant de contourner cette protection est d'identifier et exploiter une vulnérabilité XSS sur l'application cible. 
+La seule différence réside dans le contenu de l'entête HTTP `Referer`. L'application doit sans doute vérifier que cet entête possède la même valeur que l'hôte d'où elle est hébergée. Une technique permettant de contourner cette protection est d'identifier et exploiter une vulnérabilité XSS sur l'application cible.&#x20;
 
-Cela tombe bien puisque DVWA contient également une telle vulnérabilité \(ne pas oublier de contourner la limitation de la longueur du champ, voir le challenge XSS si besoin\) :
+Cela tombe bien puisque DVWA contient également une telle vulnérabilité (ne pas oublier de contourner la limitation de la longueur du champ, voir le challenge XSS si besoin) :
 
 ![](../../../../.gitbook/assets/8b1b89d32a7c2ffb168a59b9cc2aa285.png)
 
@@ -36,11 +36,8 @@ Soit lors de la navigation de la victime :
 
 Lors de sa visite de la page du Guestbook contenant notre image malveillante, la requête déclenchée sera effectuée avec un `Referer` valide :
 
-![](../../../../.gitbook/assets/052890166f4826c302b676545f6c067d%20%281%29.png)
+![](<../../../../.gitbook/assets/052890166f4826c302b676545f6c067d (1).png>)
 
 Et son mot de passe sera ainsi changé, contournant ainsi, la protection en place :
 
 ![](../../../../.gitbook/assets/ed9212a48569e45bc67a2b0667b49889.png)
-
-## 
-

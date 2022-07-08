@@ -33,8 +33,5 @@ Il est tout à fait possible d'utiliser Burp en mode Interception ou Repeater po
 ![](../../../../.gitbook/assets/c99b85e1d9a08fb376e4e6ec19790326.png)
 
 {% hint style="info" %}
-Cela ne s'arrête pas là mais les possibilités sont vastes : récupération d'un shell plus complet, maintien de l'accès, tentative d'élévation de privilèges, pivotage, ...
+Cela ne s'arrête pas là mais les possibilités sont vastes : récupération d'un shell plus complet, maintien de l'accès, tentative d'élévation de privilèges, pivot, ...
 {% endhint %}
-
-
-

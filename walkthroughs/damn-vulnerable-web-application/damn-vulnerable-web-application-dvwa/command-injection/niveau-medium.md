@@ -21,7 +21,5 @@ Attention, étant donné qu'il s'agit d'un opérateur OR, il faut impérativemen
 ![](../../../../.gitbook/assets/d1408ca550ee85ed0a90cea37298f6e0.png)
 
 {% hint style="info" %}
-Cela ne s'arrête pas là mais les possibilités sont vastes : récupération d'un shell plus complet, maintien de l'accès, tentative d'élévation de privilèges, pivotage, ...
+Cela ne s'arrête pas là mais les possibilités sont vastes : récupération d'un shell plus complet, maintien de l'accès, tentative d'élévation de privilèges, pivot, ...
 {% endhint %}
-
-##

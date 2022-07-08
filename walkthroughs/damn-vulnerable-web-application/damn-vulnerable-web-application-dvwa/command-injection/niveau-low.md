@@ -77,7 +77,5 @@ Ou encore plus simple, en omettant le ping :
 ![](../../../../.gitbook/assets/9d20a849c5e27492b0ce432a852d4885.png)
 
 {% hint style="info" %}
-Cela ne s'arrête pas là mais les possibilités sont vastes : récupération d'un shell plus complet, maintien de l'accès, tentative d'élévation de privilèges, pivotage, ...
+Cela ne s'arrête pas là mais les possibilités sont vastes : récupération d'un shell plus complet, maintien de l'accès, tentative d'élévation de privilèges, pivot, ...
 {% endhint %}
-
-##

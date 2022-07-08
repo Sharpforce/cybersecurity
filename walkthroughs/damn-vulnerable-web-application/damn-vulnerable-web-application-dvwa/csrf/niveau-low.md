@@ -4,7 +4,7 @@ Le challenge propose un formulaire permettant de renseigner le nouveau mot de pa
 
 ![](../../../../.gitbook/assets/5af2d0ed634cf59f5af9d60cd6df3a0c.png)
 
-Dans un premier temps, analysons le fonctionnement de l'application ainsi que les requêtes effectuées lors d'un changement de mot de passe. La mise à jour du mot de passe s'effectue via une requête **`GET`** et aucune protection ne semble présente \(pas de jeton anti-CSRF\) :
+Dans un premier temps, analysons le fonctionnement de l'application ainsi que les requêtes effectuées lors d'un changement de mot de passe. La mise à jour du mot de passe s'effectue via une requête **`GET`** et aucune protection ne semble présente (pas de jeton anti-CSRF) :
 
 ![](../../../../.gitbook/assets/ef490d66bb0105e19c5e034ee5fbae7a.png)
 
@@ -22,7 +22,7 @@ L'exploitation de la vulnérabilité CSRF est donc ici trivial : une simple imag
 </html>
 ```
 
-Il est maintenant nécessaire que la victime \(l'administrateur de DVWA\) soit authentifiée sur l'application vulnérable puis qu'elle visite notre page malicieuse. Lors de cette navigation, son navigateur va tenter de récupérer l'image qui va silencieusement modifier son mot de passe :
+Il est maintenant nécessaire que la victime (l'administrateur de DVWA) soit authentifiée sur l'application vulnérable puis qu'elle visite notre page malicieuse. Lors de cette navigation, son navigateur va tenter de récupérer l'image qui va silencieusement modifier son mot de passe :
 
 ![](../../../../.gitbook/assets/acb20ffc9390c0d04e0dd7efb4e9fc7f.png)
 
@@ -32,13 +32,10 @@ L'URL "http://192.168.56.120/" présent dans l'entête `Referer` représente le 
 
 
 
-Pour confirmer l'exploitation, l'administrateur tente de se connecter \(ou utilise la mire d'authentification du challenge brute force\) avec son ancien mot de passe : 
+Pour confirmer l'exploitation, l'administrateur tente de se connecter (ou utilise la mire d'authentification du challenge brute force) avec son ancien mot de passe :&#x20;
 
 ![](../../../../.gitbook/assets/74c4026702bbb03c147411c0ee08e245.png)
 
 Mais son nouveau mot de passe est bien celui renseigné par l'attaquant lors de l'attaque :
 
 ![](../../../../.gitbook/assets/f341249aaacec4aef550b969ec341d28.png)
-
-## 
-

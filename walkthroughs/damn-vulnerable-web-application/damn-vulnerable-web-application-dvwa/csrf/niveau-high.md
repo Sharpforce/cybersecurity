@@ -61,8 +61,6 @@ Une fois que l'administrateur visitera la page du challenge XSS, son mot de pass
 
 ![](../../../../.gitbook/assets/1fb2b3663d21dad270b6c81e9e61e79c.png)
 
-****
-
 **Exploitation via des requêtes XHR**
 
 Un peu plus moderne, il est possible d'effectuer la même attaque en utilisant deux requêtes **`XHR`**. La première va permettre de récupérer le jeton :
@@ -102,4 +100,3 @@ Lorsque la victime exécutera la payload XSS cela va déclencher l'attaque CSRF 
 Le mot de passe de l'administrateur a bien été changé suite à sa visite (du challenge XSS) :
 
 ![](../../../../.gitbook/assets/94ceb456695bfa0da35e85c676d73400.png)
-
