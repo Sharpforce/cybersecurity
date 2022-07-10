@@ -4,7 +4,7 @@
 
 L'affichage du prénom et du nom s'effectue ici de la même manière au sein d'une balise `<div></div>` :&#x20;
 
-![](<../../../../../.gitbook/assets/image (19).png>)
+![](<../../../../../.gitbook/assets/image (19) (1).png>)
 
 Dont voici la requête :&#x20;
 
@@ -44,15 +44,15 @@ Cela oblige donc à passer par l'insertion de nouvelles balises afin d'injecter 
 
 L'exécution de Javascript dans un attribut HTML :&#x20;
 
-![T](<../../../../../.gitbook/assets/image (20).png>)
+![T](<../../../../../.gitbook/assets/image (20) (1).png>)
 
 Ou également l'utilisation de balises customs :&#x20;
 
-![T](<../../../../../.gitbook/assets/image (18).png>)
+![T](<../../../../../.gitbook/assets/image (18) (1).png>)
 
 L'encodage URL (ni même le double encodage) ne fonctionne également pas :&#x20;
 
-![](<../../../../../.gitbook/assets/image (14).png>)
+![](<../../../../../.gitbook/assets/image (14) (1).png>)
 
 L'application semble être bien protégée contre les injections XSS (et également HTML), aucun contournement possible n'a été identifié.
 
