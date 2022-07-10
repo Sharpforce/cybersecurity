@@ -4,7 +4,7 @@
 
 L'affichage du prénom et du nom s'effectue ici de la même manière au sein d'une balise `<div></div>` :&#x20;
 
-![](<../../../../../.gitbook/assets/image (24) (1).png>)
+![](<../../../../../.gitbook/assets/image (29).png>)
 
 Dont voici la requête :&#x20;
 
@@ -26,17 +26,17 @@ L'affichage des paramètres d'URL se faire directement au sein de la balise `<di
 
 ```html
 <div id="main">
-    <h1>HTML Injection - Reflected (POST)</h1>
-    <p>Enter your first and last name:</p>
-    <form action="/bWAPP/htmli_post.php" method="POST">
-        <p><label for="firstname">First name:</label><br />
-        <input type="text" id="firstname" name="firstname"></p>
-        <p><label for="lastname">Last name:</label><br />
-        <input type="text" id="lastname" name="lastname"></p>
-        <button type="submit" name="form" value="submit">Go</button>  
-    </form>
-    <br />
-    Welcome prénom [lvl high] nom [lvl high]
+  <h1>HTML Injection - Reflected (POST)</h1>
+  <p>Enter your first and last name:</p>
+  <form action="/bWAPP/htmli_post.php" method="POST">
+    <p><label for="firstname">First name:</label><br />
+    <input type="text" id="firstname" name="firstname"></p>
+    <p><label for="lastname">Last name:</label><br />
+    <input type="text" id="lastname" name="lastname"></p>
+    <button type="submit" name="form" value="submit">Go</button>  
+  </form>
+  <br />
+  Welcome prénom [lvl high] nom [lvl high]
 </div>
 ```
 
@@ -46,15 +46,15 @@ Cela oblige donc à passer par l'insertion de nouvelles balises afin d'injecter 
 
 L'exécution de Javascript dans un attribut HTML :&#x20;
 
-![](<../../../../../.gitbook/assets/image (19).png>)
+![](<../../../../../.gitbook/assets/image (20).png>)
 
 Ou également l'utilisation de balises customs :&#x20;
 
-![](<../../../../../.gitbook/assets/image (2).png>)
+![](<../../../../../.gitbook/assets/image (3).png>)
 
 L'encodage URL (ni même le double encodage) ne fonctionne également pas :&#x20;
 
-![](<../../../../../.gitbook/assets/image (20).png>)
+![](<../../../../../.gitbook/assets/image (21).png>)
 
 L'application semble être bien protégée contre les injections XSS (et également HTML), aucun contournement possible n'a été identifié.
 
@@ -110,21 +110,21 @@ Le level "High" correspond à la valeur 2, c'est à dire ici à l'exécution de 
 ```php
 function xss_check_3($data, $encoding = "UTF-8") {
 
-    // htmlspecialchars - converts special characters to HTML entities
-    // '&' (ampersand) becomes '&amp;'
-    // '"' (double quote) becomes '&quot;' when ENT_NOQUOTES is not set
-    // "'" (single quote) becomes '&#039;' (or &apos;) only when ENT_QUOTES is set
-    // '<' (less than) becomes '&lt;'
-    // '>' (greater than) becomes '&gt;'
+  // htmlspecialchars - converts special characters to HTML entities
+  // '&' (ampersand) becomes '&amp;'
+  // '"' (double quote) becomes '&quot;' when ENT_NOQUOTES is not set
+  // "'" (single quote) becomes '&#039;' (or &apos;) only when ENT_QUOTES is set
+  // '<' (less than) becomes '&lt;'
+  // '>' (greater than) becomes '&gt;'
 
-    return htmlspecialchars($data, ENT_QUOTES, $encoding);
+  return htmlspecialchars($data, ENT_QUOTES, $encoding);
 }
 ```
 {% endcode %}
 
 La fonction `htmlspecialchars()` est une méthode PHP permettant de transformer certains caractères (`&`, `"`, `<` et `>`) dans leur version entités HTML. De plus, la méthode effectue également ce traitement sur le caractère `'` si l'option `ENT_QUOTES` est présente : &#x20;
 
-![](<../../../../../.gitbook/assets/image (12).png>)
+![](<../../../../../.gitbook/assets/image (12) (1).png>)
 
 Cette protection est donc efficace contre les injections Javascript.
 
