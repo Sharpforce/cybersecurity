@@ -1,7 +1,3 @@
----
-description: 'Walkthrough de la machine Metasploit: 1'
----
-
 # Metasploitable: 1
 
 ## Détails de la machine

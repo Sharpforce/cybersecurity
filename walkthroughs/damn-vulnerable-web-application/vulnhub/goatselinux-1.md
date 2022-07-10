@@ -1,7 +1,3 @@
----
-description: 'Walkthrough de la machine GoatseLinux: 1'
----
-
 # GoatseLinux: 1
 
 ## Détails de la machine

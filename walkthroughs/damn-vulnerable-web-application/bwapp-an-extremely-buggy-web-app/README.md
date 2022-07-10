@@ -1,7 +1,3 @@
----
-description: Walkthroughs dédiés à l'application bWAPP
----
-
 # bWAPP - An Extremely Buggy Web App !
 
 [bWAPP](http://www.itsecgames.com/index.htm) (a buggy web application) est une application PHP/MySQL délibérément vulnérable. La version utilisée pour ce writeup est la version [bee-box 2.2](https://sourceforge.net/projects/bwapp/files/bee-box/).

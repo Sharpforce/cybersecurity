@@ -1,7 +1,3 @@
----
-description: Walkthrough du challenge "Bird Box Challenge"
----
-
 # Bird Box Challenge
 
 ## Détails du challenge
@@ -57,24 +53,3 @@ Il s'agit donc d'un MySQL en version 5.7.25. Mais je n'ai pas eu le courage de c
 ![](../../../.gitbook/assets/475236691f17d4e67190c04af66a4c8e.png)
 
 Je n'ai pas choisi ces options dès le premier essai, mais le flag est en fait le nom de l'utilisateur de la base de données, la commande permet donc de récupérer la bonne information grâce à l'option `--current-user`.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,3 @@
----
-description: 'Walkthrough de la machine Holynix: v2'
----
-
 # Holynix: v2
 
 ## Détails de la machine

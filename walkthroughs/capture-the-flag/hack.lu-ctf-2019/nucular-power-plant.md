@@ -1,7 +1,3 @@
----
-description: Walkthrough du challenge "Nucular Power Plant"
----
-
 # Nucular Power Plant
 
 ## Détails du challenge

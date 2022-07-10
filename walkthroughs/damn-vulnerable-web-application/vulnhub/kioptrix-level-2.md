@@ -1,7 +1,3 @@
----
-description: 'Walkthrough de la machine Kioptrix: Level 2'
----
-
 # Kioptrix: Level 1.1 (#2)
 
 ## Détails de la machine

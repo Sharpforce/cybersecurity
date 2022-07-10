@@ -1,7 +1,3 @@
----
-description: Walkthrough de la machine pWnOS 1.0
----
-
 # pWnOS 1.0
 
 ## Détails de la machine

@@ -1,7 +1,3 @@
----
-description: 'Walkthrough de la machine LAMPSecurity: CTF6'
----
-
 # LAMPSecurity: CTF6
 
 ## Détails de la machine

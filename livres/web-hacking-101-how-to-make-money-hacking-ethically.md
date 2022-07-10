@@ -1,7 +1,3 @@
----
-description: Mon retour sur le livre Web Hacking 101
----
-
 # Web Hacking 101: How to Make Money Hacking Ethically
 
 ## Description du livre
