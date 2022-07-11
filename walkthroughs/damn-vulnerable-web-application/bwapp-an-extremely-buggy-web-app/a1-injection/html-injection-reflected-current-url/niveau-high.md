@@ -12,7 +12,7 @@ Cookie: security_level=2; PHPSESSID=2f4611482fb97564af7dbe4243dca828
 Connection: close
 ```
 
-![](<../../../../../.gitbook/assets/image (23).png>)
+![](<../../../../../.gitbook/assets/image (23) (1).png>)
 
 En PHP, la récupération de l'URL peut s'effectuer grâce aux variables `$_SERVER["REQUEST_URI"]` ou `$_SERVER["QUERYSTRING"]` par exemple (le fonctionnement est différent pour les variables types `$_GET` ou `$_POST` et autres équivalents). Dans le premier cas, les navigateurs récents encodent l'URL avant de la transmettre à l'application qui rend les tentatives d'injections HTML et XSS inefficaces :&#x20;
 
@@ -24,11 +24,11 @@ Cookie: security_level=2; PHPSESSID=2f4611482fb97564af7dbe4243dca828
 Connection: close
 ```
 
-![](<../../../../../.gitbook/assets/image (18).png>)
+![](<../../../../../.gitbook/assets/image (25).png>)
 
 Aucune injection ne semble possible ici, même en testant le contournement sous IE11 :&#x20;
 
-![](<../../../../../.gitbook/assets/image (10).png>)
+![](<../../../../../.gitbook/assets/image (16).png>)
 
 ## Analyse du code source
 
@@ -93,8 +93,8 @@ function xss_check_3($data, $encoding = "UTF-8") {
 
 Il y a ici potentiellement une injection possible via l'entête HTTP `Host` mais cela nécessite de passer par une interception par un proxy :&#x20;
 
-![](<../../../../../.gitbook/assets/image (11).png>)
+![](<../../../../../.gitbook/assets/image (18).png>)
 
-![](<../../../../../.gitbook/assets/image (20).png>)
+![](<../../../../../.gitbook/assets/image (28).png>)
 
 L'exploitation n'est pas réalisable sur les navigateurs récents à cause de l'encodage effectué sur l'URL et Internet Explorer  11 ne support pas la syntaxe `https(s)://username:password@example.com` ([https://docs.microsoft.com/en-us/troubleshoot/developer/browsers/security-privacy/name-and-password-not-supported-in-website-address](https://docs.microsoft.com/en-us/troubleshoot/developer/browsers/security-privacy/name-and-password-not-supported-in-website-address)).

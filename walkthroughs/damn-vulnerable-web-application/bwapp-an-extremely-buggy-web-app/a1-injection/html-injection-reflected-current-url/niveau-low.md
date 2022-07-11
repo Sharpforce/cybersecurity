@@ -12,7 +12,7 @@ Cookie: security_level=0; PHPSESSID=2f4611482fb97564af7dbe4243dca828
 Connection: close
 ```
 
-![](<../../../../../.gitbook/assets/image (23).png>)
+![](<../../../../../.gitbook/assets/image (23) (1).png>)
 
 En PHP, la récupération de l'URL peut s'effectuer grâce aux variables `$_SERVER["REQUEST_URI"]` ou `$_SERVER["QUERYSTRING"]` par exemple (le fonctionnement est différent pour les variables types `$_GET` ou `$_POST` et autres équivalents). Dans le premier cas, les navigateurs récents encodent l'URL avant de la transmettre à l'application qui rend les tentatives d'injections HTML et XSS inefficaces :&#x20;
 
@@ -28,7 +28,7 @@ Connection: close
 
 Internet Explorer 11 n'effectue pas cet encodage sur les nom et valeur des paramètres d'URL, par contre il possède un filtre anti-XSS pouvant empêcher l'exécution de script malicieux :&#x20;
 
-![](<../../../../../.gitbook/assets/image (27).png>)
+![](<../../../../../.gitbook/assets/image (27) (1).png>)
 
 Il existe un contournement fonctionnel sur IE permettant tout de même d'exécuter le code :&#x20;
 
@@ -44,7 +44,7 @@ Connection: close
 
 Il est tout de même possible d'exploiter la vulnérabilité sur un navigateur récent mais ne sera que très difficilement exécutable dans le contexte de la victime. Pour cela, il faut utiliser la modification de requête grâce à un proxy, ici Burp en mode interception :&#x20;
 
-![](<../../../../../.gitbook/assets/image (13).png>)
+![](<../../../../../.gitbook/assets/image (13) (1).png>)
 
 ![](<../../../../../.gitbook/assets/image (2).png>)
 

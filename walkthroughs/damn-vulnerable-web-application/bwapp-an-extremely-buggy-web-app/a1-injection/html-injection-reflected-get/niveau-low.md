@@ -4,7 +4,7 @@
 
 L'exploitation est ici triviale. Le prénom et le nom sont renseignés dans un formulaire transféré par la méthode HTTP `GET` :&#x20;
 
-![](<../../../../../.gitbook/assets/image (21) (1).png>)
+![](<../../../../../.gitbook/assets/image (21) (1) (1).png>)
 
 Dont voici la requête :&#x20;
 
@@ -48,7 +48,7 @@ Cookie: PHPSESSID=41a2ae9ea948edd613914b6d27214575; security_level=0
 Connection: close
 ```
 
-![](<../../../../../.gitbook/assets/image (13) (1).png>)
+![](<../../../../../.gitbook/assets/image (13) (1) (1).png>)
 
 Mais l'injection Javascript est également tout à fait possible, ici avec `<script>alert('XSS')</script>` :&#x20;
 
@@ -60,7 +60,7 @@ Cookie: security_level=0; PHPSESSID=0b0bfacccccd5a0692b45538f09f0b97
 Connection: close
 ```
 
-![](<../../../../../.gitbook/assets/image (7) (1).png>)
+![](<../../../../../.gitbook/assets/image (7) (1) (1).png>)
 
 ## Analyse du code source
 

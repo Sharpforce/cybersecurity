@@ -4,7 +4,7 @@
 
 L'affichage du prénom et du nom s'effectue ici de la même manière au sein d'une balise `<div></div>` :&#x20;
 
-![](<../../../../../.gitbook/assets/image (19) (1).png>)
+![](<../../../../../.gitbook/assets/image (19) (1) (1).png>)
 
 Dont voici la requête :&#x20;
 
@@ -52,7 +52,7 @@ Ou également l'utilisation de balises customs :&#x20;
 
 L'encodage URL (ni même le double encodage) ne fonctionne également pas :&#x20;
 
-![](<../../../../../.gitbook/assets/image (14) (1).png>)
+![](<../../../../../.gitbook/assets/image (14) (1) (1).png>)
 
 L'application semble être bien protégée contre les injections XSS (et également HTML), aucun contournement possible n'a été identifié.
 
