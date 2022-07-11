@@ -4,7 +4,7 @@
 
 L'exploitation est ici triviale. Le prénom et le nom sont renseignés dans un formulaire transféré par la méthode HTTP `POST` :&#x20;
 
-![](<../../../../../.gitbook/assets/image (17).png>)
+![](<../../../../../.gitbook/assets/image (17) (1).png>)
 
 Dont voici la requête :&#x20;
 
@@ -74,7 +74,7 @@ Connection: close
 firstname=%3Cscript%3Ealert%28%27XSS%27%29%3C%2Fscript%3E&lastname=nom&form=submit
 ```
 
-![](<../../../../../.gitbook/assets/image (9).png>)
+![](<../../../../../.gitbook/assets/image (9) (1).png>)
 
 ## Analyse du code source
 

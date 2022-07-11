@@ -44,11 +44,11 @@ Cela oblige donc à passer par l'insertion de nouvelles balises afin d'injecter 
 
 L'exécution de Javascript dans un attribut HTML :&#x20;
 
-![](<../../../../../.gitbook/assets/image (20) (1).png>)
+![](<../../../../../.gitbook/assets/image (20) (1) (1).png>)
 
 Ou également l'utilisation de balises customs :&#x20;
 
-![](<../../../../../.gitbook/assets/image (18) (1).png>)
+![](<../../../../../.gitbook/assets/image (18) (1) (1).png>)
 
 Pour réussir ce challenge il va donc falloir identifier un moyen de transmettre l'information sous une autre forme mais qui sera tout de même interprétée par l'application. Après plusieurs tentatives, l'encodage URL de l'injection semble fonctionner :&#x20;
 
@@ -60,7 +60,7 @@ Cookie: PHPSESSID=b6b6991fd6ae6e9926d4e8dab4692f15; security_level=1
 Connection: close
 ```
 
-![](<../../../../../.gitbook/assets/image (9) (1).png>)
+![](<../../../../../.gitbook/assets/image (9) (1) (1).png>)
 
 ## Analyse du code source
 
@@ -139,4 +139,4 @@ Cookie: PHPSESSID=1596dd4de4ad3324f300dfed9d8523f5; security_level=1
 Connection: close
 ```
 
-![](<../../../../../.gitbook/assets/image (15) (1).png>)
+![](<../../../../../.gitbook/assets/image (15) (1) (1).png>)

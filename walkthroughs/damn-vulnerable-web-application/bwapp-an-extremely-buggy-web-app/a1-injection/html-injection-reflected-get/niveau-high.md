@@ -44,11 +44,11 @@ Cela oblige donc à passer par l'insertion de nouvelles balises afin d'injecter 
 
 L'exécution de Javascript dans un attribut HTML :&#x20;
 
-![T](<../../../../../.gitbook/assets/image (20) (1).png>)
+![T](<../../../../../.gitbook/assets/image (20) (1) (1).png>)
 
 Ou également l'utilisation de balises customs :&#x20;
 
-![T](<../../../../../.gitbook/assets/image (18) (1).png>)
+![T](<../../../../../.gitbook/assets/image (18) (1) (1).png>)
 
 L'encodage URL (ni même le double encodage) ne fonctionne également pas :&#x20;
 
@@ -122,7 +122,7 @@ function xss_check_3($data, $encoding = "UTF-8") {
 
 La fonction `htmlspecialchars()` est une méthode PHP permettant de transformer certains caractères (`&`, `"`, `<` et `>`) dans leur version entités HTML. De plus, la méthode effectue également ce traitement sur le caractère `'` si l'option `ENT_QUOTES` est présente : &#x20;
 
-![](<../../../../../.gitbook/assets/image (12) (1).png>)
+![](<../../../../../.gitbook/assets/image (12) (1) (1).png>)
 
 Cette protection est donc efficace contre les injections Javascript.
 

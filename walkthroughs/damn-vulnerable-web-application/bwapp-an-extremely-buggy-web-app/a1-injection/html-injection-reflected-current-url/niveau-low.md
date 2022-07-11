@@ -24,7 +24,7 @@ Cookie: security_level=0; PHPSESSID=2f4611482fb97564af7dbe4243dca828
 Connection: close
 ```
 
-![](<../../../../../.gitbook/assets/image (15).png>)
+![](<../../../../../.gitbook/assets/image (15) (1).png>)
 
 Internet Explorer 11 n'effectue pas cet encodage sur les nom et valeur des paramètres d'URL, par contre il possède un filtre anti-XSS pouvant empêcher l'exécution de script malicieux :&#x20;
 
@@ -40,7 +40,7 @@ Cookie: PHPSESSID=5259cd672a0fb988f6f618b8527b1a8c; security_level=0
 Connection: close
 ```
 
-![](<../../../../../.gitbook/assets/image (10).png>)
+![](<../../../../../.gitbook/assets/image (10) (1).png>)
 
 Il est tout de même possible d'exploiter la vulnérabilité sur un navigateur récent mais ne sera que très difficilement exécutable dans le contexte de la victime. Pour cela, il faut utiliser la modification de requête grâce à un proxy, ici Burp en mode interception :&#x20;
 
@@ -50,7 +50,7 @@ Il est tout de même possible d'exploiter la vulnérabilité sur un navigateur r
 
 ## Analyse du code source
 
-L'application affiche le contenu de la variable $url au d'une balise `<i></i>` :
+L'application affiche le contenu de la variable `$url` au d'une balise `<i></i>` :
 
 {% code title="htmli_current_url.php" %}
 ```php
@@ -61,7 +61,7 @@ L'application affiche le contenu de la variable $url au d'une balise `<i></i>` :
 ```
 {% endcode %}
 
-La variable $url est construite de la manière suivante :&#x20;
+La variable `$url` est construite de la manière suivante :&#x20;
 
 {% code title="htmli_current_url.php" %}
 ```php
@@ -86,17 +86,17 @@ switch($_COOKIE["security_level"]) {
 ```
 {% endcode %}
 
-Le level "Low" correspond à la valeur 0, c'est à dire qu'ici, la variable $url est construite de la façon suivante :
+Le level "Low" correspond à la valeur 0, c'est à dire qu'ici, la variable `$url` est construite de la façon suivante :
 
 ```php
 $url = "http://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 ```
 
-La variable permettant la récupération de l'URL était bien celle identifiée dans la phase d'exploitation. A noter qu'il est également possible d'injecter le code HTML/Javascript au sein de l'entête HTTP `Host` dont la valeur sera récupérée par la variable PHP $\_SERVER\["HTTP\_HOST"] :&#x20;
+La variable permettant la récupération de l'URL était bien celle identifiée dans la phase d'exploitation. A noter qu'il est également possible d'injecter le code HTML/Javascript au sein de l'entête HTTP `Host` dont la valeur sera récupérée par la variable PHP `$_SERVER["HTTP_HOST"]` :&#x20;
 
-![](<../../../../../.gitbook/assets/image (28).png>)
+![](<../../../../../.gitbook/assets/image (28) (1).png>)
 
-![](<../../../../../.gitbook/assets/image (18).png>)
+![](<../../../../../.gitbook/assets/image (18) (1).png>)
 
 {% hint style="warning" %}
 Le jeu de caractères possible dans l'entête HTTP Host est limité.

@@ -42,15 +42,15 @@ L'affichage des paramètres d'URL se faire directement au sein de la balise `<di
 
 Cela oblige donc à passer par l'insertion de nouvelles balises afin d'injecter du contenu. Dans ce niveau de difficulté, aucune balise ne semble être interprétée par l'application, que cela soit le classique `<script></script>` :&#x20;
 
-![](<../../../../../.gitbook/assets/image (12).png>)
+![](<../../../../../.gitbook/assets/image (12) (1).png>)
 
 L'exécution de Javascript dans un attribut HTML :&#x20;
 
-![](<../../../../../.gitbook/assets/image (11).png>)
+![](<../../../../../.gitbook/assets/image (11) (1).png>)
 
 Ou également l'utilisation de balises customs :&#x20;
 
-![](<../../../../../.gitbook/assets/image (6).png>)
+![](<../../../../../.gitbook/assets/image (6) (1).png>)
 
 Pour réussir ce challenge il va donc falloir identifier un moyen de transmettre l'information sous une autre forme mais qui sera tout de même interprétée par l'application. Après plusieurs tentatives, l'encodage URL de l'injection semble fonctionner :&#x20;
 
