@@ -12,7 +12,7 @@ Cookie: security_level=0; PHPSESSID=2f4611482fb97564af7dbe4243dca828
 Connection: close
 ```
 
-![](<../../../../../.gitbook/assets/image (23) (1).png>)
+![](<../../../../../.gitbook/assets/image (23) (1) (1).png>)
 
 En PHP, la récupération de l'URL peut s'effectuer grâce aux variables `$_SERVER["REQUEST_URI"]` ou `$_SERVER["QUERYSTRING"]` par exemple (le fonctionnement est différent pour les variables types `$_GET` ou `$_POST` et autres équivalents). Dans le premier cas, les navigateurs récents encodent l'URL avant de la transmettre à l'application qui rend les tentatives d'injections HTML et XSS inefficaces :&#x20;
 
@@ -28,7 +28,7 @@ Connection: close
 
 Internet Explorer 11 n'effectue pas cet encodage sur les nom et valeur des paramètres d'URL, par contre il possède un filtre anti-XSS pouvant empêcher l'exécution de script malicieux :&#x20;
 
-![](<../../../../../.gitbook/assets/image (27) (1).png>)
+![](<../../../../../.gitbook/assets/image (27) (1) (1).png>)
 
 Il existe un contournement fonctionnel sur IE permettant tout de même d'exécuter le code :&#x20;
 
@@ -94,7 +94,7 @@ $url = "http://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 
 La variable permettant la récupération de l'URL était bien celle identifiée dans la phase d'exploitation. A noter qu'il est également possible d'injecter le code HTML/Javascript au sein de l'entête HTTP `Host` dont la valeur sera récupérée par la variable PHP `$_SERVER["HTTP_HOST"]` :&#x20;
 
-![](<../../../../../.gitbook/assets/image (28) (1).png>)
+![](<../../../../../.gitbook/assets/image (28) (1) (1).png>)
 
 ![](<../../../../../.gitbook/assets/image (18) (1).png>)
 
