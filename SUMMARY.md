@@ -1,7 +1,7 @@
 # Table of contents
 
-* [Bienvenue !](README.md)
-* [Mon Blog](mon-blog/README.md)
+* [👋 Bienvenue !](README.md)
+* [📒 Mon Blog](mon-blog/README.md)
   * [2022](mon-blog/2022/README.md)
     * [Juillet](mon-blog/2022/juillet/README.md)
       * [SAST - PHP\_CodeSniffer orienté sécurité intégré dans Visual Studio (sous Windows)](mon-blog/2022/juillet/sast-php\_codesniffer-oriente-securite-integre-dans-visual-studio-sous-windows.md)
@@ -24,14 +24,14 @@
 
 ## Walkthroughs
 
-* [Capture The Flag](walkthroughs/capture-the-flag/README.md)
+* [🏴☠ Capture The Flag](walkthroughs/capture-the-flag/README.md)
   * [Hack.lu CTF 2019](walkthroughs/capture-the-flag/hack.lu-ctf-2019/README.md)
     * [Nucular Power Plant](walkthroughs/capture-the-flag/hack.lu-ctf-2019/nucular-power-plant.md)
   * [TAMUctf 2019](walkthroughs/capture-the-flag/tamuctf-2019/README.md)
     * [1337 Secur1ty](walkthroughs/capture-the-flag/tamuctf-2019/1337-secur1ty.md)
     * [Bird Box Challenge](walkthroughs/capture-the-flag/tamuctf-2019/bird-box-challenge.md)
     * [Science!](walkthroughs/capture-the-flag/tamuctf-2019/science.md)
-* [Deliberately Vulnerable](walkthroughs/damn-vulnerable-web-application/README.md)
+* [☣ Deliberately Vulnerable](walkthroughs/damn-vulnerable-web-application/README.md)
   * [bWAPP - An Extremely Buggy Web App !](walkthroughs/damn-vulnerable-web-application/bwapp-an-extremely-buggy-web-app/README.md)
     * [A1 - Injection](walkthroughs/damn-vulnerable-web-application/bwapp-an-extremely-buggy-web-app/a1-injection/README.md)
       * [HTML Injection - Reflected (GET)](walkthroughs/damn-vulnerable-web-application/bwapp-an-extremely-buggy-web-app/a1-injection/html-injection-reflected-get/README.md)
