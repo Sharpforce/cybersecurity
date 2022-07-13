@@ -28,6 +28,10 @@ set PHPBIN=php
 
 ![](<../../.gitbook/assets/image (28).png>)
 
+{% hint style="warning" %}
+Il est nécessaire que le chemin de l'exécutable PHP soit renseigné dans le PATH de Windows.
+{% endhint %}
+
 6\. Dans Visual Studio Code, installer l'extension `phpcs` :&#x20;
 
 ![](<../../.gitbook/assets/image (27).png>)
