@@ -1,5 +1,5 @@
 ---
-description: 12 Juillet 2020
+description: 12 Juillet 2022
 ---
 
 # SAST - PHP\_CodeSniffer orienté sécurité intégré dans Visual Studio (sous Windows)
