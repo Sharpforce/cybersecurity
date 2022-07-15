@@ -44,7 +44,7 @@ Cela oblige donc à passer par l'insertion de nouvelles balises afin d'injecter 
 
 L'exécution de Javascript dans un attribut HTML :&#x20;
 
-![T](<../../../../../.gitbook/assets/image (20) (1) (1).png>)
+![T](<../../../../../.gitbook/assets/image (20) (1) (1) (1).png>)
 
 Ou également l'utilisation de balises customs :&#x20;
 

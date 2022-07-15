@@ -21,7 +21,7 @@
 ## Livres
 
 * [2018](livres/2018/README.md)
-  * [Web Hacking 101: How to Make Money Hacking Ethically](livres/2018/web-hacking-101-how-to-make-money-hacking-ethically.md)
+  * [Web Hacking 101: How to Make Money Hacking Ethically](livres/web-hacking-101-how-to-make-money-hacking-ethically.md)
 
 ## Walkthroughs
 
