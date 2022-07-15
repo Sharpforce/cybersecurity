@@ -280,7 +280,7 @@ Connection: close
 entry=%3Cscript%3Ealert%281%29%3C%2Fscript%3E&blog=submit&entry_add=
 ```
 
-![](<../../../../../.gitbook/assets/image (11).png>)
+![](<../../../../../.gitbook/assets/image (11) (1).png>)
 
 L'injection de script distant est plus gênant puisque les guillemets simples et doubles vont être échappés :&#x20;
 

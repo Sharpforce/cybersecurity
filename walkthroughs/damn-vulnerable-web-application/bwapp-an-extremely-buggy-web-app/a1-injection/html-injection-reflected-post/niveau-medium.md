@@ -4,7 +4,7 @@
 
 L'affichage du prénom et du nom s'effectue ici de la même manière au sein d'une balise `<div></div>` :&#x20;
 
-![](<../../../../../.gitbook/assets/image (26) (1) (1).png>)
+![](<../../../../../.gitbook/assets/image (26) (1) (1) (1).png>)
 
 Dont voici la requête :&#x20;
 
@@ -42,11 +42,11 @@ L'affichage des paramètres d'URL se faire directement au sein de la balise `<di
 
 Cela oblige donc à passer par l'insertion de nouvelles balises afin d'injecter du contenu. Dans ce niveau de difficulté, aucune balise ne semble être interprétée par l'application, que cela soit le classique `<script></script>` :&#x20;
 
-![](<../../../../../.gitbook/assets/image (12) (1).png>)
+![](<../../../../../.gitbook/assets/image (12) (1) (1).png>)
 
 L'exécution de Javascript dans un attribut HTML :&#x20;
 
-![](<../../../../../.gitbook/assets/image (11) (1).png>)
+![](<../../../../../.gitbook/assets/image (11) (1) (1).png>)
 
 Ou également l'utilisation de balises customs :&#x20;
 

@@ -29,7 +29,7 @@ Il est donc ici possible d'afficher les paramètres de type ancre :&#x20;
 
 Les navigateurs récents encodent l'URL, cela a pour conséquence qu'il est pas possible d'exploiter directement la vulnérabilité. Internet Explorer 11 n'effectue pas cet encodage sur les nom et valeur des paramètres d'URL, par contre il possède un filtre anti-XSS pouvant empêcher l'exécution de script malicieux :&#x20;
 
-![](<../../../../../.gitbook/assets/image (8).png>)
+![](<../../../../../.gitbook/assets/image (8) (1).png>)
 
 Il existe un contournement fonctionnel sur IE permettant tout de même d'exécuter le code :&#x20;
 

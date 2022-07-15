@@ -122,7 +122,7 @@ function xss_check_3($data, $encoding = "UTF-8") {
 
 La fonction `htmlspecialchars()` est une méthode PHP permettant de transformer certains caractères (`&`, `"`, `<` et `>`) dans leur version entités HTML. De plus, la méthode effectue également ce traitement sur le caractère `'` si l'option `ENT_QUOTES` est présente : &#x20;
 
-![](<../../../../../.gitbook/assets/image (12) (1) (1).png>)
+![](<../../../../../.gitbook/assets/image (12) (1) (1) (1).png>)
 
 Cette protection est donc efficace contre les injections Javascript.
 

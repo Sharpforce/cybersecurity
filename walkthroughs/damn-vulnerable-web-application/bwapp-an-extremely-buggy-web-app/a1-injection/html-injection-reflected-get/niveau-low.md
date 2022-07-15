@@ -4,7 +4,7 @@
 
 L'exploitation est ici triviale. Le prénom et le nom sont renseignés dans un formulaire transféré par la méthode HTTP `GET` :&#x20;
 
-![](<../../../../../.gitbook/assets/image (21) (1) (1).png>)
+![](<../../../../../.gitbook/assets/image (21) (1) (1) (1).png>)
 
 Dont voici la requête :&#x20;
 

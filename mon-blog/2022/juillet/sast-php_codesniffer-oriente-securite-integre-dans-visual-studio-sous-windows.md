@@ -40,7 +40,7 @@ Il est nécessaire que le chemin de l'exécutable PHP soit renseigné dans le PA
 
 7\. Configurer l'extension de la façon suivante (éditer le fichier `settings.json` pour plus de facilité) :&#x20;
 
-![](<../../../.gitbook/assets/image (26).png>)
+![](<../../../.gitbook/assets/image (26) (1).png>)
 
 L'extension est maintenant bien configurée et fonctionnelle. Par exemple ici la détection de l'utilisation de `shell_exec()` dans l'application bWAPP menant à une injection de commande :&#x20;
 

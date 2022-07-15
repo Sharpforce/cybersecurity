@@ -18,7 +18,7 @@ Connection: close
 entry=Test&blog=submit&entry_add=
 ```
 
-![](<../../../../../.gitbook/assets/image (26) (1).png>)
+![](<../../../../../.gitbook/assets/image (26) (1) (1).png>)
 
 Le message est donc ici stockée sur le serveur, sans doute en base de données, afin que tous les utilisateurs puissent y accéder (fonctionnalité Show all). L'injection XSS ne semble pas réalisable ici, que cela soit par les balises `<script></script>` :&#x20;
 
@@ -36,7 +36,7 @@ Connection: close
 entry=%3Cscript%3Ealert%281%29%3C%2Fscript%3E&blog=submit&entry_add=
 ```
 
-![](<../../../../../.gitbook/assets/image (12).png>)
+![](<../../../../../.gitbook/assets/image (12) (1).png>)
 
 Par des attributs HTML :&#x20;
 
@@ -71,7 +71,7 @@ Connection: close
 entry=%253c%2573%2563%2572%2569%2570%2574%253e%2561%256c%2565%2572%2574%2528%2531%2529%253c%252f%2573%2563%2572%2569%2570%2574%253e&blog=submit&entry_add=
 ```
 
-![](<../../../../../.gitbook/assets/image (30).png>)
+![](<../../../../../.gitbook/assets/image (30) (1).png>)
 
 L'injection HTML/XSS ne semble donc pas réalisable.
 
