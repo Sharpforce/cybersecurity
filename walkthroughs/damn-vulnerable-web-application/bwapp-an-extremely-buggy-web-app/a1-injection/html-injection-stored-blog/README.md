@@ -4,4 +4,4 @@
 
 Injecter du contenu HTML/Javascript :&#x20;
 
-![](<../../../../../.gitbook/assets/image (20).png>)
+![](<../../../../../.gitbook/assets/image (7).png>)

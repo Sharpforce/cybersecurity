@@ -42,7 +42,7 @@ L'affichage des paramètres d'URL se faire directement au sein de la balise `<di
 
 Cela oblige donc à passer par l'insertion de nouvelles balises afin d'injecter du contenu. Dans ce niveau de difficulté, aucune balise ne semble être interprétée par l'application, que cela soit le classique `<script></script>` :&#x20;
 
-![](<../../../../../.gitbook/assets/image (7) (1).png>)
+![](<../../../../../.gitbook/assets/image (7) (1) (1).png>)
 
 L'exécution de Javascript dans un attribut HTML :&#x20;
 
