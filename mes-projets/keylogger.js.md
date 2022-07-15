@@ -9,3 +9,5 @@ Le projet est disponible ici : [Github](https://github.com/Sharpforce/keylogger.
 ## Statut du projet
 
 Le projet est en arrêt depuis mi-2020 maintenant. Il reste fonctionnel mais il y a encore beaucoup de travail à effectuer dessus. Je le reprendrai un jour, si je trouve la motivation ;).
+
+![](<../.gitbook/assets/image (29).png>)

@@ -15,5 +15,4 @@ Le second objectif de cette application est d'immerger l'attaquant dans un envir
 
 Le développement de l'application est terminée. Elle est disponible directement via [Github](https://github.com/Sharpforce/MyExpense) ou sur le site [Vulnhub](https://www.vulnhub.com/entry/myexpense-1,405/).
 
-
-
+![](<../.gitbook/assets/image (23).png>)

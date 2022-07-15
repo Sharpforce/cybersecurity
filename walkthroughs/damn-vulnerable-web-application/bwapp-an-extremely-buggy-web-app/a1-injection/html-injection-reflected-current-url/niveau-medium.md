@@ -12,7 +12,7 @@ Cookie: security_level=1; PHPSESSID=2f4611482fb97564af7dbe4243dca828
 Connection: close
 ```
 
-![](<../../../../../.gitbook/assets/image (23) (1) (1).png>)
+![](<../../../../../.gitbook/assets/image (23) (1) (1) (1).png>)
 
 La récupération de l'URL s'effectue non plus en PHP mais grâce à du Javascript et la méthode `document.write()` de la variable `document.URI` :&#x20;
 
@@ -59,7 +59,7 @@ Etant donné que la valeur de l'URL est récupérée au niveau du client (par du
 
 A noter qu'il est possible d'injecter le champ également le champ Host mais sans succès après quelques tests (excepté via interception avec un proxy) :&#x20;
 
-![](<../../../../../.gitbook/assets/image (23) (1).png>)
+![](<../../../../../.gitbook/assets/image (23) (1) (1).png>)
 
 ## Analyse du code source
 
