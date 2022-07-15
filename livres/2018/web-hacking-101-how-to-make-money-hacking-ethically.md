@@ -2,7 +2,7 @@
 
 ## Description du livre
 
-![](../.gitbook/assets/5c8efa430ccfcd100bab965ed88e9165.png)
+![](../../.gitbook/assets/5c8efa430ccfcd100bab965ed88e9165.png)
 
 **Titre :** Web Hacking 101: How to Make Money Hacking Ethically\
 **Auteur :** Peter Yaworski\

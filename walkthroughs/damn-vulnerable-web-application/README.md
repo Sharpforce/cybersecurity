@@ -1,4 +1,4 @@
-# Deliberately Vulnerable
+# ☣ Deliberately Vulnerable
 
 Les applications web de cette section sont des applications proposées généralement sous la forme d'une machine virtuelle, d'une machine docker ou d'un code source à mettre soit même en place sur un serveur Web de son choix.
 

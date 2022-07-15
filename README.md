@@ -1,4 +1,4 @@
-# Bienvenue !
+# 👋 Bienvenue !
 
 Passionné en CyberSécurité, mon objectif est de partager mes connaissances acquises lors de mes lectures, travaux, challenges et CTF.
 
