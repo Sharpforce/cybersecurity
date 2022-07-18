@@ -18,7 +18,7 @@ Connection: close
 entry=Test&blog=submit&entry_add=
 ```
 
-![](<../../../../../.gitbook/assets/image (27) (1).png>)
+![](<../../../../../.gitbook/assets/image (27) (1) (1).png>)
 
 Le message est donc ici stockée sur le serveur, sans doute en base de données, afin que tous les utilisateurs puissent y accéder (fonctionnalité Show all). L'injection XSS ne semble pas réalisable ici, que cela soit par les balises `<script></script>` :&#x20;
 
