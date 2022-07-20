@@ -16,7 +16,7 @@ Une seule page est à priori disponible. Cette page permet de visualiser des inf
 
 ![](../../../.gitbook/assets/eb26144873cd4496e53df9fa0eea37bb.png)
 
-La page ne se recharge pas lorsqu'on sélectionne une centrale mais des requêtes websocket permettent de récupérer les infos :
+La page ne se recharge pas lorsqu'on sélectionne une centrale mais des requêtes websocket permettent de récupérer les informations :
 
 ![](../../../.gitbook/assets/c50905e23ed8994ea0195fa45cc2c660.png)
 
@@ -26,7 +26,7 @@ On est tenté assez rapidement de tester l'injection SQL. L'insertion d'un carac
 
 ![](../../../.gitbook/assets/5c43a430070a040fa3242b9ee2d20469.png)
 
-On tente le caractère `"` :
+On tente alors le caractère `"` :
 
 ![](../../../.gitbook/assets/5aa5aac1c63a952416dcf9533cf80179.png)
 
@@ -67,6 +67,3 @@ La table "secret" contient le flag :
 ![](../../../.gitbook/assets/4ff28b85c711c663e6dd552d387fe061.png)
 
 Le flag permettant de valider le challenge est donc `flag{sqli_as_a_socket}`.
-
-
-

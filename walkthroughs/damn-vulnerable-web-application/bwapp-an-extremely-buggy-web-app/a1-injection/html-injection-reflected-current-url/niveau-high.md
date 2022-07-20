@@ -24,7 +24,7 @@ Cookie: security_level=2; PHPSESSID=2f4611482fb97564af7dbe4243dca828
 Connection: close
 ```
 
-![](<../../../../../.gitbook/assets/image (25).png>)
+![](<../../../../../.gitbook/assets/image (25) (1).png>)
 
 Aucune injection ne semble possible ici, même en testant le contournement sous IE11 :&#x20;
 

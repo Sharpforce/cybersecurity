@@ -71,7 +71,7 @@ Connection: close
 entry=%253c%2573%2563%2572%2569%2570%2574%253e%2561%256c%2565%2572%2574%2528%2531%2529%253c%252f%2573%2563%2572%2569%2570%2574%253e&blog=submit&entry_add=
 ```
 
-![](<../../../../../.gitbook/assets/image (30) (1).png>)
+![](<../../../../../.gitbook/assets/image (30) (1) (1).png>)
 
 L'injection HTML/XSS ne semble donc pas réalisable.
 
