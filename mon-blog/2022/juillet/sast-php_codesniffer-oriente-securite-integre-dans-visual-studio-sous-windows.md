@@ -4,7 +4,7 @@ description: 12 Juillet 2022
 
 # SAST - PHP\_CodeSniffer orienté sécurité intégré dans Visual Studio (sous Windows)
 
-**PHP\_Code Sniffer** est un outil permettant d'analyser le code source PHP d'une application afin de détecter des mauvaises pratiques de développement en se basant sur un ensemble de règles. Ces règles sont principalement des règles concernant la qualité, mais nous allons voir qu'il est possible d'en ajouter afin de détecter des failles de sécurité.
+**PHP\_Code Sniffer** est un outil permettant d'analyser le code source PHP d'une application afin de détecter des mauvaises pratiques de développement en se basant sur un ensemble de règles. Ces règles concernent principalement la qualité du code, mais nous allons voir qu'il est possible d'en ajouter afin de détecter des failles de sécurité.
 
 1. La première étape est de récupérer l'archive PHP PHAR disponible à l'URL [https://squizlabs.github.io/PHP\_CodeSniffer/phpcs.phar](https://squizlabs.github.io/PHP\_CodeSniffer/phpcs.phar).&#x20;
 2. La déposer dans le dossier désiré (ici `C:\Program Files\PHP_CodeSniffer`).
