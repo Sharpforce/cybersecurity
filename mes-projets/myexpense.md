@@ -1,3 +1,8 @@
+---
+cover: ../.gitbook/assets/background.jpg
+coverY: 31.013215859030836
+---
+
 # MyExpense
 
 ## Description
