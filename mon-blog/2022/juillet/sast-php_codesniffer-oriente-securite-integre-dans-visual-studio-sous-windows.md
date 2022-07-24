@@ -1,5 +1,7 @@
 ---
 description: 12 Juillet 2022
+cover: ../../../.gitbook/assets/Qu-est-ce-que-PHP-CodeSniffer-PHPCS.png
+coverY: 0
 ---
 
 # SAST - PHP\_CodeSniffer orienté sécurité intégré dans Visual Studio (sous Windows)
