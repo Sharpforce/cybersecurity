@@ -21,7 +21,7 @@ L'adresse IP de la machine étant statique pas besoin de scan du réseau :
 
 ![](../../../.gitbook/assets/1800b61673fdffcc34d1c883cbe67ac2.png)
 
-On commence directement par le scan de services via `nmap` :
+Je commence directement par le scan de services via `nmap` :
 
 ![](../../../.gitbook/assets/1f6222a8a24ac1fd029c54628f1ff19a.png)
 
@@ -35,7 +35,7 @@ Quelques vulnérabilités sur la version 5.8p1 d'OpenSSH, mais les CVE ont été
 
 ### Service Web
 
-Nous sommes donc en face d'un serveur Web Apache 2.2.17 utilisant PHP. Nous commençons par un `dirb` :
+Je me retrouve donc en face d'un serveur Web Apache 2.2.17 utilisant PHP. Je lance un `dirb` :
 
 ![](../../../.gitbook/assets/04c759cc0144b6f984a5bbb5abe98459.png)
 
@@ -43,15 +43,15 @@ Suivi d'un `nikto` :
 
 ![](../../../.gitbook/assets/3810de0d0b7b42863fefcbce5cf562fc.png)
 
-Ces deux scans nous apprennent la présence d'une page `info.php` qui effectue un appel à la fonction `phpinfo()` :
+Ces deux scans m'apprenne la présence d'une page `info.php` qui effectue un appel à la fonction `phpinfo()` :
 
 ![](../../../.gitbook/assets/d24253082253f33f3917010130ea0307.png)
 
-Cela étant fait, allons faire un tour sur le site proposé. La page d'accueil affiche un message de bienvenue et propose 3 liens (à droite, dont le lien `Home` qui est la page courante) :
+Cela étant fait, je vais faire un tour sur le site proposé. La page d'accueil affiche un message de bienvenue et propose 3 liens (à droite, dont le lien `Home` qui est la page courante) :
 
 ![](../../../.gitbook/assets/515a26491044826578325bc04b416d2b.png)
 
-On peut tenter de s'inscrire via le lien `Register`, cela va peut-être nous permettre de nous authentifier et ainsi avoir accès à d'autres informations :
+Je tente de m'inscrire via le lien `Register`, cela va peut-être me permettre de m'authentifier et ainsi avoir accès à d'autres informations :
 
 ![](../../../.gitbook/assets/68d009db34acbae94c1c68734c263377.png)
 
@@ -59,7 +59,7 @@ Après une activation du compte via un lien forgé par l'application :
 
 ![](../../../.gitbook/assets/4c7e10c440221bdfe2c25751a3dc24fd.png)
 
-Nous sommes authentifié, mais aucun lien supplémentaire ne nous est offert :
+Je suis maintenant authentifié, mais aucun lien supplémentaire n'est présent :
 
 ![](../../../.gitbook/assets/c7ac4885d84e40aee4e3a7bdabeb2ad9.png)
 
@@ -73,11 +73,11 @@ Après avoir fait le tour de tout ce qui est proposé, je commence à tester que
 
 ## Exploitation
 
-On va exploiter l'injection SQL afin de se connecter avec un compte existant et voir ce qu'on peut en tirer :
+J'exploite donc l'injection SQL afin de me connecter avec un compte existant et voir ce que je peux en tirer :
 
 ![](../../../.gitbook/assets/6828d78ef241b25bbee0150c2f0bc71e.png)
 
-Nous sommes connectés avec le premier compte que remonte la requête SQL effectuée par l'application :
+Je suis maintenant connecté avec le premier compte que remonte la requête SQL effectuée par l'application :
 
 ![](../../../.gitbook/assets/addd90b3eaae79d95996067a8565a534.png)
 
@@ -87,23 +87,23 @@ Un compte admin, pas mal. En fait, l'accès au compte admin ne donne pas d'infor
 Je ne l'ai vu seulement après coup mais l'adresse email de l'admin est présente sur la page d'accueil afin de le contacter en cas de questions.
 {% endhint %}
 
-On va donc tenter de récupérer les informations de la base de données en exploitant l'injection. Pour cela direction `sqlmap`. On récupère les mots de passe disponibles :
+Je tente de récupérer les informations de la base de données en exploitant l'injection. Pour cela direction `sqlmap`. Je  récupère les mots de passe disponibles :
 
 ![](../../../.gitbook/assets/b77bffe730d7eb785dee822857ee3936.png)
 
-Le mot de passe est hashé en SHA1 (40 caractères), on tente de le cracker :
+Le mot de passe est hashé en SHA1 (40 caractères), je tente de le cracker :
 
 ![](../../../.gitbook/assets/cf0627b44f73e69fb881a86621297b43.png)
 
-Etant déjà connecté en tant qu'admin, ce mot de passe ne va pas nous servir directement, mais je tente de l'utiliser admin de me connecter au blog et également en SSH. Pour cela, j'essaie plusieurs login tels que admin, dan, privett, danprivett, dan.privett mais sans succès.
+Etant déjà connecté en tant qu'admin, ce mot de passe ne va pas me servir directement, mais je tente de l'utiliser afin de me connecter au blog et également en SSH. Pour cela, j'essaie plusieurs login tels que admin, dan, privett, danprivett, dan.privett mais sans succès.
 
 Etant donné que la seule faille à ma disposition est l'injection SQL, je tente d'obtenir un shell par ce biais. Pour ce faire il est possible d'utiliser `sqlmap`. Il faut pour cela que le compte gérant la base de données possède le droit d'écriture sur le système de fichiers.
 
-Dans un premier temps, on génère notre shell avec `msfvenom` :
+Dans un premier temps, je génère le shell avec `msfvenom` :
 
 ![](../../../.gitbook/assets/b3cd3eb65947989d0e23a172abf6965c.png)
 
-On upload notre shell sur le serveur web via `sqlmap` :
+J'upload le shell sur le serveur web via `sqlmap` :
 
 ![](../../../.gitbook/assets/1f46249ab525fe746cbf035db4a80398.png)
 
@@ -111,13 +111,13 @@ On upload notre shell sur le serveur web via `sqlmap` :
 Le répertoire cible est indiqué dans la page `info` affichant le `phpinfo()`. Dans le cas contraire il faut tenter les valeurs habituelles voir brute forcer le nom du chemin.
 {% endhint %}
 
-On lance un handler en écoute sur le port adéquat, on visite la page contenant le webshell et nous sommes dans la place :
+Je lance un handler en écoute sur le port adéquat, je visite la page contenant le webshell et je suis dans la place :
 
 ![](../../../.gitbook/assets/92bf2ae7c90fa56f8258829a9c21c338.png)
 
 ## Élévation de privilèges
 
-On effectue un peu de reconnaissance :
+J'effectue un peu de reconnaissance :
 
 ![](../../../.gitbook/assets/06537bbd3b2156df507c637922492e43.png)
 
@@ -139,7 +139,7 @@ Un `cd ..` (plutôt chanceux sur le coup) plus tard on retrouve une copie du fic
 
 ![](../../../.gitbook/assets/b994308ce0f2cf9ba03168bc4a5635cd.png)
 
-Ce mot de passe (indiquant bien qu'il s'agit du mot de passe root) nous permet de se connecter en root à la machine :
+Ce mot de passe (indiquant bien qu'il s'agit du mot de passe root) me permet de me connecter en root à la machine :
 
 ![](../../../.gitbook/assets/27214758cc7845b06d85a1b118a564c0.png)
 

@@ -13,15 +13,15 @@
 
 ## Reconnaissance
 
-On détermine l'adresse IP de notre cible :
+Je détermine l'adresse IP de la cible :
 
 ![](../../../.gitbook/assets/b1ccdc3cf6e39d0e1f5457325fbde479.png)
 
-On découvre les services offerts par notre cible grâce à `nmap` :
+Je découvre les services offerts grâce à `nmap` :
 
 ![](../../../.gitbook/assets/7d8fae9a9ed7013ca4db05ddbf66dd7e.png)
 
-Un nombre intéressant de services sont en écoute sur cette machine. Un serveur Web sur le port 80 mais également une interface d'administration sur le port 901. Nous trouvons également du POP, RPC, IMAP ou encore du SMB.
+Un nombre intéressant de services sont en écoute sur cette machine. Un serveur Web sur le port 80 mais également une interface d'administration sur le port 901. Je trouve également du POP, RPC, IMAP ou encore du SMB.
 
 ### Samba
 
@@ -33,9 +33,9 @@ Je n'ai rien trouvé d'intéressant autre que cette énumération, il y avait bi
 
 ### Server HTTP
 
-On s'attaque ici logiquement à la plus grosse partie des machines de type "LAMPSecurity", le serveur web. Je ne vais pas ajouter une impression écran pour chaque page/service disponible, car il y en a pas mal, mais voici la liste :
+Je m'attaque ici logiquement à la plus grosse partie des machines de type "LAMPSecurity", le serveur web. Je ne vais pas ajouter une impression écran pour chaque page/service disponible, car il y en a pas mal, mais voici la liste :
 
-* La racine du site nous amène vers la page d'accueil de la "Phake Organization"
+* La racine du site qui amène vers la page d'accueil de la "Phake Organization"
 * Un blog est disponible à l'adresse "\~andy"
 * Un premier webmail "SquirrelMail" en version 1.4.11 sur "/mail"
 * Un gestionnaire d’événements sur "/event"
@@ -51,7 +51,7 @@ Un seul paramètre de disponible sur cette page et c'est déjà une première fa
 
 #### Andy Carp's Blog
 
-Il s'agit ici d'un blog qui se base sur un CMS du nom de "NanoCMS". Pour continuer notre reconnaissance, nous devons récupérer la version de ce CMS afin d'identifier de possibles vulnérabilités. Un petit tour sur Google nous apprend que la version (et bien plus encore) est disponible à la page "/data/pagesdata.txt" :
+Il s'agit ici d'un blog qui se base sur un CMS du nom de "NanoCMS". Pour continuer ma reconnaissance, je récupère la version de ce CMS afin d'identifier de possibles vulnérabilités. Un petit tour sur Google m'apprends que la version (et bien plus encore) est disponible à la page "/data/pagesdata.txt" :
 
 ![](../../../.gitbook/assets/c548766dfbc5858b2fbc1872bc8e0684.png)
 
@@ -67,7 +67,7 @@ Rien de très intéressant avec cette version de phpMyAdmin selon `searchsploit`
 
 #### Page info.php
 
-`nikto` nous remonte également la présence d'un fichier "/info.php" qui exécute en fait la méthode PHP `phpinfo()` :
+`nikto` remonte également la présence d'un fichier "/info.php" qui exécute en fait la méthode PHP `phpinfo()` :
 
 ![](../../../.gitbook/assets/7ccfbb5b186f2db54f44f2bf9c84e01e.png)
 
@@ -89,27 +89,27 @@ Il semblerait que la version 5.0.45 du service MySQL soit vulnérable à un buff
 
 ### Local File Inclusion
 
-Nous pouvons commencer par la LFI disponible sur la page d'accueil du site de la "Phake Organization". Il n'est pas possible ici d'effectuer une RFI, car il y a une concaténation avec le dossier "/inc" en préfix du nom du fichier. Il est toutefois possible de récupérer des fichiers locaux comme le "/etc/passwd", nous avons déjà la liste des utilisateurs grâce au Samba, mais pourquoi pas :
+Je commence par la LFI disponible sur la page d'accueil du site de la "Phake Organization". Il n'est pas possible ici d'effectuer une RFI, car il y a une concaténation avec le dossier "/inc" en préfix du nom du fichier. Il est toutefois possible de récupérer des fichiers locaux comme le "/etc/passwd", je possède déjà la liste des utilisateurs grâce au Samba, mais pourquoi pas :
 
 ![](../../../.gitbook/assets/178e6aeca043b49acb41c3d10102cf77.png)
 
-On peut également tenter de cracker le condensat du mot de passe présent dans le fichier "pagesdata.txt" de NanoCMS :
+Je tente également de cracker le condensat du mot de passe présent dans le fichier "pagesdata.txt" de NanoCMS :
 
 ![](../../../.gitbook/assets/a2327a9d57e315eee80ef20e26b10680.png)
 
 ### Code injection
 
-NanoCMS est également vulnérable à une injection de code, il suffit de créer une nouvelle page avec la payload PHP désirée. En ce qui concerne les différentes vulnérabilités de NanoCMS, je suis tombé sur ce très bon site (en tout cas il y figure tout ce dont j'ai besoin) : [http://www.madirish.net/304](http://www.madirish.net/304)
+NanoCMS est vulnérable à une injection de code, il suffit de créer une nouvelle page avec la payload PHP désirée. En ce qui concerne les différentes vulnérabilités de NanoCMS, je suis tombé sur ce très bon site (en tout cas il y figure tout ce dont j'ai besoin) : [http://www.madirish.net/304](http://www.madirish.net/304)
 
-On utilise `msfvenom` afin de générer notre reverse shell en PHP :
+J'utilise `msfvenom` afin de générer le reverse shell en PHP :
 
 ![](../../../.gitbook/assets/309aeef011df9311b20a8fc1eb14b7de.png)
 
-Puis grâce à une "nouvelle page" du blog on exécute notre payload :
+Puis grâce à une "nouvelle page" du blog j'exécute la payload :
 
 ![](../../../.gitbook/assets/046dc4a98dd751b316066743c2556523.png)
 
-Et on récupère notre shell `meterpreter` avec metasploit :
+Je récupère ainsi un shell `meterpreter` avec metasploit :
 
 ![](../../../.gitbook/assets/161c5b804d376c96b5d1f685805c7f3e.png)
 
@@ -119,7 +119,7 @@ Tomboy, que je connaissais pas (non je ne parle pas du film :slight\_smile: ) es
 
 ![](../../../.gitbook/assets/3bb3ff40e43e4bb00d67c2b77c59c703.png)
 
-On tente donc d'afficher cette note :
+Je tente d'afficher le contenu de cette note :
 
 ![](../../../.gitbook/assets/6aa78237000ce17e576200439cfd7a21.png)
 
@@ -127,7 +127,7 @@ Le mot de passe "root" est "50$cent" (un fan de rap ?)
 
 ## Élévation de privilèges
 
-L'élévation est ici facile puisque nous sommes en possession du mot de passe "root" :
+L'élévation est ici facile puisque je suis en possession du mot de passe "root" :
 
 ![](../../../.gitbook/assets/f51d0a93e0237a2cc2c9c0ad03f97f65.png)
 

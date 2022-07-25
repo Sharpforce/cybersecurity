@@ -26,8 +26,6 @@ Plusieurs services sont disponibles sur la machine : un serveur SSH, un serveur 
 
 ![](../../../.gitbook/assets/894a221970805858bda48459f925aee2.png)
 
-###
-
 ### Service SSH
 
 Pas de CVE intéressante du côté du service SSH.
@@ -36,7 +34,7 @@ Pas de CVE intéressante du côté du service SSH.
 
 ### Serveur HTTP
 
-On démarre par un scan `nikto` :
+Je démarre par un scan `nikto` :
 
 ![](../../../.gitbook/assets/1966636ad3ecf456391563f63d60b8d9.png)
 
@@ -54,21 +52,21 @@ Aucune tentative de compte par défaut ne fonctionnent :
 
 ![](../../../.gitbook/assets/5ff9da7fab316d99622a3d07ae88675c.png)
 
-Par contre l'injection d'un simple guillemet dans le champ mot de passe nous permet d'identifier une potentielle injection SQL :
+Par contre l'injection d'un simple guillemet dans le champ mot de passe me permet d'identifier une potentielle injection SQL :
 
 ![](../../../.gitbook/assets/462413260b8801c9d39046b699e0b4b7.png)
 
 ### Samba
 
-On commence par récupérer la version de Samba grâce au script `Metasploit` :
+Je commence par récupérer la version de Samba grâce au script `Metasploit` :
 
 ![](../../../.gitbook/assets/17b6a47806f4dcd143ae2c5442a80648.png)
 
-La version 3.0.28a de Samba semble posséder plusieurs vulnérabilités permettant un contrôle à distance (mais après quelques tests je n'ai aps réussi à faire fonctionner l'exploit) :
+La version 3.0.28a de Samba semble posséder plusieurs vulnérabilités permettant un contrôle à distance (mais après quelques tests je n'ai pas réussi à faire fonctionner l'exploit) :
 
 ![](../../../.gitbook/assets/17d188baa65188a6e377aec4e45306a8.png)
 
-`Metasploit` va nous permettre également d'énumérer les utilisateurs de la machine :
+`Metasploit` va me permettre également d'énumérer les utilisateurs de la machine :
 
 ![](../../../.gitbook/assets/8920b58a54f7db83a1ce75053f8c75bc.png)
 
@@ -80,19 +78,19 @@ Grâce à l'énumération smb il est possible d'utiliser l'injection SQL afin de
 
 ![](../../../.gitbook/assets/45fbf9b8610a465db14bfbb3cb0861eb.png)
 
-Par facilité, on utilise `sqlmap` afin de dump la totalité de la base :
+Par facilité, j'utilise `sqlmap` afin de dump la totalité de la base :
 
 ![](../../../.gitbook/assets/1022555dc8bf17e08d931248a081673a.png)
 
-Rien de très intéressant, on retrouve seulement les mots de passe des utilisateurs john et robert. Il est possible de tenter de récupérer un shell via une injection SQL (suivant les droits de l'utilisateur). Tout d'abord il est possible de savoir quel compte s'y connecte :
+Rien de très intéressant, je ne récupère seulement que les mots de passe des utilisateurs john et robert. Il est possible de tenter de récupérer un shell via une injection SQL (suivant les droits de l'utilisateur). Tout d'abord il est possible de savoir quel compte s'y connecte :
 
 ![](../../../.gitbook/assets/773f46dd5d165df3ddc1082c9be1142d.png)
 
-Le shell a de fortes chances de fonctionner car l'utilisateur s'y connectant est l'utilisateur root. La seconde information nécessaire est le chemin de l'arborescence des pages web ; L'erreur SQL nous donne cette information :
+Le shell a de fortes chances de fonctionner car l'utilisateur s'y connectant est l'utilisateur root. La seconde information nécessaire est le chemin de l'arborescence des pages web ; L'erreur SQL me donne cette information :
 
 ![](../../../.gitbook/assets/b17a5ec34f3ffda906edd814362320b8.png)
 
-Quelques secondes plus tard, `sqlmap` nous ramène un shell :
+Quelques secondes plus tard, `sqlmap` me ramène un shell :
 
 ![](../../../.gitbook/assets/fcac5fa412efcf0ad40c5b41ce006a56.png)
 
@@ -116,11 +114,11 @@ Tout d'abord il est possible de récupérer les identifiants du compte root se c
 
 ![](../../../.gitbook/assets/d59141abb5390725c2ebfec34c507a2b.png)
 
-`sys_exec` est une UDF qui n'est pas installée par défaut sur MySQL mais dans le cas où elle est présente, elle va nous permettre d'exécuter des commandes en root. On vérifie d'abord sa présence :
+`sys_exec` est une UDF qui n'est pas installée par défaut sur MySQL mais dans le cas où elle est présente, elle va me permettre d'exécuter des commandes en root. Je vérifie d'abord sa présence :
 
 ![](../../../.gitbook/assets/207a6c748f67d2ac9cc674d203820493.png)
 
-Cela semble le cas. Il nous suffit alors d'ajouter notre utilisateur john dans le groupe admin :
+Cela semble le cas. Il me suffit alors d'ajouter l'utilisateur john dans le groupe admin :
 
 ![](../../../.gitbook/assets/aad5c605b928b05753c8c16e3d60aa82.png)
 

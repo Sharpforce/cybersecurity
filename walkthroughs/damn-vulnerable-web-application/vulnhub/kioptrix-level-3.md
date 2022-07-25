@@ -15,7 +15,7 @@
 
 ## Reconnaissance
 
-La machine étant en DHCP il nous faut tout d'abord récupérer son adresse IP :
+La machine étant en DHCP il me faut tout d'abord récupérer son adresse IP :
 
 ![](../../../.gitbook/assets/2deb7203ebaf8282be37f5b5c566da05.png)
 
@@ -33,33 +33,33 @@ Peu de services puisque seul un service SSH et un serveur HTTP sont exposés.
 
 ### Service SSH
 
-Pas de vulnérabilité notable pour cette version de SSH, ça ne sera sans doute pas notre porte d'entrée :
+Pas de vulnérabilité notable pour cette version de SSH, ça ne sera sans doute pas ma porte d'entrée :
 
 ![](../../../.gitbook/assets/4aeb07eae3f4a5743e45a741ab7e1fe8.png)
 
 ### Serveur HTTP
 
-Le `nmap` nous apprend que le serveur HTTP est un Apache 2.2.8 utilisant PHP en version 5.2.4. Ajoutons à cela les résultats d'un `nikto` :
+Le `nmap` m'apprends que le serveur HTTP est un Apache 2.2.8 utilisant PHP en version 5.2.4. J'ajoute à cela les résultats d'un `nikto` :
 
 ![](../../../.gitbook/assets/acba11cde47bf0cc7aa3a4b96d66634b.png)
 
-Le scan nous apprend la présence d'un phpMyAdmin. La consultation du fichier `changelog.php` nous indique son numéro de version :
+Le scan m'apprends la présence d'un phpMyAdmin. La consultation du fichier `changelog.php` m'indique son numéro de version :
 
 ![](../../../.gitbook/assets/2545c9cd63d702ea68f6cc394345308a.png)
 
 Je ne mets pas la sortie du `dirb` car cela ne donne pas grand chose.
 
-Passons maintenant à l'analyse des pages web hébergées par le service. Tout d'abord la page d'accueil :
+Je passe maintenant à l'analyse des pages web hébergées par le service. Tout d'abord la page d'accueil :
 
 ![](../../../.gitbook/assets/e3f3136cda2c6480eebe477ad90a07c9.png)
 
-La mire de login est intéressante car elle nous informe du CMS utilisé :
+La mire de login est intéressante car elle m'informe du CMS utilisé :
 
 ![](../../../.gitbook/assets/7173a10a17abc6ab810f7da6a3bebd85.png)
 
 LotusCMS était un CMS open-source écrit en 2007/2008. Le code source est encore disponible sur [GitHub](https://github.com/kevinbluett/LotusCMS-Content-Management-System) (hébergé à l'origine sur [sourceforge](http://sourceforge.net/projects/arboroiancms/)).
 
-Mon premier but était d'identifier la version utilisée, j'ai donc récupéré le code source afin de repérer les différents fichiers pouvant contenir cette information. Le titre du fichier `install.html` présent dans le répertoire `/style/comps/admin/` nous rend ce service :
+Mon premier but était d'identifier la version utilisée, j'ai donc récupéré le code source afin de repérer les différents fichiers pouvant contenir cette information. Le titre du fichier `install.html` présent dans le répertoire `/style/comps/admin/` me rend ce service :
 
 ![](../../../.gitbook/assets/0a7d7315353be9fb05d96c32190f0256.png)
 
@@ -107,7 +107,7 @@ Après un certain temps à tourner en rond, j'ai décidé de rétropédaler et d
 
 Mon premier objectif est d'avoir accès à la partie administration de LotusCMS. Etant donné qu'il s'agit d'un CMS qui utilise seulement des fichiers plats, le mot de passe doit se situer dans un de ses fichiers de configuration.
 
-Après quelques recherches il se trouve que le mot de passe est présent dans un fichier distinct pour chaque utilisateur. Dans notre cas il s'agit de l'administrateur :
+Après quelques recherches il se trouve que le mot de passe est présent dans un fichier distinct pour chaque utilisateur. Dans mon cas il s'agit de l'administrateur :
 
 ![](../../../.gitbook/assets/380aae7f14e17ac297e227f92c0780fe.png)
 
@@ -115,15 +115,15 @@ Après une lecture du code source, il se trouve que le mot de passe, avant d'êt
 
 ![](../../../.gitbook/assets/5dd5d4f39ca30c4520b36b8e5b4b4381.png)
 
-John va nous aider à cracker ce mot de passe, mais il faut bien prendre en compte le sel utilisé. J'ajoute donc le hash dans un fichier sous le format `username:hash$sel` :
+John va m'aider à cracker ce mot de passe, mais il faut bien prendre en compte le sel utilisé. J'ajoute donc le hash dans un fichier sous le format `username:hash$sel` :
 
 ![](../../../.gitbook/assets/abdc00f93c7dbe14060e4aa7c4f3a9d4.png)
 
-Il ne faut pas oublier d'indiquer le format (ici `dynamic_24`) dans notre ligne de commande :
+Il ne faut pas oublier d'indiquer le format (ici `dynamic_24`) dans la ligne de commande :
 
 ![](../../../.gitbook/assets/a7299ae089a9a30c4ea1c1f906a66d21.png)
 
-Tout cela nous donne accès à la partie administration de LotusCMS :
+Tout cela donne accès à la partie administration de LotusCMS :
 
 ![](../../../.gitbook/assets/e4c88163fa456c0f2fd3e190a8acc3fe.png)
 
@@ -133,9 +133,9 @@ La recherche de mot de passe en plaintext porte ses fruits au niveau du réperto
 
 ![](../../../.gitbook/assets/522a3d5f14bea3929868e3676a3f0935.png)
 
-Cela nous permet d'avoir accès à la base MySQL avec le compte root/fuckeyou. Pour une analyse plus facile du contenu de la base de données, je passe par le phpMyAdmin.
+Cela permet d'avoir accès à la base MySQL avec le compte root/fuckeyou. Pour une analyse plus facile du contenu de la base de données, je passe par le phpMyAdmin.
 
-Nous avons donc un premier mot de passe dans la table `gallarific_users` :
+J'obtiens donc un premier mot de passe dans la table `gallarific_users` :
 
 ![](../../../.gitbook/assets/395cef4fc251ed7ef313d36062b0da48.png)
 
@@ -143,23 +143,23 @@ Et deux autres mots de passe (cette fois hashés) pour les utilisateurs **dreg**
 
 ![](../../../.gitbook/assets/8b492cfedeb8f61b28c6978d024e7bda.png)
 
-On tente de récupérer les mots de passe en clair :
+Je tente de récupérer les mots de passe en clair :
 
 ![](../../../.gitbook/assets/c1fce2e38ed6841b010536035e7fa937.png)
 
-Cela nous permet de se connecter en SSH avec le compte de **loneferret** :
+Cela me permet de se connecter en SSH avec le compte de **loneferret** :
 
 ![](../../../.gitbook/assets/6ac743790d4e460ef50b7b0661ceb8d5.png)
 
-Etant donné que `ht` possède le bit suid à 1, il est possible d'éditer des fichiers avec les droits root. On modifie alors le fichier `/etc/sudoers` :
+Etant donné que `ht` possède le bit suid à 1, il est possible d'éditer des fichiers avec les droits root. Je modifie alors le fichier `/etc/sudoers` :
 
 ![](../../../.gitbook/assets/0d7ea31987d0a4a1e312a93a5b4a5ca4.png)
 
-afin d'ajouter le droit su à notre utilisateur **loneferret** :
+afin d'ajouter le droit `su` à l'utilisateur **loneferret** :
 
 ![](<../../../.gitbook/assets/743a0c067215825e0d3a98017dd1b66b (2).png>)
 
-Un petit `sudo` su plut tard, nous voilà root :
+Un petit `sudo su` plus tard, me voilà root :
 
 ![](../../../.gitbook/assets/fa187d718ea2ce9be51246ea929a9e6b.png)
 

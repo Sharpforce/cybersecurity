@@ -15,23 +15,23 @@
 
 ## Reconnaissance
 
-On récupère l'adresse IP de la cible grâce à `netdiscover` :
+Je récupère l'adresse IP de la cible grâce à `netdiscover` :
 
 ![](../../../.gitbook/assets/fd957a25c648bee9fd66952e73c6ab43.png)
 
-On continue en scannant notre cible à l'adresse 192.168.56.68 via `nmap` :
+Je continue en scannant la cible à l'adresse 192.168.56.68 via `nmap` :
 
 ![](../../../.gitbook/assets/241914acc60e932ded45530601026b7d.png)
 
-Il y a donc un service web de disponible ainsi qu' service sur le port 666 mais filtré par le pare-feu.
+Il y a donc un service web de disponible ainsi qu'un service sur le port 666 mais filtré par le pare-feu.
 
 ### Serveur Web
 
-Une analyse avec `nikto` va nous permettre d'en savoir un peu plus :
+Une analyse avec `nikto` va me permettre d'en savoir un peu plus :
 
 ![](../../../.gitbook/assets/7114fd2c1640fef76a969c6d34aaf90e.png)
 
-Le serveur web propose un phpMyAdmin. On tente de connaitre sa version :&#x20;
+Le serveur web propose un phpMyAdmin. Je tente de connaitre sa version :&#x20;
 
 ![](../../../.gitbook/assets/ba67bca8a59e203652d76318e0401d73.png)
 
@@ -47,7 +47,7 @@ Malheureusement aucune des tentatives de weak credentials ne fonctionnent et pas
 
 ### Port knocking
 
-Etant donné que le serveur web du port 80 ne semble pas très intéressant, on se concentre sur le port 666 qui semble filtré. Ici un peu par chance (beaucoup de chance en fait), le port 666 est devenu ouvert :
+Etant donné que le serveur web du port 80 ne semble pas très intéressant, je me concentre sur le port 666 qui semble être filtré. Ici un peu par chance (beaucoup de chance en fait), le port 666 est devenu ouvert :
 
 ![](../../../.gitbook/assets/17327db6fdcc4ddee4e48c574cb7f584.png)
 
@@ -55,7 +55,7 @@ Mais qu'elle est cette sorcellerie ? En effet, j'ai dit par chance car j'avais n
 
 ![](../../../.gitbook/assets/9c5a4ce47506eaefcf413db928f92ff0.png)
 
-Ce second site utilise le CMS Joomla en 1.5, il faudra sans doute creuser par là. On commence tout d'abord par une petite reconnaissance avec `nikto` :&#x20;
+Ce second site utilise le CMS Joomla en 1.5, il faudra sans doute creuser par là. Je commence tout d'abord par une petite reconnaissance avec `nikto` :&#x20;
 
 ![](../../../.gitbook/assets/b37fcc1d43be96964ee63a316c1005c0.png)
 
@@ -67,7 +67,7 @@ Et le phpMyAdmin présent sur ce port est également en version 3.3.2.
 
 ### Joomla
 
-On attaque la reconnaissance du CMS Joomla qui semble être en version 1.5. `metsaploit` nous donne quelques détails supplémentaires :
+J'attaque la reconnaissance du CMS Joomla qui semble être en version 1.5. `metsaploit` me donne quelques détails supplémentaires :
 
 ![](../../../.gitbook/assets/2055b3827371e34384b2a446f5b90c2f.png)
 
@@ -81,13 +81,13 @@ Le plugin com\_abc (ABC Joomla Extension) semble être vulnérable aux injection
 
 ### Injection SQL
 
-&#x20;`metasploit` nous indique que le paramètre vulnérable est le paramètre "sectionid" (`http://192.168.56.68:666/index.php?option=com_abc&view=abc&letter=AS&sectionid='`).
+`metasploit` indique que le paramètre vulnérable est le paramètre "sectionid" (`http://192.168.56.68:666/index.php?option=com_abc&view=abc&letter=AS&sectionid='`).
 
-En cherchant un peu on identifie cette vulnérabilité comme étant la CVE-2010-1656 :
+En cherchant un peu j'identifie cette vulnérabilité comme étant la CVE-2010-1656 :
 
 ![](../../../.gitbook/assets/bc2863fb933df91a8db6b3d47ef3e8e0.png)
 
-Ici on ne s'embête pas, on sort l'artillerie `sqlmap` pour l'exploitation. On récupère deux mots de passe d'utilisateurs lambda mais pas celui de l'administrateur :
+Ici je ne m'embête pas et je sors l'artillerie `sqlmap` pour l'exploitation. Je récupère deux mots de passe d'utilisateurs lambda mais pas celui de l'administrateur :
 
 ![](../../../.gitbook/assets/4db0765c50f081e1a353ab55eadc8f34.png)
 
@@ -97,15 +97,15 @@ Pour cela, il faut utiliser l'option `--os-shell` :
 
 ![](../../../.gitbook/assets/a8e21cfb96625a12e7d30f2ba7c3fc1f.png)
 
-On possède donc maintenant un shell sur la machine mais limité en droits puisque il s'agit du compte www-data.
+Je possède donc maintenant un shell sur la machine mais limité en droits puisque il s'agit du compte www-data.
 
 ## Élévation de privilèges
 
-On identifie la version du système d'exploitation :
+J'identifie la version du système d'exploitation :
 
 ![](../../../.gitbook/assets/6d41f273d411b9785c03ba2ba2eb09c5.png)
 
-Pour cette version, [Linux-suggester](https://github.com/mzet-/linux-exploit-suggester) nous propose l'exploit suivant :
+Pour cette version, [Linux-suggester](https://github.com/mzet-/linux-exploit-suggester) propose l'exploit suivant :
 
 ![](../../../.gitbook/assets/a60387230af9692081d0764a85dadb86.png)
 
@@ -117,11 +117,11 @@ Pour son exécution, il faut retrouver un shell un peu plus classique, je suis d
 
 ![](../../../.gitbook/assets/f8ca36c20faec349a88b06a7e8191a1f.png)
 
-L'exécution de l'exploit nous donne un accès root :
+L'exécution de l'exploit me donne un accès root :
 
 ![](../../../.gitbook/assets/933f9c0d57e41f9f3644398a564da510.png)
 
-On récupère le flag présent dans le fichier à l'emplacement /root/Key.txt (le fichier étant très long, la sortie est tronquée) :
+Je récupère le flag présent dans le fichier à l'emplacement /root/Key.txt (le fichier étant très long, la sortie est tronquée) :
 
 ![](../../../.gitbook/assets/5ae790334d45fd1bb3ddb9f483f0eb73.png)
 
@@ -131,7 +131,7 @@ Le texte est encodé en base64, son décodage nous donne une image :
 
 ## Conclusion
 
-Machine sympathique que j'ai mis un certain temps à finir. La raison était que le shell récupéré était très instable et la connexion se fermait au bout de quelques secondes. Un peu de persévérance a terminé par payer :wink: .
+Machine sympathique que j'ai mis un certain temps à finir. La raison était que le shell récupéré était très instable et la connexion se fermait au bout de quelques secondes. Un peu de persévérance a finit par payer :wink: .
 
 J'ai eu beaucoup de chance concernant le port knocking puisque un double `nmap` suffit à déclencher l'ouverture du port. Par curiosité, je suis allé voir la configuration de `knockd` que voici :
 
