@@ -6,4 +6,4 @@ Ces quelques pages me servent surtout de pense-bête ou de mémo, en effet, j'ai
 
 Si vous avez des questions ou que vous apercevez des erreurs (qu'elles soient techniques ou de français) n'hésitez pas à me contacter par mail **sh4rpf0rc3\<AT>gmail.com** ou sur Twitter [https://twitter.com/Sh4rpF0rc3](https://twitter.com/Sh4rpF0rc3).
 
-![](.gitbook/assets/c60b329b5419139f45551c4324ef2dd9.png)
+![](.gitbook/assets/cyber-security-gbd0c41af9\_1280.png)
