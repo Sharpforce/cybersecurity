@@ -10,11 +10,8 @@ Cette suite est reconnaissable à son format, il s'agit d'un timestamp UNIX :
 
 Afin d'usurper la session d'une personne il suffira donc de tester les sessions passées avec, une certaine chance que les sessions les plus récentes soient encore actives.
 
-Voyons ce qu'en dit le Sequencer de Burp :
+J'utilise le Sequencer de Burp :
 
 ![](../../../../.gitbook/assets/a5a367d82180205beb7abd7ff1395e8d.png)
 
 En effet, étant donné qu'il n'y ait toujours pas d'aléa dans ce jeton, Burp le qualifie également d' "extremely poor" avec une entropie de 0 bits.
-
-
-

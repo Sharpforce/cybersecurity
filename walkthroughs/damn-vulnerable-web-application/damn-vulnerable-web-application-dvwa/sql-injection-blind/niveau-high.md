@@ -1,20 +1,20 @@
 # Niveau "High"
 
-Un changement est effectué au niveau de l’interface pour ce niveau « High ». Une pop-up est disponible pour insérer l’objet de notre recherche et le résultat s’affiche sur la fenêtre principale :
+Un changement est effectué au niveau de l’interface pour ce niveau « High ». Une pop-up est disponible pour insérer l’objet de la recherche et le résultat s’affiche sur la fenêtre principale :
 
 ![](../../../../.gitbook/assets/ddfc80eb30046f1b91071886f7f82007.png)
 
-Il nous faut donc maintenant découvrir si le champ est vulnérable à une injection de type SQL. Bien sur, il s’agira ici d'une injection à l’aveugle car l’application ne peut retourner que vrai/faux. De plus, l'injection sera de type String comme pour le niveau "Low" :
+Il me faut donc maintenant découvrir si le champ est vulnérable à une injection de type SQL. Bien sur, il s’agira ici d'une injection à l’aveugle car l’application ne peut retourner que vrai/faux. De plus, l'injection sera de type String comme pour le niveau "Low" :
 
 ![](../../../../.gitbook/assets/731669385a1dff534be839076604ce71.png)
 
 ![](../../../../.gitbook/assets/30d4692cec561529a15965976df413a4.png)
 
-On commence donc par récupérer le nom de la base de données :
+Je commence donc par récupérer le nom de la base de données :
 
-![](../../../../.gitbook/assets/bd4c85ececd02d004ae427df857b622d%20%281%29.png)
+![](<../../../../.gitbook/assets/bd4c85ececd02d004ae427df857b622d (1).png>)
 
-Soit \(le premier apostrophe est présent juste pour la coloration syntaxique\) :
+Soit (le premier apostrophe est présent juste pour la coloration syntaxique) :
 
 ```sql
 '1' AND ORD(MID(DATABASE(),1,1)) = 100 --  // d
@@ -109,4 +109,3 @@ Soit :
 {% hint style="info" %}
 Dans ce niveau "High", un cookie est créé pour chacune des requêtes effectuées avec comme valeur l'entrée renseignée par l'utilisateur. Il est donc également possible d'attaquer l'application par ce vecteur.
 {% endhint %}
-

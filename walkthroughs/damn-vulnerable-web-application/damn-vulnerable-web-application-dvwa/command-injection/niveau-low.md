@@ -1,6 +1,6 @@
 # Niveau "Low"
 
-Ce challenge offre la possibilité de vérifier l'état d'un hôte effectuant un ping. On commence, par exemple, par pinger la passerelle du réseau à l'adresse `192.168.56.1` (il s'agit ici de la passerelle VirtualBox) :
+Ce challenge offre la possibilité de vérifier l'état d'un hôte effectuant un ping. Je commence, par exemple, par pinger la passerelle du réseau à l'adresse `192.168.56.1` (il s'agit ici de la passerelle VirtualBox) :
 
 ![](<../../../../.gitbook/assets/4a5a279f278e5d0ebb27a28c0a2f4112 (2) (1).png>)
 
@@ -68,7 +68,7 @@ $ command1 || command2
 
 
 
-Afin d'exécuter notre commande, le plus simple est d'utiliser le séparateur de commandes `";"` puis d'insérer notre commande ensuite :
+Afin d'exécuter la commande, le plus simple est d'utiliser le séparateur de commandes `";"` puis d'insérer ma commande ensuite :
 
 ![](<../../../../.gitbook/assets/0924c72b0350b0689b2ac2873a08a021 (1).png>)
 

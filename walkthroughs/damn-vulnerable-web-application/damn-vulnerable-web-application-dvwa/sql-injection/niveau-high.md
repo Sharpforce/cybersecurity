@@ -1,10 +1,10 @@
 # Niveau "High"
 
-Un changement au niveau de l’interface pour ce niveau « High ». Une pop-up est disponible pour insérer l’objet de notre recherche et le résultat s’affiche sur la fenêtre principale :
+Un changement au niveau de l’interface pour ce niveau « High ». Une pop-up est disponible pour insérer l’objet de la recherche et le résultat s’affiche sur la fenêtre principale :
 
 ![](../../../../.gitbook/assets/a1dd1c57a6575a56ff5864b9dac6743f.png)
 
-L'injection de notre caractère préféré `"'"` retourne une erreur générique :
+L'injection du caractère `"'"` retourne une erreur générique :
 
 ![](../../../../.gitbook/assets/03a2758c4de27662e8d49b251f3d11c4.png)
 

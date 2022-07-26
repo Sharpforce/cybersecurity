@@ -1,6 +1,6 @@
 # Niveau "Medium"
 
-Voyons les modifications apportées à ce niveau "Medium" :
+Il faut analyser les modifications apportées à ce niveau "Medium" :
 
 ![](../../../../.gitbook/assets/0dd89966d796cc2958648f2b515f78e2.png)
 
@@ -16,7 +16,7 @@ La seconde requête contient un nouveau paramètre nommé `passed_captcha` qui a
 
 ![](../../../../.gitbook/assets/8cd98b3ca0d4afe92b6b2a1d70a95cf8.png)
 
-Aucune difficulté pour contourner cette protection, on adapte sensiblement notre précédente requête **`XHR`** pouvant être utilisée pour une attaque CSRF :
+Aucune difficulté pour contourner cette protection, j'adapte sensiblement ma précédente requête **`XHR`** pouvant être utilisée pour une attaque CSRF :
 
 ```javascript
 var xhr = new XMLHttpRequest();
@@ -34,6 +34,5 @@ xhr.send("step=2&password_new=hacked&password_conf=hacked&passed_captcha=true&Ch
 ```
 
 {% hint style="info" %}
-Pour l'exploitation de cette vulnérabilité, il suffit de reprendre le même principe que lors d'une attaque CSRF classique \(faire visiter un site malicieux à la victime, s'appuyer sur une faille XSS, etc\)
+Pour l'exploitation de cette vulnérabilité, il suffit de reprendre le même principe que lors d'une attaque CSRF classique (faire visiter un site malicieux à la victime, s'appuyer sur une faille XSS, etc)
 {% endhint %}
-

@@ -1,6 +1,6 @@
 # Niveau "High"
 
-Les réponses du serveur face aux attaques précédentes varient légèrement ici puisque nous avons le droit à l'erreur suivante pour chacun de nos essais :
+Les réponses du serveur face aux attaques précédentes varient légèrement ici puisque je récupère l'erreur suivante pour chacun de mes essais :
 
 ![](../../../../.gitbook/assets/f67415de8b00b3d38436adf029c583a7.png)
 
@@ -10,11 +10,11 @@ La seule chose facilement réalisable est l'accès à la page cachée :
 
 Il est sans doute possible qu'un filtre vérifie la présence du mot "file" dans le paramètre d'inclusion. L'idée du développeur était sans doute ici de ne pouvoir inclure seulement les fichiers `file*.php` .&#x20;
 
-On tente un premier contournement mais sans succès :
+Je tente un premier contournement mais sans succès :
 
 ![](../../../../.gitbook/assets/eca544497d1118465bb8fb73ca0ba739.png)
 
-Après quelques essais, on identifie qu'il est impératif que la valeur du paramètre commence par la chaîne "file" :
+Après quelques essais, j'identifie qu'il est impératif que la valeur du paramètre commence par la chaîne "file" :
 
 ![](../../../../.gitbook/assets/f658ec962579ec04fe396494372eb65a.png)
 

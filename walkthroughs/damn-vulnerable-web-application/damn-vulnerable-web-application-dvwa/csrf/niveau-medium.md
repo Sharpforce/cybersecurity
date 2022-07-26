@@ -14,7 +14,7 @@ L'attaque précédente, effectuée pour le niveau "Low", doit donc toujours fonc
 
 
 
-Analysons la différence entre la requête légitime et celle générée par notre précédente (tentative d') attaque :
+J'analyse alors la différence entre la requête légitime et celle générée par ma précédente (tentative d') attaque :
 
 ![](../../../../.gitbook/assets/57e93dd720248cb62751c3e65862f417.png)
 
@@ -34,7 +34,7 @@ Soit lors de la navigation de la victime :
 
 ![](../../../../.gitbook/assets/d0da1fda181ffba0dc7774a0bf695fd4.png)
 
-Lors de sa visite de la page du Guestbook contenant notre image malveillante, la requête déclenchée sera effectuée avec un `Referer` valide :
+Lors de sa visite de la page du Guestbook contenant l'image malveillante, la requête déclenchée sera effectuée avec un `Referer` valide :
 
 ![](<../../../../.gitbook/assets/052890166f4826c302b676545f6c067d (1).png>)
 

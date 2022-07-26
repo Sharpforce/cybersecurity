@@ -23,7 +23,7 @@ Une faille XSS permet de contourner une protection basée sur un jeton anti-CSRF
 
 **Exploitation via des iframes**
 
-Nous affichons une première `<iframe>` qui va afficher la page du challenge afin de récupérer le jeton. La mécanique de récupération se fait grâce à la méthode `readFrame1()` :
+J'affiche une première `<iframe>` qui va afficher la page du challenge afin de récupérer le jeton. La mécanique de récupération se fait grâce à la méthode `readFrame1()` :
 
 ```markup
 <iframe src="http://192.168.56.203:8080/vulnerabilities/csrf" onload="readFrame1()" id="frame1"></iframe>
@@ -41,7 +41,7 @@ function readFrame() {
 ```
 {% endcode %}
 
-La variable `token` va contenir la chaîne suivante : `"&user_token=jeton_csrf_récupérée"`. Nous allons ensuite assigner à une seconde `<iframe>` une URL représentant la requête **`GET`** effectuant le changement de mot de passe.
+La variable `token` va contenir la chaîne suivante : `"&user_token=jeton_csrf_récupérée"`. J'assigne à une seconde `<iframe>` une URL représentant la requête **`GET`** effectuant le changement de mot de passe.
 
 Cette `<iframe>` sera appelée de cette façon :
 

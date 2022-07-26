@@ -1,6 +1,6 @@
 # Niveau "Medium"
 
-Le formulaire est légèrement modifié ici puisque l'application nous présente non plus un champ de type `<input>` mais une liste de sélection `<select>` :
+Le formulaire est légèrement modifié ici puisque l'application présente non plus un champ de type `<input>` mais une liste de sélection `<select>` :
 
 ![](../../../../.gitbook/assets/01cdc18d716ae4bddce7d1c64bb83075.png)
 
@@ -8,13 +8,13 @@ Pour un soucis de simplicité, j'utilise ici l'extension Web Developer (possible
 
 ![](../../../../.gitbook/assets/50601a1b929aae8bcc75f6023ff5fc6d.png)
 
-On tente d'injecter notre caractère spécial `"'"` afin de générer une erreur SQL :
+Je tente d'injecter ma caractère spécial `"'"` afin de générer une erreur SQL :
 
 ![](../../../../.gitbook/assets/0af6ed1e681ffc6f5b9b95c97ca44859.png)
 
-L'erreur nous informe sur la présence d'une protection car le caractère `"'"` est échappé (via le caractère `"\"`). De plus, l'erreur nous indique qu'il s'agit sans doute d'une injection de type numérique et non plus de type String (nombre de `"'"` entourant notre donnée).
+L'erreur m'informe sur la présence d'une protection car le caractère `"'"` est échappé (via le caractère `"\"`). De plus, l'erreur m'indique qu'il s'agit sans doute d'une injection de type numérique et non plus de type String (nombre de `"'"` entourant notre donnée).
 
-Sans reprendre toutes les étapes de reconnaissance (déjà effectuées pour le niveau "Low"), voici l'exploitation de l'injection dans les grandes lignes :
+Sans reprendre toutes les étapes de reconnaissance (déjà effectuées pour le niveau "Low"), voici l'exploitation de l'injection :
 
 ```sql
 1 UNION SELET 1,2
@@ -22,7 +22,7 @@ Sans reprendre toutes les étapes de reconnaissance (déjà effectuées pour le 
 
 ![](../../../../.gitbook/assets/8a1a58636b34849d9a72d55aedb3d7a3.png)
 
-L'échappement effectué par l'application est un peu embêtant car il nous empêche d'effectuer notre clause `WHERE` :&#x20;
+L'échappement effectué par l'application est un peu embêtant car il m'empêche d'effectuer ma clause `WHERE` :&#x20;
 
 ```sql
 6 UNION SELECT table_name,2 FROM INFORMATION_SCHEMA.tables WHERE TABLE_SCHEMA = 'dvwa' -- 
@@ -30,7 +30,7 @@ L'échappement effectué par l'application est un peu embêtant car il nous emp�
 
 ![](../../../../.gitbook/assets/064b4c7ce96c1e4813c22f82ea99e670.png)
 
-Afin de contourner cette limitation on peut, soit supprimer notre clause, ce qui aura pour conséquence de retourner une liste de toutes les tables des différentes bases, ou alors, d'utiliser la fonction `CHAR()` de MySQL :
+Afin de contourner cette limitation je peux, soit supprimer la clause, ce qui aura pour conséquence de retourner une liste de toutes les tables des différentes bases, ou alors, utiliser la fonction `CHAR()` de MySQL :
 
 ```sql
 6 UNION SELECT table_name,2 FROM INFORMATION_SCHEMA.tables WHERE TABLE_SCHEMA = CHAR(100,118,119,97)
@@ -38,7 +38,7 @@ Afin de contourner cette limitation on peut, soit supprimer notre clause, ce qui
 
 ![](../../../../.gitbook/assets/4bdb391ab3998433c70c6425147d293f.png)
 
-Maintenant que nous pouvons contourner l'échappement en place, la suite est facile :
+Maintenant que je peux contourner l'échappement en place, la suite est facile :
 
 ```sql
 6 UNION SELECT column_name,2 FROM INFORMATION_SCHEMA.columns WHERE TABLE_SCHEMA = CHAR(100,118,119,97)
