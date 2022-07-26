@@ -14,9 +14,9 @@ En plus de la chaîne renversée, les caractères `"'" (simple quote)`, `"S"` ai
 
 ![](../../../.gitbook/assets/7f414979a8120e4b67398743f80293c3.png)
 
-En essayant plusieurs payloads on se rend compte que le caractère `"5"` est également filtré. C'est assez gênant car le caractère `"S"` est représente par `"\u0053"` en unicode et le caractère `"e"` par `"\u0065"`empêchant cette technique de contournement.&#x20;
+En essayant plusieurs payloads je me rends compte que le caractère `"5"` est également filtré. C'est assez gênant car le caractère `"S"` est représente par `"\u0053"` en unicode et le caractère `"e"` par `"\u0065"`empêchant cette technique de contournement.&#x20;
 
-La technique est ici alors d'utiliser la balise `<svg>`. Cette balise va permettre d'utiliser les HTML entities au sein de la balise `<script></script>` car la balise `<svg>` nous fait travailler dans un contexte XML :
+La technique est ici alors d'utiliser la balise `<svg>`. Cette balise va permettre d'utiliser les HTML entities au sein de la balise `<script></script>` car la balise `<svg>` fait travailler dans un contexte XML :
 
 ![](<../../../.gitbook/assets/0fbca9cf35939074ad5b55ebb715f6a3 (1).png>)
 
@@ -70,7 +70,7 @@ Ce challenge semble proposer une inversion de la chaîne de caractères et un fi
 
 ![](../../../.gitbook/assets/ec355bed09f8c3f5657dfcd7b4ef0622.png)
 
-Concernant le caractère `"y"` il suffit de le répéter dans la balise `<style>` car seule la première occurrence semble être supprimée. L'encodage unicode va nous permettre d'appeler correctement la fonction malgré le filtrage du caractère `"F"`, puis, on inverse le tout :
+Concernant le caractère `"y"` il suffit de le répéter dans la balise `<style>` car seule la première occurrence semble être supprimée. L'encodage unicode va me permettre d'appeler correctement la fonction malgré le filtrage du caractère `"F"`, puis, j'inverse le tout :
 
 ![](../../../.gitbook/assets/bac1e101560c4bc2855d16872fff8755.png)
 
@@ -88,11 +88,11 @@ On s’aperçoit que le caractère `" " (espace)` est filtré et que la chaîne 
 
 ![](../../../.gitbook/assets/69b88b8eb5dc648a8dffe8cc268fa517.png)
 
-Le filtrage sur le caractère `" " (espace)` n'est pas gênant car il n'est pas nécessaire dans la balise. Par contre, si on inverse notre payload, un second filtrage (voir même un brouillage :laughing: ) s'active :
+Le filtrage sur le caractère `" " (espace)` n'est pas gênant car il n'est pas nécessaire dans la balise. Par contre, si j'inverse ma payload, un second filtrage (voir même un brouillage :laughing: ) s'active :
 
 ![](../../../.gitbook/assets/f19587312b2c89ddb8ec5af75d1e6190.png)
 
-Après quelques recherches, le fautif semble être trouvé. Il s'agit non pas d'un caractère spécifique mais sans doute de l'emplacement de ce caractère voir peut être de la longueur de la chaîne. En effet, il semblerait que notre chaîne s'affiche correctement seulement lorsque la transformation base64 se termine par un signe `"="`. Un encodage unicode du `"S"` va permettre de passer notre payload et de valider ce challenge :
+Après quelques recherches, le fautif semble être trouvé. Il s'agit non pas d'un caractère spécifique mais sans doute de l'emplacement de ce caractère voir peut être de la longueur de la chaîne. En effet, il semblerait que la chaîne s'affiche correctement seulement lorsque la transformation base64 se termine par un signe `"="`. Un encodage unicode du `"S"` va permettre de faire passer ma payload et de valider ce challenge :
 
 ![](../../../.gitbook/assets/f77ae7b912dcbf71b26c70c824e84075.png)
 
@@ -128,8 +128,8 @@ Premièrement la chaîne est inversée, et, plus embêtant, le caractère `"<"` 
 
 ![](../../../.gitbook/assets/9082b09b1725e21d56e5acdfe9b56e24.png)
 
-Il nous faut donc trouver une payload qui n'a pas besoin de fermer la balise `<script>` ouverte et également gérer la fin de la variable JSON, à savoir `"};"` , afin de ne pas avoir d'erreur de syntaxe.&#x20;
+Il me faut donc trouver une payload qui n'a pas besoin de fermer la balise `<script>` ouverte et également gérer la fin de la variable JSON, à savoir `"};"` , afin de ne pas avoir d'erreur de syntaxe.&#x20;
 
-En essayant plusieurs payload, on se rend compte du filtrage de l'occurrence `"on"` ainsi que celui du  caractère `"4"`. Pour contourner cela, il suffira de doubler le `"on"` et d'utiliser la méthode `toLowerCase()`pour le caractère `"d"` (son encodage unicode n'était pas possible car il contient le caractère `"4"` ) :
+En essayant plusieurs payload, je me rends compte du filtrage de l'occurrence `"on"` ainsi que celui du  caractère `"4"`. Pour contourner cela, il suffira de doubler le `"on"` et d'utiliser la méthode `toLowerCase()`pour le caractère `"d"` (son encodage unicode n'était pas possible car il contient le caractère `"4"` ) :
 
 ![](../../../.gitbook/assets/04f2aa0daca599196576492f7470ab2c.png)

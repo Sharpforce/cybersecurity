@@ -14,7 +14,7 @@ Le caractère `"8"` est ici filtré et la chaîne est inversée :
 
 ![](../../../.gitbook/assets/204881d35f6f224dc6f3542f0667e36b.png)
 
-Si nous tentons seulement d'inverser la chaîne et de gérer le caractère filtré avec une opération mathématique, plus rien ne s'affiche :
+Lorsque je tente seulement d'inverser la chaîne et de gérer le caractère filtré avec une opération mathématique, plus rien ne s'affiche :
 
 ![](../../../.gitbook/assets/cf7fc79bf3009af39d9187166e80619a.png)
 
@@ -32,7 +32,7 @@ Appeler la fonction `fancyHuman()` avec la chaîne de caractères `"rm2zma4i1v6"
 
 ### Résolution
 
-Nous avons à priori de la chance car seul le caractère `"4"` semble être filtré. La chaîne est inversée, mais nous commençons à avoir l'habitude de cela :stuck\_out\_tongue: :
+J'ai à priori de la chance car seul le caractère `"4"` semble être filtré. La chaîne est inversée, mais je commence à avoir l'habitude de cela :stuck\_out\_tongue: :
 
 ![](../../../.gitbook/assets/752d0273870fa3d3f4a42af34733419b.png)
 
@@ -72,9 +72,6 @@ Je tente ici de fermer la première balise `<script></script>` afin de ne pas av
 
 ![](../../../.gitbook/assets/565dcaf7a99216e30362b85a1aa5e9f8.png)
 
-&#x20;Etant donné qu'il nous faut contourner le filtre sur la parenthèse ouvrante nous allons utiliser la balise `<svg>` afin de pouvoir utiliser son équivalent HTML entities. Le caractère `"h"`, qui est également filtré, possède un `"8"` dans son unicode, nous passons alors également par son équivalent HTML entities :
+&#x20;Etant donné qu'il me faut contourner le filtre sur la parenthèse ouvrante j'utilise la balise `<svg>` afin de pouvoir utiliser son équivalent HTML entities. Le caractère `"h"`, qui est également filtré, possède un `"8"` dans son unicode, je passe alors également par son équivalent HTML entities :
 
 ![](../../../.gitbook/assets/44464d254ed2b28c5fca9d0c016ae9f6.png)
-
-
-

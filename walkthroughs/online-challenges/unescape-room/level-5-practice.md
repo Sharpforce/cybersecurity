@@ -10,11 +10,11 @@ Appeler la fonction `prettyHuman()` avec la chaîne de caractères `"m5lccw"` en
 
 ### Résolution
 
-Ici, deux filtres sont en place : les occurrences du caractère `"c"` sont supprimées et le caractère `" " (espace)` n'est également pas disponible. Le filtrage du caractère `"c"` est gênant car notre balise `<script></script>` n'est pas utilisable :
+Ici, deux filtres sont en place : les occurrences du caractère `"c"` sont supprimées et le caractère `" " (espace)` n'est également pas disponible. Le filtrage du caractère `"c"` est gênant car la balise `<script></script>` n'est pas utilisable :
 
 ![](../../../.gitbook/assets/99533f26bcb0f0dc30be7ecd5468b8b3.png)
 
-Il est possible de contourner le filtrage du caractère `"c"` en passant par un tag `<svg>`ainsi que de l'encodage unicode suivant le contexte. Le `"/"` permet de contourner la suppression du caractère `" " (espace)` :
+Je contourne le filtrage du caractère `"c"` en passant par un tag `<svg>`ainsi que de l'encodage unicode suivant le contexte. Le `"/"` me permet de contourner la suppression du caractère `" " (espace)` :
 
 ![](../../../.gitbook/assets/f57fe3417e199719c0c63b030528c50f.png)
 
@@ -28,11 +28,11 @@ Appeler la fonction `prettyRobot()` avec la chaîne de caractères `"elcmf4"` en
 
 ### Résolution
 
-Il faut plusieurs essais avant de déterminer les quelques filtres en place ici. Il semble que l’occurrence `"on"` ne soit pas permise ainsi que l’occurrence `"rr"` qui est transformée en `"r"`. De plus le caractère `"t"` ne semble pas permis non plus :
+Il me faut plusieurs essais avant de déterminer les quelques filtres en place ici. Il semble que l’occurrence `"on"` ne soit pas permise ainsi que l’occurrence `"rr"` qui est transformée en `"r"`. De plus le caractère `"t"` ne semble pas être permis non plus :
 
 ![](../../../.gitbook/assets/c7fa03cbe2d3c98581db70fa31c5ba2e.png)
 
-Concernant le `"on"` de `onerror` on peut passer par le balise `<script></<script>`. Pour avoir une seule occurrence de `"r"` on en renseigne un second, puis, finalement, on utilise l'encodage unicode pour contourner le filtre sur le caractère `"t"` :
+Concernant le `"on"` de `onerror` je peux passer par le balise `<script></<script>`. Pour avoir une seule occurrence de `"r"` j'en renseigne un second, puis, finalement, j'utilise l'encodage unicode pour contourner le filtre sur le caractère `"t"` :
 
 ![](../../../.gitbook/assets/be28df2a6a27f4a6ac51cc82d483c447.png)
 
@@ -50,8 +50,8 @@ Dans ce challenge, le caractère `"u"` ainsi que le caractère `"o"` sont filtr�
 
 ![](../../../.gitbook/assets/92f35925b895f58e15fb170dc43f5ab7.png)
 
-Etant donné que le `"u"` est filtré, il n'est pas possible d'utiliser l'encodage unicode. On utilise donc les HTML entities pour le filtrage des caractères `"o"` et `"u"`. Concernant le `"u"` présent dans la chaîne passée en argument on utilise la fonction `String.fromCharCode()` . On utilise également les HTML entities car on se rend compte que la chaîne `"String"` est également filtrée :
+Etant donné que le `"u"` est filtré, il n'est pas possible d'utiliser l'encodage unicode. J'utilise donc les HTML entities pour le filtrage des caractères `"o"` et `"u"`. Concernant le `"u"` présent dans la chaîne passée en argument on utilise la fonction `String.fromCharCode()` . J'utilise également les HTML entities car je me rends compte que la chaîne `"String"` est également filtrée :
 
 ![](../../../.gitbook/assets/3b161555d0facb03956540bec8f16573.png)
 
-Je me suis rendu compte seulement après, mais le filtrage sur le `"o"` est contournable en le doublant (par exemple `"oo"`).
+Je me suis rendu compte seulement à posteriori , mais le filtrage sur le `"o"` est contournable en le doublant (par exemple `"oo"`).

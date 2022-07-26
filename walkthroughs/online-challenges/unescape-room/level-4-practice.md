@@ -1,6 +1,6 @@
-# Level 4 \(practice\)
+# Level 4 (practice)
 
-## Challenge \#1
+## Challenge #1
 
 ### Description
 
@@ -18,7 +18,7 @@ La notation unicode ainsi que l'opération mathématique permet de s'en passer o
 
 ![](../../../.gitbook/assets/c6029c256ff2a2c4ea0a458f0f77db46.png)
 
-## Challenge \#2
+## Challenge #2
 
 ### Description
 
@@ -32,11 +32,11 @@ Un filtrage est effectué sur le caractère `"e"` ainsi que sur le caractère `"
 
 ![](../../../.gitbook/assets/8cb6683a392640434e4ac82f88a5803a.png)
 
-Il est possible de le contourner en utilisant les mêmes techniques que précédemment à savoir l'encodage unicode ainsi que l'opération mathématique :
+Je parviens à contourner ce filtre en utilisant les mêmes techniques que précédemment à savoir l'encodage unicode ainsi que l'opération mathématique :
 
 ![](../../../.gitbook/assets/e5647e33c683d7e2b313528feb910ecb.png)
 
-## Challenge \#3
+## Challenge #3
 
 ### Description
 
@@ -54,9 +54,6 @@ Soit, en utilisant l'encodage unicode :
 
 ![](../../../.gitbook/assets/3c380c51b35637e2205767de44b3cb5f.png)
 
-Etant donné que notre payload se situe dans un `href`, il ne faut pas oublier de cliquer sur le lien pour déclencher l'injection \(View DOM\) :
+Etant donné que la payload se situe dans un `href`, il ne faut pas oublier de cliquer sur le lien pour déclencher l'injection (View DOM) :
 
 ![](../../../.gitbook/assets/ffcc5eb2241bd36aa306ea0d3bdcad70.png)
-
-
-

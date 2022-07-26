@@ -1,6 +1,6 @@
-# Level 7 \(practice\)
+# Level 7 (practice)
 
-## Challenge \#1
+## Challenge #1
 
 ### Description
 
@@ -10,15 +10,15 @@ Appeler la fonction `tallHuman()` avec la chaîne de caractères `"9ultl0bs"` en
 
 ### Résolution
 
-Dans cet exercice, la chaîne semble être inversée et un filtrage est effectué sur le caractère `"t"` : 
+Dans cet exercice, la chaîne semble être inversée et un filtrage est effectué sur le caractère `"t"` :&#x20;
 
 ![](../../../.gitbook/assets/b805221344cd2a67c1ae3246154e9f3c.png)
 
-L'idée va donc être de gérer dans un premier temps le filtrage sur le caractère `"t"` puis d'effectuer un inversement sur notre chaîne. Concernant le filtrage on utilise le `"T"` à la place du `"t"` pour pouvoir écrire le mot clé `"script"`. Le filtre du caractère dans le nom de la fonction ainsi que dans la chaîne passée en paramètre est contournable grâce à l'encodage unicode :
+L'idée va donc être de gérer dans un premier temps le filtrage sur le caractère `"t"` puis d'effectuer un inversement sur notre chaîne. Concernant le filtrage j'utilise le `"T"` à la place du `"t"` pour pouvoir écrire le mot clé `"script"`. Le filtre du caractère dans le nom de la fonction ainsi que dans la chaîne passée en paramètre est contournable grâce à l'encodage unicode :
 
 ![](../../../.gitbook/assets/1b90a6e251c390791592eb6af289684d.png)
 
-## Challenge \#2
+## Challenge #2
 
 ### Description
 
@@ -28,15 +28,15 @@ Appeler la fonction `prettySuperHero()` avec la chaîne de caractères `"86zk0a0
 
 ### Résolution
 
-Seuls les caractères `" " (espace)` , `"6"` et `"0"` sont filtrés, on ne rencontre donc pas de réel problème ici :
+Seuls les caractères `" " (espace)` , `"6"` et `"0"` sont filtrés, je ne rencontre donc pas de réel difficulté ici :
 
 ![](../../../.gitbook/assets/559adf43a8d5753f3d0b6c1cb99800ed.png)
 
-Cela ne sert à rien de tenter de contourner le filtre sur le caractère `" " (espace)`, il sera ajouté automatiquement. On utilise les opérations mathématiques afin de retrouver notre `"6"` et nos `"0"` :
+Cela ne sert à rien de tenter de contourner le filtre sur le caractère `" " (espace)`, il sera ajouté automatiquement. J'utilise les opérations mathématiques afin de retrouver le `"6"` et le  `"0"` :
 
 ![](../../../.gitbook/assets/56e99beff016ef220387065c9b635b26.png)
 
-## Challenge \#3
+## Challenge #3
 
 ### Description
 
@@ -50,11 +50,11 @@ Plutôt facile pour celle-ci : la chaîne est inversée et seul le caractère `"
 
 ![](../../../.gitbook/assets/d483be9f4ba36a4daabfb79bf96bd3c9.png)
 
-On utilise donc le contournement par le jeu de majuscule/minuscule et l'encodage unicode avant d'inverser la payload :
+J'utilise donc le contournement par le jeu de majuscule/minuscule et l'encodage unicode avant d'inverser la payload :
 
 ![](../../../.gitbook/assets/e3792001b34cd2659f6d9edd850aa27a.png)
 
-## Challenge \#4
+## Challenge #4
 
 ### Description
 
@@ -68,11 +68,11 @@ Dans cet exercice, le caractère `"p"` ainsi que le caractère `"\"` sont filtr�
 
 ![](../../../.gitbook/assets/75b495b9963e0d44d852be4d6ee9a166.png)
 
-On contourne le filtrage sur `"p"` dans les balises en utilisant `"P"`. Pour le caractère `"p"` de la chaîne passée en argument, il n'est pas possible d'utiliser l'encodage unicode car le caractère `"\"` est filtré. Je passe alors par un `toLowerCase()` :
+Je contourne le filtrage sur `"p"` dans les balises en utilisant `"P"`. Pour le caractère `"p"` de la chaîne passée en argument, il n'est pas possible d'utiliser l'encodage unicode car le caractère `"\"` est filtré. Je passe alors par un `toLowerCase()` :
 
 ![](../../../.gitbook/assets/c298dabe10e09a4d1c650317967ff21b.png)
 
-## Challenge \#5
+## Challenge #5
 
 ### Description
 
@@ -86,11 +86,11 @@ Ici la chaîne est inversée. De plus, les caractères `"F"`, `"("` et `" "(espa
 
 ![](../../../.gitbook/assets/c3231fbbebbc76f0bce06810b65517f4.png)
 
-On remplace les caractères par la version HTML entities ou unicode selon le cas, puis, on inverse la chaîne :
+Je remplace les caractères par la version HTML entities ou unicode selon le cas, puis, j'inverse la chaîne :
 
 ![](../../../.gitbook/assets/46dd72f5d4a364332f26a894c982df39.png)
 
-## Challenge \#6
+## Challenge #6
 
 ### Description
 
@@ -100,15 +100,15 @@ Appeler la fonction `niceSuperHero()` avec la chaîne de caractères `"3hbw9yod"
 
 ### Résolution
 
-Un filtrage est effectué sur le caractère `"c"` \(ainsi que sur `"C"`\) ainsi que sur le caractère `"3"` . Finalement la chaîne est également inversée :
+Un filtrage est effectué sur le caractère `"c"` (ainsi que sur `"C"`) ainsi que sur le caractère `"3"` . Finalement la chaîne est également inversée :
 
 ![](../../../.gitbook/assets/519b02a07133e6d9d06ae8f4b37d2d22.png)
 
-On est tenté d'appeler directement la fonction `niceSuperHero()` , mais étant donné que le `"c"` est filtré et son code unicode est `\u0063`et qu'il contient un `"3"` ...  On passe alors par un encodage base64 et un `toLowerCase()` :
+Je suis tenté d'appeler directement la fonction `niceSuperHero()` , mais étant donné que le `"c"` est filtré et son code unicode est `\u0063`et qu'il contient un `"3"` ...  Je passe alors par un encodage base64 et un `toLowerCase()` :
 
 ![](../../../.gitbook/assets/474bb0091cd6a1cfbb5066eb05cad264.png)
 
-## Challenge \#7
+## Challenge #7
 
 ### Description
 
@@ -125,6 +125,3 @@ Pas de difficulté ici puisque seul le caractère `"9"` semble être filtré :
 Soit en utilisant une opération mathématique :
 
 ![](../../../.gitbook/assets/f4103b5cbd88d24a4edc8ad0ce53b79e.png)
-
-
-
