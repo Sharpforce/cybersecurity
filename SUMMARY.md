@@ -4,6 +4,7 @@
 * [💬 Mon Blog](mon-blog/README.md)
   * [2022](mon-blog/2022/README.md)
     * [Juillet](mon-blog/2022/juillet/README.md)
+      * [Est-il possible de contourner la fonction PHP htmlspecialchars() ?](mon-blog/2022/juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md)
       * [SAST - PHP\_CodeSniffer orienté sécurité intégré dans Visual Studio (sous Debian/Ubuntu)](mon-blog/2022/juillet/sast-php\_codesniffer-oriente-securite-integre-dans-visual-studio-sous-debian-ubuntu.md)
       * [SAST - PHP\_CodeSniffer orienté sécurité intégré dans Visual Studio (sous Windows)](mon-blog/2022/juillet/sast-php\_codesniffer-oriente-securite-integre-dans-visual-studio-sous-windows.md)
 

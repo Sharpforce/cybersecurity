@@ -46,7 +46,7 @@ Il est tout de même possible d'exploiter la vulnérabilité sur un navigateur r
 
 ![](<../../../../../.gitbook/assets/image (13) (1).png>)
 
-![](<../../../../../.gitbook/assets/image (2).png>)
+![](<../../../../../.gitbook/assets/image (2) (2).png>)
 
 ## Analyse du code source
 
@@ -96,7 +96,7 @@ La variable permettant la récupération de l'URL était bien celle identifiée 
 
 ![](<../../../../../.gitbook/assets/image (28) (1) (1).png>)
 
-![](<../../../../../.gitbook/assets/image (18) (1).png>)
+![](<../../../../../.gitbook/assets/image (18) (1) (2).png>)
 
 {% hint style="warning" %}
 Le jeu de caractères possible dans l'entête HTTP Host est limité.

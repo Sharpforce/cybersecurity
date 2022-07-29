@@ -53,7 +53,7 @@ Cookie: PHPSESSID=5259cd672a0fb988f6f618b8527b1a8c; security_level=1
 Connection: close
 ```
 
-![](<../../../../../.gitbook/assets/image (10).png>)
+![](<../../../../../.gitbook/assets/image (10) (2).png>)
 
 Etant donné que la valeur de l'URL est récupérée au niveau du client (par du code Javascript, c'est donc une vulnérabilité Dom-based) l'interception et la modification de l'URL ne fonctionnera pas.
 
