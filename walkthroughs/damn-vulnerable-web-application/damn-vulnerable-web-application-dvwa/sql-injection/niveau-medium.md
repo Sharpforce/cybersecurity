@@ -17,7 +17,7 @@ L'erreur m'informe sur la présence d'une protection car le caractère `"'"` est
 Sans reprendre toutes les étapes de reconnaissance (déjà effectuées pour le niveau "Low"), voici l'exploitation de l'injection :
 
 ```sql
-1 UNION SELET 1,2
+1 UNION SELECT 1,2
 ```
 
 ![](../../../../.gitbook/assets/8a1a58636b34849d9a72d55aedb3d7a3.png)

@@ -80,7 +80,7 @@ function xss_check_4($data) {
 
 La méthode `addslashes()` permet d'échapper (en ajoutant un anti-slash) les caractères guillemets simples ( ' ), guillemets doubles ( " ), antislash (\\) et l'octet NUL :
 
-![](<../../../../../.gitbook/assets/image (5) (1).png>)
+![](<../../../../../.gitbook/assets/image (5).png>)
 
 Cela peut poser problème lorsque l'injection tente d'appeler un script externe par exemple :&#x20;
 

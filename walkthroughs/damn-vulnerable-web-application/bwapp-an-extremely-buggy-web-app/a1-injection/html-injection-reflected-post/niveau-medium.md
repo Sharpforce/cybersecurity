@@ -50,7 +50,7 @@ L'exécution de Javascript dans un attribut HTML :&#x20;
 
 Ou également l'utilisation de balises customs :&#x20;
 
-![](<../../../../../.gitbook/assets/image (6) (1) (1).png>)
+![](<../../../../../.gitbook/assets/image (6) (1).png>)
 
 Pour réussir ce challenge il va donc falloir identifier un moyen de transmettre l'information sous une autre forme mais qui sera tout de même interprétée par l'application. Après plusieurs tentatives, l'encodage URL de l'injection semble fonctionner :&#x20;
 

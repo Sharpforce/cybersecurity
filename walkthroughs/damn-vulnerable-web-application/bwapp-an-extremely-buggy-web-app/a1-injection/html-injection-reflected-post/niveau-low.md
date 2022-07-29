@@ -56,7 +56,7 @@ Connection: close
 firstname=%3Ch1%3ETitre+H1+contenant+le+pr%C3%A9nom%3C%2Fh1%3E&lastname=%3Ch1%3ETitre+H1+contenant+le+nom%3C%2Fh1%3E&form=submit
 ```
 
-![](<../../../../../.gitbook/assets/image (19) (1) (2).png>)
+![](<../../../../../.gitbook/assets/image (19) (1).png>)
 
 Mais l'injection Javascript est également tout à fait possible, ici avec `<script>alert('XSS')</script>` :&#x20;
 

@@ -6,7 +6,7 @@ Keylogger.js était au départ un simple keylogger en Javascript qui a évolué 
 
 Le projet est disponible ici : [Github](https://github.com/Sharpforce/keylogger.js).
 
-![](<../.gitbook/assets/image (30).png>)
+![](<../.gitbook/assets/image (30) (2).png>)
 
 ## Statut du projet
 
