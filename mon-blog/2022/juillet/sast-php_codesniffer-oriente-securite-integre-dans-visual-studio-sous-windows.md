@@ -28,7 +28,7 @@ set PHPBIN=php
 
 5\. Le contenu du dossier doit maintenant être le suivant :&#x20;
 
-![](<../../../.gitbook/assets/image (28).png>)
+![](<../../../.gitbook/assets/image (28) (2).png>)
 
 {% hint style="warning" %}
 Il est nécessaire que le chemin de l'exécutable PHP soit renseigné dans le PATH de Windows.

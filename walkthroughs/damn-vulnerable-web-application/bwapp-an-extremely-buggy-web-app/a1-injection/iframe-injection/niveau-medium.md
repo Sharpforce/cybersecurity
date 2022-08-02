@@ -9,7 +9,7 @@ La page du challenge permet de charger une `<iframe></iframe>`. L'URL admet 3 pa
 
 Ici, modifier l'URL de l'iframe via le paramètre `ParamURL` ne semble pas fonctionner. Qu'importe sa valeur, le fichier "robots.txt" est affiché :
 
-![](<../../../../../.gitbook/assets/image (8).png>)
+![](<../../../../../.gitbook/assets/image (8) (1).png>)
 
 Naturellement, l'injection via le paramètre d'URL `ParamUrl` ne fonctionne donc également pas. Il faut s'intéresser aux deux autres paramètres présents dans l'URL, qui eux peuvent être modifiés et ne semble pas être assainis :&#x20;
 
@@ -80,7 +80,7 @@ function xss_check_4($data) {
 
 La méthode `addslashes()` permet d'échapper (en ajoutant un anti-slash) les caractères guillemets simples ( ' ), guillemets doubles ( " ), antislash (\\) et l'octet NUL :
 
-![](<../../../../../.gitbook/assets/image (5).png>)
+![](<../../../../../.gitbook/assets/image (5) (2).png>)
 
 Cela peut poser problème lorsque l'injection tente d'appeler un script externe par exemple :&#x20;
 

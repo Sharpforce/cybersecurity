@@ -9,7 +9,7 @@ La page du challenge permet de charger une `<iframe></iframe>`. L'URL admet 3 pa
 
 Ici, modifier l'URL de l'iframe via le paramètre `ParamURL` ne semble pas fonctionner. Qu'importe sa valeur, le fichier "robots.txt" est affiché :
 
-![](<../../../../../.gitbook/assets/image (8).png>)
+![](<../../../../../.gitbook/assets/image (8) (1).png>)
 
 Naturellement, l'injection via le paramètre d'URL `ParamUrl` ne fonctionne donc également pas. Concernant les deux paramètres de taille de l'iframe ils sont bien pris en compte, mais aucune injection ne semble possible également :&#x20;
 

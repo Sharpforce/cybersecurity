@@ -50,7 +50,7 @@ L'exécution de Javascript dans un attribut HTML :&#x20;
 
 Ou également l'utilisation de balises customs :&#x20;
 
-![](<../../../../../.gitbook/assets/image (3).png>)
+![](<../../../../../.gitbook/assets/image (3) (3).png>)
 
 L'encodage URL (ni même le double encodage) ne fonctionne également pas :&#x20;
 

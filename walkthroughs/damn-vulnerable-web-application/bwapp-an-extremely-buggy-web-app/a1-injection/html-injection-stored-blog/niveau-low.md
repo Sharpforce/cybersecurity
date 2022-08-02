@@ -36,7 +36,7 @@ Connection: close
 entry=%3Cscript%3Ealert%28%27XSS%27%29%3C%2Fscript%3E&blog=submit&entry_add=
 ```
 
-![](<../../../../../.gitbook/assets/image (32).png>)
+![](<../../../../../.gitbook/assets/image (32) (1).png>)
 
 ## Analyse du code source
 

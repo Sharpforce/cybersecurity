@@ -420,7 +420,7 @@ Content-Type: text/html; charset=UTF-8
 
 Cette fois, l'application reste vulnérable :&#x20;
 
-![](<../../../.gitbook/assets/image (10).png>)
+![](<../../../.gitbook/assets/image (10) (2).png>)
 
 Cela provient du fait que le développeur n'a pas renseigné tous les paramètres nécessaires à la fonction. La fonction, par défaut, ne transforme pas le caractère `'` si le drapeau `ENT_QUOTES` n'est pas renseigné :&#x20;
 
@@ -483,7 +483,7 @@ Content-Type: text/html; charset=UTF-8
 
 L'injection est ici tout de même réussie :&#x20;
 
-![](<../../../.gitbook/assets/image (25).png>)
+![](<../../../.gitbook/assets/image (25) (2).png>)
 
 #### PHP 8.1.0
 
@@ -555,7 +555,7 @@ Content-Type: text/html;charset=UTF-7
 </html>
 ```
 
-![](<../../../.gitbook/assets/image (23).png>)
+![](<../../../.gitbook/assets/image (23) (1).png>)
 
 ## Conclusion
 

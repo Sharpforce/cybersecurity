@@ -46,7 +46,7 @@ Il est tout de même possible d'exploiter la vulnérabilité sur un navigateur r
 
 ![](<../../../../../.gitbook/assets/image (13) (1).png>)
 
-![](<../../../../../.gitbook/assets/image (2).png>)
+![](<../../../../../.gitbook/assets/image (2) (1).png>)
 
 ## Analyse du code source
 

