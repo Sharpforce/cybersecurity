@@ -54,7 +54,7 @@ Connection: close
 entry=%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E&blog=submit&entry_add=
 ```
 
-![](<../../../../../.gitbook/assets/image (15).png>)
+![](<../../../../../.gitbook/assets/image (15) (1).png>)
 
 Par quelques contournements comme de l'encodage URL :&#x20;
 

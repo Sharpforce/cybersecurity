@@ -24,7 +24,7 @@ Cookie: security_level=0; PHPSESSID=2f4611482fb97564af7dbe4243dca828
 Connection: close
 ```
 
-![](<../../../../../.gitbook/assets/image (15) (1).png>)
+![](<../../../../../.gitbook/assets/image (15) (1) (2).png>)
 
 Internet Explorer 11 n'effectue pas cet encodage sur les nom et valeur des paramètres d'URL, par contre il possède un filtre anti-XSS pouvant empêcher l'exécution de script malicieux :&#x20;
 
@@ -44,9 +44,9 @@ Connection: close
 
 Il est tout de même possible d'exploiter la vulnérabilité sur un navigateur récent mais ne sera que très difficilement exécutable dans le contexte de la victime. Pour cela, il faut utiliser la modification de requête grâce à un proxy, ici Burp en mode interception :&#x20;
 
-![](<../../../../../.gitbook/assets/image (13) (1).png>)
+![](<../../../../../.gitbook/assets/image (13) (1) (2).png>)
 
-![](<../../../../../.gitbook/assets/image (2) (1).png>)
+![](<../../../../../.gitbook/assets/image (2) (2).png>)
 
 ## Analyse du code source
 

@@ -7,7 +7,7 @@ La page du challenge permet de charger une `<iframe></iframe>`. L'URL admet 3 pa
 * le premier, `ParamURL`, est l'URL cible de l'iframe, ayant comme valeur par défaut "robots.txt"
 * le second et la troisième, `ParamWidth` et `ParamHeight`, sont la taille en largeur et en hauteur de l'iframe, ayant comme valeur par défaut "250"
 
-![](<../../../../../.gitbook/assets/image (8) (1).png>)
+![](<../../../../../.gitbook/assets/image (8) (2).png>)
 
 Avant de tenter de contourner l'iframe (via ses attributs) afin d'injecter du code Javascript, il est possible d'analyser l'assainissement des paramètres d'entrée. Est ce que l'application assainie correctement les caractères tels que `"`, `'` ou encore `<` et `>` :&#x20;
 
