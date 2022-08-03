@@ -4,7 +4,7 @@
 
 L'affichage du prénom et du nom s'effectue ici de la même manière au sein d'une balise `<div></div>` :&#x20;
 
-![](<../../../../../.gitbook/assets/image (17) (2).png>)
+![](<../../../../../.gitbook/assets/image (17) (2) (1).png>)
 
 Dont voici la requête :&#x20;
 
