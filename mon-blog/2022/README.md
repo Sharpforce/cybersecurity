@@ -1,5 +1,9 @@
 # 2022
 
+## Août
+
+{% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/aout/walkthroughs-xss-vulnerability-challenges" %}
+
 ## Juillet
 
 {% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars" %}

@@ -319,4 +319,4 @@ entry=%3Cscript+src%3Dhttp%3A%2F%2Fpha4dbrnyd3796rdbvttq48mfdl49t.oastify.com%3E
 
 ![](<../../../../../.gitbook/assets/image (4) (1).png>)
 
-![](<../../../../../.gitbook/assets/image (17) (2).png>)
+![](<../../../../../.gitbook/assets/image (17).png>)
