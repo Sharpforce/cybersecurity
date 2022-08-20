@@ -1,3 +1,7 @@
 # 2018
 
-{% embed url="https://sharpforce.gitbook.io/cybersecurity/livres/2018/web-hacking-101-how-to-make-money-hacking-ethically" %}
+| Couverture                                  | Titre du livre                                       | Notes                        |
+| ------------------------------------------- | ---------------------------------------------------- | ---------------------------- |
+| ![](<../../.gitbook/assets/image (51).png>) | Practical Web Penetration Testing                    | :star:****                   |
+| ![](<../../.gitbook/assets/image (44).png>) | Web Hacking 101: How to Make Money Hacking Ethically | :star::star::star::star:**** |
+|                                             |                                                      |                              |
