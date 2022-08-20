@@ -36,7 +36,7 @@ Connection: close
 entry=%3Cscript%3Ealert%281%29%3C%2Fscript%3E&blog=submit&entry_add=
 ```
 
-![](<../../../../../.gitbook/assets/image (20) (1) (2).png>)
+![](<../../../../../.gitbook/assets/image (20) (1).png>)
 
 Par des attributs HTML :&#x20;
 

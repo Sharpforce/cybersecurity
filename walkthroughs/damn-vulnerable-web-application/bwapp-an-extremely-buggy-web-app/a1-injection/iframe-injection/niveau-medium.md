@@ -21,7 +21,7 @@ Cookie: PHPSESSID=36ce7aa0711c5215358577749d068476; security_level=1
 Connection: close
 ```
 
-![](<../../../../../.gitbook/assets/image (21).png>)
+![](<../../../../../.gitbook/assets/image (21) (2).png>)
 
 ## Analyse du code source
 
