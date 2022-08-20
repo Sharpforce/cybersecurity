@@ -2,7 +2,7 @@
 
 ## Description du livre
 
-![](<../../.gitbook/assets/image (29).png>)
+![](<../../.gitbook/assets/image (19).png>)
 
 **Ma note (sur 5) :** :star:****\
 **Titre :** Practical Web Penetration Testing\

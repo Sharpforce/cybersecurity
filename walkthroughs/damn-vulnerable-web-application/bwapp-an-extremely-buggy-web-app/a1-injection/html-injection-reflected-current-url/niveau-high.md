@@ -28,7 +28,7 @@ Connection: close
 
 Aucune injection ne semble possible ici, même en testant le contournement sous IE11 :&#x20;
 
-![](<../../../../../.gitbook/assets/image (16).png>)
+![](<../../../../../.gitbook/assets/image (16) (2).png>)
 
 ## Analyse du code source
 
