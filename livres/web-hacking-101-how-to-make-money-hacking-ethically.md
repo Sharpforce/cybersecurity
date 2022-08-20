@@ -4,7 +4,6 @@
 
 ![](../.gitbook/assets/5c8efa430ccfcd100bab965ed88e9165.png)
 
-**Ma note (sur 5) :** :star::star::star::star:****\
 **Titre :** Web Hacking 101: How to Make Money Hacking Ethically\
 **Auteur :** Peter Yaworski\
 **Dernière parution :** 30 novembre 2018\

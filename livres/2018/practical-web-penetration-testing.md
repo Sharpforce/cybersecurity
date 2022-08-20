@@ -4,7 +4,6 @@
 
 ![](<../../.gitbook/assets/image (17).png>)
 
-**Ma note (sur 5) :** :star:****\
 **Titre :** Practical Web Penetration Testing\
 **Auteur :** Gus Khawaja\
 **Dernière parution :** 22 juin 2018\
