@@ -4,6 +4,7 @@
 
 ![](../.gitbook/assets/5c8efa430ccfcd100bab965ed88e9165.png)
 
+**Ma note (sur 5) :** :star::star::star::star:****\
 **Titre :** Web Hacking 101: How to Make Money Hacking Ethically\
 **Auteur :** Peter Yaworski\
 **Dernière parution :** 30 novembre 2018\
@@ -59,6 +60,3 @@ Pour ma part j'ai lu le livre d'un bout à l'autre, mais suivant vos besoins vou
 Je l'ai trouvé très abordable techniquement parlant, quelques petits tips à droite à gauche qui permettent de s'améliorer pour les prochains challenges. Mais selon moi, le but du livre n'est pas tant d'exposer des faits techniques que des manières de penser lors de la recherche de failles. Une chose soulevée assez fréquemment est de ne jamais abandonner la recherche, toujours creuser plus loin (ou alors autour, vous comprendrez à la lecture). En quelques mots : "Never give up !".
 
 En résumé, je vous conseille fortement ce livre, vous ne perdrez pas votre temps. Le seul regret à son sujet est que je n'ai pas trouvé de version papier directement achetable.
-
-
-
