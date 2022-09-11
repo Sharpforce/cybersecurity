@@ -28,7 +28,7 @@ set PHPBIN=php
 
 5\. Le contenu du dossier doit maintenant être le suivant :&#x20;
 
-![](<../../../.gitbook/assets/image (28) (2).png>)
+![](<../../../.gitbook/assets/image (28) (1).png>)
 
 {% hint style="warning" %}
 Il est nécessaire que le chemin de l'exécutable PHP soit renseigné dans le PATH de Windows.
@@ -36,7 +36,7 @@ Il est nécessaire que le chemin de l'exécutable PHP soit renseigné dans le PA
 
 6\. Dans Visual Studio Code, installer l'extension **phpcs** :&#x20;
 
-![](<../../../.gitbook/assets/image (27) (1).png>)
+![](<../../../.gitbook/assets/image (27) (2).png>)
 
 7\. Configurer l'extension de la façon suivante (éditer le fichier `settings.json` pour plus de facilité) :&#x20;
 
