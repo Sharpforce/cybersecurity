@@ -45,7 +45,7 @@ Dans l'exemple suivant, le développeur, qui a été sensibilisé aux vulnérabi
 
 Bien qu'il ne soit plus possible d'effectuer l'injection du code malicieux en s'échappant de l'attribut HTML `href` : &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 l'utilisation du schéma Javascript peut tout de même permettre l'exécution de code lors du clique sur le lien par la victime :
 
@@ -72,7 +72,7 @@ Il n'est pas rare qu'une application web permette à l'utilisateur de renseigner
 
 et l'exécution du code qui ne nécessite pas d'action utilisateur : &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Autres éléments HTML
 

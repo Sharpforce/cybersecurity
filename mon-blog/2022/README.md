@@ -1,5 +1,9 @@
 # 2022
 
+## Septembre
+
+{% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript" %}
+
 ## Août
 
 {% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/aout/walkthroughs-xss-vulnerability-challenges?refresh=1" %}
