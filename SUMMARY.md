@@ -3,6 +3,8 @@
 * [👋 Bienvenue !](README.md)
 * [💬 Mon Blog](mon-blog/README.md)
   * [2022](mon-blog/2022/README.md)
+    * [Septembre](mon-blog/2022/septembre/README.md)
+      * [Cross-Site Scripting (XSS) et schéma d'URI javascript](mon-blog/2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript.md)
     * [Août](mon-blog/2022/aout/README.md)
       * [Walkthroughs - XSS Vulnerability Challenges](mon-blog/2022/aout/walkthroughs-xss-vulnerability-challenges.md)
     * [Juillet](mon-blog/2022/juillet/README.md)
