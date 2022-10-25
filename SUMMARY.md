@@ -3,6 +3,8 @@
 * [👋 Bienvenue !](README.md)
 * [💬 Mon Blog](mon-blog/README.md)
   * [2022](mon-blog/2022/README.md)
+    * [Octobre](mon-blog/2022/octobre/README.md)
+      * [XSS Exploitation Tool v0.4.0](mon-blog/2022/octobre/xss-exploitation-tool-v0.4.0.md)
     * [Septembre](mon-blog/2022/septembre/README.md)
       * [Cross-Site Scripting (XSS) et schéma d'URI javascript](mon-blog/2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript.md)
     * [Août](mon-blog/2022/aout/README.md)
