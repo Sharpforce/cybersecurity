@@ -343,7 +343,7 @@ Cette technique possède un inconvénient supplémentaire, il utilise l'iframing
 
 Le script hébergé sur le github nécessite également quelques ajustements. Tout d'abord, l'iframing en attaquant des champs de type `hidden` ne semble plus fonctionner avec la méthode `~*`,(en utilisant les iframes, cela fonctionne très bien avec une injection manuelle comme vu précédemment) exit donc la récupération des jetons CSRF par exemple.
 
-> Je n'ai pas identifié de manière alternative pour faire fonctionner cela mais ce n'est peut être pas votre cas. N'hésitez pas à laisser un commentaire sur le fil Twitter pour partager vos trouvailles !
+> Je n'ai pas identifié de manière alternative pour faire fonctionner cela mais ce n'est peut être pas votre cas. N'hésitez pas à laisser un commentaire sur le fil [Twitter](https://twitter.com/Sh4rpF0rc3) pour partager vos trouvailles !
 
 De plus, le code du back-end n'est pas disponible mais il est possible de retrouver un back-end très simple par [ici](https://github.com/Sharpforce/PoC-CSS-injection-with-attribute-selector) :&#x20;
 
