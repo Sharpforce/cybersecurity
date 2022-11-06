@@ -1,3 +1,7 @@
+---
+description: 17 Septembre 2022
+---
+
 # Cross-Site Scripting (XSS) et schéma d'URI javascript
 
 L'accès à une URL par un navigateur est conditionné par son schéma (_scheme_). Le schéma est le premier niveau de la structure de nommage d'un URI. Plus concrètement, il s'agit de la partie la plus à gauche, avant le caractère ":". Il ne faut pas confondre le schéma et le protocole : le schéma représente la sémantique alors que le protocole est la manière de communiquer avec le service cible.
@@ -45,11 +49,11 @@ Dans l'exemple suivant, le développeur, qui a été sensibilisé aux vulnérabi
 
 Bien qu'il ne soit plus possible d'effectuer l'injection du code malicieux en s'échappant de l'attribut HTML `href` : &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 l'utilisation du schéma Javascript peut tout de même permettre l'exécution de code lors du clique sur le lien par la victime :
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## L'élément HTML \<iframe>
 
@@ -72,7 +76,7 @@ Il n'est pas rare qu'une application web permette à l'utilisateur de renseigner
 
 et l'exécution du code qui ne nécessite pas d'action utilisateur : &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Autres éléments HTML
 
