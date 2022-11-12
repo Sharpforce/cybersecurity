@@ -1,5 +1,9 @@
 # 2022
 
+## Novembre
+
+{% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/novembre/les-injections-css-partie-1" %}
+
 ## Octobre
 
 {% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/octobre/xss-exploitation-tool-v0.4.0" %}

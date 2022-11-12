@@ -189,7 +189,7 @@ Le code vulnérable exploité possède un élément HTML `<input>` de type `pass
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 L'idée de l'exploitation va être d'utiliser les sélecteurs CSS afin de récupérer le mot de passe de la victime caractère par caractère. Voici un exemple de sélecteur d'attribut :
 
@@ -257,7 +257,7 @@ Connection: close
 ```
 {% endcode %}
 
-### Récupération de la valeur d'un attribut d'un élément HTML de type hidden via les sélecteurs d'attribut CSS
+### Récupération de la valeur d'un attribut d'un élément HTML de type hidden via les sélecteurs d'attribut CSS (mis à jour le 11/11/2022)
 
 Malheureusement, la technique précédente ne fonctionne pas sur les champs `<input>` de type `hidden`. Cela pourrait pourtant être utile dans le cas ou l'application vulnérable utilise des champs cachés pour transmettre des jetons anti-CSRF par exemple :
 
@@ -292,6 +292,18 @@ Cela est en fait possible en utilisant les combinateurs `~` et `*` à la suite d
 </style>
 ```
 {% endcode %}
+
+{% hint style="info" %}
+Le combinateur `~` ([general sibling combinator](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building\_blocks/Selectors/Combinators#general\_sibling\_combinator)) sélectionne les frères d'un élément, même dans le cas ou ils ne sont pas adjacents mais doivent avoir le même parent. Il est possible également d'utiliser le combinateur `+` ([adjacent sibling combinator](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building\_blocks/Selectors/Combinators#adjacent\_sibling\_combinator)) mais son utilisation est alors plus restreinte.
+{% endhint %}
+
+{% hint style="info" %}
+Le sélecteur`*` ([universal selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal\_selectors)) correspond à un élément de n'importe quel type.
+{% endhint %}
+
+{% hint style="warning" %}
+Automatisation : l'utilisation des combinateurs va nécessiter la présence d'un autre champ `<input>` ayant le même parent (par exemple `<form></form>`.
+{% endhint %}
 
 Le lien malicieux devenant alors :&#x20;
 
@@ -335,16 +347,12 @@ L'inconvénient de ces techniques est qu'elles sont limitées à la récupérati
 Il existe toutefois d'autres techniques permettant cela et qui seront vues dans les prochaines parties de cet article.
 {% endhint %}
 
-### Automatisation de l'attaque
+### Automatisation de l'attaque (mis à jour le 12/11/2022)
 
 Un script d'automatisation ([https://gist.github.com/d0nutptr/928301bde1d2aa761d1632628ee8f24e](https://gist.github.com/d0nutptr/928301bde1d2aa761d1632628ee8f24e)) existe permettant de retrouver la valeur d'un attribut en incitant la victime à cliquer une seule fois sur un lien. Le lien aura pour destination un serveur malveillant hébergeant un script ainsi qu'une partie back-end pour le traitement.
 
-Cette technique possède un inconvénient supplémentaire, il utilise l'iframing afin de pouvoir requêter la page vulnérable nécessitant l'application ciblée puisse être iframée.
+Cette technique possède un inconvénient supplémentaire, il utilise l'iframing afin de pouvoir requêter la page vulnérable. Cela nécessite donc que l'application vulnérable puisse être iframée (entêtes [X-Frame-Options](https://developer.mozilla.org/fr/docs/Web/HTTP/Headers/X-Frame-Options) et [frame-ancestors](https://developer.mozilla.org/fr/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors)).
 
-Le script hébergé sur le github nécessite également quelques ajustements. Tout d'abord, l'iframing en attaquant des champs de type `hidden` ne semble plus fonctionner avec la méthode `~*`,(en utilisant les iframes, cela fonctionne très bien avec une injection manuelle comme vu précédemment) exit donc la récupération des jetons CSRF par exemple.
+Le code du back-end n'est pas disponible mais il est possible de retrouver un back-end très simple par [ici](https://github.com/Sharpforce/PoC-CSS-injection-with-attribute-selector) :&#x20;
 
-> Je n'ai pas identifié de manière alternative pour faire fonctionner cela mais ce n'est peut être pas votre cas. N'hésitez pas à laisser un commentaire sur le fil [Twitter](https://twitter.com/Sh4rpF0rc3) pour partager vos trouvailles !
-
-De plus, le code du back-end n'est pas disponible mais il est possible de retrouver un back-end très simple par [ici](https://github.com/Sharpforce/PoC-CSS-injection-with-attribute-selector) :&#x20;
-
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

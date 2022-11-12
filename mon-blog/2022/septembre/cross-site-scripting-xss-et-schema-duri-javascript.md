@@ -76,7 +76,7 @@ Il n'est pas rare qu'une application web permette à l'utilisateur de renseigner
 
 et l'exécution du code qui ne nécessite pas d'action utilisateur : &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 ## Autres éléments HTML
 
