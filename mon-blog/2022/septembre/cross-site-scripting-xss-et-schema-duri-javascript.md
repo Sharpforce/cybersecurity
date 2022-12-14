@@ -53,7 +53,7 @@ Bien qu'il ne soit plus possible d'effectuer l'injection du code malicieux en s'
 
 l'utilisation du schéma Javascript peut tout de même permettre l'exécution de code lors du clique sur le lien par la victime :
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## L'élément HTML \<iframe>
 

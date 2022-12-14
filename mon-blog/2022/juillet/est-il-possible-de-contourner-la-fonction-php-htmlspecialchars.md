@@ -51,7 +51,7 @@ Content-Type: text/html; charset=UTF-8
 
 Le navigateur exécute le code Javascript renseigné dans le paramètre `param` présent dans l'URL (il s'agit donc d'une XSS réfléchie) :
 
-![](<../../../.gitbook/assets/image (34).png>)
+![](<../../../.gitbook/assets/image (34) (1).png>)
 
 Si le développeur souhaite protéger son application (et ses visiteurs) de cette vulnérabilité, il se doit d'assainir la donnée non fiable (la valeur du paramètre `param`) avant son affichage. C'est ce que propose de faire la fonction `htmlspecialchars()`.
 
@@ -375,7 +375,7 @@ Content-Type: text/html; charset=UTF-8
 
 Protégeant ainsi l'application :&#x20;
 
-![](<../../../.gitbook/assets/image (27) (3).png>)
+![](<../../../.gitbook/assets/image (27).png>)
 
 #### Cas n°2
 
