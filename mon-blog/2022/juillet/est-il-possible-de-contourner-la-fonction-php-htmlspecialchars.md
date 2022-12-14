@@ -133,7 +133,7 @@ L'injection ne semble plus possible, et la valeur du paramètre `param` est affi
 
 &#x20;
 
-![](<../../../.gitbook/assets/image (39).png>)
+![](<../../../.gitbook/assets/image (39) (1).png>)
 
 {% hint style="info" %}
 L'article ne traite pas le cas de la [fonction](https://www.php.net/manual/fr/function.htmlentities.php) `htmlentities()` de PHP mais peut également s'y appliquer.
@@ -228,7 +228,7 @@ Connection: close
 
 &#x20;Soit lors du clic de la victime :&#x20;
 
-![](<../../../.gitbook/assets/image (35).png>)
+![](<../../../.gitbook/assets/image (35) (1).png>)
 
 {% hint style="info" %}
 Cet exemple est aussi valable pour l'attribut HTML "src" avec, par exemple, la balise `<iframe></iframe>`.
@@ -375,7 +375,7 @@ Content-Type: text/html; charset=UTF-8
 
 Protégeant ainsi l'application :&#x20;
 
-![](<../../../.gitbook/assets/image (27).png>)
+![](<../../../.gitbook/assets/image (27) (3).png>)
 
 #### Cas n°2
 
@@ -525,7 +525,7 @@ Deux limitations à cette exploitation :&#x20;
 
 Pour exploiter la vulnérabilité, l'attaque transforme tout d'abord son injection en "UTF-7". Ici `<script>alert(1)</script>` donne `+ADw-script+AD4-alert(1)+ADw-/script+AD4-` : &#x20;
 
-![](<../../../.gitbook/assets/image (43).png>)
+![](<../../../.gitbook/assets/image (43) (1).png>)
 
 Cette exploitation possède par contre l'avantage de contourner le filtre anti-XSS d'IE 11 :&#x20;
 
@@ -555,7 +555,7 @@ Content-Type: text/html;charset=UTF-7
 </html>
 ```
 
-![](<../../../.gitbook/assets/image (23) (1).png>)
+![](<../../../.gitbook/assets/image (23) (1) (1).png>)
 
 ## Conclusion
 
