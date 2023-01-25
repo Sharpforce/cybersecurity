@@ -1,5 +1,5 @@
 # Novembre
 
-{% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/novembre/les-injections-css-partie-1" %}
+[les-injections-css-partie-1.md](les-injections-css-partie-1.md "mention")
 
-{% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/novembre/les-injections-css-partie-2" %}
+[les-injections-css-partie-2.md](les-injections-css-partie-2.md "mention")

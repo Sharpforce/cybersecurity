@@ -1,3 +1,3 @@
 # Septembre
 
-{% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript" %}
+[cross-site-scripting-xss-et-schema-duri-javascript.md](cross-site-scripting-xss-et-schema-duri-javascript.md "mention")

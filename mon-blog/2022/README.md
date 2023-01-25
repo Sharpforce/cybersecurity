@@ -1,33 +1,33 @@
 # 2022
 
-## Décembre
+#### Décembre
 
-{% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/decembre/les-injections-css-partie-3" %}
+[les-injections-css-partie-3.md](decembre/les-injections-css-partie-3.md "mention")
 
-{% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/decembre/les-injections-css-partie-4" %}
+[les-injections-css-partie-4.md](decembre/les-injections-css-partie-4.md "mention")
 
-## Novembre
+#### Novembre
 
-{% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/novembre/les-injections-css-partie-1" %}
+[les-injections-css-partie-1.md](novembre/les-injections-css-partie-1.md "mention")
 
-{% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/novembre/les-injections-css-partie-2" %}
+[les-injections-css-partie-2.md](novembre/les-injections-css-partie-2.md "mention")
 
-## Octobre
+#### Octobre
 
-{% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/octobre/xss-exploitation-tool-v0.4.0" %}
+[xss-exploitation-tool-v0.4.0.md](octobre/xss-exploitation-tool-v0.4.0.md "mention")
 
-## Septembre
+#### Septembre
 
-{% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript" %}
+[cross-site-scripting-xss-et-schema-duri-javascript.md](septembre/cross-site-scripting-xss-et-schema-duri-javascript.md "mention")
 
-## Août
+#### Aout
 
-{% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/aout/walkthroughs-xss-vulnerability-challenges?refresh=1" %}
+[xss-vulnerability-challenges](../../walkthroughs/damn-vulnerable-web-application/xss-vulnerability-challenges/ "mention")
 
-## Juillet
+#### Juillet
 
-{% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/juillet/sast-php_codesniffer-oriente-securite-integre-dans-visual-studio-sous-windows?refresh=1" %}
+[sast-php\_codesniffer-oriente-securite-integre-dans-visual-studio-sous-windows.md](juillet/sast-php\_codesniffer-oriente-securite-integre-dans-visual-studio-sous-windows.md "mention")
 
-{% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/juillet/sast-php_codesniffer-oriente-securite-integre-dans-visual-studio-sous-debian-ubuntu?refresh=1" %}
+[sast-php\_codesniffer-oriente-securite-integre-dans-visual-studio-sous-debian-ubuntu.md](juillet/sast-php\_codesniffer-oriente-securite-integre-dans-visual-studio-sous-debian-ubuntu.md "mention")
 
-{% embed url="https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars" %}
+[est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md](juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md "mention")
