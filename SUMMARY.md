@@ -1,6 +1,6 @@
 # Table of contents
 
-* [👋 Bienvenue !](README.md)
+* [🏠 Home](README.md)
 * [📧 Contact](contact.md)
 * [📦 Archives](mon-blog/README.md)
   * [2022](mon-blog/2022/README.md)
