@@ -4,7 +4,7 @@
 
 #### Décembre
 
-* Les injections CSS - Règle [les-injections-css-partie-3.md](2022/decembre/les-injections-css-partie-3.md "mention")
+* [les-injections-css-partie-3.md](2022/decembre/les-injections-css-partie-3.md "mention")
 
 #### Novembre
 
