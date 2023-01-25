@@ -2,7 +2,7 @@
 description: 06 Novembre 2022
 ---
 
-# Les injections CSS - Partie 1
+# Les injections CSS - Attribute Selector
 
 ## Utilisation des Feuilles de style en cascade (CSS)
 

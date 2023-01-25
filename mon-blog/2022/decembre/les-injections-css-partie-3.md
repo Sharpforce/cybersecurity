@@ -2,7 +2,7 @@
 description: 15 Décembre 2022
 ---
 
-# Les injections CSS - Partie 3
+# Les injections CSS - Règle @import
 
 ## Utilisation de la règle @import
 

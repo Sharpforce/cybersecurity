@@ -2,7 +2,7 @@
 description: 20 Novembre 2022
 ---
 
-# Les injections CSS - Partie 2
+# Les injections CSS - Règle @font-face et descripteur unicode
 
 ## Utilisation de la règle @font-face et du descripteur unicode
 
