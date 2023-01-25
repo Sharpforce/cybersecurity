@@ -289,7 +289,7 @@ Malheureusement, la technique précédente ne fonctionne pas sur les champs `<in
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 Cela est en fait possible en utilisant les combinateurs `~` et `*` à la suite du sélecteur CSS :&#x20;
 
@@ -440,7 +440,7 @@ Voici plusieurs PoC tentant de résoudre ces problèmes.
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### PoC - Récupération de la valeur d'un attribut d'un élément HTML via les Popups
 

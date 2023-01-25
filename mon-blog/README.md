@@ -1,35 +1,31 @@
 # 📦 Archives
 
-## 2022
+## <mark style="background-color:green;">2022</mark>
 
-#### Décembre
+### <mark style="background-color:blue;">Décembre</mark>
 
-[les-injections-css-partie-3.md](2022/decembre/les-injections-css-partie-3.md "mention")
+* **15 Déc -** <mark style="color:blue;"></mark> [les-injections-css-partie-3.md](2022/decembre/les-injections-css-partie-3.md "mention")
+* **16 Déc** - [les-injections-css-partie-4.md](2022/decembre/les-injections-css-partie-4.md "mention")
 
-[les-injections-css-partie-4.md](2022/decembre/les-injections-css-partie-4.md "mention")
+### <mark style="background-color:blue;">Novembre</mark>
 
-#### Novembre
+* **06 Nov** - [les-injections-css-partie-1.md](2022/novembre/les-injections-css-partie-1.md "mention")****
+* **20 Nov** - [les-injections-css-partie-2.md](2022/novembre/les-injections-css-partie-2.md "mention")
 
-[les-injections-css-partie-1.md](2022/novembre/les-injections-css-partie-1.md "mention")
+### <mark style="background-color:blue;">Octobre</mark>
 
-[les-injections-css-partie-2.md](2022/novembre/les-injections-css-partie-2.md "mention")
+* **26 Oct** - [xss-exploitation-tool-v0.4.0.md](2022/octobre/xss-exploitation-tool-v0.4.0.md "mention")
 
-#### Octobre
+### <mark style="background-color:blue;">Septembre</mark>
 
-[xss-exploitation-tool-v0.4.0.md](2022/octobre/xss-exploitation-tool-v0.4.0.md "mention")
+* **17 Sept** - [cross-site-scripting-xss-et-schema-duri-javascript.md](2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript.md "mention")
 
-#### Septembre
+### <mark style="background-color:blue;">Aout</mark>
 
-[cross-site-scripting-xss-et-schema-duri-javascript.md](2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript.md "mention")
+* **02 Août** - [xss-vulnerability-challenges](../walkthroughs/damn-vulnerable-web-application/xss-vulnerability-challenges/ "mention")
 
-#### Aout
+### <mark style="background-color:blue;">Juillet</mark>
 
-[xss-vulnerability-challenges](../walkthroughs/damn-vulnerable-web-application/xss-vulnerability-challenges/ "mention")
-
-#### Juillet
-
-[sast-php\_codesniffer-oriente-securite-integre-dans-visual-studio-sous-windows.md](2022/juillet/sast-php\_codesniffer-oriente-securite-integre-dans-visual-studio-sous-windows.md "mention")
-
-[sast-php\_codesniffer-oriente-securite-integre-dans-visual-studio-sous-debian-ubuntu.md](2022/juillet/sast-php\_codesniffer-oriente-securite-integre-dans-visual-studio-sous-debian-ubuntu.md "mention")
-
-[est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md](2022/juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md "mention")
+* **12 Juil** - [sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md](../archives/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md "mention")****
+* **18 Juil -** [sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md](../archives/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md "mention")****
+* **29 Juil** - [est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md](2022/juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md "mention")

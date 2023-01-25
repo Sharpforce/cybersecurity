@@ -57,7 +57,7 @@ En reprenant le code de l'exemple précédent, il est donc possible de mettre en
 http://vulnerable.com/scroll-to-text.php#:~:text=Administrateur
 ```
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 Ou alors une phrase entière :&#x20;
 
@@ -65,7 +65,7 @@ Ou alors une phrase entière :&#x20;
 
 Il est également possible de surligner tout un paragraphe en spécifiant le texte du début (`textStart`) et le texte de fin (`textEnd`) séparés par une virgule :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 Ou encore d'ajouter des suffixes et des préfixes :&#x20;
 
@@ -99,7 +99,7 @@ http://vulnerable.com/scroll-to-text.php?color=black;}:target::before{content:ur
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 L'attaque ne passera pas inaperçu pour la victime puisque le texte ciblé sera souligné et un défilement sera effectué si nécessaire :&#x20;
 
