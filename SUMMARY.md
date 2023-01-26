@@ -3,26 +3,26 @@
 ## Mon Blog
 
 * [🏠 Home](README.md)
-* [📧 Contact](mon-blog/contact.md)
+* [📧 A propos de moi](mon-blog/a-propos-de-moi.md)
 * [📂 Catégories](mon-blog/categories.md)
-* [📦 Archives](mon-blog/archives/README.md)
-  * [2022](mon-blog/archives/2022/README.md)
-    * [Décembre](mon-blog/archives/2022/decembre/README.md)
-      * [Les injections CSS - Règle @import](mon-blog/archives/2022/decembre/les-injections-css-regle-import.md)
-      * [Les injections CSS - Scroll-to-Text Fragment](mon-blog/archives/2022/decembre/les-injections-css-scroll-to-text-fragment.md)
-    * [Novembre](mon-blog/archives/2022/novembre/README.md)
-      * [Les injections CSS - Attribute Selector](mon-blog/archives/2022/novembre/les-injections-css-attribute-selector.md)
-      * [Les injections CSS - Règle @font-face et descripteur unicode](mon-blog/archives/2022/novembre/les-injections-css-regle-font-face-et-descripteur-unicode.md)
-    * [Octobre](mon-blog/archives/2022/octobre/README.md)
-      * [XSS Exploitation Tool v0.4.0](mon-blog/archives/2022/octobre/xss-exploitation-tool-v0.4.0.md)
-    * [Septembre](mon-blog/archives/2022/septembre/README.md)
-      * [Cross-Site Scripting (XSS) et schéma d'URI javascript](mon-blog/archives/2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript.md)
-    * [Août](mon-blog/archives/2022/aout/README.md)
-      * [Walkthroughs - XSS Vulnerability Challenges](mon-blog/archives/2022/aout/walkthroughs-xss-vulnerability-challenges.md)
-    * [Juillet](mon-blog/archives/2022/juillet/README.md)
-      * [SAST - PHP CodeSniffer orienté sécurité dans Visual Studio (sous Windows)](mon-blog/archives/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md)
-      * [SAST - PHP CodeSniffer orienté sécurité dans Visual Studio (sous Debian)](mon-blog/archives/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md)
-      * [Est-il possible de contourner la fonction PHP htmlspecialchars() ?](mon-blog/archives/2022/juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md)
+
+## Mes Articles
+
+* [2022](mes-articles/2022/README.md)
+  * [Décembre](mes-articles/2022/decembre/README.md)
+    * [Les injections CSS - Règle @import](mes-articles/2022/decembre/les-injections-css-regle-import.md)
+    * [Les injections CSS - Scroll-to-Text Fragment](mes-articles/2022/decembre/les-injections-css-scroll-to-text-fragment.md)
+  * [Novembre](mes-articles/2022/novembre/README.md)
+    * [Les injections CSS - Attribute Selector](mes-articles/2022/novembre/les-injections-css-attribute-selector.md)
+    * [Les injections CSS - Règle @font-face et descripteur unicode](mes-articles/2022/novembre/les-injections-css-regle-font-face-et-descripteur-unicode.md)
+  * [Octobre](mes-articles/2022/octobre/README.md)
+    * [XSS Exploitation Tool v0.4.0](mes-articles/2022/octobre/xss-exploitation-tool-v0.4.0.md)
+  * [Septembre](mes-articles/2022/septembre/README.md)
+    * [Cross-Site Scripting (XSS) et schéma d'URI javascript](mes-articles/2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript.md)
+  * [Juillet](mes-articles/2022/juillet/README.md)
+    * [SAST - PHP CodeSniffer orienté sécurité dans Visual Studio (sous Windows)](mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md)
+    * [SAST - PHP CodeSniffer orienté sécurité dans Visual Studio (sous Debian)](mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md)
+    * [Est-il possible de contourner la fonction PHP htmlspecialchars() ?](mes-articles/2022/juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md)
 
 ## Mes projets
 
@@ -44,14 +44,14 @@
 
 ## Walkthroughs
 
-* [🏴☠ Capture The Flag](walkthroughs/capture-the-flag/README.md)
+* [Capture The Flag](walkthroughs/capture-the-flag/README.md)
   * [Hack.lu CTF 2019](walkthroughs/capture-the-flag/hack.lu-ctf-2019/README.md)
     * [Nucular Power Plant](walkthroughs/capture-the-flag/hack.lu-ctf-2019/nucular-power-plant.md)
   * [TAMUctf 2019](walkthroughs/capture-the-flag/tamuctf-2019/README.md)
     * [1337 Secur1ty](walkthroughs/capture-the-flag/tamuctf-2019/1337-secur1ty.md)
     * [Bird Box Challenge](walkthroughs/capture-the-flag/tamuctf-2019/bird-box-challenge.md)
     * [Science!](walkthroughs/capture-the-flag/tamuctf-2019/science.md)
-* [☣ Deliberately Vulnerable](walkthroughs/damn-vulnerable-web-application/README.md)
+* [Deliberately Vulnerable](walkthroughs/damn-vulnerable-web-application/README.md)
   * [CORS vulnerable Lab](walkthroughs/damn-vulnerable-web-application/cors-vulnerable-lab/README.md)
     * [Application Trust Arbritrary Origin](walkthroughs/damn-vulnerable-web-application/cors-vulnerable-lab/application-trust-arbritrary-origin.md)
     * [Application has bad "regex" Implementation to check Trusted Origin](walkthroughs/damn-vulnerable-web-application/cors-vulnerable-lab/application-has-bad-regex-implementation-to-check-trusted-origin.md)

@@ -1,38 +1,38 @@
 # 🏠 Home
 
-[les-injections-css-scroll-to-text-fragment.md](mon-blog/archives/2022/decembre/les-injections-css-scroll-to-text-fragment.md "mention")
+[les-injections-css-scroll-to-text-fragment.md](mes-articles/2022/decembre/les-injections-css-scroll-to-text-fragment.md "mention")
 
-Un attaquant peut s'appuyer sur la fonctionnalité de Scroll-to-Text Fragment afin d'exploiter une injection CSS dans l'objectif de connaitre la présence d'un mot ou d'une phrase dans la page Web de sa victime. Les scénarios d'utilisation sont très nombreux, mais il est possible de prendre le cas d'un attaquant souhaitant connaitre le rôle de la victime...
+Cette exploitation d'une injection CSS va permettre à l'attaquant de savoir si l'occurrence d'un mot est présent ou non sur la page ciblée. Cela peut être utile afin d'identifier par exemple, si la victime est connectée en tant qu'administrateur ou non.
 
 :date: 16 Déc 2022 :open\_file\_folder:[CSS Injection](mon-blog/categories.md#css-injection)
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-[les-injections-css-regle-import.md](mon-blog/archives/2022/decembre/les-injections-css-regle-import.md "mention")
+[les-injections-css-regle-import.md](mes-articles/2022/decembre/les-injections-css-regle-import.md "mention")
 
-La règle CSS `@import` permet de récupérer facilement la valeur d'un attribut HTML lors de l'exploitation d'une injection CSS...
+On continue sur le sujet des injections CSS avec cette fois l'utilisation de la règle @import. L'objectif est toujours de récupérer des informations contenues dans les attributs HTML, mais cette fois, sans avoir besoin d'iframer la page vulnérable.
 
 :date: 15 Déc 2022 :open\_file\_folder:[CSS Injection](mon-blog/categories.md#css-injection)
 
 <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-[les-injections-css-regle-font-face-et-descripteur-unicode.md](mon-blog/archives/2022/novembre/les-injections-css-regle-font-face-et-descripteur-unicode.md "mention")
+[les-injections-css-regle-font-face-et-descripteur-unicode.md](mes-articles/2022/novembre/les-injections-css-regle-font-face-et-descripteur-unicode.md "mention")
 
-L'inconvénient de la méthode précédente est qu'elle ne permet pas de récupérer le contenu d'un élément HTML, mais seulement la valeur d'un attribut. L'utilisation de la règle `@font-face` peut permettre de contourner cette limitation...
+Dans cet article, l'exploitation de l'injection CSS ne va plus cibler le contenu des attributs HTML, mais le contenu des éléments HTML, avec certaines limitations toutefois.
 
 :date: 20 Nov 2022 :open\_file\_folder:[CSS Injection](mon-blog/categories.md#css-injection)
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-[les-injections-css-attribute-selector.md](mon-blog/archives/2022/novembre/les-injections-css-attribute-selector.md "mention")
+[les-injections-css-attribute-selector.md](mes-articles/2022/novembre/les-injections-css-attribute-selector.md "mention")
 
-Le [CSS](https://fr.wikipedia.org/wiki/Feuilles\_de\_style\_en\_cascade) est un langage informatique qui décrit la présentation des documents HTML et XML. Trois méthodes permettent d'appliquer un style aux documents...
+Les injections CSS ne sont pas les vulnérabilités les plus connues, mais permettent tout de même certaines exploitations. Pour illustrer cela, nous commençons par la récupération de valeurs d'attributs HTML grâce aux sélecteurs d'attributs CSS.
 
 :date: 06 Nov 2022 :open\_file\_folder:[CSS Injection](mon-blog/categories.md#css-injection)
 
 <figure><img src=".gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
-[xss-exploitation-tool-v0.4.0.md](mon-blog/archives/2022/octobre/xss-exploitation-tool-v0.4.0.md "mention")
+[xss-exploitation-tool-v0.4.0.md](mes-articles/2022/octobre/xss-exploitation-tool-v0.4.0.md "mention")
 
 La version 0.4.0 vient XET (XSS Exploitation Tool) est maintenant disponible : [https://github.com/Sharpforce/XSS-Exploitation-Tool/tree/v0.4.0](https://github.com/Sharpforce/XSS-Exploitation-Tool/tree/v0.4.0)
 
@@ -40,40 +40,40 @@ La version 0.4.0 vient XET (XSS Exploitation Tool) est maintenant disponible : [
 
 <figure><img src=".gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
-[cross-site-scripting-xss-et-schema-duri-javascript.md](mon-blog/archives/2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript.md "mention")
+[cross-site-scripting-xss-et-schema-duri-javascript.md](mes-articles/2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript.md "mention")
 
-L'accès à une URL par un navigateur est conditionné par son schéma (_scheme_). Le schéma est le premier niveau de la structure de nommage d'un URI. Plus concrètement, il s'agit de la partie la plus à gauche, avant le caractère ":". Il ne faut pas confondre le schéma et le protocole : le schéma représente la sémantique alors que le protocole est la manière de communiquer avec le service cible...
+Dans cet article, nous allons examiner quelques exemples d'injections XSS possibles lorsque les données entrées par l'utilisateur sont réfléchies au sein d'un attribut HTML représentant une URL, tel que `href`, `src`, ou `url`.
 
 :date: 17 Sep 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
 
 <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-[walkthroughs-xss-vulnerability-challenges.md](mon-blog/archives/2022/aout/walkthroughs-xss-vulnerability-challenges.md "mention")
+[xss-vulnerability-challenges](walkthroughs/damn-vulnerable-web-application/xss-vulnerability-challenges/ "mention")
 
-[XSS Vulnerability Challenges](https://github.com/moeinfatehi/xss\_vulnerability\_challenges) est une une application PHP distribuée sous forme d'une image Docker proposant 8 challenges d'exploitation de vulnérabilités de type Cross-Site Scripting (XSS)...
+Mon writeup de l'application PHP "xss\_vulnerability\_challenges" qui propose une série de 8 challenges sur la thématique de la vulnérabilité XSS.
 
 :date: 02 Août 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
 
 <figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-[est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md](mon-blog/archives/2022/juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md "mention")
+[est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md](mes-articles/2022/juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md "mention")
 
-Avant d'analyser la méthode `htmlspecialchars()`, voici le code d'une injection simple au sein d'une page HTML...
+La fonction `htmlspecialchars()` est fréquemment utilisée pour nettoyer les entrées utilisateur dans les applications PHP natives (comprendre sans utilisation de framework). Est-elle suffisante pour couvrir tous les cas d'utilisation ? C'est ce que nous allons tenter de découvrir dans cet article.
 
 :date: 29 Juil 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
 
 <figure><img src=".gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-[sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md](mon-blog/archives/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md "mention")
+[sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md](mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md "mention")
 
-**PHP\_Code Sniffer** est un outil permettant d'analyser le code source PHP d'une application afin de détecter des mauvaises pratiques de développement en se basant sur un ensemble de règles. Ces règles concernent principalement la qualité du code, mais nous allons voir qu'il est possible d'en ajouter afin de détecter des failles de sécurité...
+**PHP Code Sniffer** est un outil qui permet d'analyser le code source PHP d'une application pour détecter des mauvaises pratiques de développement en se basant sur un ensemble de règles. Ces règles concernent principalement la qualité du code, mais il est également possible d'en ajouter pour détecter des failles de sécurité.
 
 :date: 18 Juil 2022 :open\_file\_folder:[SAST](mon-blog/categories.md#sast)
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-[sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md](mon-blog/archives/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md "mention")
+[sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md](mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md "mention")
 
-**PHP\_Code Sniffer** est un outil permettant d'analyser le code source PHP d'une application afin de détecter des mauvaises pratiques de développement en se basant sur un ensemble de règles. Ces règles concernent principalement la qualité du code, mais nous allons voir qu'il est possible d'en ajouter afin de détecter des failles de sécurité...
+**PHP Code Sniffer** est un outil qui permet d'analyser le code source PHP d'une application pour détecter des mauvaises pratiques de développement en se basant sur un ensemble de règles. Ces règles concernent principalement la qualité du code, mais il est également possible d'en ajouter pour détecter des failles de sécurité.
 
 :date: 12 Juil 2022 :open\_file\_folder:[SAST](mon-blog/categories.md#sast)

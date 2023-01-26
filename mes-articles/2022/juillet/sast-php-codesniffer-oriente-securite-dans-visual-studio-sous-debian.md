@@ -8,7 +8,9 @@ description: 18 Juillet 2022
 Un article concernant l'installation de PHP\_CodeSniffer sous Windows est également disponible [ici](https://sharpforce.gitbook.io/cybersecurity/mon-blog/2022/juillet/sast-php\_codesniffer-oriente-securite-integre-dans-visual-studio-sous-windows).
 {% endhint %}
 
-**PHP\_Code Sniffer** est un outil permettant d'analyser le code source PHP d'une application afin de détecter des mauvaises pratiques de développement en se basant sur un ensemble de règles. Ces règles concernent principalement la qualité du code, mais nous allons voir qu'il est possible d'en ajouter afin de détecter des failles de sécurité.
+> **PHP Code Sniffer** est un outil qui permet d'analyser le code source PHP d'une application pour détecter des mauvaises pratiques de développement en se basant sur un ensemble de règles. Ces règles concernent principalement la qualité du code, mais il est également possible d'en ajouter pour détecter des failles de sécurité.
+
+## Installation
 
 1. La première étape est d'installer l'outil grâce au gestionnaire de paquets `apt` :&#x20;
 
@@ -74,12 +76,12 @@ drwxr-xr-x  2 root root  4096 Jul 19 00:42 Util
 
 3\. Dans Visual Studio Code, installer l'extension **phpcs** :&#x20;
 
-![](<../../../../.gitbook/assets/image (27) (2).png>)
+![](<../../../.gitbook/assets/image (27) (2).png>)
 
 4\. Configurer l'extension de la façon suivante (éditer le fichier `settings.json` pour plus de facilité) :&#x20;
 
-![](<../../../../.gitbook/assets/image (27) (1).png>)
+![](<../../../.gitbook/assets/image (27) (1).png>)
 
 L'extension est maintenant bien configurée et fonctionnelle. Par exemple, ici la détection de l'utilisation de `shell_exec()` dans l'application bWAPP menant à une injection de commande :&#x20;
 
-![](<../../../../.gitbook/assets/image (23) (1) (1).png>)
+![](<../../../.gitbook/assets/image (23) (1) (1).png>)
