@@ -2,7 +2,7 @@
 description: 12 Juillet 2022
 ---
 
-# SAST - PHP\_CodeSniffer orienté sécurité intégré dans Visual Studio (sous Windows)
+# SAST - PHP CodeSniffer orienté sécurité dans Visual Studio (sous Windows)
 
 **PHP\_Code Sniffer** est un outil permettant d'analyser le code source PHP d'une application afin de détecter des mauvaises pratiques de développement en se basant sur un ensemble de règles. Ces règles concernent principalement la qualité du code, mais nous allons voir qu'il est possible d'en ajouter afin de détecter des failles de sécurité.
 
@@ -28,7 +28,7 @@ set PHPBIN=php
 
 5\. Le contenu du dossier doit maintenant être le suivant :&#x20;
 
-![](<../../../.gitbook/assets/image (28) (1).png>)
+![](<../../../../.gitbook/assets/image (28) (1).png>)
 
 {% hint style="warning" %}
 Il est nécessaire que le chemin de l'exécutable PHP soit renseigné dans le PATH de Windows.
@@ -36,12 +36,12 @@ Il est nécessaire que le chemin de l'exécutable PHP soit renseigné dans le PA
 
 6\. Dans Visual Studio Code, installer l'extension **phpcs** :&#x20;
 
-![](<../../../.gitbook/assets/image (27) (2).png>)
+![](<../../../../.gitbook/assets/image (27) (2).png>)
 
 7\. Configurer l'extension de la façon suivante (éditer le fichier `settings.json` pour plus de facilité) :&#x20;
 
-![](<../../../.gitbook/assets/image (26) (1) (2).png>)
+![](<../../../../.gitbook/assets/image (26) (1) (2).png>)
 
 L'extension est maintenant bien configurée et fonctionnelle. Par exemple ici la détection de l'utilisation de `shell_exec()` dans l'application bWAPP menant à une injection de commande :&#x20;
 
-![](<../../../.gitbook/assets/image (23) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (23) (1) (1).png>)

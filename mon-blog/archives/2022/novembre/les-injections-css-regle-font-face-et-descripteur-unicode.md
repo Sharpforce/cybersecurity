@@ -32,7 +32,7 @@ Le code vulnérable suivant possède un élément HTML `<span></span>` ayant com
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 L'attaquant souhaite évidemment récupérer le contenu de l'élément `<span></span>` qui contient ce secret. Pour cela, il va utiliser la règle `@font-face` ainsi qu'un code unicode grâce au descripteur `unicode-range` représentant le caractère à tester. Il faudra également spécifier une URL distante permettant de récupérer le caractère identifié ainsi qu'une police d'écriture permettant de l'appliquer sur l'élément HTML ciblé :
 
@@ -82,7 +82,7 @@ Connection: close
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 Il y a donc bien un "s" dans le secret de la victime. L'attaquant peut ainsi continuer d'exfiltrer les autres caractères présents dans le secret :&#x20;
 
@@ -102,7 +102,7 @@ Connection: close
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (8) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (4).png" alt=""><figcaption></figcaption></figure>
 
 Malheureusement, cette technique possède plusieurs limitations : il n'est pas possible de connaitre les caractères dupliqués (plusieurs caractères "3" dans l'exemple ci-dessus) ni l'ordre d'apparition de ces caractères.
 
@@ -130,7 +130,7 @@ Dans l'exemple précédent, tous les éléments `<span></span>` seront analysés
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 En CSS le caractère `#` va permettre de sélectionner un attribut `id` spécifique :
 
@@ -180,7 +180,7 @@ Connection: close
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ### Récupération en fonction de la classe
 
@@ -206,7 +206,7 @@ De la même façon, il est possible de cibler un attribut `class` au lieu d'un a
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Ici, c'est le caractère `.` qui va permettre de sélectionner l'attribut `class` désiré :
 
@@ -256,7 +256,7 @@ Connection: close
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 Dans le cas où il existe plusieurs éléments HTML portant le nom de `class`, il est possible de cibler précisément celle désirée en utilisant la pseudo-classe CSS `nth-child(n)` ([https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child](https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child)) :&#x20;
 
@@ -281,7 +281,7 @@ Dans le cas où il existe plusieurs éléments HTML portant le nom de `class`, i
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 L'ajout de la pseudo-class `nth-child()` va permettre de sélectionner seulement le second élément HTML ayant l'attribut class désiré :
 
@@ -331,7 +331,7 @@ Connection: close
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (5) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (4).png" alt=""><figcaption></figcaption></figure>
 
 ### Récupération du contenu d'une balise \<script>\</script>
 
@@ -359,7 +359,7 @@ En temps normal, il n'est pas possible de récupérer de l'information contenue 
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 La raison est que le texte contenu dans ces balises n'est pas affiché et ne déclenche jamais les règles de style utilisées par l'attaque.&#x20;
 
@@ -375,7 +375,7 @@ script {
 
 Cela a pour effet de faire apparaitre le contenu de la balise et ainsi déclencher la règle CSS `@font-face` (la victime pourra également voir le contenu pendant l'exploitation) :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 Le code CSS complet est le suivant :&#x20;
 
@@ -422,7 +422,7 @@ Connection: close
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Bien sur, ici l'attaquant va également récupérer les caractères composants les mots clés de Javascript, par exemple "var" ici.
@@ -434,7 +434,7 @@ L'attaque étant limitée (il est seulement  possible de savoir si un caractère
 
 Exemple de 5 requêtes représentant l'information "s3cr3t" récupérée :
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 Un PoC minimaliste est disponible [ici](https://github.com/Sharpforce/PoC-CSS-injection/tree/master/font-face-and-unicode-descriptor).
 
@@ -464,11 +464,11 @@ Si l'attaquant est également en mesure de contrôler un élément HTML tel qu'u
 
 L'élément HTML `<object></object>` va afficher le contenu récupéré en requêtant l'URL de l'attribut `data`:
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 Si aucune information n'est récupérée (hôte non joignable, ressource non trouvée, etc) le texte alternatif `Error` sera alors affiché à l'utilisateur :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (5).png" alt=""><figcaption></figcaption></figure>
 
 En analysant le site vulnérable, l'attaquant identifie un endpoint contenant l'identifiant de l'utilisateur actuel : `http://vulnerable.com/users.php?id={id}`. Pour l'attaquant, l'URL est  `http://vulnerable.com/users.php?id=967344`. Afin d'exploiter une seconde vulnérabilité plus sévère, il souhaite connaitre l'identifiant de sa victime.
 
@@ -521,7 +521,7 @@ Connection: close
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 Il faut donc continuer l'attaque jusqu'à deviner l'identifiant et qu'aucune requête ne soit reçue par l'attaquant.
 
