@@ -54,10 +54,12 @@
 
 [cross-site-scripting-xss-et-schema-duri-javascript.md](../mes-articles/2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript.md "mention")
 
-[Broken link](broken-reference "mention")
+[xss-vulnerability-challenges](../walkthroughs/damn-vulnerable-web-application/xss-vulnerability-challenges/ "mention")
 
 [est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md](../mes-articles/2022/juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md "mention")
 
 [cve-2022-33910.md](../cve/2022/cve-2022-33910.md "mention")
+
+[cve-2022-32442.md](../cve/2022/cve-2022-32442.md "mention")
 
 </details>
