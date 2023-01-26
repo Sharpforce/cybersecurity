@@ -52,7 +52,7 @@ Dans cet article, nous allons examiner quelques exemples d'injections XSS possib
 
 Ma critique du livre "Practical Web Penetration Testing" de Gus Khawaja, paru en 2018.
 
-:date: 20 Août 2022 :open\_file\_folder:[Books](livres/2018/practical-web-penetration-testing.md)
+:date: 20 Août 2022 :open\_file\_folder:[Books](mon-blog/categories.md#books)
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -92,7 +92,7 @@ La fonction `htmlspecialchars()` est fréquemment utilisée pour nettoyer les en
 
 Ma critique du livre "Web Hacking 101: How to make Money Hacking Ethically" de Peter Yaworski, paru en 2018.
 
-:date: 01 Juil 2022 :open\_file\_folder:[Books](livres/2018/practical-web-penetration-testing.md)
+:date: 01 Juil 2022 :open\_file\_folder:[Books](mon-blog/categories.md#books)
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
