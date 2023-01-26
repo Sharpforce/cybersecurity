@@ -6,7 +6,7 @@ Cette exploitation d'une injection CSS va permettre à l'attaquant de savoir si 
 
 :date: 16 Déc 2022 :open\_file\_folder:[CSS Injection](mon-blog/categories.md#css-injection)
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 [les-injections-css-regle-import.md](mes-articles/2022/decembre/les-injections-css-regle-import.md "mention")
 
@@ -14,7 +14,7 @@ On continue sur le sujet des injections CSS avec cette fois l'utilisation de la 
 
 :date: 15 Déc 2022 :open\_file\_folder:[CSS Injection](mon-blog/categories.md#css-injection)
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 [les-injections-css-regle-font-face-et-descripteur-unicode.md](mes-articles/2022/novembre/les-injections-css-regle-font-face-et-descripteur-unicode.md "mention")
 
@@ -77,3 +77,27 @@ La fonction `htmlspecialchars()` est fréquemment utilisée pour nettoyer les en
 **PHP Code Sniffer** est un outil qui permet d'analyser le code source PHP d'une application pour détecter des mauvaises pratiques de développement en se basant sur un ensemble de règles. Ces règles concernent principalement la qualité du code, mais il est également possible d'en ajouter pour détecter des failles de sécurité.
 
 :date: 12 Juil 2022 :open\_file\_folder:[SAST](mon-blog/categories.md#sast)
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+[cve-2022-33910.md](cve/2022/cve-2022-33910.md "mention")
+
+Je vous propose mon analyse de la **CVE-2022-33910**, qui est une vulnérabilité de type Cross-Site Scripting (XSS) dans l'application de suivi de bogues MantisBT.
+
+:date: 01 Juil 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss) :open\_file\_folder:[CVE](mon-blog/categories.md#cve)
+
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+[cve-2022-32444.md](cve/2022/cve-2022-32444.md "mention")
+
+Je vous propose mon analyse de la **CVE-2022-32444**, qui est une vulnérabilité de type Open Redirect dans le système de gestion de contenu (CMS) nommé u5CMS.
+
+:date: 23 Juin 2022 :open\_file\_folder:[Open Redirect](mon-blog/categories.md#open-redirect) :open\_file\_folder:[CVE](mon-blog/categories.md#cve)
+
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+[cve-2022-32442.md](cve/2022/cve-2022-32442.md "mention")
+
+Je vous propose mon analyse de la **CVE-2022-32442**, qui est une vulnérabilité de type Cross-Site Scripting (XSS) dans le système de gestion de contenu (CMS) nommé u5CMS.
+
+:date: 22 Juin 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss) :open\_file\_folder:[CVE](mon-blog/categories.md#cve)

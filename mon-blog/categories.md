@@ -16,6 +16,26 @@
 
 <details>
 
+<summary>CVE</summary>
+
+[cve-2022-33910.md](../cve/2022/cve-2022-33910.md "mention")
+
+[cve-2022-32444.md](../cve/2022/cve-2022-32444.md "mention")
+
+[cve-2022-32442.md](../cve/2022/cve-2022-32442.md "mention")
+
+</details>
+
+<details>
+
+<summary>Open Redirect</summary>
+
+[cve-2022-32444.md](../cve/2022/cve-2022-32444.md "mention")
+
+</details>
+
+<details>
+
 <summary>SAST</summary>
 
 [sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md](../mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md "mention")
@@ -37,5 +57,7 @@
 [Broken link](broken-reference "mention")
 
 [est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md](../mes-articles/2022/juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md "mention")
+
+[cve-2022-33910.md](../cve/2022/cve-2022-33910.md "mention")
 
 </details>

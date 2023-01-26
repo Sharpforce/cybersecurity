@@ -34,7 +34,7 @@ Le code vulnérable suivant possède un élément HTML `<span></span>` ayant com
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 L'attaquant souhaite évidemment récupérer le contenu de l'élément `<span></span>` qui contient ce secret. Pour cela, il va utiliser la règle `@font-face` ainsi qu'un code unicode grâce au descripteur `unicode-range` représentant le caractère à tester. Il faudra également spécifier une URL distante permettant de récupérer le caractère identifié ainsi qu'une police d'écriture permettant de l'appliquer sur l'élément HTML ciblé :
 
@@ -208,7 +208,7 @@ De la même façon, il est possible de cibler un attribut `class` au lieu d'un a
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Ici, c'est le caractère `.` qui va permettre de sélectionner l'attribut `class` désiré :
 
