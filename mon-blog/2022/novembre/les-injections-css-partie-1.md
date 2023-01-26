@@ -105,7 +105,7 @@ Et finalement, la méthode sans doute la moins usitée est le style en ligne (in
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Exploitation d'une injection XSS via un élément CSS
 

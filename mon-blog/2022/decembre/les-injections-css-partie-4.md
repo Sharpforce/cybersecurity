@@ -57,15 +57,15 @@ En reprenant le code de l'exemple précédent, il est donc possible de mettre en
 http://vulnerable.com/scroll-to-text.php#:~:text=Administrateur
 ```
 
-<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Ou alors une phrase entière :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
 
 Il est également possible de surligner tout un paragraphe en spécifiant le texte du début (`textStart`) et le texte de fin (`textEnd`) séparés par une virgule :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 Ou encore d'ajouter des suffixes et des préfixes :&#x20;
 
@@ -75,7 +75,7 @@ Ou encore d'ajouter des suffixes et des préfixes :&#x20;
 
 Une dernière possibilité pouvant être utile est de pouvoir effectuer une multi sélection grâce au caractère `&`. Par exemple :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (5).png" alt=""><figcaption></figcaption></figure>
 
 ### La pseudo-class :target&#x20;
 
@@ -103,7 +103,7 @@ http://vulnerable.com/scroll-to-text.php?color=black;}:target::before{content:ur
 
 L'attaque ne passera pas inaperçu pour la victime puisque le texte ciblé sera souligné et un défilement sera effectué si nécessaire :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Limites de l'attaque
 
