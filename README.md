@@ -14,7 +14,7 @@ On continue sur le sujet des injections CSS avec cette fois l'utilisation de la 
 
 :date: 15 Déc 2022 :open\_file\_folder:[CSS Injection](mon-blog/categories.md#css-injection)
 
-<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 [les-injections-css-regle-font-face-et-descripteur-unicode.md](mes-articles/2022/novembre/les-injections-css-regle-font-face-et-descripteur-unicode.md "mention")
 
@@ -48,6 +48,14 @@ Dans cet article, nous allons examiner quelques exemples d'injections XSS possib
 
 <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
+[practical-web-penetration-testing.md](livres/2018/practical-web-penetration-testing.md "mention")
+
+Ma critique du livre "Practical Web Penetration Testing" de Gus Khawaja, paru en 2018.
+
+:date: 20 Août 2022 :open\_file\_folder:[Books](livres/2018/practical-web-penetration-testing.md)
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 [xss-vulnerability-challenges](walkthroughs/damn-vulnerable-web-application/xss-vulnerability-challenges/ "mention")
 
 Mon writeup de l'application PHP "xss\_vulnerability\_challenges" qui propose une série de 8 challenges sur la thématique de la vulnérabilité XSS.
@@ -70,13 +78,21 @@ La fonction `htmlspecialchars()` est fréquemment utilisée pour nettoyer les en
 
 :date: 18 Juil 2022 :open\_file\_folder:[SAST](mon-blog/categories.md#sast)
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 [sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md](mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md "mention")
 
 **PHP Code Sniffer** est un outil qui permet d'analyser le code source PHP d'une application pour détecter des mauvaises pratiques de développement en se basant sur un ensemble de règles. Ces règles concernent principalement la qualité du code, mais il est également possible d'en ajouter pour détecter des failles de sécurité.
 
 :date: 12 Juil 2022 :open\_file\_folder:[SAST](mon-blog/categories.md#sast)
+
+<figure><img src=".gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
+
+[web-hacking-101-how-to-make-money-hacking-ethically.md](livres/web-hacking-101-how-to-make-money-hacking-ethically.md "mention")
+
+Ma critique du livre "Web Hacking 101: How to make Money Hacking Ethically" de Peter Yaworski, paru en 2018.
+
+:date: 01 Juil 2022 :open\_file\_folder:[Books](livres/2018/practical-web-penetration-testing.md)
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -86,7 +102,7 @@ Je vous propose mon analyse de la **CVE-2022-33910**, qui est une vulnérabilit�
 
 :date: 01 Juil 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss) :open\_file\_folder:[CVE](mon-blog/categories.md#cve)
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 [cve-2022-32444.md](cve/2022/cve-2022-32444.md "mention")
 

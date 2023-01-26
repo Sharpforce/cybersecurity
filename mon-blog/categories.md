@@ -2,6 +2,16 @@
 
 <details>
 
+<summary>Books</summary>
+
+[practical-web-penetration-testing.md](../livres/2018/practical-web-penetration-testing.md "mention")
+
+[web-hacking-101-how-to-make-money-hacking-ethically.md](../livres/web-hacking-101-how-to-make-money-hacking-ethically.md "mention")
+
+</details>
+
+<details>
+
 <summary>CSS Injection</summary>
 
 [les-injections-css-scroll-to-text-fragment.md](../mes-articles/2022/decembre/les-injections-css-scroll-to-text-fragment.md "mention")

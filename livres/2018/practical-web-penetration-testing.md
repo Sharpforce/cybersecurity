@@ -1,5 +1,7 @@
 # Practical Web Penetration Testing
 
+> Ma critique du livre "Practical Web Penetration Testing" de Gus Khawaja, paru en 2018.
+
 ## Description du livre
 
 ![](<../../.gitbook/assets/image (17).png>)
