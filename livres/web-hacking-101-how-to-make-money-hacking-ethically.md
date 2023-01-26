@@ -1,5 +1,7 @@
 # Web Hacking 101: How to Make Money Hacking Ethically
 
+> Ma critique du livre "Web Hacking 101: How to make Money Hacking Ethically" de Peter Yaworski, paru en 2018.
+
 ## Description du livre
 
 ![](../.gitbook/assets/5c8efa430ccfcd100bab965ed88e9165.png)
