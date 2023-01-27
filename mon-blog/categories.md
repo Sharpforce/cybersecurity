@@ -46,7 +46,7 @@
 
 <details>
 
-<summary>SAST</summary>
+<summary>Tooling</summary>
 
 [sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md](../mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md "mention")
 

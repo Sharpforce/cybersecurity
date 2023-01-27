@@ -76,7 +76,7 @@ La fonction `htmlspecialchars()` est fréquemment utilisée pour nettoyer les en
 
 **PHP Code Sniffer** est un outil qui permet d'analyser le code source PHP d'une application pour détecter des mauvaises pratiques de développement en se basant sur un ensemble de règles. Ces règles concernent principalement la qualité du code, mais il est également possible d'en ajouter pour détecter des failles de sécurité.
 
-:date: 18 Juil 2022 :open\_file\_folder:[SAST](mon-blog/categories.md#sast)
+:date: 18 Juil 2022 :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling)
 
 <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -84,7 +84,7 @@ La fonction `htmlspecialchars()` est fréquemment utilisée pour nettoyer les en
 
 **PHP Code Sniffer** est un outil qui permet d'analyser le code source PHP d'une application pour détecter des mauvaises pratiques de développement en se basant sur un ensemble de règles. Ces règles concernent principalement la qualité du code, mais il est également possible d'en ajouter pour détecter des failles de sécurité.
 
-:date: 12 Juil 2022 :open\_file\_folder:[SAST](mon-blog/categories.md#sast)
+:date: 12 Juil 2022 :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling)
 
 <figure><img src=".gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
 
