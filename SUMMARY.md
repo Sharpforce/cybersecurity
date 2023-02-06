@@ -38,6 +38,8 @@
 
 ## Livres
 
+* [2022](livres/2022/README.md)
+  * [Hacking APIs - Breaking Web Application Programming Interfaces](livres/2022/hacking-apis-breaking-web-application-programming-interfaces.md)
 * [2018](livres/2018/README.md)
   * [Practical Web Penetration Testing](livres/2018/practical-web-penetration-testing.md)
   * [Web Hacking 101: How to Make Money Hacking Ethically](livres/web-hacking-101-how-to-make-money-hacking-ethically.md)

@@ -2,9 +2,19 @@
 
 <details>
 
+<summary>API</summary>
+
+[hacking-apis-breaking-web-application-programming-interfaces.md](../livres/2022/hacking-apis-breaking-web-application-programming-interfaces.md "mention")
+
+</details>
+
+<details>
+
 <summary>Books</summary>
 
 [practical-web-penetration-testing.md](../livres/2018/practical-web-penetration-testing.md "mention")
+
+[hacking-apis-breaking-web-application-programming-interfaces.md](../livres/2022/hacking-apis-breaking-web-application-programming-interfaces.md "mention")
 
 [web-hacking-101-how-to-make-money-hacking-ethically.md](../livres/web-hacking-101-how-to-make-money-hacking-ethically.md "mention")
 

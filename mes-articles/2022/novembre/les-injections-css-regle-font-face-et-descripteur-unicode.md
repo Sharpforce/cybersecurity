@@ -182,7 +182,7 @@ Connection: close
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Récupération en fonction de la classe
 
@@ -208,7 +208,7 @@ De la même façon, il est possible de cibler un attribut `class` au lieu d'un a
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Ici, c'est le caractère `.` qui va permettre de sélectionner l'attribut `class` désiré :
 
@@ -424,7 +424,7 @@ Connection: close
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Bien sur, ici l'attaquant va également récupérer les caractères composants les mots clés de Javascript, par exemple "var" ici.

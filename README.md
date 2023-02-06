@@ -1,5 +1,13 @@
 # 🏠 Home
 
+[hacking-apis-breaking-web-application-programming-interfaces.md](livres/2022/hacking-apis-breaking-web-application-programming-interfaces.md "mention")
+
+Ma critique du livre "Hacking APIs - Breaking Web Application Programming Interfaces" de Corey J. Ball, paru en 2022
+
+:date: 06 Fév 2023 :open\_file\_folder:API :open\_file\_folder:[Books](mon-blog/categories.md#books)
+
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
 [les-injections-css-scroll-to-text-fragment.md](mes-articles/2022/decembre/les-injections-css-scroll-to-text-fragment.md "mention")
 
 Cette exploitation d'une injection CSS va permettre à l'attaquant de savoir si l'occurrence d'un mot est présent ou non sur la page ciblée. Cela peut être utile afin d'identifier par exemple, si la victime est connectée en tant qu'administrateur ou non.
@@ -46,7 +54,7 @@ Dans cet article, nous allons examiner quelques exemples d'injections XSS possib
 
 :date: 17 Sep 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 [practical-web-penetration-testing.md](livres/2018/practical-web-penetration-testing.md "mention")
 
@@ -78,7 +86,7 @@ La fonction `htmlspecialchars()` est fréquemment utilisée pour nettoyer les en
 
 :date: 18 Juil 2022 :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling)
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 [sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md](mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md "mention")
 
@@ -94,7 +102,7 @@ Ma critique du livre "Web Hacking 101: How to make Money Hacking Ethically" de P
 
 :date: 01 Juil 2022 :open\_file\_folder:[Books](mon-blog/categories.md#books)
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 [cve-2022-33910.md](cve/2022/cve-2022-33910.md "mention")
 
@@ -102,7 +110,7 @@ Je vous propose mon analyse de la **CVE-2022-33910**, qui est une vulnérabilit�
 
 :date: 01 Juil 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss) :open\_file\_folder:[CVE](mon-blog/categories.md#cve)
 
-<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 [cve-2022-32444.md](cve/2022/cve-2022-32444.md "mention")
 
