@@ -4,7 +4,7 @@
 
 Ma critique du livre "Hacking APIs - Breaking Web Application Programming Interfaces" de Corey J. Ball, paru en 2022
 
-:date: 06 Fév 2023 :open\_file\_folder:API :open\_file\_folder:[Books](mon-blog/categories.md#books)
+:date: 06 Fév 2023 :open\_file\_folder:[API](mon-blog/categories.md#api) :open\_file\_folder:[Books](mon-blog/categories.md#books)
 
 <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
