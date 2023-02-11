@@ -1,12 +1,20 @@
 # 🏠 Home
 
+[fonctionnement-de-lentete-http-strict-transport-security-header-hsts.md](mes-articles/2023/fevrier/fonctionnement-de-lentete-http-strict-transport-security-header-hsts.md "mention")
+
+Que ce soit lorsqu'on effectue un audit de sécurité d'un site web pour nos clients ou, à l'inverse, lorsqu'un utilisateur nous remonte les résultats d'un outil d'analyse de la configuration de notre application, l'absence de l'en-tête de sécurité HTTP Strict Transport Security Header est généralement relevée. Mais à quoi sert cet en-tête et comment fonctionne-t-il ?
+
+:date: 12 Fév 2023 :open\_file\_folder:[Configuration](mon-blog/categories.md#configuration) :open\_file\_folder:[Web Server](mon-blog/categories.md#web-server)
+
+<figure><img src=".gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+
 [hacking-apis-breaking-web-application-programming-interfaces.md](livres/2022/hacking-apis-breaking-web-application-programming-interfaces.md "mention")
 
-Ma critique du livre "Hacking APIs - Breaking Web Application Programming Interfaces" de Corey J. Ball, paru en 2022
+Ma critique du livre "Hacking APIs - Breaking Web Application Programming Interfaces" de Corey J. Ball, paru en 2022.
 
 :date: 06 Fév 2023 :open\_file\_folder:[API](mon-blog/categories.md#api) :open\_file\_folder:[Books](mon-blog/categories.md#books)
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 [les-injections-css-scroll-to-text-fragment.md](mes-articles/2022/decembre/les-injections-css-scroll-to-text-fragment.md "mention")
 
@@ -54,7 +62,7 @@ Dans cet article, nous allons examiner quelques exemples d'injections XSS possib
 
 :date: 17 Sep 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
 
-<figure><img src=".gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 [practical-web-penetration-testing.md](livres/2018/practical-web-penetration-testing.md "mention")
 
@@ -62,7 +70,7 @@ Ma critique du livre "Practical Web Penetration Testing" de Gus Khawaja, paru en
 
 :date: 20 Août 2022 :open\_file\_folder:[Books](mon-blog/categories.md#books)
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
 [xss-vulnerability-challenges](walkthroughs/damn-vulnerable-web-application/xss-vulnerability-challenges/ "mention")
 
@@ -86,7 +94,7 @@ La fonction `htmlspecialchars()` est fréquemment utilisée pour nettoyer les en
 
 :date: 18 Juil 2022 :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling)
 
-<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 [sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md](mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md "mention")
 

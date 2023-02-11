@@ -22,6 +22,14 @@
 
 <details>
 
+<summary>Configuration</summary>
+
+[fonctionnement-de-lentete-http-strict-transport-security-header-hsts.md](../mes-articles/2023/fevrier/fonctionnement-de-lentete-http-strict-transport-security-header-hsts.md "mention")
+
+</details>
+
+<details>
+
 <summary>CSS Injection</summary>
 
 [les-injections-css-scroll-to-text-fragment.md](../mes-articles/2022/decembre/les-injections-css-scroll-to-text-fragment.md "mention")
@@ -63,6 +71,14 @@
 [sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md](../mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md "mention")
 
 
+
+</details>
+
+<details>
+
+<summary>Web Server</summary>
+
+[fonctionnement-de-lentete-http-strict-transport-security-header-hsts.md](../mes-articles/2023/fevrier/fonctionnement-de-lentete-http-strict-transport-security-header-hsts.md "mention")
 
 </details>
 

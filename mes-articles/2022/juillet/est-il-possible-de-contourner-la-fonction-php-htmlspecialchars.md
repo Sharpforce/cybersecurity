@@ -440,7 +440,7 @@ Cela provient du fait que le développeur n'a pas renseigné tous les paramètre
 
 Grâce à cette modification, l'application semble être maintenant protégée :&#x20;
 
-![](<../../../.gitbook/assets/image (42).png>)
+![](<../../../.gitbook/assets/image (42) (1).png>)
 
 #### Cas n°3
 
