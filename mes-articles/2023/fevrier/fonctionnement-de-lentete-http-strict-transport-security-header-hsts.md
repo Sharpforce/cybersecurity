@@ -165,4 +165,4 @@ La soumission du formulaire s'effectue ici : [https://hstspreload.org/](https://
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-La présence de la directive `preload` peut ne pas être évidente. En réalité, elle permet à Google de vérifier que l'ajout du domaine à la "liste de préchargement" est bien souhaité par son propriétaire. Ainsi, une autre personne peut soumettre le formulaire, mais ne sera pas en mesure de modifier la configuration du serveur web pour y inclure cette directive. Dans ce cas, l'ajout du domaine à la "liste de préchargement" ne sera pas effectué.
+La présence de la directive `preload` peut ne pas être évidente. En réalité, elle permet de vérifier que l'ajout du domaine à la "liste de préchargement" est bien souhaité par son propriétaire. Ainsi, une autre personne peut soumettre le formulaire, mais ne sera pas en mesure de modifier la configuration du serveur web pour y inclure cette directive. Dans ce cas, l'ajout du domaine à la "liste de préchargement" ne sera pas effectué.
