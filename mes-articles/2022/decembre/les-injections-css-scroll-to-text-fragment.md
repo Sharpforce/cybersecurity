@@ -109,7 +109,7 @@ http://vulnerable.com/scroll-to-text.php?color=black;}:target::before{content:ur
 
 L'attaque ne passera pas inaperçu pour la victime puisque le texte ciblé sera souligné et un défilement sera effectué si nécessaire :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Limites de l'attaque
 

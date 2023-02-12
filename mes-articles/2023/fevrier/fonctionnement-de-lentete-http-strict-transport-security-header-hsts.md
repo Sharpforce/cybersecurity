@@ -12,8 +12,8 @@ Sans revenir sur le fonctionnement de HTTPS, sa raison d'être est la sécurité
 
 Par défaut, le protocole HTTP fonctionne sur le port 80 et sa version sécurisée sur le port 443. Ils peuvent être atteints en spécifiant le protocole comme dans les exemples suivants : [http://example.com](http://example.com/) (non sécurisé) ou [https://example.com](https://example.com/) (sécurisé). Sous Google Chrome, par exemple, une version non sécurisée est visible également dans la barre d'adresse par l'indication "Non sécurisé" accompagnée d'un pictogramme d'exclamation, tandis que la version sécurisée se voit dotée d'un cadenas :
 
-| ![](<../../../.gitbook/assets/image (4).png>) | ![](../../../.gitbook/assets/image.png) |
-| :-------------------------------------------: | :-------------------------------------: |
+| ![](<../../../.gitbook/assets/image (4).png>) | ![](<../../../.gitbook/assets/image (2).png>) |
+| :-------------------------------------------: | :-------------------------------------------: |
 
 {% hint style="info" %}
 Mais pourquoi un utilisateur renseignerait une URL avec le protocole HTTP ?&#x20;
@@ -28,6 +28,8 @@ Il existe plusieurs cas où cela peut arriver (et sans doute d'autres) :&#x20;
 ## Redirection des utilisateurs vers HTTPS
 
 Afin de protéger les utilisateurs, les applications web effectuent généralement une redirection du port 80 vers le port 443. De cette façon, un utilisateur tentant d'accéder à l'URL via le protocole HTTP sera redirigé, par la réponse du serveur, vers une connexion HTTPS.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Par exemple, la configuration suivante est celle d'un serveur Nginx et permet une telle redirection :&#x20;
 

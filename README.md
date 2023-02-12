@@ -38,7 +38,7 @@ Dans cet article, l'exploitation de l'injection CSS ne va plus cibler le contenu
 
 :date: 20 Nov 2022 :open\_file\_folder:[CSS Injection](mon-blog/categories.md#css-injection)
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 [les-injections-css-attribute-selector.md](mes-articles/2022/novembre/les-injections-css-attribute-selector.md "mention")
 
