@@ -144,11 +144,11 @@ Si présent, la règle s'applique pour tous les sous-domaines de l'application.
 
 `preload` _(optionnel) (non standard)_
 
-Que se passe-t-il si un utilisateur visite le site de sa banque alors qu'il est connecté à un hotspot malveillant à l'aéroport ? Si cet utilisateur a récemment consulté ses comptes (et si le site implémente correctement l'entête de sécurité HSTS), le navigateur se rappellera qu'il est obligatoire d'utiliser HTTPS même lors de la première connexion.
+Que se passe-t-il si un utilisateur visite le site de sa banque alors qu'il est connecté à un hotspot malveillant à l'aéroport ? Si cet utilisateur a récemment consulté ses comptes (et si le site implémente correctement l'entête de sécurité HSTS), le navigateur se rappellera qu'il est obligatoire d'utiliser HTTPS même lorsque le protocole spécifié est HTTP. L'attaquant ne sera pas en mesure d'utiliser les méthodes d'attaque décrites ci-dessus pour détourner la connexion de la victime.
 
-L'attaquant ne sera pas en mesure d'utiliser les méthodes d'attaque décrites ci-dessus pour détourner la connexion de la victime. Cependant, que se passera-t-il si c'est la première fois que l'utilisateur visite le site de sa banque (ou si cela fait plus de temps que la durée définie par la directive `max-age`) ? Le navigateur n'aura pas en mémoire l'utilisation exclusive de HTTPS et donc la victime verra sa connexion compromise par l'attaquant. C'est pour contrer cela, qu'existe la directive `preload`.
+Cependant, que se passera-t-il si c'est la première fois que l'utilisateur visite le site de sa banque (ou si cela fait plus de temps que la durée définie par la directive `max-age`) ? Le navigateur n'aura pas en mémoire l'utilisation exclusive de HTTPS et donc la victime verra sa connexion compromise par l'attaquant. C'est pour contrer cela, qu'existe la directive `preload`.
 
-Google maintient une liste blanche qui indique que les sites inscrits ne doivent utiliser que le protocole HTTPS. Cette "liste de préchargement" est codée en dur dans Chrome et est également disponible pour d'autres navigateurs. Avant de se connecter à un site, le navigateur y vérifie la présence du site. Si tel est le cas, le navigateur utilisera HTTPS dès la première requête. Grâce à cela, l'utilisateur est maintenant protégé même en cas de première connexion.
+Google maintient une liste blanche qui indique que les sites inscrits ne doivent utiliser que le protocole HTTPS. Cette "liste de préchargement" est codée en dur dans Chrome et est également disponible pour d'autres navigateurs. Avant de se connecter à un site, le navigateur y vérifie la présence du site. Si tel est le cas, le navigateur utilisera HTTPS dès la première requête. Grâce à cela, l'utilisateur est maintenant protégé même dans le cas de la première connexion.
 
 **Soumission du formulaire**
 
