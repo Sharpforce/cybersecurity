@@ -156,7 +156,7 @@ La soumission du formulaire s'effectue ici : [https://hstspreload.org/](https://
 
 * Avoir un certificat valide
 * Avoir une redirection HTTP vers HTTPS sur le même hôte (si écoute sur le port 80)
-* Tous les sous-domaines doivent être en HTTPS
+* Tous les sous-domaines, y compris _www_,  doivent être en HTTPS
 * Inclure l'entête HSTS avec la configuration suivante : &#x20;
   * un `max-age` d'au moins un an (31536000 secondes)
   * présence de la directive `includeSubDomains`
