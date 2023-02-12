@@ -45,6 +45,10 @@ En admettant la page vulnérable suivante :&#x20;
 
 La variable PHP `$role` contient le rôle du visiteur authentifié. Elle peut contenir la valeur "Administrateur" ou "Utilisateur". L'attaquant souhaite tout d'abord déterminer si le visiteur de la page est bien l'administrateur du site afin, ensuite, d'effectuer une attaque plus poussée contre lui ; c'est ici que la fonctionnalité Scroll-to-Text Fragment va lui être utile.
 
+{% hint style="info" %}
+L'article original concernant cette exploitation est disponible ici : [https://www.secforce.com/blog/new-technique-of-stealing-data-using-css-and-scroll-to-text-fragment-feature/](https://www.secforce.com/blog/new-technique-of-stealing-data-using-css-and-scroll-to-text-fragment-feature/)
+{% endhint %}
+
 ### Text Fragments
 
 Un fragment de texte dans une URL se compose du signe `#` suivi de `:~:text=` et se termine par le texte ciblé (encodé en URL) :&#x20;
