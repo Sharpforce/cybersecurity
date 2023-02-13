@@ -29,7 +29,7 @@ Il existe plusieurs cas où cela peut arriver (et sans doute d'autres) :&#x20;
 
 Afin de protéger les utilisateurs, les applications web effectuent généralement une redirection du port 80 vers le port 443. De cette façon, un utilisateur tentant d'accéder à l'URL via le protocole HTTP sera redirigé, par la réponse du serveur, vers une connexion HTTPS.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 Par exemple, la configuration suivante est celle d'un serveur Nginx et permet une telle redirection :&#x20;
 
@@ -163,6 +163,16 @@ La soumission du formulaire s'effectue ici : [https://hstspreload.org/](https://
   * présence de la directive `preload`
 * Les redirections effectuées en HTTPS doivent également contenir l'entête HSTS
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 La présence de la directive `preload` peut ne pas être évidente. En réalité, elle permet de vérifier que l'ajout du domaine à la "liste de préchargement" est bien souhaité par son propriétaire. Ainsi, une autre personne peut soumettre le formulaire, mais ne sera pas en mesure de modifier la configuration du serveur web pour y inclure cette directive. Dans ce cas, l'ajout du domaine à la "liste de préchargement" ne sera pas effectué.
+
+### Votre connexion n'est pas privée
+
+Il peut arriver en naviguant sur certains sites de rencontrer des erreurs liées au certificat TLS. L'erreur rencontrée peut varier mais ressemble à ceci :
+
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+Le site web https://poclab1.com ne possède pas l'entête de sécurité HSTS, il est donc possible pour l'utilisateur de forcer la navigation malgré le message d'avertissement (et donc d'accepter les risques encourus). Par contre, comme indiqué dans le message d'avertissement, cette possibilité n'est pas présente pour les sites mettant en place HSTS :&#x20;
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

@@ -71,7 +71,7 @@ Ou alors une phrase entière :&#x20;
 
 Il est également possible de surligner tout un paragraphe en spécifiant le texte du début (`textStart`) et le texte de fin (`textEnd`) séparés par une virgule :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 Ou encore d'ajouter des suffixes et des préfixes :&#x20;
 

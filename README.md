@@ -78,7 +78,7 @@ Mon writeup de l'application PHP "xss\_vulnerability\_challenges" qui propose un
 
 :date: 02 Août 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
 
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 [est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md](mes-articles/2022/juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md "mention")
 
@@ -126,7 +126,7 @@ Je vous propose mon analyse de la **CVE-2022-32444**, qui est une vulnérabilit�
 
 :date: 23 Juin 2022 :open\_file\_folder:[Open Redirect](mon-blog/categories.md#open-redirect) :open\_file\_folder:[CVE](mon-blog/categories.md#cve)
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
 
 [cve-2022-32442.md](cve/2022/cve-2022-32442.md "mention")
 
