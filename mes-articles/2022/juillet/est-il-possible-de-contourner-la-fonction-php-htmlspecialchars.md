@@ -568,3 +568,7 @@ htmlspecialchars($_GET["untrustedInput"], ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML
 ```
 
 Il y a également d'autres emplacements non couverts dans cet article mais qui nécessite une attention particulière (comprendre par là que `htmlspecialchars()` ne sera sans doute pas suffisant comme protection). Par exemple au sein de code Javascript ou encore de code CSS.
+
+## Références
+
+* [https://www.php.net/manual/fr/function.htmlspecialchars.php](https://www.php.net/manual/fr/function.htmlspecialchars.php)

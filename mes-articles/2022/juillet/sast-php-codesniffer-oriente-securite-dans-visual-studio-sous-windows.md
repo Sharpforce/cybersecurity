@@ -47,3 +47,8 @@ Il est nécessaire que le chemin de l'exécutable PHP soit renseigné dans le PA
 L'extension est maintenant bien configurée et fonctionnelle. Par exemple ici la détection de l'utilisation de `shell_exec()` dans l'application bWAPP menant à une injection de commande :&#x20;
 
 ![](<../../../.gitbook/assets/image (23) (1) (1).png>)
+
+## Références
+
+* [https://pear.php.net/package/PHP\_CodeSniffer/](https://pear.php.net/package/PHP\_CodeSniffer/)
+* [https://github.com/FloeDesignTechnologies/phpcs-security-audit](https://github.com/FloeDesignTechnologies/phpcs-security-audit)

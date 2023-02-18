@@ -120,3 +120,9 @@ A noter que si le serveur vulnérable présente l'entête HTTP `Document-Policy`
 {% endhint %}
 
 De plus, la fonctionnalité s'active seulement lors d'une navigation vers une page différente, c'est à dire que rafraichir la page ou ouvrir un lien vers la même page ne déclenchera pas l'attaque. Exit également l'iframing de la page vulnérable, la fonctionnalité ne se déclenchera pas dans ce contexte non plus.
+
+## Références
+
+* [https://book.hacktricks.xyz/pentesting-web/xs-search/css-injection](https://book.hacktricks.xyz/pentesting-web/xs-search/css-injection)
+* [https://x-c3ll.github.io/posts/CSS-Injection-Primitives/](https://x-c3ll.github.io/posts/CSS-Injection-Primitives/)
+* [https://www.secforce.com/blog/new-technique-of-stealing-data-using-css-and-scroll-to-text-fragment-feature/](https://www.secforce.com/blog/new-technique-of-stealing-data-using-css-and-scroll-to-text-fragment-feature/)

@@ -536,3 +536,8 @@ https://vulnerable.com/font-face-et-descripteur-unicode-scanner-de-ressources.ph
 {% endcode %}
 
 Si tel est bien le cas, l'attaquant ne recevra pas de requête déclenchée par l'application du style CSS.
+
+## Références
+
+* [https://book.hacktricks.xyz/pentesting-web/xs-search/css-injection](https://book.hacktricks.xyz/pentesting-web/xs-search/css-injection)
+* [https://x-c3ll.github.io/posts/CSS-Injection-Primitives/](https://x-c3ll.github.io/posts/CSS-Injection-Primitives/)

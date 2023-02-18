@@ -85,3 +85,8 @@ drwxr-xr-x  2 root root  4096 Jul 19 00:42 Util
 L'extension est maintenant bien configurée et fonctionnelle. Par exemple, ici la détection de l'utilisation de `shell_exec()` dans l'application bWAPP menant à une injection de commande :&#x20;
 
 ![](<../../../.gitbook/assets/image (23) (1) (1).png>)
+
+## Références
+
+* [https://pear.php.net/package/PHP\_CodeSniffer/](https://pear.php.net/package/PHP\_CodeSniffer/)
+* [https://github.com/FloeDesignTechnologies/phpcs-security-audit](https://github.com/FloeDesignTechnologies/phpcs-security-audit)

@@ -356,3 +356,9 @@ Le mieux reste encore de tester soi-même l'automatisation pour bien se rendre c
 {% endhint %}
 
 Le PoC est disponible [ici](https://github.com/Sharpforce/PoC-CSS-injection/tree/master/has-attribute-selectors-import).
+
+## Références
+
+* [https://book.hacktricks.xyz/pentesting-web/xs-search/css-injection](https://book.hacktricks.xyz/pentesting-web/xs-search/css-injection)
+* [https://x-c3ll.github.io/posts/CSS-Injection-Primitives/](https://x-c3ll.github.io/posts/CSS-Injection-Primitives/)
+* [https://vwzq.net/slides/2019-s3\_css\_injection\_attacks.pdf](https://vwzq.net/slides/2019-s3\_css\_injection\_attacks.pdf)

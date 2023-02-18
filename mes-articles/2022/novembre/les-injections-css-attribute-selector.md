@@ -465,3 +465,9 @@ Il existe une autre technique utilisant les popups et qui ne nécessite pas l'if
 {% endcode %}
 
 <figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+
+## Références
+
+* [https://book.hacktricks.xyz/pentesting-web/xs-search/css-injection](https://book.hacktricks.xyz/pentesting-web/xs-search/css-injection)
+* [https://x-c3ll.github.io/posts/CSS-Injection-Primitives/](https://x-c3ll.github.io/posts/CSS-Injection-Primitives/)
+* [https://gist.github.com/d0nutptr/928301bde1d2aa761d1632628ee8f24e](https://gist.github.com/d0nutptr/928301bde1d2aa761d1632628ee8f24e)

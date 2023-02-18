@@ -176,3 +176,8 @@ Il peut arriver en naviguant sur certains sites de rencontrer des erreurs liées
 Le site web https://poclab1.com ne possède pas l'entête de sécurité HSTS, il est donc possible pour l'utilisateur de forcer la navigation malgré le message d'avertissement (et donc d'accepter les risques encourus). Par contre, comme indiqué dans le message d'avertissement, cette possibilité n'est pas présente pour les sites mettant en place HSTS :&#x20;
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+## Références
+
+* [https://fr.wikipedia.org/wiki/HTTP\_Strict\_Transport\_Security](https://fr.wikipedia.org/wiki/HTTP\_Strict\_Transport\_Security)
+* [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security)
