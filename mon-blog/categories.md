@@ -24,6 +24,8 @@
 
 <summary>Configuration</summary>
 
+[fonctionnement-de-lentete-x-content-type-options-contournement-de-csp.md](../mes-articles/2023/mars/fonctionnement-de-lentete-x-content-type-options-contournement-de-csp.md "mention")
+
 [fonctionnement-de-lentete-http-strict-transport-security-header-hsts.md](../mes-articles/2023/fevrier/fonctionnement-de-lentete-http-strict-transport-security-header-hsts.md "mention")
 
 </details>
@@ -77,6 +79,8 @@
 <details>
 
 <summary>Web Server</summary>
+
+[fonctionnement-de-lentete-x-content-type-options-contournement-de-csp.md](../mes-articles/2023/mars/fonctionnement-de-lentete-x-content-type-options-contournement-de-csp.md "mention")
 
 [fonctionnement-de-lentete-http-strict-transport-security-header-hsts.md](../mes-articles/2023/fevrier/fonctionnement-de-lentete-http-strict-transport-security-header-hsts.md "mention")
 

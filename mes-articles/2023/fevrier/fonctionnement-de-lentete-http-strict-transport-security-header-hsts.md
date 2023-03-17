@@ -12,8 +12,8 @@ Sans revenir sur le fonctionnement de HTTPS, sa raison d'être est la sécurité
 
 Par défaut, le protocole HTTP fonctionne sur le port 80 et sa version sécurisée sur le port 443. Ils peuvent être atteints en spécifiant le protocole comme dans les exemples suivants : [http://example.com](http://example.com/) (non sécurisé) ou [https://example.com](https://example.com/) (sécurisé). Sous Google Chrome, par exemple, une version non sécurisée est visible également dans la barre d'adresse par l'indication "Non sécurisé" accompagnée d'un pictogramme d'exclamation, tandis que la version sécurisée se voit dotée d'un cadenas :
 
-| ![](<../../../.gitbook/assets/image (4).png>) | ![](<../../../.gitbook/assets/image (2).png>) |
-| :-------------------------------------------: | :-------------------------------------------: |
+| ![](<../../../.gitbook/assets/image (4) (6).png>) | ![](<../../../.gitbook/assets/image (2) (7).png>) |
+| :-----------------------------------------------: | :-----------------------------------------------: |
 
 {% hint style="info" %}
 Mais pourquoi un utilisateur renseignerait une URL avec le protocole HTTP ?&#x20;
@@ -171,11 +171,11 @@ La présence de la directive `preload` peut ne pas être évidente. En réalité
 
 Il peut arriver en naviguant sur certains sites de rencontrer des erreurs liées au certificat TLS. L'erreur rencontrée peut varier mais ressemble à ceci :
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (6).png" alt=""><figcaption></figcaption></figure>
 
 Le site web https://poclab1.com ne possède pas l'entête de sécurité HSTS, il est donc possible pour l'utilisateur de forcer la navigation malgré le message d'avertissement (et donc d'accepter les risques encourus). Par contre, comme indiqué dans le message d'avertissement, cette possibilité n'est pas présente pour les sites mettant en place HSTS :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
 ## Références
 

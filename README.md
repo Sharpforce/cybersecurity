@@ -1,12 +1,20 @@
 # 🏠 Home
 
+[fonctionnement-de-lentete-x-content-type-options-contournement-de-csp.md](mes-articles/2023/mars/fonctionnement-de-lentete-x-content-type-options-contournement-de-csp.md "mention")
+
+L'entête X-Content-Type-Options est un incontournable des résultats de scan des outils automatisés. Mais à quoi sert-il réellement et contre quoi protège-t-il ?
+
+:date: 17 Mars 2023 :open\_file\_folder:[Configuration](mon-blog/categories.md#configuration) :open\_file\_folder:[Web Server](mon-blog/categories.md#web-server)
+
+<figure><img src=".gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+
 [fonctionnement-de-lentete-http-strict-transport-security-header-hsts.md](mes-articles/2023/fevrier/fonctionnement-de-lentete-http-strict-transport-security-header-hsts.md "mention")
 
 Que ce soit lorsqu'on effectue un audit de sécurité d'un site web pour nos clients ou, à l'inverse, lorsqu'un utilisateur nous remonte les résultats d'un outil d'analyse de la configuration de notre application, l'absence de l'en-tête de sécurité HTTP Strict Transport Security Header est généralement relevée. Mais à quoi sert cet en-tête et comment fonctionne-t-il ?
 
 :date: 12 Fév 2023 :open\_file\_folder:[Configuration](mon-blog/categories.md#configuration) :open\_file\_folder:[Web Server](mon-blog/categories.md#web-server)
 
-<figure><img src=".gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (54) (2).png" alt=""><figcaption></figcaption></figure>
 
 [hacking-apis-breaking-web-application-programming-interfaces.md](livres/2022/hacking-apis-breaking-web-application-programming-interfaces.md "mention")
 
@@ -22,7 +30,7 @@ Cette exploitation d'une injection CSS va permettre à l'attaquant de savoir si 
 
 :date: 16 Déc 2022 :open\_file\_folder:[CSS Injection](mon-blog/categories.md#css-injection)
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 [les-injections-css-regle-import.md](mes-articles/2022/decembre/les-injections-css-regle-import.md "mention")
 
@@ -54,7 +62,7 @@ La version 0.4.0 vient XET (XSS Exploitation Tool) est maintenant disponible : [
 
 :date: 26 Oct 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
 
-<figure><img src=".gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (20) (5).png" alt=""><figcaption></figcaption></figure>
 
 [cross-site-scripting-xss-et-schema-duri-javascript.md](mes-articles/2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript.md "mention")
 
