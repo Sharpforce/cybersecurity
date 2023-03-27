@@ -396,7 +396,7 @@ Une alternative pouvant répondre à certaines limites des combinateurs CSS est 
 
 Cette technique ne fonctionne pas sur FireFox, ni sur IE, car ces navigateurs ne supportent pas cette pseudo-class :
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Automatisation de l'attaque
 

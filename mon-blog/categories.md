@@ -58,6 +58,26 @@
 
 <details>
 
+<summary>DevSecOps</summary>
+
+[sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md](../mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md "mention")
+
+[sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md](../mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md "mention")
+
+</details>
+
+<details>
+
+<summary>Labs</summary>
+
+[myexpense.md](../mes-projets/myexpense.md "mention")
+
+[xss-vulnerability-challenges](../walkthroughs/damn-vulnerable-web-application/xss-vulnerability-challenges/ "mention")
+
+</details>
+
+<details>
+
 <summary>Open Redirect</summary>
 
 [cve-2022-32444.md](../cve/2022/cve-2022-32444.md "mention")
@@ -72,7 +92,7 @@
 
 [sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md](../mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md "mention")
 
-
+[xss-exploitation-tool-v0.4.0.md](../mes-articles/2022/octobre/xss-exploitation-tool-v0.4.0.md "mention")
 
 </details>
 

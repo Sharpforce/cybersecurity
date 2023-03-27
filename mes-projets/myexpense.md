@@ -16,3 +16,13 @@ Le second objectif de cette application est d'immerger l'attaquant dans un envir
 ## Statut du projet
 
 Le développement de l'application est terminée. Elle est disponible directement via [Github](https://github.com/Sharpforce/MyExpense) ou sur le site [Vulnhub](https://www.vulnhub.com/entry/myexpense-1,405/).
+
+## Changelog
+
+**28/03/2023 :** Mise à jour des librairies (image Vbox, compatible 7.0, disponible [ici](https://www.mediafire.com/file/smscycfha2qb3u1/My\_Expense\_Vulnerable\_Web\_Application\_%28Debian11%29.ova/file))
+
+```
+Changed
+- Based on Debian 11
+- Use Python3 and Chrome headless
+```

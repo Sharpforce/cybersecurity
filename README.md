@@ -1,5 +1,13 @@
 # 🏠 Home
 
+[myexpense-v1.1.md](mes-articles/2023/mars/myexpense-v1.1.md "mention")
+
+La version 1.1 de MyExpense est maintenant disponible. Il s'agit d'une mise à jour afin de pouvoir fonctionner sur Debian 11 et Python3. PhantomJS étant déprécié, l'application se repose maintenant sur un Chrome headless. Happy Hacking :smile:.
+
+:date: 28 Mars 2023 :open\_file\_folder:[Labs](mon-blog/categories.md#labs)
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 [fonctionnement-de-lentete-x-content-type-options-contournement-de-csp.md](mes-articles/2023/mars/fonctionnement-de-lentete-x-content-type-options-contournement-de-csp.md "mention")
 
 L'entête X-Content-Type-Options est un incontournable des résultats de scan des outils automatisés. Mais à quoi sert-il réellement et contre quoi protège-t-il ?
@@ -60,7 +68,7 @@ Les injections CSS ne sont pas les vulnérabilités les plus connues, mais perme
 
 La version 0.4.0 vient XET (XSS Exploitation Tool) est maintenant disponible : [https://github.com/Sharpforce/XSS-Exploitation-Tool/tree/v0.4.0](https://github.com/Sharpforce/XSS-Exploitation-Tool/tree/v0.4.0)
 
-:date: 26 Oct 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
+:date: 26 Oct 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss) :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling)
 
 <figure><img src=".gitbook/assets/image (20) (5).png" alt=""><figcaption></figcaption></figure>
 
@@ -84,7 +92,7 @@ Ma critique du livre "Practical Web Penetration Testing" de Gus Khawaja, paru en
 
 Mon writeup de l'application PHP "xss\_vulnerability\_challenges" qui propose une série de 8 challenges sur la thématique de la vulnérabilité XSS.
 
-:date: 02 Août 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
+:date: 02 Août 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss) :open\_file\_folder:[Labs](mon-blog/categories.md#labs)
 
 <figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -100,7 +108,7 @@ La fonction `htmlspecialchars()` est fréquemment utilisée pour nettoyer les en
 
 **PHP Code Sniffer** est un outil qui permet d'analyser le code source PHP d'une application pour détecter des mauvaises pratiques de développement en se basant sur un ensemble de règles. Ces règles concernent principalement la qualité du code, mais il est également possible d'en ajouter pour détecter des failles de sécurité.
 
-:date: 18 Juil 2022 :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling)
+:date: 18 Juil 2022 :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling) :open\_file\_folder:[DevSecOps](mon-blog/categories.md#devsecops)
 
 <figure><img src=".gitbook/assets/image (3) (1) (5).png" alt=""><figcaption></figcaption></figure>
 
@@ -108,7 +116,7 @@ La fonction `htmlspecialchars()` est fréquemment utilisée pour nettoyer les en
 
 **PHP Code Sniffer** est un outil qui permet d'analyser le code source PHP d'une application pour détecter des mauvaises pratiques de développement en se basant sur un ensemble de règles. Ces règles concernent principalement la qualité du code, mais il est également possible d'en ajouter pour détecter des failles de sécurité.
 
-:date: 12 Juil 2022 :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling)
+:date: 12 Juil 2022 :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling) :open\_file\_folder:[DevSecOps](mon-blog/categories.md#devsecops)
 
 <figure><img src=".gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
 
