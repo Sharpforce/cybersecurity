@@ -6,7 +6,7 @@ La version 1.1 de MyExpense est maintenant disponible. Il s'agit d'une mise à j
 
 :date: 28 Mars 2023 :open\_file\_folder:[Labs](mon-blog/categories.md#labs)
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 [fonctionnement-de-lentete-x-content-type-options-contournement-de-csp.md](mes-articles/2023/mars/fonctionnement-de-lentete-x-content-type-options-contournement-de-csp.md "mention")
 

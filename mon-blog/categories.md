@@ -70,7 +70,7 @@
 
 <summary>Labs</summary>
 
-[myexpense.md](../mes-projets/myexpense.md "mention")
+[myexpense-v1.1.md](../mes-articles/2023/mars/myexpense-v1.1.md "mention")
 
 [xss-vulnerability-challenges](../walkthroughs/damn-vulnerable-web-application/xss-vulnerability-challenges/ "mention")
 

@@ -44,7 +44,7 @@ L'application suivante permet à l'utilisateur d'uploader des fichiers sur un se
 
 L'utilisateur peut rechercher un document de la façon suivante :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (7).png" alt=""><figcaption></figcaption></figure>
 
 Voici le code source associé :&#x20;
 
@@ -231,7 +231,7 @@ input {
 
 Le navigateur exécute tout de même le code malicieux :
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
@@ -255,7 +255,7 @@ input {
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ## L'entête X-Content-Type-Options
 
