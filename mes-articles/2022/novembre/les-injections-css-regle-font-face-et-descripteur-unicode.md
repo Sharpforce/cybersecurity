@@ -84,7 +84,7 @@ Connection: close
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
 
 Il y a donc bien un "s" dans le secret de la victime. L'attaquant peut ainsi continuer d'exfiltrer les autres caractères présents dans le secret :&#x20;
 
@@ -361,7 +361,7 @@ En temps normal, il n'est pas possible de récupérer de l'information contenue 
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 La raison est que le texte contenu dans ces balises n'est pas affiché et ne déclenche jamais les règles de style utilisées par l'attaque.&#x20;
 

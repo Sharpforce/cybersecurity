@@ -100,7 +100,7 @@ h1 {
 
 La victime verra donc ainsi l'application du style CSS :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Pour l'attaquant, l'idée ici sera d'utiliser la feuille de style CSS sous son contrôle afin d'exécuter les attaques vues précédemment, mais sans avoir besoin d'iframer le site vulnérable ou de passer plusieurs fois des liens malicieux à sa victime (un premier lien pour identifier le premier caractère, un second lien pour le second caractère, etc).
 

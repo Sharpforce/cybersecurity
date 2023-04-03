@@ -77,7 +77,7 @@ Content-Security-Policy: default-src 'self'; script-src 'self'; img-src *; style
 
 Le développeur valide également la directive avec l'[outil d'évaluation de Google](https://csp-evaluator.withgoogle.com/) :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (3).png" alt=""><figcaption></figcaption></figure>
 
 L'application proposant en effet la possibilité de déposer des fichiers, il décide de durcir son formulaire d'upload :&#x20;
 
@@ -143,7 +143,7 @@ alert("XSS dans fichier uploadé");
 
 Et référence le fichier précédemment uploadé :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (6).png" alt=""><figcaption></figcaption></figure>
 
 Le fichier étant bien hébergé sur le même domaine d'exécution, la politique CSP n'est pas déclenchée et la payload XSS est exécutée :&#x20;
 
@@ -181,7 +181,7 @@ alert("XSS dans fichier uploadé avec un content-type application/octet-stream")
 
 En revanche, faire passer un fichier Javascript pour une image ne fonctionnera pas :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Exploitation d'une Injection Cascading Style Sheets (CSS)
 
@@ -195,7 +195,7 @@ Content-Security-Policy: default-src 'self'; script-src 'none'; img-src *; style
 
 L'outil de test de Google confirme la bonne protection concernant l'exécution de script :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 Et l'injection ne semble en effet plus possible :&#x20;
 
@@ -231,7 +231,7 @@ input {
 
 Le navigateur exécute tout de même le code malicieux :
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
@@ -255,7 +255,7 @@ input {
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## L'entête X-Content-Type-Options
 

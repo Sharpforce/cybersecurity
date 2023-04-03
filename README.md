@@ -6,7 +6,7 @@ La version 1.1 de MyExpense est maintenant disponible. Il s'agit d'une mise à j
 
 :date: 28 Mars 2023 :open\_file\_folder:[Labs](mon-blog/categories.md#labs)
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 [fonctionnement-de-lentete-x-content-type-options-contournement-de-csp.md](mes-articles/2023/mars/fonctionnement-de-lentete-x-content-type-options-contournement-de-csp.md "mention")
 
@@ -22,7 +22,7 @@ Que ce soit lorsqu'on effectue un audit de sécurité d'un site web pour nos cli
 
 :date: 12 Fév 2023 :open\_file\_folder:[Configuration](mon-blog/categories.md#configuration) :open\_file\_folder:[Web Server](mon-blog/categories.md#web-server)
 
-<figure><img src=".gitbook/assets/image (54) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (54) (1).png" alt=""><figcaption></figcaption></figure>
 
 [hacking-apis-breaking-web-application-programming-interfaces.md](livres/2022/hacking-apis-breaking-web-application-programming-interfaces.md "mention")
 
@@ -30,7 +30,7 @@ Ma critique du livre "Hacking APIs - Breaking Web Application Programming Interf
 
 :date: 06 Fév 2023 :open\_file\_folder:[API](mon-blog/categories.md#api) :open\_file\_folder:[Books](mon-blog/categories.md#books)
 
-<figure><img src=".gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 [les-injections-css-scroll-to-text-fragment.md](mes-articles/2022/decembre/les-injections-css-scroll-to-text-fragment.md "mention")
 
@@ -38,7 +38,7 @@ Cette exploitation d'une injection CSS va permettre à l'attaquant de savoir si 
 
 :date: 16 Déc 2022 :open\_file\_folder:[CSS Injection](mon-blog/categories.md#css-injection)
 
-<figure><img src=".gitbook/assets/image (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 [les-injections-css-regle-import.md](mes-articles/2022/decembre/les-injections-css-regle-import.md "mention")
 
@@ -70,7 +70,7 @@ La version 0.4.0 vient XET (XSS Exploitation Tool) est maintenant disponible : [
 
 :date: 26 Oct 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss) :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling)
 
-<figure><img src=".gitbook/assets/image (20) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 [cross-site-scripting-xss-et-schema-duri-javascript.md](mes-articles/2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript.md "mention")
 
@@ -78,7 +78,7 @@ Dans cet article, nous allons examiner quelques exemples d'injections XSS possib
 
 :date: 17 Sep 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
 
-<figure><img src=".gitbook/assets/image (4) (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (2) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 [practical-web-penetration-testing.md](livres/2018/practical-web-penetration-testing.md "mention")
 
