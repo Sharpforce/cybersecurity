@@ -177,7 +177,7 @@ Le site web https://poclab1.com ne possède pas l'entête de sécurité HSTS, il
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-### Car particulier de la redirection vers un sous-domaine
+### Cas particulier de la redirection vers un sous-domaine
 
 Il est important de noter que le mécanisme HSTS ne s'applique qu'au domaine qui répond à la demande ou, si la directive `includeSubDomains` est présente, à tous ses sous-domaines. En revanche, la politique ne s'appliquera en aucun cas au domaine parent.
 
