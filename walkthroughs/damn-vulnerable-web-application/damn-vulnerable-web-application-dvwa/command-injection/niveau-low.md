@@ -36,7 +36,7 @@ Pour rediriger la sortie d’erreurs de `command1` vers l’entrée de `command2
 $ command1 |& command2
 ```
 
-****
+
 
 **List**
 

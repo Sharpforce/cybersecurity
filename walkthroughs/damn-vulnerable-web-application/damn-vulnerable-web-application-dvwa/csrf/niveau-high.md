@@ -19,7 +19,7 @@ Une faille XSS permet de contourner une protection basée sur un jeton anti-CSRF
 * Une première requête va permettre de récupérer un jeton CSRF présent sur la page du challenge
 * Une seconde requête, comprenant le jeton fraîchement récupéré, va modifier le mot de passe de la victime
 
-****
+
 
 **Exploitation via des iframes**
 

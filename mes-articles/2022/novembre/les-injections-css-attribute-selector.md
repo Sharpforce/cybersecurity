@@ -134,7 +134,7 @@ Dans les cas les plus simples, une injection au sein d'un code CSS peut mener à
 
 Bien que l'injection se situe au sein d'une balise `<style></style>`, aucune particularité liée au CSS n'intervient dans l'exploitation de cette vulnérabilité. Il suffit de procéder comme pour une XSS classique, c'est-à-dire ici de fermer la balise de style, puis de charger le code JavaScript désiré :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Suite à cette mésaventure, le développeur souhaite toujours laisser la possibilité à ses utilisateurs de personnaliser le style du site et notamment la couleur du titre de la page grâce au paramètre `color`, mais tout en protégeant son site. Etant maintenant sensibilisé aux vulnérabilités Web, la donnée non fiable est assainie par la méthode `htmlspecialchars()` transformant ainsi les caractères `<`, `>`, `"` et `'` en entités HTML.
 

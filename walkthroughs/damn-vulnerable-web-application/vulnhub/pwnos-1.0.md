@@ -64,7 +64,7 @@ Quand à `dirb` :
 
 ![](../../../.gitbook/assets/86a7db8a6178b48873aea57f45b95f95.png)
 
-Il indique également la présence de répertoire "/php" et m'avertis que le __ listing directory __ y est possible :
+Il indique également la présence de répertoire "/php" et m'avertis que le listing directory y est possible :
 
 ![](../../../.gitbook/assets/5c61da7887b99d38cc38b627ed85a923.png)
 
@@ -84,7 +84,7 @@ La troisième colonne indique que la machine partage (ou est en mesure de le fai
 
 ![](../../../.gitbook/assets/58cbc1523720809d72788c48cbeba39c.png)
 
-Ce qui amène à l'énumération des utilisateurs Samba __ et des répertoires partagés :
+Ce qui amène à l'énumération des utilisateurs Samba et des répertoires partagés :
 
 ![](../../../.gitbook/assets/fec6fe5bb71c5807d914c1221641f43c.png)
 
@@ -96,7 +96,7 @@ Aucun droit qui me permet d'aller plus loin, mais l'énumération m'a donné le 
 
 ### Webmin
 
-La navigation sur le port 10000 de la machine me conduis à une page web demandent un login / mot de passe pour pouvoir accéder au service Webmin __ :
+La navigation sur le port 10000 de la machine me conduis à une page web demandent un login / mot de passe pour pouvoir accéder au service Webmin :
 
 ![](../../../.gitbook/assets/d387cbf387aa3cf0679fdf5db2cb46b5.png)
 
@@ -148,11 +148,11 @@ Sur la cible, je compile puis exécute l'exploit :
 
 ![](../../../.gitbook/assets/8dfd3d4087b9d6c9a0a2480d1b7456a9.png)
 
-Congratz ! Je deviens "root" **** (qui n'a d'ailleurs en fait pas de nom ;) )!
+Congratz ! Je deviens "root" (qui n'a d'ailleurs en fait pas de nom ;) )!
 
 ## Conclusion
 
-Machine plutôt facile grâce à l'accès à n'importe quel fichier via la vulnérabilité sur le Webmin __ qui tourne en "root" et qui permet de récupérer le fichier "/etc/shadow" :
+Machine plutôt facile grâce à l'accès à n'importe quel fichier via la vulnérabilité sur le Webmin qui tourne en "root" et qui permet de récupérer le fichier "/etc/shadow" :
 
 ![](../../../.gitbook/assets/86b7c88a10dbc3a7240a03da6c9c6c68.png)
 

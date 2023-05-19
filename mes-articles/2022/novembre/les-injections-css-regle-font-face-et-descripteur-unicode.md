@@ -283,7 +283,7 @@ Dans le cas où il existe plusieurs éléments HTML portant le nom de `class`, i
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 L'ajout de la pseudo-class `nth-child()` va permettre de sélectionner seulement le second élément HTML ayant l'attribut class désiré :
 
@@ -377,7 +377,7 @@ script {
 
 Cela a pour effet de faire apparaitre le contenu de la balise et ainsi déclencher la règle CSS `@font-face` (la victime pourra également voir le contenu pendant l'exploitation) :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (4).png" alt=""><figcaption></figcaption></figure>
 
 Le code CSS complet est le suivant :&#x20;
 
@@ -466,7 +466,7 @@ Si l'attaquant est également en mesure de contrôler un élément HTML tel qu'u
 
 L'élément HTML `<object></object>` va afficher le contenu récupéré en requêtant l'URL de l'attribut `data`:
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
 
 Si aucune information n'est récupérée (hôte non joignable, ressource non trouvée, etc) le texte alternatif `Error` sera alors affiché à l'utilisateur :&#x20;
 

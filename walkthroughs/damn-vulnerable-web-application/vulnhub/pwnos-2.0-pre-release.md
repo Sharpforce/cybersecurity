@@ -9,7 +9,7 @@
 **Objectif(s) :** obtenir un accès "root"\
 **Description :**\
 `pWnOS v2.0 is a Virutal Machine Image which hosts a server to pratice penetration testing. It will test your ability to exploit the server and contains multiple entry points to reach the goal (root). It was design to be used with WMWare Workstation 7.0, but can also be used with most other virtual machine software.`\
-``\
+\
 `Server's Network Settings:`\
 `IP: 10.10.10.100`\
 `Netmask: 255.255.255.0`\

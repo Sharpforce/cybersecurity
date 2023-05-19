@@ -18,7 +18,7 @@ Ainsi que de "file3.php" :
 
 **Local File Inclusion (LFI)**
 
-Ce qui est important de **** repérer **** ici, c'est que le nom du fichier à inclure se retrouve en tant que valeur du paramètre `page` présent dans l'URL :
+Ce qui est important de repérer ici, c'est que le nom du fichier à inclure se retrouve en tant que valeur du paramètre `page` présent dans l'URL :
 
 ![](../../../../.gitbook/assets/3a508a736095328be32d907b97cb7749.png)
 
@@ -42,7 +42,7 @@ Ou alors, de sortir du niveau courant de l'arborescence et d'utiliser dans le m�
 Il est possible sous DVWA en niveau "Low" d'utiliser directement la syntaxe `?page=/etc/passwd` mais cela peut ne pas fonctionner suivant l'application ou le système cible
 {% endhint %}
 
-__
+
 
 _Utilisation des wrappers PHP_
 

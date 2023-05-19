@@ -8,12 +8,12 @@
 **Niveau :** Facile\
 **Objectif(s) :** obtenir un accès "root"\
 **Description :** \
-****`Updated to set default runlevel to 3 (no X windows) and fixed DHCP.`\
-``\
+`Updated to set default runlevel to 3 (no X windows) and fixed DHCP.`\
+\
 `This is the fourth capture the flag exercise. It includes the target virtual virutal machine image as well as a PDF of instructions. The username and password for the targer are deliberately not provided! The idea of the exercise is to compromise the target WITHOUT knowing the username and password. Note that there are other capture the flag exercises. If you like this one, download and try out the others. If you have any questions e-mail me at justin AT madirish DOT net.`\
-``\
+\
 `The LAMPSecurity project is an effort to produce training and benchmarking tools that can be used to educate information security professionals and test products. Please note there are other capture the flag exercises (not just the latest one). Check the SourceForge site to find other exercises available (http://sourceforge.net/projects/lampsecurity/files/CaptureTheFlag/).`\
-``\
+\
 `These exercises can be used for training purposes by following this documentation. Alternatively you may wish to test new tools, using the CTF virtual machines as targets. This is especially helpful in evaluating the effectiveness of vulnerability discovery or penetration testing tools.`
 
 ## Reconnaissance
@@ -120,11 +120,11 @@ Pendant tout ce temps tournait bien sur un `nikto` ainsi qu'un `dirb` :
 
 ![](../../../.gitbook/assets/9bf8dc69d8470fde3e1e1b3088723444.png)
 
-`nikto` __ remonte une nouvelle URL à tester, le répertoire "/pages" que voici :
+`nikto` remonte une nouvelle URL à tester, le répertoire "/pages" que voici :
 
 ![](../../../.gitbook/assets/440c1d257ddcd63d5cd27ebe7db9db26.png)
 
-Et voici le résultat de `dirb` __ (la sortie est tronquée, je n'ai mis que ce qui me semblait intéressant) :
+Et voici le résultat de `dirb` (la sortie est tronquée, je n'ai mis que ce qui me semblait intéressant) :
 
 ![](../../../.gitbook/assets/9468037c1d7ca9d3745d13227be71d2d.png)
 

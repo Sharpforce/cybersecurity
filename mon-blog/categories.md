@@ -12,6 +12,8 @@
 
 <summary>Books</summary>
 
+[devsecops-developpez-et-administrez-vos-services-en-toute-securite.md](../livres/2023/devsecops-developpez-et-administrez-vos-services-en-toute-securite.md "mention")
+
 [practical-web-penetration-testing.md](../livres/2018/practical-web-penetration-testing.md "mention")
 
 [hacking-apis-breaking-web-application-programming-interfaces.md](../livres/2022/hacking-apis-breaking-web-application-programming-interfaces.md "mention")
@@ -59,6 +61,8 @@
 <details>
 
 <summary>DevSecOps</summary>
+
+[devsecops-developpez-et-administrez-vos-services-en-toute-securite.md](../livres/2023/devsecops-developpez-et-administrez-vos-services-en-toute-securite.md "mention")
 
 [sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md](../mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md "mention")
 

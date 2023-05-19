@@ -185,7 +185,7 @@ En admettant le scénario suivant :
 
 Pour certaines raisons, l'entreprise possédant le domaine [example.com](http://exemple.com) souhaite plutôt rediriger ses utilisateurs vers son sous-domaine [www.exemple.com](http://www.example.com). Afin d'appliquer cette politique, l'entreprise va donc mettre en place la redirection adéquate :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (8).png" alt=""><figcaption></figcaption></figure>
 
 L'entreprise met correctement en place l'entête HSTS en réponse, que cela soit sur une réponse HTTPS pour [example.com](https://example.com) :&#x20;
 
@@ -213,7 +213,7 @@ Ne pas oublier que la politique HSTS est appliquée seulement dans le cadre d'un
 
 En général, il est alors conseillé de toujours rediriger vers le même domaine (afin d'appliquer HSTS), quitte à effectuer une seconde redirection pour rediriger l'utilisateur vers le sous-domaine "officiel" de l'entreprise :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 ## Références
 

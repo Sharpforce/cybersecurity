@@ -6,6 +6,11 @@
 * [📧 A propos de moi](mon-blog/a-propos-de-moi.md)
 * [📂 Catégories](mon-blog/categories.md)
 
+## Mes projets
+
+* [MyExpense](mes-projets/myexpense.md)
+* [XSS Exploitation Tool](mes-projets/xss-exploitation-tool.md)
+
 ## Mes Articles
 
 * [2023](mes-articles/2023/README.md)
@@ -30,11 +35,6 @@
     * [SAST - PHP CodeSniffer orienté sécurité dans Visual Studio (sous Debian)](mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md)
     * [Est-il possible de contourner la fonction PHP htmlspecialchars() ?](mes-articles/2022/juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md)
 
-## Mes projets
-
-* [MyExpense](mes-projets/myexpense.md)
-* [XSS Exploitation Tool](mes-projets/xss-exploitation-tool.md)
-
 ## Common Vulnerabilities and Exposures (CVE) <a href="#cve" id="cve"></a>
 
 * [2022](cve/2022/README.md)
@@ -44,6 +44,8 @@
 
 ## Livres
 
+* [2023](livres/2023/README.md)
+  * [DevSecOps - Développez et administrez vos services en toute sécurité](livres/2023/devsecops-developpez-et-administrez-vos-services-en-toute-securite.md)
 * [2022](livres/2022/README.md)
   * [Hacking APIs - Breaking Web Application Programming Interfaces](livres/2022/hacking-apis-breaking-web-application-programming-interfaces.md)
 * [2018](livres/2018/README.md)

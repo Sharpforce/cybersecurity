@@ -10,7 +10,7 @@
 **Description :**
 
 `Again a long delay between VMs, but that cannot be helped. Work, family must come first. Blogs and hobbies are pushed down the list. These things aren’t as easy to make as one may think. Time and some planning must be put into these challenges, to make sure that:`\
-****`1. It’s possible to get root remotely [ Edit: sorry not what I meant ]`\
+`1. It’s possible to get root remotely [ Edit: sorry not what I meant ]`\
 `1a. It’s possible to remotely compromise the machine`\
 &#x20; `2. Stays within the target audience of this site`\
 &#x20; `3. Must be “realistic” (well kinda…)`\

@@ -8,7 +8,7 @@
 **Niveau :** Facile\
 **Objectif(s) :** obtenir un accès "root" et lire le flag situé dans le fichier `/root/Key.txt`\
 **Description :**\
-****`This is the first realistic hackademic challenge (root this box) by mr.pr0n`\
+`This is the first realistic hackademic challenge (root this box) by mr.pr0n`\
 `Download the target and get root.`\
 `After all, try to read the contents of the file 'key.txt' in the root directory.`\
 `Enjoy!`

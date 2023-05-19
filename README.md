@@ -1,5 +1,13 @@
 # 🏠 Home
 
+[devsecops-developpez-et-administrez-vos-services-en-toute-securite.md](livres/2023/devsecops-developpez-et-administrez-vos-services-en-toute-securite.md "mention")
+
+Ma critique du livre "DevSecOps - Développez et administrez vos services en toute sécurité" de Jordan Assouline, paru en 2023.
+
+:date: 19 Mai 2023 :open\_file\_folder:[Books](mon-blog/categories.md#books) :open\_file\_folder:[DevSecOps](mon-blog/categories.md#devsecops)
+
+<figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
 [myexpense-v1.1.md](mes-articles/2023/mars/myexpense-v1.1.md "mention")
 
 La version 1.1 de MyExpense est maintenant disponible. Il s'agit d'une mise à jour afin de pouvoir fonctionner sur Debian 11 et Python3. PhantomJS étant déprécié, l'application se repose maintenant sur un Chrome headless. Happy Hacking :smile:.

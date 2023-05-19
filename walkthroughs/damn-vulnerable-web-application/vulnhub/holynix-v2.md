@@ -9,7 +9,7 @@
 **Objectif(s) :** obtenir un accès "root"\
 **Description :** \
 `Holynix is an Linux distribution that was deliberately built to have security holes for the purposes of penetration testing. The object of the challenge v1 is just to root the box. Register on the forums to receive an email update when a new challenge is released.`\
-``\
+\
 `Network Configuration Holynix v2 is set with static ip and requires some network configuration in order to run.`\
 `Network: 192.168.1.0/24` \
 `Pool Starting Addr: 192.168.1.2` \

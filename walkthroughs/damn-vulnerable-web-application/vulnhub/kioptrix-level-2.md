@@ -8,8 +8,8 @@
 **Niveau :** Facile\
 **Objectif(s) :** obtenir un accès "root"\
 **Description :**\
-****`This Kioptrix VM Image are easy challenges. The object of the game is to acquire root access via any means possible (except actually hacking the VM server or player). The purpose of these games are to learn the basic tools and techniques in vulnerability assessment and exploitation. There are more ways then one to successfully complete the challenges.` \
-``\
+`This Kioptrix VM Image are easy challenges. The object of the game is to acquire root access via any means possible (except actually hacking the VM server or player). The purpose of these games are to learn the basic tools and techniques in vulnerability assessment and exploitation. There are more ways then one to successfully complete the challenges.` \
+\
 `This is the second release of #2. First release had a bug in it with the web application`\
 `2012/Feb/09: Re-releases`\
 `2011/Feb/11: Original Release`
