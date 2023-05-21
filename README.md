@@ -2,7 +2,7 @@
 
 [devsecops-developpez-et-administrez-vos-services-en-toute-securite.md](livres/2023/devsecops-developpez-et-administrez-vos-services-en-toute-securite.md "mention")
 
-Ma critique du livre "DevSecOps - Développez et administrez vos services en toute sécurité" de Jordan Assouline, paru en 2023.
+Mon retour sur le livre "DevSecOps - Développez et administrez vos services en toute sécurité" de Jordan Assouline, paru en 2023.
 
 :date: 19 Mai 2023 :open\_file\_folder:[Books](mon-blog/categories.md#books) :open\_file\_folder:[DevSecOps](mon-blog/categories.md#devsecops)
 
@@ -34,7 +34,7 @@ Que ce soit lorsqu'on effectue un audit de sécurité d'un site web pour nos cli
 
 [hacking-apis-breaking-web-application-programming-interfaces.md](livres/2022/hacking-apis-breaking-web-application-programming-interfaces.md "mention")
 
-Ma critique du livre "Hacking APIs - Breaking Web Application Programming Interfaces" de Corey J. Ball, paru en 2022.
+Mon retour sur le livre "Hacking APIs - Breaking Web Application Programming Interfaces" de Corey J. Ball, paru en 2022.
 
 :date: 06 Fév 2023 :open\_file\_folder:[API](mon-blog/categories.md#api) :open\_file\_folder:[Books](mon-blog/categories.md#books)
 
@@ -90,7 +90,7 @@ Dans cet article, nous allons examiner quelques exemples d'injections XSS possib
 
 [practical-web-penetration-testing.md](livres/2018/practical-web-penetration-testing.md "mention")
 
-Ma critique du livre "Practical Web Penetration Testing" de Gus Khawaja, paru en 2018.
+Mon retour sur le livre "Practical Web Penetration Testing" de Gus Khawaja, paru en 2018.
 
 :date: 20 Août 2022 :open\_file\_folder:[Books](mon-blog/categories.md#books)
 
@@ -130,7 +130,7 @@ La fonction `htmlspecialchars()` est fréquemment utilisée pour nettoyer les en
 
 [web-hacking-101-how-to-make-money-hacking-ethically.md](livres/web-hacking-101-how-to-make-money-hacking-ethically.md "mention")
 
-Ma critique du livre "Web Hacking 101: How to make Money Hacking Ethically" de Peter Yaworski, paru en 2018.
+Mon retour sur le livre "Web Hacking 101: How to make Money Hacking Ethically" de Peter Yaworski, paru en 2018.
 
 :date: 01 Juil 2022 :open\_file\_folder:[Books](mon-blog/categories.md#books)
 

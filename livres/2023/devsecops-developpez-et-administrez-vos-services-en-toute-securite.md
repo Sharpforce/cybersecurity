@@ -1,6 +1,6 @@
 # DevSecOps - Développez et administrez vos services en toute sécurité
 
-> Ma critique du livre "DevSecOps - Développez et administrez vos services en toute sécurité" de Jordan Assouline, paru en 2023
+> Mon retour sur le livre "DevSecOps - Développez et administrez vos services en toute sécurité" de Jordan Assouline, paru en 2023
 
 ## Description du livre
 

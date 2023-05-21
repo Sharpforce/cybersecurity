@@ -1,6 +1,6 @@
 # Practical Web Penetration Testing
 
-> Ma critique du livre "Practical Web Penetration Testing" de Gus Khawaja, paru en 2018.
+> Mon retour sur le livre "Practical Web Penetration Testing" de Gus Khawaja, paru en 2018.
 
 ## Description du livre
 

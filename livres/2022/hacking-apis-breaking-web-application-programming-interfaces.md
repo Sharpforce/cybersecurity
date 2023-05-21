@@ -1,6 +1,6 @@
 # Hacking APIs - Breaking Web Application Programming Interfaces
 
-> Ma critique du livre "Hacking APIs - Breaking Web Application Programming Interfaces" de Corey J. Ball, paru en 2022
+> Mon retour sur le livre "Hacking APIs - Breaking Web Application Programming Interfaces" de Corey J. Ball, paru en 2022
 
 ## Description du livre
 
