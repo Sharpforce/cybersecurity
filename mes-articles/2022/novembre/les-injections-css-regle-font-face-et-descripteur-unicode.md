@@ -258,7 +258,7 @@ Connection: close
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (3).png" alt=""><figcaption></figcaption></figure>
 
 Dans le cas où il existe plusieurs éléments HTML portant le nom de `class`, il est possible de cibler précisément celle désirée en utilisant la pseudo-classe CSS `nth-child(n)` ([https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child](https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child)) :&#x20;
 

@@ -1,5 +1,13 @@
 # 🏠 Home
 
+[myexpense-v1.2.md](mes-articles/2023/mai/myexpense-v1.2.md "mention")
+
+La version 1.2 de MyExpense est maintenant disponible. Il s'agit d'une mise à jour visant à  améliorer le fonctionnement des scripts Selenium/Chrome qui simulent les utilisateurs de la plateforme. L'adresse IP de la machine virtuelle est désormais également affichée au démarrage afin de facilité la prise en main pour les débutants.
+
+:date: 21 Mai 2023 :open\_file\_folder:[Labs](mon-blog/categories.md#labs)
+
+<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
 [devsecops-developpez-et-administrez-vos-services-en-toute-securite.md](livres/2023/devsecops-developpez-et-administrez-vos-services-en-toute-securite.md "mention")
 
 Mon retour sur le livre "DevSecOps - Développez et administrez vos services en toute sécurité" de Jordan Assouline, paru en 2023.

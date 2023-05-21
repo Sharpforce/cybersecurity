@@ -19,6 +19,16 @@ Le développement de l'application est terminée. Elle est disponible directemen
 
 ## Changelog
 
+**21/05/2023 :** Amélioration des scripts Selenium/Chrome et affichage de l'IP de la machine virtuelle (image Vbox, compatible 7.0, disponible [ici](https://www.mediafire.com/file/fex3dyfbpjbbqtc/My\_Expense\_Vulnerable\_Web\_Application\_-\_1.2.ova/file))
+
+```
+Added
+- IP address is now diplayed at the startup of the virtual machine
+
+Changed
+- Improve Selenium/Chrome users scripts
+```
+
 **28/03/2023 :** Mise à jour des librairies (image Vbox, compatible 7.0, disponible [ici](https://www.mediafire.com/file/smscycfha2qb3u1/My\_Expense\_Vulnerable\_Web\_Application\_%28Debian11%29.ova/file))
 
 ```
