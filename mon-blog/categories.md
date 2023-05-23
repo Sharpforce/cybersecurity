@@ -78,7 +78,7 @@
 
 [myexpense-v1.1.md](../mes-articles/2023/mars/myexpense-v1.1.md "mention")
 
-[xss-vulnerability-challenges](../walkthroughs/damn-vulnerable-web-application/xss-vulnerability-challenges/ "mention")
+[xss-vulnerability-challenges](../walkthroughs/deliberately-vulnerable/xss-vulnerability-challenges/ "mention")
 
 </details>
 
@@ -120,7 +120,7 @@
 
 [cross-site-scripting-xss-et-schema-duri-javascript.md](../mes-articles/2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript.md "mention")
 
-[xss-vulnerability-challenges](../walkthroughs/damn-vulnerable-web-application/xss-vulnerability-challenges/ "mention")
+[xss-vulnerability-challenges](../walkthroughs/deliberately-vulnerable/xss-vulnerability-challenges/ "mention")
 
 [est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md](../mes-articles/2022/juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md "mention")
 

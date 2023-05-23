@@ -523,7 +523,7 @@ Connection: close
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (4).png" alt=""><figcaption></figcaption></figure>
 
 Il faut donc continuer l'attaque jusqu'à deviner l'identifiant et qu'aucune requête ne soit reçue par l'attaquant.
 

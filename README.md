@@ -104,7 +104,7 @@ Mon retour sur le livre "Practical Web Penetration Testing" de Gus Khawaja, paru
 
 <figure><img src=".gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
-[xss-vulnerability-challenges](walkthroughs/damn-vulnerable-web-application/xss-vulnerability-challenges/ "mention")
+[xss-vulnerability-challenges](walkthroughs/deliberately-vulnerable/xss-vulnerability-challenges/ "mention")
 
 Mon writeup de l'application PHP "xss\_vulnerability\_challenges" qui propose une série de 8 challenges sur la thématique de la vulnérabilité XSS.
 
