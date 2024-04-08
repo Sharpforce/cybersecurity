@@ -1,7 +1,4 @@
 # 2018
 
-|                      Couverture                     | Auteur         | Titre                                                | Note                     |
-| :-------------------------------------------------: | -------------- | ---------------------------------------------------- | ------------------------ |
-| ![](<../../.gitbook/assets/image (16) (1) (2).png>) | Gus Khawaja    | Practical Web Penetration Testing                    | :star:                   |
-| ![](<../../.gitbook/assets/image (19) (3) (1).png>) | Peter Yaworski | Web Hacking 101: How to Make Money Hacking Ethically | :star::star::star::star: |
+<table><thead><tr><th width="140" align="center">Couverture</th><th width="142">Auteur</th><th width="313">Titre</th><th>Note</th></tr></thead><tbody><tr><td align="center"><img src="../../.gitbook/assets/image (299).png" alt=""></td><td>Gus Khawaja</td><td>Practical Web Penetration Testing</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2b50">⭐</span></td></tr><tr><td align="center"><img src="../../.gitbook/assets/image (276).png" alt=""></td><td>Peter Yaworski</td><td>Web Hacking 101: How to Make Money Hacking Ethically</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2b50">⭐</span><span data-gb-custom-inline data-tag="emoji" data-code="2b50">⭐</span><span data-gb-custom-inline data-tag="emoji" data-code="2b50">⭐</span><span data-gb-custom-inline data-tag="emoji" data-code="2b50">⭐</span></td></tr></tbody></table>
 

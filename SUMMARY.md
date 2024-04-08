@@ -13,6 +13,11 @@
 
 ## Mes Articles
 
+* [2024](mes-articles/2024/README.md)
+  * [Avril](mes-articles/2024/avril/README.md)
+    * [Bypass de validation d'URL et embedded credentials côté front](mes-articles/2024/avril/bypass-de-validation-durl-et-embedded-credentials-cote-front.md)
+  * [Mars](mes-articles/2024/mars/README.md)
+    * [MyExpense v1.3](mes-articles/2024/mars/myexpense-v1.3.md)
 * [2023](mes-articles/2023/README.md)
   * [Mai](mes-articles/2023/mai/README.md)
     * [MyExpense v1.2](mes-articles/2023/mai/myexpense-v1.2.md)
@@ -52,7 +57,7 @@
   * [Hacking APIs - Breaking Web Application Programming Interfaces](livres/2022/hacking-apis-breaking-web-application-programming-interfaces.md)
 * [2018](livres/2018/README.md)
   * [Practical Web Penetration Testing](livres/2018/practical-web-penetration-testing.md)
-  * [Web Hacking 101: How to Make Money Hacking Ethically](livres/web-hacking-101-how-to-make-money-hacking-ethically.md)
+  * [Web Hacking 101: How to Make Money Hacking Ethically](livres/2018/web-hacking-101-how-to-make-money-hacking-ethically.md)
 
 ## Walkthroughs
 

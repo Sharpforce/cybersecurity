@@ -40,11 +40,11 @@ Le MIME Sniffing est présent sur tous les navigateurs mais il était encore plu
 
 L'application suivante permet à l'utilisateur d'uploader des fichiers sur un serveur distant et également d'effectuer une recherche par mot-clé pour retrouver plus facilement ses documents :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
 
 L'utilisateur peut rechercher un document de la façon suivante :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1) (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
 Voici le code source associé :&#x20;
 
@@ -77,7 +77,7 @@ Content-Security-Policy: default-src 'self'; script-src 'self'; img-src *; style
 
 Le développeur valide également la directive avec l'[outil d'évaluation de Google](https://csp-evaluator.withgoogle.com/) :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (19) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
 
 L'application proposant en effet la possibilité de déposer des fichiers, il décide de durcir son formulaire d'upload :&#x20;
 
@@ -115,7 +115,7 @@ if (in_array($file_extension, $forbidden_extensions)) {
 
 Un utilisateur malicieux découvre la possibilité d'une XSS au niveau du paramètre de recherche `search` mais CSP semble protéger correctement son exécution :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
 
 L'attaquant tente alors d'uploader un fichier de type Javascript `xss.js` puis de l'appeler directement via la paramètre `src` de la balise `<script></script>` :
 
@@ -125,11 +125,11 @@ alert("XSS dans fichier uploadé");
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
 Mais le durcissement de la fonctionnalité par le développeur l'en empêche :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 L'attaquant ayant déjà réussi à uploader avec succès un fichier texte simple, il effectue à nouveau son attaque mais en intégrant la payload XSS dans un fichier ayant l'extension `txt` :&#x20;
 
@@ -139,15 +139,15 @@ alert("XSS dans fichier uploadé");
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
 
 Et référence le fichier précédemment uploadé :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (5) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
 
 Le fichier étant bien hébergé sur le même domaine d'exécution, la politique CSP n'est pas déclenchée et la payload XSS est exécutée :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
 Et cela, bien que le `Content-Type` retourné par le serveur ne soit pas de type `text/javascript` mais bien `text/plain` :&#x20;
 
@@ -177,11 +177,11 @@ alert("XSS dans fichier uploadé avec un content-type application/octet-stream")
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
 
 En revanche, faire passer un fichier Javascript pour une image ne fonctionnera pas :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 #### Exploitation d'une Injection Cascading Style Sheets (CSS)
 
@@ -195,11 +195,11 @@ Content-Security-Policy: default-src 'self'; script-src 'none'; img-src *; style
 
 L'outil de test de Google confirme la bonne protection concernant l'exécution de script :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
 Et l'injection ne semble en effet plus possible :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
 Comme déjà évoqué dans plusieurs articles, l'injection CSS peut permettre de récupérer des informations grâce à l'utilisation des [sélecteurs](../../2022/novembre/les-injections-css-attribute-selector.md), par exemple. L'injection va se faire grâce à la balise `<link>` . L'attaquant va devoir uploader un fichier CSS qui aura une extension autre que `css`, car interdite par l'application :
 
@@ -231,9 +231,9 @@ input {
 
 Le navigateur exécute tout de même le code malicieux :
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Cette attaque n'est possible seulement parce que la CSP permet le chargement d'image distante. Dans le cas contraire, l'impact de cette injection sera sans doute réduite.
@@ -255,13 +255,13 @@ input {
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
 ## L'entête X-Content-Type-Options
 
 X-Content-Type-Options est un entête HTTP de sécurité qui peut être présent dans les réponses HTTP et qui indique au navigateur de suivre et ne de pas modifier les type MIME indiqués dans l'entête `Content-Type`. Cela permet de se protéger contre les vulnérabilités liées au MIME sniffing. L'entête est supporté par tous les navigateurs principaux :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 ### Syntaxe
 
@@ -294,7 +294,7 @@ add_header X-Content-Type-Options "nosniff";
 
 L'attaquant tente à nouveau d'exploiter la vulnérabilité afin d'exécuter une XSS, mais cette fois le navigateur refuse de charger le fichier contenant le script malicieux :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 La réponse du serveur contenant effet l'entête de protection :&#x20;
 
@@ -315,7 +315,7 @@ alert("XSS dans fichier uploadé");
 
 Il en va de même pour l'injection CSS :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
 
 {% code overflow="wrap" %}
 ```http

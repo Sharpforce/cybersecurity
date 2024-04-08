@@ -2,7 +2,7 @@
 
 Le ping semble fonctionner toujours de la même manière pour ce niveau "High" :
 
-![](<../../../../.gitbook/assets/4a5a279f278e5d0ebb27a28c0a2f4112 (2) (1).png>)
+![](../../../../.gitbook/assets/4a5a279f278e5d0ebb27a28c0a2f4112.png)
 
 En testant toutes les possibilités, aucun enchaînement de commandes ne semble fonctionner. Mais ici, la petite astuce est d'utiliser un pipe sans ajouter d'espace entre ce pipe et la seconde commande :
 

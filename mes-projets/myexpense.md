@@ -11,7 +11,7 @@
 
 Le second objectif de cette application est d'immerger l'attaquant dans un environnement professionnel. Pour cela, un effort a été fourni afin que l'application ressemble le plus possible à un outil destiné à une utilisation interne par les employés de l'entreprise "Futura Business Informatique". De plus, il est possible (et nécessaire afin de récupérer le flag/drapeau validant le challenge) de lancer des scripts permettant de simuler l'utilisation de l'application par des employés afin d'exploiter certaines vulnérabilités ayant pour victime les utilisateurs authentifiés.
 
-![](<../.gitbook/assets/image (24) (3).png>)
+![](<../.gitbook/assets/image (153).png>)
 
 ## Statut du projet
 
@@ -19,7 +19,18 @@ Le développement de l'application est terminée. Elle est disponible directemen
 
 ## Changelog
 
-**21/05/2023 :** Amélioration des scripts Selenium/Chrome et affichage de l'IP de la machine virtuelle (image Vbox, compatible 7.0, disponible [ici](https://www.mediafire.com/file/fex3dyfbpjbbqtc/My\_Expense\_Vulnerable\_Web\_Application\_-\_1.2.ova/file))
+**27/03/2024 :** Correction d'un bug lors de l'installation à partir des sources (image Vbox, compatible 7.0 et Debian 12, disponible [ici](https://www.mediafire.com/file/e1hjy5orlpd87au/My\_Expense\_Vulnerable\_Web\_Application\_-\_1.3.ova/file)).
+
+```
+Changed
+- Based on Debian 12
+- Installation from source is nox based on a automatic script
+
+Fixed
+- Initialization of the database not possible when installing the application from the sources.
+```
+
+**21/05/2023 :** Amélioration des scripts Selenium/Chrome et affichage de l'IP de la machine virtuelle.
 
 ```
 Added

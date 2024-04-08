@@ -18,7 +18,7 @@ En essayant plusieurs payloads je me rends compte que le caractère `"5"` est é
 
 La technique est ici alors d'utiliser la balise `<svg>`. Cette balise va permettre d'utiliser les HTML entities au sein de la balise `<script></script>` car la balise `<svg>` fait travailler dans un contexte XML :
 
-![](<../../../.gitbook/assets/0fbca9cf35939074ad5b55ebb715f6a3 (1).png>)
+![](../../../.gitbook/assets/0fbca9cf35939074ad5b55ebb715f6a3.png)
 
 ## Challenge #2
 
@@ -62,7 +62,7 @@ Une opération mathématique suffit à contourner ce filtre (ne pas oublier de c
 
 Appeler la fonction `elegantFunction()` avec la chaîne de caractères `"cqin5qnyfv"` en argument mais cette fois sur la valeur de la propriété `background-color` du sélecteur `banner` :
 
-![](<../../../.gitbook/assets/aa5796f9a1644a0e049f9f923d3b1b21 (1).png>)
+![](../../../.gitbook/assets/aa5796f9a1644a0e049f9f923d3b1b21.png)
 
 ### Résolution
 
@@ -80,7 +80,7 @@ Concernant le caractère `"y"` il suffit de le répéter dans la balise `<style>
 
 Appeler la fonction `kindSuperHero()` avec la chaîne de caractères `"p89folqp99"` en argument mais cette fois sur l'attribut `value` du tag `<input/>` :
 
-![](<../../../.gitbook/assets/b92cb37dea9976150e36a5fda0521cde (1).png>)
+![](../../../.gitbook/assets/b92cb37dea9976150e36a5fda0521cde.png)
 
 ### Résolution
 

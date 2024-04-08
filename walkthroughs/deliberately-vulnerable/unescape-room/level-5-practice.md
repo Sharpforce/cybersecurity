@@ -6,7 +6,7 @@
 
 Appeler la fonction `prettyHuman()` avec la chaîne de caractères `"m5lccw"` en argument :
 
-![](<../../../.gitbook/assets/fb47e14cc50b2150eefeb8f5a70473f7 (1).png>)
+![](../../../.gitbook/assets/fb47e14cc50b2150eefeb8f5a70473f7.png)
 
 ### Résolution
 

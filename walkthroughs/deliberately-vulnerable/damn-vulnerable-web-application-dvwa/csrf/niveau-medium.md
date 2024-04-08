@@ -36,7 +36,7 @@ Soit lors de la navigation de la victime :
 
 Lors de sa visite de la page du Guestbook contenant l'image malveillante, la requête déclenchée sera effectuée avec un `Referer` valide :
 
-![](<../../../../.gitbook/assets/052890166f4826c302b676545f6c067d (1).png>)
+![](../../../../.gitbook/assets/052890166f4826c302b676545f6c067d.png)
 
 Et son mot de passe sera ainsi changé, contournant ainsi, la protection en place :
 

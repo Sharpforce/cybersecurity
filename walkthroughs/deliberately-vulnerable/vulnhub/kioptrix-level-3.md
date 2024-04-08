@@ -157,7 +157,7 @@ Etant donné que `ht` possède le bit suid à 1, il est possible d'éditer des f
 
 afin d'ajouter le droit `su` à l'utilisateur **loneferret** :
 
-![](<../../../.gitbook/assets/743a0c067215825e0d3a98017dd1b66b (2).png>)
+![](../../../.gitbook/assets/743a0c067215825e0d3a98017dd1b66b.png)
 
 Un petit `sudo su` plus tard, me voilà root :
 

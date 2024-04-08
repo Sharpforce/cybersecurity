@@ -4,7 +4,7 @@
 
 ## Description du livre
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
 
 **Titre :** DevSecOps - Développez et administrez vos services en toute sécurité\
 **Auteur :** Jordan Assouline\

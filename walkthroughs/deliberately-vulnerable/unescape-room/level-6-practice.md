@@ -52,7 +52,7 @@ Etant donné que l'injection est présente au sein d'un attribut `href` j'utilis
 
 Il est possible de contourner le premier filtre en utilisant la majuscule, soit `"T"`. Pour les occurrences du caractère `"t"` présents dans le nom de la fonction il est possible d'utiliser l'encodage unicode, puis les HTML entities pour les deux `"'" (simple quote)` entourant la chaîne de caractère en argument :
 
-![](<../../../.gitbook/assets/33aea2ee5da784bd3dca025acb4e2d45 (2).png>)
+![](../../../.gitbook/assets/33aea2ee5da784bd3dca025acb4e2d45.png)
 
 ## Challenge #4
 
@@ -60,7 +60,7 @@ Il est possible de contourner le premier filtre en utilisant la majuscule, soit 
 
 Appeler la fonction `tallSuperHero()` avec la chaîne de caractères `"rj7tfb1"` en argument mais cette fois sur la valeur de la propriété `background-color` du sélecteur `banner` :
 
-![](<../../../.gitbook/assets/69f66f865b50058f5767b89f9fcb1c4d (1).png>)
+![](../../../.gitbook/assets/69f66f865b50058f5767b89f9fcb1c4d.png)
 
 ### Résolution
 

@@ -1,12 +1,28 @@
 # 🏠 Home
 
+[bypass-de-validation-durl-et-embedded-credentials-cote-front.md](mes-articles/2024/avril/bypass-de-validation-durl-et-embedded-credentials-cote-front.md "mention")
+
+Petit retour d'expérience suite à un audit concernant l'utilisation des embedded credentials à des fins de contournement de validation d'URL couplée aux comportements différents des navigateurs lors du chargement d'une telle ressource ressource.
+
+:date: 08 Avril 2024 :open\_file\_folder:[Bypass](mon-blog/categories.md#bypass)
+
+***
+
+[myexpense-v1.3.md](mes-articles/2024/mars/myexpense-v1.3.md "mention")
+
+La version 1.3 de MyExpense est maintenant disponible. Il s'agit d'une mise à jour corrigeant un bug lors de l'installation à partir des sources, pour lequel un script automatique est maintenant fournit. De plus, la machine virtuelle a été mise à jour vers Debian 12.
+
+:date: 27 Mars 2024 :open\_file\_folder:[Labs](mon-blog/categories.md#labs)
+
+***
+
 [myexpense-v1.2.md](mes-articles/2023/mai/myexpense-v1.2.md "mention")
 
 La version 1.2 de MyExpense est maintenant disponible. Il s'agit d'une mise à jour visant à  améliorer le fonctionnement des scripts Selenium/Chrome qui simulent les utilisateurs de la plateforme. L'adresse IP de la machine virtuelle est désormais également affichée au démarrage afin de facilité la prise en main pour les débutants.
 
 :date: 21 Mai 2023 :open\_file\_folder:[Labs](mon-blog/categories.md#labs)
 
-<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+***
 
 [devsecops-developpez-et-administrez-vos-services-en-toute-securite.md](livres/2023/devsecops-developpez-et-administrez-vos-services-en-toute-securite.md "mention")
 
@@ -14,7 +30,7 @@ Mon retour sur le livre "DevSecOps - Développez et administrez vos services en 
 
 :date: 19 Mai 2023 :open\_file\_folder:[Books](mon-blog/categories.md#books) :open\_file\_folder:[DevSecOps](mon-blog/categories.md#devsecops)
 
-<figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+***
 
 [myexpense-v1.1.md](mes-articles/2023/mars/myexpense-v1.1.md "mention")
 
@@ -22,7 +38,7 @@ La version 1.1 de MyExpense est maintenant disponible. Il s'agit d'une mise à j
 
 :date: 28 Mars 2023 :open\_file\_folder:[Labs](mon-blog/categories.md#labs)
 
-<figure><img src=".gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+***
 
 [fonctionnement-de-lentete-x-content-type-options-contournement-de-csp.md](mes-articles/2023/mars/fonctionnement-de-lentete-x-content-type-options-contournement-de-csp.md "mention")
 
@@ -30,7 +46,7 @@ L'entête X-Content-Type-Options est un incontournable des résultats de scan de
 
 :date: 17 Mars 2023 :open\_file\_folder:[Configuration](mon-blog/categories.md#configuration) :open\_file\_folder:[Web Server](mon-blog/categories.md#web-server)
 
-<figure><img src=".gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+***
 
 [fonctionnement-de-lentete-http-strict-transport-security-header-hsts.md](mes-articles/2023/fevrier/fonctionnement-de-lentete-http-strict-transport-security-header-hsts.md "mention")
 
@@ -38,7 +54,7 @@ Que ce soit lorsqu'on effectue un audit de sécurité d'un site web pour nos cli
 
 :date: 12 Fév 2023 :open\_file\_folder:[Configuration](mon-blog/categories.md#configuration) :open\_file\_folder:[Web Server](mon-blog/categories.md#web-server)
 
-<figure><img src=".gitbook/assets/image (54) (1).png" alt=""><figcaption></figcaption></figure>
+***
 
 [hacking-apis-breaking-web-application-programming-interfaces.md](livres/2022/hacking-apis-breaking-web-application-programming-interfaces.md "mention")
 
@@ -46,7 +62,7 @@ Mon retour sur le livre "Hacking APIs - Breaking Web Application Programming Int
 
 :date: 06 Fév 2023 :open\_file\_folder:[API](mon-blog/categories.md#api) :open\_file\_folder:[Books](mon-blog/categories.md#books)
 
-<figure><img src=".gitbook/assets/image (4) (2) (2).png" alt=""><figcaption></figcaption></figure>
+***
 
 [les-injections-css-scroll-to-text-fragment.md](mes-articles/2022/decembre/les-injections-css-scroll-to-text-fragment.md "mention")
 
@@ -54,7 +70,7 @@ Cette exploitation d'une injection CSS va permettre à l'attaquant de savoir si 
 
 :date: 16 Déc 2022 :open\_file\_folder:[CSS Injection](mon-blog/categories.md#css-injection)
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+***
 
 [les-injections-css-regle-import.md](mes-articles/2022/decembre/les-injections-css-regle-import.md "mention")
 
@@ -62,7 +78,7 @@ On continue sur le sujet des injections CSS avec cette fois l'utilisation de la 
 
 :date: 15 Déc 2022 :open\_file\_folder:[CSS Injection](mon-blog/categories.md#css-injection)
 
-<figure><img src=".gitbook/assets/image (3) (1) (4).png" alt=""><figcaption></figcaption></figure>
+***
 
 [les-injections-css-regle-font-face-et-descripteur-unicode.md](mes-articles/2022/novembre/les-injections-css-regle-font-face-et-descripteur-unicode.md "mention")
 
@@ -70,7 +86,7 @@ Dans cet article, l'exploitation de l'injection CSS ne va plus cibler le contenu
 
 :date: 20 Nov 2022 :open\_file\_folder:[CSS Injection](mon-blog/categories.md#css-injection)
 
-<figure><img src=".gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+***
 
 [les-injections-css-attribute-selector.md](mes-articles/2022/novembre/les-injections-css-attribute-selector.md "mention")
 
@@ -78,7 +94,7 @@ Les injections CSS ne sont pas les vulnérabilités les plus connues, mais perme
 
 :date: 06 Nov 2022 :open\_file\_folder:[CSS Injection](mon-blog/categories.md#css-injection)
 
-<figure><img src=".gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+***
 
 [xss-exploitation-tool-v0.4.0.md](mes-articles/2022/octobre/xss-exploitation-tool-v0.4.0.md "mention")
 
@@ -86,7 +102,7 @@ La version 0.4.0 vient XET (XSS Exploitation Tool) est maintenant disponible : [
 
 :date: 26 Oct 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss) :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling)
 
-<figure><img src=".gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+***
 
 [cross-site-scripting-xss-et-schema-duri-javascript.md](mes-articles/2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript.md "mention")
 
@@ -94,7 +110,7 @@ Dans cet article, nous allons examiner quelques exemples d'injections XSS possib
 
 :date: 17 Sep 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
 
-<figure><img src=".gitbook/assets/image (4) (2) (2) (1).png" alt=""><figcaption></figcaption></figure>
+***
 
 [practical-web-penetration-testing.md](livres/2018/practical-web-penetration-testing.md "mention")
 
@@ -102,7 +118,7 @@ Mon retour sur le livre "Practical Web Penetration Testing" de Gus Khawaja, paru
 
 :date: 20 Août 2022 :open\_file\_folder:[Books](mon-blog/categories.md#books)
 
-<figure><img src=".gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+***
 
 [xss-vulnerability-challenges](walkthroughs/deliberately-vulnerable/xss-vulnerability-challenges/ "mention")
 
@@ -110,7 +126,7 @@ Mon writeup de l'application PHP "xss\_vulnerability\_challenges" qui propose un
 
 :date: 02 Août 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss) :open\_file\_folder:[Labs](mon-blog/categories.md#labs)
 
-<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+***
 
 [est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md](mes-articles/2022/juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md "mention")
 
@@ -118,7 +134,7 @@ La fonction `htmlspecialchars()` est fréquemment utilisée pour nettoyer les en
 
 :date: 29 Juil 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
 
-<figure><img src=".gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+***
 
 [sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md](mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md "mention")
 
@@ -126,7 +142,7 @@ La fonction `htmlspecialchars()` est fréquemment utilisée pour nettoyer les en
 
 :date: 18 Juil 2022 :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling) :open\_file\_folder:[DevSecOps](mon-blog/categories.md#devsecops)
 
-<figure><img src=".gitbook/assets/image (3) (1) (5).png" alt=""><figcaption></figcaption></figure>
+***
 
 [sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md](mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md "mention")
 
@@ -134,15 +150,15 @@ La fonction `htmlspecialchars()` est fréquemment utilisée pour nettoyer les en
 
 :date: 12 Juil 2022 :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling) :open\_file\_folder:[DevSecOps](mon-blog/categories.md#devsecops)
 
-<figure><img src=".gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
+***
 
-[web-hacking-101-how-to-make-money-hacking-ethically.md](livres/web-hacking-101-how-to-make-money-hacking-ethically.md "mention")
+[web-hacking-101-how-to-make-money-hacking-ethically.md](livres/2018/web-hacking-101-how-to-make-money-hacking-ethically.md "mention")
 
 Mon retour sur le livre "Web Hacking 101: How to make Money Hacking Ethically" de Peter Yaworski, paru en 2018.
 
 :date: 01 Juil 2022 :open\_file\_folder:[Books](mon-blog/categories.md#books)
 
-<figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+***
 
 [cve-2022-33910.md](cve/2022/cve-2022-33910.md "mention")
 
@@ -150,7 +166,7 @@ Je vous propose mon analyse de la **CVE-2022-33910**, qui est une vulnérabilit�
 
 :date: 01 Juil 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss) :open\_file\_folder:[CVE](mon-blog/categories.md#cve)
 
-<figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+***
 
 [cve-2022-32444.md](cve/2022/cve-2022-32444.md "mention")
 
@@ -158,7 +174,7 @@ Je vous propose mon analyse de la **CVE-2022-32444**, qui est une vulnérabilit�
 
 :date: 23 Juin 2022 :open\_file\_folder:[Open Redirect](mon-blog/categories.md#open-redirect) :open\_file\_folder:[CVE](mon-blog/categories.md#cve)
 
-<figure><img src=".gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
+***
 
 [cve-2022-32442.md](cve/2022/cve-2022-32442.md "mention")
 

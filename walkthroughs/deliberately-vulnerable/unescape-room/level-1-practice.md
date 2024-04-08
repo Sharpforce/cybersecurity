@@ -12,4 +12,4 @@ Appeler la fonction `niceSuperHero()` avec la chaîne de caractères `"0"` en ar
 
 La premier niveau n'offre aucune difficulté puisque aucun filtre n'est présent. Je tente ici la payload la plus classique qui fonctionne très bien :
 
-![](<../../../.gitbook/assets/e72e0e11aa63159e16f2e980f11bb0bc (1).png>)
+![](../../../.gitbook/assets/e72e0e11aa63159e16f2e980f11bb0bc.png)

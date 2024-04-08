@@ -18,7 +18,15 @@
 
 [hacking-apis-breaking-web-application-programming-interfaces.md](../livres/2022/hacking-apis-breaking-web-application-programming-interfaces.md "mention")
 
-[web-hacking-101-how-to-make-money-hacking-ethically.md](../livres/web-hacking-101-how-to-make-money-hacking-ethically.md "mention")
+[web-hacking-101-how-to-make-money-hacking-ethically.md](../livres/2018/web-hacking-101-how-to-make-money-hacking-ethically.md "mention")
+
+</details>
+
+<details>
+
+<summary>Bypass</summary>
+
+[bypass-de-validation-durl-et-embedded-credentials-cote-front.md](../mes-articles/2024/avril/bypass-de-validation-durl-et-embedded-credentials-cote-front.md "mention")
 
 </details>
 
@@ -73,6 +81,8 @@
 <details>
 
 <summary>Labs</summary>
+
+[myexpense-v1.3.md](../mes-articles/2024/mars/myexpense-v1.3.md "mention")
 
 [myexpense-v1.2.md](../mes-articles/2023/mai/myexpense-v1.2.md "mention")
 

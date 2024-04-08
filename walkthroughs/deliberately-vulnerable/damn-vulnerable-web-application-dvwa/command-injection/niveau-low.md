@@ -2,7 +2,7 @@
 
 Ce challenge offre la possibilité de vérifier l'état d'un hôte effectuant un ping. Je commence, par exemple, par pinger la passerelle du réseau à l'adresse `192.168.56.1` (il s'agit ici de la passerelle VirtualBox) :
 
-![](<../../../../.gitbook/assets/4a5a279f278e5d0ebb27a28c0a2f4112 (2) (1).png>)
+![](../../../../.gitbook/assets/4a5a279f278e5d0ebb27a28c0a2f4112.png)
 
 La fonctionnalité permet également de prendre un nom de domaine comme valeur :
 

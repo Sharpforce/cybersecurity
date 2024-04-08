@@ -6,7 +6,7 @@ Ce nouveau niveau offre le même formulaire que les deux précédents. Mais cett
 
 Je tente directement de renseigner la valeur "success" même s'il n'y a aucune chance que cela fonctionne :
 
-![](<../../../../.gitbook/assets/cab0e7b9f7faba4eff4b22fbfcd2e810 (1).png>)
+![](../../../../.gitbook/assets/cab0e7b9f7faba4eff4b22fbfcd2e810.png)
 
 Je m'y attendais. Une première chose étrange est que le jeton présent dans le champ caché n'est pas le même que celui présent dans la requête :
 

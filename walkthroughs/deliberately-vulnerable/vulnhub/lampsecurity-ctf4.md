@@ -126,7 +126,7 @@ Pendant tout ce temps tournait bien sur un `nikto` ainsi qu'un `dirb` :
 
 Et voici le résultat de `dirb` (la sortie est tronquée, je n'ai mis que ce qui me semblait intéressant) :
 
-![](../../../.gitbook/assets/9468037c1d7ca9d3745d13227be71d2d.png)
+![](<../../../.gitbook/assets/9468037c1d7ca9d3745d13227be71d2d (1).png>)
 
 `dirb` indique la présence d'un "/calendar" ainsi qu'un fichier "README". Sa consultation me permet de connaitre la version du logiciel, soit la version 0.10 :
 
