@@ -14,6 +14,8 @@
 ## Mes Articles
 
 * [2024](mes-articles/2024/README.md)
+  * [Mai](mes-articles/2024/mai/README.md)
+    * [Dompurify 3.0.9 bypass - Node type confusion](mes-articles/2024/mai/dompurify-3.0.9-bypass-node-type-confusion.md)
   * [Avril](mes-articles/2024/avril/README.md)
     * [Bypass de validation d'URL et embedded credentials côté front](mes-articles/2024/avril/bypass-de-validation-durl-et-embedded-credentials-cote-front.md)
   * [Mars](mes-articles/2024/mars/README.md)

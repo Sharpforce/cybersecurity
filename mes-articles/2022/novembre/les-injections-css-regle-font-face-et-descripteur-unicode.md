@@ -14,7 +14,7 @@ L'inconvénient de la méthode précédente est qu'elle ne permet pas de récup�
 
 Le code vulnérable suivant possède un élément HTML `<span></span>` ayant comme contenu une information sensible propre au visiteur :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -38,7 +38,7 @@ Le code vulnérable suivant possède un élément HTML `<span></span>` ayant com
 
 L'attaquant souhaite évidemment récupérer le contenu de l'élément `<span></span>` qui contient ce secret. Pour cela, il va utiliser la règle `@font-face` ainsi qu'un code unicode grâce au descripteur `unicode-range` représentant le caractère à tester. Il faudra également spécifier une URL distante permettant de récupérer le caractère identifié ainsi qu'une police d'écriture permettant de l'appliquer sur l'élément HTML ciblé :
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <style>
   @font-face {
@@ -112,7 +112,7 @@ Malheureusement, cette technique possède plusieurs limitations : il n'est pas p
 
 Dans l'exemple précédent, tous les éléments `<span></span>` seront analysés, il sera difficile pour l'attaquant d'identifier quel caractère provient de quel élément de la page vulnérable. Pour contourner cela, il est possible de cibler un attribut `id` :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -136,7 +136,7 @@ Dans l'exemple précédent, tous les éléments `<span></span>` seront analysés
 
 En CSS le caractère `#` va permettre de sélectionner un attribut `id` spécifique :
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <style>
   @font-face {
@@ -188,7 +188,7 @@ Connection: close
 
 De la même façon, il est possible de cibler un attribut `class` au lieu d'un attribut `id` :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -212,7 +212,7 @@ De la même façon, il est possible de cibler un attribut `class` au lieu d'un a
 
 Ici, c'est le caractère `.` qui va permettre de sélectionner l'attribut `class` désiré :
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <style>
   @font-face {
@@ -262,7 +262,7 @@ Connection: close
 
 Dans le cas où il existe plusieurs éléments HTML portant le nom de `class`, il est possible de cibler précisément celle désirée en utilisant la pseudo-classe CSS `nth-child(n)` ([https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child](https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child)) :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -287,7 +287,7 @@ Dans le cas où il existe plusieurs éléments HTML portant le nom de `class`, i
 
 L'ajout de la pseudo-class `nth-child()` va permettre de sélectionner seulement le second élément HTML ayant l'attribut class désiré :
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <style>
   @font-face {
@@ -339,7 +339,7 @@ Connection: close
 
 En temps normal, il n'est pas possible de récupérer de l'information contenue dans une balise `<script></script>`:&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -367,7 +367,7 @@ La raison est que le texte contenu dans ces balises n'est pas affiché et ne dé
 
 Pour contourner cela, il est possible d'ajouter l'instruction CSS diplay:block au niveau des balises de script :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```css
 script {
   display: block;
@@ -438,13 +438,13 @@ Exemple de 5 requêtes représentant l'information "s3cr3t" récupérée :
 
 <figure><img src="../../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
 
-Un PoC minimaliste est disponible [ici](https://github.com/Sharpforce/PoC-CSS-injection/tree/master/font-face-and-unicode-descriptor).
+Un PoC minimaliste est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tree/master/font-face-and-unicode-descriptor).
 
 ### Scanner des services et des ressources
 
 Si l'attaquant est également en mesure de contrôler un élément HTML tel qu'un `<object></object>`, il devient alors possible de scanner des services réseaux ainsi que des ressources HTTP. Le code vulnérable utilisé dans les prochains exemples est le suivant :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -476,7 +476,7 @@ En analysant le site vulnérable, l'attaquant identifie un endpoint contenant l'
 
 Pour cela, il va tout d'abord exploiter l'injection CSS et utiliser l'élément HTML `<object></object>`. Le style à appliquer sera le suivant :
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <style>
   @font-face {

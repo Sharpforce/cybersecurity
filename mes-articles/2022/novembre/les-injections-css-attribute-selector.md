@@ -14,7 +14,7 @@ Le [CSS](https://fr.wikipedia.org/wiki/Feuilles\_de\_style\_en\_cascade) est un 
 
 La méthode la plus couramment utilisée est de lier directement la feuille de style :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```css
 h1 {
   color: red;
@@ -24,7 +24,7 @@ h1 {
 
 à la page HTML grâce à l'élément `<link>` :
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -45,7 +45,7 @@ h1 {
 
 La seconde méthode est d'utiliser une feuille de style interne directement dans le document HTML grâce à l'élément `<style></style>` :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -68,7 +68,7 @@ La seconde méthode est d'utiliser une feuille de style interne directement dans
 
 Bien que l'ajout de la balise `<style></style>` se fait communément au sein de la balise `<head></head>`, rien n'empêche le développeur de l'ajouter au sein de la balise `<body></body>` :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -93,7 +93,7 @@ Bien que l'ajout de la balise `<style></style>` se fait communément au sein de 
 
 Et finalement, la méthode sans doute la moins usitée est le style en ligne (inline style) :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -113,7 +113,7 @@ Et finalement, la méthode sans doute la moins usitée est le style en ligne (in
 
 Dans les cas les plus simples, une injection au sein d'un code CSS peut mener à une vulnérabilité de type Cross-Site Scripting (XSS) :
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -138,7 +138,7 @@ Bien que l'injection se situe au sein d'une balise `<style></style>`, aucune par
 
 Suite à cette mésaventure, le développeur souhaite toujours laisser la possibilité à ses utilisateurs de personnaliser le style du site et notamment la couleur du titre de la page grâce au paramètre `color`, mais tout en protégeant son site. Etant maintenant sensibilisé aux vulnérabilités Web, la donnée non fiable est assainie par la méthode `htmlspecialchars()` transformant ainsi les caractères `<`, `>`, `"` et `'` en entités HTML.
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -171,7 +171,7 @@ En CSS, les sélecteurs d'attributs permettent d'effectuer un traitement sur un 
 
 Le code vulnérable exploité possède un élément HTML `<input>` de type `password` et ayant comme valeur le mot de passe de la victime :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -198,7 +198,7 @@ Le code vulnérable exploité possède un élément HTML `<input>` de type `pass
 
 L'idée de l'exploitation va être d'utiliser les sélecteurs CSS afin de récupérer le mot de passe de la victime caractère par caractère. Voici un exemple de sélecteur d'attribut :
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <style>
   input[name=password][value^=valeur] {
@@ -212,7 +212,7 @@ Le style va s'appliquer pour les éléments HTML `<input>`, dont l'attribut `nam
 
 L'attaquant va ainsi modifier le sélecteur comme ceci :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <style>
   input[name=password][value^=a] {
@@ -266,7 +266,7 @@ Connection: close
 
 Malheureusement, la technique précédente ne fonctionne pas sur les champs `<input>` de type `hidden`. Cela pourrait pourtant être utile dans le cas ou l'application vulnérable utilise des champs cachés pour transmettre des jetons anti-CSRF par exemple :
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -295,7 +295,7 @@ Malheureusement, la technique précédente ne fonctionne pas sur les champs `<in
 
 Cela est en fait possible en utilisant les combinateurs `~` et `*` à la suite du sélecteur CSS :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <style>
   input[name=csrf-token][value^=a]~* {
@@ -359,7 +359,7 @@ Il existe toutefois d'autres techniques permettant cela et qui seront vues dans 
 
 Une alternative pouvant répondre à certaines limites des combinateurs CSS est d'utiliser le sélecteur CSS `has()` de la façon suivante :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -384,7 +384,7 @@ Une alternative pouvant répondre à certaines limites des combinateurs CSS est 
 ```
 {% endcode %}
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <style>
   form:has(input[name=csrf-token][value^=a]) {
@@ -408,9 +408,9 @@ Voici plusieurs PoC tentant de résoudre ces problèmes.
 
 #### PoC - Récupération de la valeur d'un attribut d'un élément HTML via les sélecteurs d'attribut CSS
 
-[Accéder au PoC](https://github.com/Sharpforce/PoC-CSS-injection/tree/master/attribute-selectors-iframe)
+[Accéder au PoC](https://github.com/Sharpforce/cybersecurity-code/tree/master/attribute-selectors-iframe)
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
   <body>
   <h1>Attribute selectors iframe with password input</h1>
@@ -426,9 +426,9 @@ Voici plusieurs PoC tentant de résoudre ces problèmes.
 
 #### PoC - Récupération de la valeur d'un attribut d'un élément HTML de type hidden via la pseudo-class CSS `has()`
 
-[Accéder au PoC](https://github.com/Sharpforce/PoC-CSS-injection/tree/master/has-attribute-selectors-iframe)
+[Accéder au PoC](https://github.com/Sharpforce/cybersecurity-code/tree/master/has-attribute-selectors-iframe)
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
   <body>
     <h1>Has attribute selectors iframe with hidden input</h1>
@@ -448,9 +448,9 @@ Voici plusieurs PoC tentant de résoudre ces problèmes.
 
 Il existe une autre technique utilisant les popups et qui ne nécessite pas l'iframing du site vulnérable. Malheureusement, il faudra soit un clic en plus de la part de la victime afin de lancer l'attaque ou alors qu'il autorise l'ouverture des popups au sein de son navigateur. De plus, cette attaque est très bruyante puisque la victime voit directement les fenêtres s'ouvrir et se rafraichir.
 
-[Accéder au PoC](https://github.com/Sharpforce/PoC-CSS-injection/tree/master/attribute-selectors-popup)
+[Accéder au PoC](https://github.com/Sharpforce/cybersecurity-code/tree/master/attribute-selectors-popup)
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
   <body>
     <h1>Popup attribute selectors iframe with hidden input</h1>

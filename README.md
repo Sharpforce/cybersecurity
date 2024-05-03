@@ -1,5 +1,13 @@
 # 🏠 Home
 
+[dompurify-3.0.9-bypass-node-type-confusion.md](mes-articles/2024/mai/dompurify-3.0.9-bypass-node-type-confusion.md "mention")
+
+Un article reprenant le travail de [slonser](https://twitter.com/slonser\_) concernant le bypass de Dompurify dans sa version 3.0.9.
+
+:date: 03 Mai 2024 :open\_file\_folder:[Bypass](mon-blog/categories.md#bypass)
+
+***
+
 [bypass-de-validation-durl-et-embedded-credentials-cote-front.md](mes-articles/2024/avril/bypass-de-validation-durl-et-embedded-credentials-cote-front.md "mention")
 
 Petit retour d'expérience suite à un audit concernant l'utilisation des embedded credentials à des fins de contournement de validation d'URL couplée aux comportements différents des navigateurs lors du chargement d'une telle ressource ressource.

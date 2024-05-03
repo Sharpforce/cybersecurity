@@ -26,6 +26,8 @@
 
 <summary>Bypass</summary>
 
+[dompurify-3.0.9-bypass-node-type-confusion.md](../mes-articles/2024/mai/dompurify-3.0.9-bypass-node-type-confusion.md "mention")
+
 [bypass-de-validation-durl-et-embedded-credentials-cote-front.md](../mes-articles/2024/avril/bypass-de-validation-durl-et-embedded-credentials-cote-front.md "mention")
 
 </details>

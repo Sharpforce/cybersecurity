@@ -20,7 +20,7 @@ La fonctionnalité Scroll-to-Text Fragment n'étant pas un standard, elle n'est 
 
 En admettant la page vulnérable suivante :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -87,7 +87,7 @@ Une dernière possibilité pouvant être utile est de pouvoir effectuer une mult
 
 L'injection CSS et l'utilisation de la pseudo-class `:target`, va permettre de prévenir l'attaquant dans le cas ou le texte recherché a bien été trouvé :&#x20;
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code overflow="wrap" %}
 ```html
 <style>
   :target::before {
