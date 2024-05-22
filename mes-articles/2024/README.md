@@ -2,6 +2,7 @@
 
 ### <mark style="background-color:blue;">Mai</mark>
 
+* **22 Mai -** [dompurify-3.0.10-bypass-confusion-nodename-and-cdata.md](mai/dompurify-3.0.10-bypass-confusion-nodename-and-cdata.md "mention")
 * **03 Mai -** [dompurify-3.0.9-bypass-node-type-confusion.md](mai/dompurify-3.0.9-bypass-node-type-confusion.md "mention")
 
 ### <mark style="background-color:blue;">Avril</mark>

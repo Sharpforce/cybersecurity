@@ -26,6 +26,8 @@
 
 <summary>Bypass</summary>
 
+[dompurify-3.0.10-bypass-confusion-nodename-and-cdata.md](../mes-articles/2024/mai/dompurify-3.0.10-bypass-confusion-nodename-and-cdata.md "mention")
+
 [dompurify-3.0.9-bypass-node-type-confusion.md](../mes-articles/2024/mai/dompurify-3.0.9-bypass-node-type-confusion.md "mention")
 
 [bypass-de-validation-durl-et-embedded-credentials-cote-front.md](../mes-articles/2024/avril/bypass-de-validation-durl-et-embedded-credentials-cote-front.md "mention")
@@ -127,6 +129,10 @@
 <details>
 
 <summary>XSS</summary>
+
+[dompurify-3.0.10-bypass-confusion-nodename-and-cdata.md](../mes-articles/2024/mai/dompurify-3.0.10-bypass-confusion-nodename-and-cdata.md "mention")
+
+[dompurify-3.0.9-bypass-node-type-confusion.md](../mes-articles/2024/mai/dompurify-3.0.9-bypass-node-type-confusion.md "mention")
 
 [xss-exploitation-tool-v0.4.0.md](../mes-articles/2022/octobre/xss-exploitation-tool-v0.4.0.md "mention")
 

