@@ -1,5 +1,13 @@
 # 🏠 Home
 
+[parution-de-mon-livre-securite-des-applications-web-strategies-offensives-et-defensives.md](mes-articles/2024/juin/parution-de-mon-livre-securite-des-applications-web-strategies-offensives-et-defensives.md "mention")
+
+Un article destiné à dévoiler mon tout premier ouvrage sur la sécurité des applications web, publié par les [Editions ENI](https://www.editions-eni.fr/).
+
+:date: 10 Juin 2024 :open\_file\_folder:[Books](mon-blog/categories.md#books)
+
+***
+
 [dompurify-3.0.10-bypass-confusion-nodename-and-cdata.md](mes-articles/2024/mai/dompurify-3.0.10-bypass-confusion-nodename-and-cdata.md "mention")
 
 Un article reprenant le travail de [RyotaK](https://x.com/ryotkak) concernant le bypass de Dompurify dans sa version 3.0.10.

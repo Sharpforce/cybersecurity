@@ -1,5 +1,9 @@
 # 2024
 
+### <mark style="background-color:blue;">Juin</mark>
+
+* **10 Juin -** [parution-de-mon-livre-securite-des-applications-web-strategies-offensives-et-defensives.md](juin/parution-de-mon-livre-securite-des-applications-web-strategies-offensives-et-defensives.md "mention")
+
 ### <mark style="background-color:blue;">Mai</mark>
 
 * **22 Mai -** [dompurify-3.0.10-bypass-confusion-nodename-and-cdata.md](mai/dompurify-3.0.10-bypass-confusion-nodename-and-cdata.md "mention")

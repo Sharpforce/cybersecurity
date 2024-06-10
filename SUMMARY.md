@@ -14,6 +14,8 @@
 ## Mes Articles
 
 * [2024](mes-articles/2024/README.md)
+  * [Juin](mes-articles/2024/juin/README.md)
+    * [Parution de mon livre, Sécurité des applications web - Stratégies offensives et défensives](mes-articles/2024/juin/parution-de-mon-livre-securite-des-applications-web-strategies-offensives-et-defensives.md)
   * [Mai](mes-articles/2024/mai/README.md)
     * [Dompurify 3.0.10 bypass - Confusion nodeName and CDATA](mes-articles/2024/mai/dompurify-3.0.10-bypass-confusion-nodename-and-cdata.md)
     * [Dompurify 3.0.9 bypass - Node type confusion](mes-articles/2024/mai/dompurify-3.0.9-bypass-node-type-confusion.md)
