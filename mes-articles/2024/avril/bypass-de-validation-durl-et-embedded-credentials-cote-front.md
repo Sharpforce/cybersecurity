@@ -18,12 +18,12 @@ https://example.com@evil.com
 
 Lors de l'audit d'une application web, une fonctionnalité permettait l'édition et la consultation de documents HTML accessibles à un ensemble de contributeurs et de lecteurs. Cette fonctionnalité permettait également l'intégration de vidéos Youtube, dont l'utilisateur devait en fournir les URL. Lorsque la soumission de l'URL était acceptée, le contenu était finalement intégré dans une iframe au sein du document. Lors du renseignement de cette URL, une validation était effectuée par le serveur afin de vérifier que l'URL corresponde bien à celle de Youtube (par exemple, https://www.youtube.com).
 
-Un contournement était possible grâce à l'utilisation des embedded credentials, mais étant donné que l'URL était insérée dans un élément iframe, et donc finalement chargée par le navigateur lors de la consultation du document, <img src="../../../.gitbook/assets/image (1) (1).png" alt="" data-size="line">Google Chrome n'autorise pas le chargement d'une telle ressource (et ce depuis la version 59) :
+Un contournement était possible grâce à l'utilisation des embedded credentials, mais étant donné que l'URL était insérée dans un élément iframe, et donc finalement chargée par le navigateur lors de la consultation du document, <img src="../../../.gitbook/assets/image (1) (1) (1).png" alt="" data-size="line">Google Chrome n'autorise pas le chargement d'une telle ressource (et ce depuis la version 59) :
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Le même comportement a été identifié sur <img src="../../../.gitbook/assets/image (2).png" alt="" data-size="line">Microsoft Edge ainsi que sur <img src="../../../.gitbook/assets/image (3).png" alt="" data-size="line">Chromium.
+Le même comportement a été identifié sur <img src="../../../.gitbook/assets/image (2) (1).png" alt="" data-size="line">Microsoft Edge ainsi que sur <img src="../../../.gitbook/assets/image (3).png" alt="" data-size="line">Chromium.
 {% endhint %}
 
 Toutefois, cela reste possible à minima avec <img src="../../../.gitbook/assets/image (4).png" alt="" data-size="line">Mozilla Firefox (testé en 124.0.1) qui autorise bien le chargement de l'iframe. Cela permet donc de profiter du contournement possible afin d'exécuter des actions nécessitant la visite d'une page spécifique de la part de la victime : click-jacking, cross-site request forgery (CSRF) ou plus généralement du phishing.

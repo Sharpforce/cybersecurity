@@ -6,7 +6,7 @@ description: 10 juin 2024
 
 Après des mois de travail et de recherche, mon tout premier livre, Sécurité des applications web - Stratégies offensives et défensives, est disponible aux [Editions ENI](https://www.editions-eni.fr/). Je suis heureux de vous le présenter et, je l'espère, de vous donner envie de le lire 👇
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 **À propos du livre**
 

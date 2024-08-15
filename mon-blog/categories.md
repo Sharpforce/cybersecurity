@@ -4,6 +4,8 @@
 
 <summary>API</summary>
 
+[exploitation-des-injections-sql-au-sein-de-la-clause-order-by.md](../mes-articles/2024/aout/exploitation-des-injections-sql-au-sein-de-la-clause-order-by.md "mention")
+
 [hacking-apis-breaking-web-application-programming-interfaces.md](../livres/2022/hacking-apis-breaking-web-application-programming-interfaces.md "mention")
 
 </details>
@@ -103,6 +105,14 @@
 <summary>Open Redirect</summary>
 
 [cve-2022-32444.md](../cve/2022/cve-2022-32444.md "mention")
+
+</details>
+
+<details>
+
+<summary>SQL Injection</summary>
+
+[exploitation-des-injections-sql-au-sein-de-la-clause-order-by.md](../mes-articles/2024/aout/exploitation-des-injections-sql-au-sein-de-la-clause-order-by.md "mention")
 
 </details>
 

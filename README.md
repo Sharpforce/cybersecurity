@@ -1,5 +1,13 @@
 # 🏠 Home
 
+[exploitation-des-injections-sql-au-sein-de-la-clause-order-by.md](mes-articles/2024/aout/exploitation-des-injections-sql-au-sein-de-la-clause-order-by.md "mention")
+
+Les injections SQL peuvent surgir de manière inattendue, même dans les clauses ORDER BY. Comprenez les subtilités de ces attaques et maîtriser les techniques de défense pour protéger vos applications.
+
+:date: 15 Aout 2024 :open\_file\_folder:[API](mon-blog/categories.md#api) :open\_file\_folder: [SQL Injection](mon-blog/categories.md#sql-injection)
+
+***
+
 [parution-de-mon-livre-securite-des-applications-web-strategies-offensives-et-defensives.md](mes-articles/2024/juin/parution-de-mon-livre-securite-des-applications-web-strategies-offensives-et-defensives.md "mention")
 
 Un article destiné à dévoiler mon tout premier ouvrage sur la sécurité des applications web, publié par les [Editions ENI](https://www.editions-eni.fr/).
@@ -26,7 +34,7 @@ Un article reprenant le travail de [slonser](https://twitter.com/slonser\_) conc
 
 [bypass-de-validation-durl-et-embedded-credentials-cote-front.md](mes-articles/2024/avril/bypass-de-validation-durl-et-embedded-credentials-cote-front.md "mention")
 
-Petit retour d'expérience suite à un audit concernant l'utilisation des embedded credentials à des fins de contournement de validation d'URL couplée aux comportements différents des navigateurs lors du chargement d'une telle ressource ressource.
+Petit retour d'expérience suite à un audit concernant l'utilisation des embedded credentials à des fins de contournement de validation d'URL couplée aux différents comportements des navigateurs lors du chargement d'une telle ressource ressource.
 
 :date: 08 Avril 2024 :open\_file\_folder:[Bypass](mon-blog/categories.md#bypass)
 
