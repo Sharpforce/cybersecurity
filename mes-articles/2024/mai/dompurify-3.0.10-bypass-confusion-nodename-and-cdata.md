@@ -145,4 +145,4 @@ const _createNodeIterator = function _createNodeIterator(root) {
 
 ## Labs
 
-Afin de tester et d'exploiter ce contournement, une image Docker est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tree/master/dompurify-3.0.10-confusing-nodename).
+Afin de tester et d'exploiter ce contournement, une image Docker est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tree/master/dompurify-3.0.10-bypass-confusion-nodename-and-cdata).
