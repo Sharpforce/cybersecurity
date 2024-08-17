@@ -155,5 +155,5 @@ Cette constante est définit par l'API DOM et utilisée par la méthode `createN
 
 ## Labs
 
-Afin de tester et d'exploiter ce contournement, une image Docker est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tree/master/dompurify-3.0.9-node-type-confusion).
+Afin de tester et d'exploiter ce contournement, une image Docker est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tree/master/dompurify-3.0.9-bypass-node-type-confusion).
 
