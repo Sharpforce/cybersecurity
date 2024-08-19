@@ -438,7 +438,14 @@ Exemple de 5 requêtes représentant l'information "s3cr3t" récupérée :
 
 <figure><img src="../../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
 
-Un PoC minimaliste est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tree/master/font-face-and-unicode-descriptor).
+Un PoC est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tree/master/les-injections-css-regle-font-face-et-descripteur-unicode).
+
+```html
+<h1>Injection CSS - récupération de la valeur d'un élément HTML via @font-face et descripteur unicode</h1>
+<span id="secret">s3cr3t</span>
+```
+
+<figure><img src="../../../.gitbook/assets/image (330).png" alt=""><figcaption></figcaption></figure>
 
 ### Scanner des services et des ressources
 

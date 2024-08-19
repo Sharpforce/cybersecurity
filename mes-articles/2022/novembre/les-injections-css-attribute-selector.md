@@ -1,5 +1,5 @@
 ---
-description: 06 Novembre 2022
+description: 06 Novembre 2022 (mis à jour le 19 Aout 2024)
 ---
 
 # Les injections CSS - Attribute Selector
@@ -394,10 +394,6 @@ Une alternative pouvant répondre à certaines limites des combinateurs CSS est 
 ```
 {% endcode %}
 
-Cette technique ne fonctionne pas sur FireFox, ni sur IE, car ces navigateurs ne supportent pas cette pseudo-class :
-
-<figure><img src="../../../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
-
 ### Automatisation de l'attaque
 
 Un script d'automatisation exploitant l'injection CSS afin de récupérer une valeur d'un attribut existe déjà ici : [https://gist.github.com/d0nutptr/928301bde1d2aa761d1632628ee8f24e](https://gist.github.com/d0nutptr/928301bde1d2aa761d1632628ee8f24e). Son utilisation nécessite que la victime accède à la page malicieuse et que l'application vulnérable ciblée soit iframable (entêtes [X-Frame-Options](https://developer.mozilla.org/fr/docs/Web/HTTP/Headers/X-Frame-Options) et [frame-ancestors](https://developer.mozilla.org/fr/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors)). Toutefois, ce PoC ne possède pas la partie back-end. Il faudra donc le développer, mais il reste toutefois assez simple. De plus, étant donné qu'une seule requête est effectuée par position de caractère, il est possible que l'iframing résulte en une erreur HTTP `414 URI Too Long` et que l'attaque échoue.
@@ -406,17 +402,25 @@ Ci-dessous, plusieurs PoC tentant de résoudre ces problèmes.
 
 #### PoC - Récupération de la valeur d'un attribut d'un élément HTML via les sélecteurs d'attribut CSS
 
-[Accéder au PoC](https://github.com/Sharpforce/cybersecurity-code/tree/master/attribute-selectors-iframe)
+Un PoC est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tree/master/les-injections-css-attribute-selector/attribute-selectors-iframe).
 
 {% code overflow="wrap" %}
 ```html
-  <body>
-  <h1>Attribute selectors iframe with password input</h1>
-    <form method="POST" action="">
-        <input type="password" name="password" value="qwerty">
-        <input type="submit" name="currentPassword" value="Submit">
-    </form>
-  </body>
+<h1>Récupération de la valeur d'un attribut d'un élément HTML via les sélecteurs d'attribut CSS</h1>
+
+<h2>PoC #1 - Champ de type password</h2>
+<form method="POST" action="">
+    <input type="password" name="password" value="qwerty">
+    <input type="submit" name="currentPassword" value="Submit">
+</form>
+        
+<h2>PoC #2 - Champ de type hidden</h2>
+<form action="" method="POST">
+    <input type="password" name="newPassword" placeholder="New Password">
+    <input type="password" name="confirmNewPassword" placeholder="Confirm New Password">
+    <input type="hidden" name="csrf-token" value="a5ccef6a-1f00-4a02-b16b-e4e9e517b223">
+    <input type="submit" name="changePassword" value="Continue">
+</form>
 ```
 {% endcode %}
 
@@ -424,19 +428,25 @@ Ci-dessous, plusieurs PoC tentant de résoudre ces problèmes.
 
 #### PoC - Récupération de la valeur d'un attribut d'un élément HTML de type hidden via la pseudo-class CSS `has()`
 
-[Accéder au PoC](https://github.com/Sharpforce/cybersecurity-code/tree/master/has-attribute-selectors-iframe)
+Un PoC est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tree/master/les-injections-css-attribute-selector/has-attribute-selectors-iframe).
 
 {% code overflow="wrap" %}
 ```html
-  <body>
-    <h1>Has attribute selectors iframe with hidden input</h1>
-    <form action="" method="POST">
-      <input type="password" name="newPassword" placeholder="New Password">
-      <input type="password" name="confirmNewPassword" placeholder="Confirm New Password">
-      <input type="hidden" name="csrf-token" value="a5ccef6a-1f00-4a02-b16b-e4e9e517b223">
-      <input type="submit" name="changePassword" value="Continue">
-    </form>
-  </body>
+<h1>Récupération de la valeur d'un attribut d'un élément HTML via la pseudo-class CSS has()</h1>
+        
+<h2>PoC #1 - Champ de type password</h2>
+<form method="POST" action="">
+    <input type="password" name="password" value="qwerty">
+    <input type="submit" name="currentPassword" value="Submit">
+</form>
+        
+<h2>PoC #2 - Champ de type hidden</h2>
+<form action="" method="POST">
+    <input type="password" name="newPassword" placeholder="New Password">
+    <input type="password" name="confirmNewPassword" placeholder="Confirm New Password">
+    <input type="hidden" name="csrf-token" value="a5ccef6a-1f00-4a02-b16b-e4e9e517b223">
+    <input type="submit" name="changePassword" value="Continue">
+</form>
 ```
 {% endcode %}
 
@@ -446,19 +456,26 @@ Ci-dessous, plusieurs PoC tentant de résoudre ces problèmes.
 
 Il existe une autre technique utilisant les popups et qui ne nécessite pas l'iframing du site vulnérable. Malheureusement, il faudra soit un clic en plus de la part de la victime afin de lancer l'attaque ou alors qu'il autorise l'ouverture des popups au sein de son navigateur. De plus, cette attaque est très bruyante puisque la victime voit directement les fenêtres s'ouvrir et se rafraichir.
 
-[Accéder au PoC](https://github.com/Sharpforce/cybersecurity-code/tree/master/attribute-selectors-popup)
+Un PoC est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tree/master/les-injections-css-attribute-selector/attribute-selectors-popup).
 
 {% code overflow="wrap" %}
 ```html
-  <body>
-    <h1>Popup attribute selectors iframe with hidden input</h1>
-    <form action="" method="POST">
-        <input type="password" name="newPassword" placeholder="New Password">
-        <input type="password" name="confirmNewPassword" placeholder="Confirm New Password">
-        <input type="hidden" name="csrf-token" value="a5ccef6a-1f00-4a02-b16b-e4e9e517b223">
-        <input type="submit" name="changePassword" value="Continue">
-    </form>
-  </body>
+<h1>Récupération de la valeur d'un attribut d'un élément HTML via les sélecteurs d'attribut CSS</h1>
+ 
+<h2>PoC #1 - Champ de type password</h2>
+ <form method="POST" action="">
+    <input type="password" name="password" value="qwerty">
+    <input type="submit" name="currentPassword" value="Submit">
+</form>
+        
+<h2>PoC #2 - Champ de type hidden</h2>
+<form action="" method="POST">
+    <input type="password" name="newPassword" placeholder="New Password">
+    <input type="password" name="confirmNewPassword" placeholder="Confirm New Password">
+    <!-- shorter csrf token due to URI too long error -->
+    <input type="hidden" name="csrf-token" value="ab4f63f9ac65">
+    <input type="submit" name="changePassword" value="Continue">
+</form>
 ```
 {% endcode %}
 
