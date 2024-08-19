@@ -400,11 +400,9 @@ Cette technique ne fonctionne pas sur FireFox, ni sur IE, car ces navigateurs ne
 
 ### Automatisation de l'attaque
 
-Un script d'automatisation exploitant l'injection CSS afin de récupérer une valeur d'un attribut existe déjà ici : [https://gist.github.com/d0nutptr/928301bde1d2aa761d1632628ee8f24e](https://gist.github.com/d0nutptr/928301bde1d2aa761d1632628ee8f24e). Son utilisation nécessite que la victime accède à la page malicieuse et que l'application vulnérable ciblée soit iframable (entêtes [X-Frame-Options](https://developer.mozilla.org/fr/docs/Web/HTTP/Headers/X-Frame-Options) et [frame-ancestors](https://developer.mozilla.org/fr/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors)).
+Un script d'automatisation exploitant l'injection CSS afin de récupérer une valeur d'un attribut existe déjà ici : [https://gist.github.com/d0nutptr/928301bde1d2aa761d1632628ee8f24e](https://gist.github.com/d0nutptr/928301bde1d2aa761d1632628ee8f24e). Son utilisation nécessite que la victime accède à la page malicieuse et que l'application vulnérable ciblée soit iframable (entêtes [X-Frame-Options](https://developer.mozilla.org/fr/docs/Web/HTTP/Headers/X-Frame-Options) et [frame-ancestors](https://developer.mozilla.org/fr/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors)). Toutefois, ce PoC ne possède pas la partie back-end. Il faudra donc le développer, mais il reste toutefois assez simple. De plus, étant donné qu'une seule requête est effectuée par position de caractère, il est possible que l'iframing résulte en une erreur HTTP `414 URI Too Long` et que l'attaque échoue.
 
-Le PoC ne possède pas la partie back-end. Il faudra donc le développer, mais il reste toutefois assez simple. De plus, étant donné qu'une seule requête est effectuée par position de caractère, il est possible que l'iframing résulte en une erreur HTTP `414 URI Too Long` et que l'attaque échoue.
-
-Voici plusieurs PoC tentant de résoudre ces problèmes.
+Ci-dessous, plusieurs PoC tentant de résoudre ces problèmes.
 
 #### PoC - Récupération de la valeur d'un attribut d'un élément HTML via les sélecteurs d'attribut CSS
 
