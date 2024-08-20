@@ -357,7 +357,32 @@ Dans le cas contraire, la récupération sera soit très lente voir même bloqu�
 Le mieux reste encore de tester soi-même l'automatisation pour bien se rendre compte de ces difficultés.
 {% endhint %}
 
-Le PoC est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tree/master/has-attribute-selectors-import).
+Un PoC est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tree/master/les-injections-css-regle-import).
+
+```html
+<h2>PoC #1 - Champ de type password</h2>
+<!-- "The <div> tag directly surrounding the form appears to be important for the successful execution of the attack." -->
+<div>
+    <form method="POST" action="">
+        <input type="password" name="password" value="qwerty">
+        <input type="submit" name="currentPassword" value="Submit">
+    </form>
+</div>
+
+<h2>PoC #2 - Champ de type hidden</h2>
+<!-- "The <div> tag directly surrounding the form appears to be important for the successful execution of the attack." -->
+<div>
+    <form action="" method="POST">
+        <input type="password" name="newPassword" placeholder="New Password">
+        <input type="password" name="confirmNewPassword" placeholder="Confirm New Password">
+        <!-- shorter csrf token due to URI too long error -->
+        <input type="hidden" name="csrf-token" value="a5ccef6a-1f00-4a02-b16b-e4e9e517b223">
+        <input type="submit" name="changePassword" value="Continue">
+    </form>
+</div>
+```
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Références
 

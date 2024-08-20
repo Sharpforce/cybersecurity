@@ -121,6 +121,20 @@ A noter que si le serveur vulnérable présente l'entête HTTP `Document-Policy`
 
 De plus, la fonctionnalité s'active seulement lors d'une navigation vers une page différente, c'est à dire que rafraichir la page ou ouvrir un lien vers la même page ne déclenchera pas l'attaque. Exit également l'iframing de la page vulnérable, la fonctionnalité ne se déclenchera pas dans ce contexte non plus.
 
+### Automatisation
+
+Un PoC est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tree/master/les-injections-css-scroll-to-text-fragment).
+
+```php
+<h1>Récupération de la présence de l'occurrence d'un mot via fonctionnalité de Scroll-to-Text Fragment</h1>
+<div>
+        <?php echo '<p>Connecté en tant que ' . $_SESSION['role'] . '</p>'; ?>
+</div>
+<a href="logout.php">Se déconnecter</a>
+```
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
 ## Références
 
 * [https://book.hacktricks.xyz/pentesting-web/xs-search/css-injection](https://book.hacktricks.xyz/pentesting-web/xs-search/css-injection)
