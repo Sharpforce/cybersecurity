@@ -4,9 +4,7 @@ description: 22 mai 2024
 
 # Dompurify 3.0.10 bypass - Confusion nodeName and CDATA
 
-## Crédits
-
-Cet article se base sur les recherches de [RyotaK](https://x.com/ryotkak) ([https://flatt.tech/research/posts/bypassing-dompurify-with-good-old-xml/](https://flatt.tech/research/posts/bypassing-dompurify-with-good-old-xml/)).
+> Cet article se base sur les recherches de [RyotaK](https://x.com/ryotkak) ([https://flatt.tech/research/posts/bypassing-dompurify-with-good-old-xml/](https://flatt.tech/research/posts/bypassing-dompurify-with-good-old-xml/)).
 
 ## Confusion nodeName
 

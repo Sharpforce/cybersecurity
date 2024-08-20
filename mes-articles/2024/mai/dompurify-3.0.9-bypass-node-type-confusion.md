@@ -4,9 +4,7 @@ description: 03 mai 2024
 
 # Dompurify 3.0.9 bypass - Node type confusion
 
-## Crédits
-
-Cet article se base sur les recherches de [slonser\_](https://twitter.com/slonser\_) ([https://blog.slonser.info/posts/dompurify-node-type-confusion/](https://blog.slonser.info/posts/dompurify-node-type-confusion/)).
+> Cet article se base sur les recherches de [slonser\_](https://twitter.com/slonser\_) ([https://blog.slonser.info/posts/dompurify-node-type-confusion/](https://blog.slonser.info/posts/dompurify-node-type-confusion/)).
 
 ## Confusion HTML et XML
 

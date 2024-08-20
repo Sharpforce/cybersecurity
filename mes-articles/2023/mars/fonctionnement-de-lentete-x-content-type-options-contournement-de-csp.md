@@ -4,7 +4,7 @@ description: 17 Mars 2023
 
 # Fonctionnement de l'entête X-Content-Type-Options - Contournement de CSP
 
-L'entête X-Content-Type-Options est un incontournable des résultats de scan des outils automatisés. Mais à quoi sert-il réellement et contre quoi protège-t-il ?
+> L'entête X-Content-Type-Options est un incontournable des résultats de scan des outils automatisés. Mais à quoi sert-il réellement et contre quoi protège-t-il ?
 
 ## Le type MIME
 

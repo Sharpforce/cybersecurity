@@ -4,6 +4,8 @@ description: 08 avril 2024
 
 # Bypass de validation d'URL et embedded credentials côté front
 
+> Petit retour d'expérience suite à un audit concernant l'utilisation des embedded credentials à des fins de contournement de validation d'URL couplée aux différents comportements des navigateurs lors du chargement d'une telle ressource ressource.
+
 Lors de la recherche ou de l'exploitation de vulnérabilités SSRF (Server-Side Request Forgery), il n'est pas rare de se confronter à une validation de l'URL par le serveur lors de la soumission de la requête. Les expressions régulières sont fréquemment utilisées pour effectuer cette vérification. Ainsi, l'expression régulière suivante vérifie que l'URL renseignée correspond bien à celle autorisée, soit ici [https://example.com](https://example.com) :&#x20;
 
 ```
