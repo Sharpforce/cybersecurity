@@ -128,7 +128,7 @@ Un PoC est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tre
 ```php
 <h1>Récupération de la présence de l'occurrence d'un mot via fonctionnalité de Scroll-to-Text Fragment</h1>
 <div>
-        <?php echo '<p>Connecté en tant que ' . $_SESSION['role'] . '</p>'; ?>
+    <?php echo '<p>Connecté en tant que ' . $_SESSION['role'] . '</p>'; ?>
 </div>
 <a href="logout.php">Se déconnecter</a>
 ```
