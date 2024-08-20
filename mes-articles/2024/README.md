@@ -2,6 +2,7 @@
 
 ### <mark style="background-color:blue;">Aout</mark>
 
+* **20 Aout -** [xss-exploitation-tool-v0.5.0.md](aout/xss-exploitation-tool-v0.5.0.md "mention")
 * **15 Aout -** [exploitation-des-injections-sql-au-sein-de-la-clause-order-by.md](aout/exploitation-des-injections-sql-au-sein-de-la-clause-order-by.md "mention")
 
 ### <mark style="background-color:blue;">Juin</mark>

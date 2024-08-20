@@ -126,6 +126,8 @@
 
 [xss-exploitation-tool-v0.4.0.md](../mes-articles/2022/octobre/xss-exploitation-tool-v0.4.0.md "mention")
 
+[xss-exploitation-tool-v0.5.0.md](../mes-articles/2024/aout/xss-exploitation-tool-v0.5.0.md "mention")
+
 </details>
 
 <details>
@@ -155,6 +157,8 @@
 [est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md](../mes-articles/2022/juillet/est-il-possible-de-contourner-la-fonction-php-htmlspecialchars.md "mention")
 
 [xss-exploitation-tool-v0.4.0.md](../mes-articles/2022/octobre/xss-exploitation-tool-v0.4.0.md "mention")
+
+[xss-exploitation-tool-v0.5.0.md](../mes-articles/2024/aout/xss-exploitation-tool-v0.5.0.md "mention")
 
 [xss-vulnerability-challenges](../walkthroughs/deliberately-vulnerable/xss-vulnerability-challenges/ "mention")
 

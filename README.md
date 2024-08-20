@@ -1,5 +1,13 @@
 # 🏠 Home
 
+[xss-exploitation-tool-v0.5.0.md](mes-articles/2024/aout/xss-exploitation-tool-v0.5.0.md "mention")
+
+La version 0.5.0 vient XET (XSS Exploitation Tool) est maintenant disponible : [https://github.com/Sharpforce/XSS-Exploitation-Tool/releases/tag/v0.5.0](https://github.com/Sharpforce/XSS-Exploitation-Tool/releases/tag/v0.5.0)
+
+:date: 20 Aout 2024 :open\_file\_folder:[XSS](mon-blog/categories.md#xss) :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling)
+
+***
+
 [exploitation-des-injections-sql-au-sein-de-la-clause-order-by.md](mes-articles/2024/aout/exploitation-des-injections-sql-au-sein-de-la-clause-order-by.md "mention")
 
 Les injections SQL peuvent surgir de manière inattendue, même dans les clauses ORDER BY. Comprenez les subtilités de ces attaques et maîtriser les techniques de défense pour protéger vos applications.
