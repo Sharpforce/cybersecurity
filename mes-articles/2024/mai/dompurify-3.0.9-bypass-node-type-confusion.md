@@ -52,7 +52,7 @@ Les instructions de traitement (processing instructions) ne semblent pas être a
 
 Malheureusement, le code est commenté par le navigateur, empêchant ainsi son exécution : &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (328).png" alt=""><figcaption><p><a href="https://developer.mozilla.org/en-US/docs/Web/API/ProcessingInstruction">https://developer.mozilla.org/en-US/docs/Web/API/ProcessingInstruction</a></p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (334).png" alt=""><figcaption><p><a href="https://developer.mozilla.org/en-US/docs/Web/API/ProcessingInstruction">https://developer.mozilla.org/en-US/docs/Web/API/ProcessingInstruction</a></p></figcaption></figure>
 
 Toutefois, le navigateur commente le code jusqu'à rencontrer le prochain caractère `>`, il est donc possible d'exploiter ce comportemement de la façon suivante :&#x20;
 

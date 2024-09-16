@@ -4,7 +4,7 @@
 
 ## Description du livre
 
-<figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
 **Titre :** Hacking APIs - Breaking Web Application Programming Interfaces\
 **Auteur :** Corey J. Ball\

@@ -63,15 +63,15 @@ En reprenant le code de l'exemple précédent, il est donc possible de mettre en
 http://vulnerable.com/scroll-to-text.php#:~:text=Administrateur
 ```
 
-<figure><img src="../../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
 
 Ou alors une phrase entière :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
 
 Il est également possible de surligner tout un paragraphe en spécifiant le texte du début (`textStart`) et le texte de fin (`textEnd`) séparés par une virgule :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (311).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
 
 Ou encore d'ajouter des suffixes et des préfixes :&#x20;
 
@@ -81,7 +81,7 @@ Ou encore d'ajouter des suffixes et des préfixes :&#x20;
 
 Une dernière possibilité pouvant être utile est de pouvoir effectuer une multi sélection grâce au caractère `&`. Par exemple :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (228).png" alt=""><figcaption></figcaption></figure>
 
 ### La pseudo-class :target&#x20;
 
@@ -105,11 +105,11 @@ http://vulnerable.com/scroll-to-text.php?color=black;}:target::before{content:ur
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (227).png" alt=""><figcaption></figcaption></figure>
 
 L'attaque ne passera pas inaperçu pour la victime puisque le texte ciblé sera souligné et un défilement sera effectué si nécessaire :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
 
 ### Limites de l'attaque
 
@@ -133,7 +133,7 @@ Un PoC est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tre
 <a href="logout.php">Se déconnecter</a>
 ```
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Références
 

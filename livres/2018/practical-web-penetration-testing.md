@@ -4,7 +4,7 @@
 
 ## Description du livre
 
-![](<../../.gitbook/assets/image (105).png>)
+![](<../../.gitbook/assets/image (111).png>)
 
 **Titre :** Practical Web Penetration Testing\
 **Auteur :** Gus Khawaja\

@@ -8,7 +8,7 @@ description: >-
 
 ## Description du livre
 
-<figure><img src="../../.gitbook/assets/image (332).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (338).png" alt=""><figcaption></figcaption></figure>
 
 **Titre :** Sécurité des applications web - Stratégies offensives et défensives
 

@@ -12,7 +12,7 @@ Sans revenir sur le fonctionnement de HTTPS, sa raison d'être est la sécurité
 
 Par défaut, le protocole HTTP fonctionne sur le port 80 et sa version sécurisée sur le port 443. Ils peuvent être atteints en spécifiant le protocole comme dans les exemples suivants : [http://example.com](http://example.com/) (non sécurisé) ou [https://example.com](https://example.com/) (sécurisé). Sous Google Chrome, par exemple, une version non sécurisée est visible également dans la barre d'adresse par l'indication "Non sécurisé" accompagnée d'un pictogramme d'exclamation, tandis que la version sécurisée se voit dotée d'un cadenas :
 
-| ![](<../../../.gitbook/assets/image (89).png>) | ![](<../../../.gitbook/assets/image (54).png>) |
+| ![](<../../../.gitbook/assets/image (95).png>) | ![](<../../../.gitbook/assets/image (60).png>) |
 | :--------------------------------------------: | :--------------------------------------------: |
 
 {% hint style="info" %}
@@ -29,7 +29,7 @@ Il existe plusieurs cas où cela peut arriver (et sans doute d'autres) :&#x20;
 
 Afin de protéger les utilisateurs, les applications web effectuent généralement une redirection du port 80 vers le port 443. De cette façon, un utilisateur tentant d'accéder à l'URL via le protocole HTTP sera redirigé, par la réponse du serveur, vers une connexion HTTPS.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
 Par exemple, la configuration suivante est celle d'un serveur Nginx et permet une telle redirection :&#x20;
 
@@ -116,7 +116,7 @@ HTTP Strict Transport Security (HSTS) est un mécanisme de sécurité qui permet
 
 HTTP Strict Transport Security Header (HSTS) est supporté par tous les navigateurs même ceux relativement anciens :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
 
 Avec ce nouveau fonctionnement, la problématique du premier échange lors d'une connexion à un site web en utilisant HTTP semble disparaitre. Enfin pas tout à fait, comme va le montrer la présence de la directive `preload`.
 
@@ -163,7 +163,7 @@ La soumission du formulaire s'effectue ici : [https://hstspreload.org/](https://
   * présence de la directive `preload`
 * Les redirections effectuées en HTTPS doivent également contenir l'entête HSTS
 
-<figure><img src="../../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
 La présence de la directive `preload` peut ne pas être évidente. En réalité, elle permet de vérifier que l'ajout du domaine à la "liste de préchargement" est bien souhaité par son propriétaire. Ainsi, une autre personne peut soumettre le formulaire, mais ne sera pas en mesure de modifier la configuration du serveur web pour y inclure cette directive. Dans ce cas, l'ajout du domaine à la "liste de préchargement" ne sera pas effectué.
 
@@ -171,11 +171,11 @@ La présence de la directive `preload` peut ne pas être évidente. En réalité
 
 Il peut arriver en naviguant sur certains sites de rencontrer des erreurs liées au certificat TLS. L'erreur rencontrée peut varier mais ressemble à ceci :
 
-<figure><img src="../../../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
 
 Le site web https://poclab1.com ne possède pas l'entête de sécurité HSTS, il est donc possible pour l'utilisateur de forcer la navigation malgré le message d'avertissement (et donc d'accepter les risques encourus). Par contre, comme indiqué dans le message d'avertissement, cette possibilité n'est pas présente pour les sites mettant en place HSTS :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
 
 ### Cas particulier de la redirection vers un sous-domaine
 
@@ -185,7 +185,7 @@ En admettant le scénario suivant :
 
 Pour certaines raisons, l'entreprise possédant le domaine [example.com](http://exemple.com) souhaite plutôt rediriger ses utilisateurs vers son sous-domaine [www.exemple.com](http://www.example.com). Afin d'appliquer cette politique, l'entreprise va donc mettre en place la redirection adéquate :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (288).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (294).png" alt=""><figcaption></figcaption></figure>
 
 L'entreprise met correctement en place l'entête HSTS en réponse, que cela soit sur une réponse HTTPS pour [example.com](https://example.com) :&#x20;
 
@@ -213,7 +213,7 @@ Ne pas oublier que la politique HSTS est appliquée seulement dans le cadre d'un
 
 En général, il est alors conseillé de toujours rediriger vers le même domaine (afin d'appliquer HSTS), quitte à effectuer une seconde redirection pour rediriger l'utilisateur vers le sous-domaine "officiel" de l'entreprise :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (287).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (293).png" alt=""><figcaption></figcaption></figure>
 
 ## Références
 
