@@ -8,6 +8,7 @@
 
 ## Mes projets
 
+* [Livre / Ouvrage](mes-projets/livre-ouvrage.md)
 * [MyExpense](mes-projets/myexpense.md)
 * [XSS Exploitation Tool](mes-projets/xss-exploitation-tool.md)
 

@@ -9,7 +9,7 @@
 **Titre :** DevSecOps - Développez et administrez vos services en toute sécurité\
 **Auteur :** Jordan Assouline\
 **Dernière parution :** 22 mai 2023\
-**Langue :** Francçaise\
+**Langue :** Française\
 **Prix (minimum) :** 54,00 €\
 **Lien :** [https://www.editions-eni.fr/livre/devsecops-developpez-et-administrez-vos-services-en-toute-securite-9782409039188](https://www.editions-eni.fr/livre/devsecops-developpez-et-administrez-vos-services-en-toute-securite-9782409039188)
 
