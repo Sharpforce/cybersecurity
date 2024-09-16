@@ -382,7 +382,7 @@ Un PoC est disponible [ici](https://github.com/Sharpforce/cybersecurity-code/tre
 </div>
 ```
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Références
 

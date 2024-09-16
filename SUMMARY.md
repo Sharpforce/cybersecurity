@@ -8,7 +8,8 @@
 
 ## Mes projets
 
-* [Livre / Ouvrage](mes-projets/livre-ouvrage.md)
+* [Livres / ouvrages](mes-projets/livres-ouvrages/README.md)
+  * [Sécurité des applications web - Stratégies offensives et défensives](mes-projets/livres-ouvrages/securite-des-applications-web-strategies-offensives-et-defensives.md)
 * [MyExpense](mes-projets/myexpense.md)
 * [XSS Exploitation Tool](mes-projets/xss-exploitation-tool.md)
 

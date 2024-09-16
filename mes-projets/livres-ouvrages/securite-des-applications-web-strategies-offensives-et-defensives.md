@@ -4,11 +4,11 @@ description: >-
   applications web - Stratégies offensives et défensives" paru aux Editions ENI.
 ---
 
-# Livre / Ouvrage
+# Sécurité des applications web - Stratégies offensives et défensives
 
 ## Description du livre
 
-<figure><img src="../.gitbook/assets/image (332).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (332).png" alt=""><figcaption></figcaption></figure>
 
 **Titre :** Sécurité des applications web - Stratégies offensives et défensives
 
