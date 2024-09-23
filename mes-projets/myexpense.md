@@ -19,6 +19,13 @@ Le développement de l'application est terminée. Elle est disponible directemen
 
 ## Changelog
 
+**22/09/2024 :** Correction d'un bug lors de l'exploitation de l'injection SQL.
+
+```
+Fixed
+- Issue during the exploitation of the SQL injection
+```
+
 **27/03/2024 :** Correction d'un bug lors de l'installation à partir des sources (image Vbox, compatible 7.0 et Debian 12, disponible [ici](https://www.mediafire.com/file/e1hjy5orlpd87au/My\_Expense\_Vulnerable\_Web\_Application\_-\_1.3.ova/file)).
 
 ```

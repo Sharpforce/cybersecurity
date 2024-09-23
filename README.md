@@ -1,10 +1,18 @@
 # 🏠 Home
 
+[myexpense-v1.4.md](mes-articles/2024/septembre/myexpense-v1.4.md "mention")
+
+La version 1.4 de MyExpense est maintenant disponible. Il s'agit d'une mise à jour visant à corriger un bug survenant lors de l'exploitation de l'injection SQL. De plus, il est maintenant possible d'installer MyExpense via Docker.
+
+:date: 23 Sept 2024 :open\_file\_folder:[Labs](mon-blog/categories.md#labs)
+
+***
+
 [xss-exploitation-tool-v0.5.0.md](mes-articles/2024/aout/xss-exploitation-tool-v0.5.0.md "mention")
 
 La version 0.5.0 vient XET (XSS Exploitation Tool) est maintenant disponible : [https://github.com/Sharpforce/XSS-Exploitation-Tool/releases/tag/v0.5.0](https://github.com/Sharpforce/XSS-Exploitation-Tool/releases/tag/v0.5.0)
 
-:date: 20 Aout 2024 :open\_file\_folder:[XSS](mon-blog/categories.md#xss) :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling)
+:date: 20 Août 2024 :open\_file\_folder:[XSS](mon-blog/categories.md#xss) :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling)
 
 ***
 
@@ -12,7 +20,7 @@ La version 0.5.0 vient XET (XSS Exploitation Tool) est maintenant disponible : [
 
 Les injections SQL peuvent surgir de manière inattendue, même dans les clauses ORDER BY. Comprenez les subtilités de ces attaques et maîtriser les techniques de défense pour protéger vos applications.
 
-:date: 15 Aout 2024 :open\_file\_folder:[API](mon-blog/categories.md#api) :open\_file\_folder: [SQL Injection](mon-blog/categories.md#sql-injection)
+:date: 15 Août 2024 :open\_file\_folder:[API](mon-blog/categories.md#api) :open\_file\_folder: [SQL Injection](mon-blog/categories.md#sql-injection)
 
 ***
 
@@ -148,7 +156,7 @@ La version 0.4.0 vient XET (XSS Exploitation Tool) est maintenant disponible : [
 
 Dans cet article, nous allons examiner quelques exemples d'injections XSS possibles lorsque les données entrées par l'utilisateur sont réfléchies au sein d'un attribut HTML représentant une URL, tel que `href`, `src`, ou `url`.
 
-:date: 17 Sep 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
+:date: 17 Sept 2022 :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
 
 ***
 

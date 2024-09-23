@@ -96,6 +96,8 @@
 
 [myexpense-v1.3.md](../mes-articles/2024/mars/myexpense-v1.3.md "mention")
 
+[myexpense-v1.4.md](../mes-articles/2024/septembre/myexpense-v1.4.md "mention")
+
 [xss-vulnerability-challenges](../walkthroughs/deliberately-vulnerable/xss-vulnerability-challenges/ "mention")
 
 </details>
