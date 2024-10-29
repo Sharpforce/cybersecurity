@@ -12,7 +12,7 @@
 
 ### <mark style="background-color:blue;">Septembre</mark>
 
-* **17 Sep** - [cross-site-scripting-xss-et-schema-duri-javascript.md](septembre/cross-site-scripting-xss-et-schema-duri-javascript.md "mention")
+* **17 Sept** - [cross-site-scripting-xss-et-schema-duri-javascript.md](septembre/cross-site-scripting-xss-et-schema-duri-javascript.md "mention")
 
 ### <mark style="background-color:blue;">Juillet</mark>
 
