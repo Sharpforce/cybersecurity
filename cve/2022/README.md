@@ -1,10 +1,3 @@
 # 2022
 
-### <mark style="background-color:blue;">Juillet</mark>
-
-* **01 Juil** - [cve-2022-33910.md](cve-2022-33910.md "mention")
-
-### <mark style="background-color:blue;">Juin</mark>
-
-* **23 Juin** - [cve-2022-32444.md](cve-2022-32444.md "mention")
-* **22 Juin** - [cve-2022-32442.md](cve-2022-32442.md "mention")
+<table><thead><tr><th width="196">N° CVE</th><th width="182">Date d'analyse</th><th width="269">Type de vulnérabilité</th><th>CVSS</th></tr></thead><tbody><tr><td><strong>CVE-2022-33910</strong></td><td>01 Juillet 2022</td><td>Cross-Site Scripting (XSS)</td><td><mark style="color:orange;"><strong>5.4</strong></mark></td></tr><tr><td><strong>CVE-2022-32444</strong></td><td>23 Juin 2022</td><td>Open Redirect</td><td><mark style="color:orange;"><strong>6.1</strong></mark></td></tr><tr><td><strong>CVE-2022-32442</strong></td><td>22 Juin 2022</td><td>Cross-Site Scripting (XSS)</td><td><mark style="color:orange;"><strong>6.1</strong></mark></td></tr></tbody></table>

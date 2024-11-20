@@ -72,6 +72,8 @@
 
 [cve-2022-33910.md](../cve/2022/cve-2022-33910.md "mention")
 
+[cve-2020-26311.md](../cve/2020/cve-2020-26311.md "mention")
+
 </details>
 
 <details>
@@ -107,6 +109,14 @@
 <summary>Open Redirect</summary>
 
 [cve-2022-32444.md](../cve/2022/cve-2022-32444.md "mention")
+
+</details>
+
+<details>
+
+<summary>ReDoS</summary>
+
+[cve-2020-26311.md](../cve/2020/cve-2020-26311.md "mention")
 
 </details>
 

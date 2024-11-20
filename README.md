@@ -1,5 +1,13 @@
 # 🏠 Home
 
+[cve-2020-26311.md](cve/2020/cve-2020-26311.md "mention")
+
+Je vous propose mon analyse de la **CVE-2020-26311**, qui est une vulnérabilité de type Regular expression Denial of Service (ReDoS) dans le projet Node.js useragent.
+
+:date: 20 Nov 2024 :open\_file\_folder:[ReDoS](mon-blog/categories.md#redos) :open\_file\_folder:[CVE](mon-blog/categories.md#cve)
+
+***
+
 [myexpense-v1.4.md](mes-articles/2024/septembre/myexpense-v1.4.md "mention")
 
 La version 1.4 de MyExpense est maintenant disponible. Il s'agit d'une mise à jour visant à corriger un bug survenant lors de l'exploitation de l'injection SQL. De plus, il est maintenant possible d'installer MyExpense via Docker.
