@@ -140,6 +140,8 @@
 
 [xss-exploitation-tool-v0.5.0.md](../mes-articles/2024/aout/xss-exploitation-tool-v0.5.0.md "mention")
 
+[xss-exploitation-tool-v0.6.0.md](../mes-articles/2024/decembre/xss-exploitation-tool-v0.6.0.md "mention")
+
 </details>
 
 <details>
@@ -173,5 +175,7 @@
 [xss-exploitation-tool-v0.5.0.md](../mes-articles/2024/aout/xss-exploitation-tool-v0.5.0.md "mention")
 
 [xss-vulnerability-challenges](../walkthroughs/deliberately-vulnerable/xss-vulnerability-challenges/ "mention")
+
+[xss-exploitation-tool-v0.6.0.md](../mes-articles/2024/decembre/xss-exploitation-tool-v0.6.0.md "mention")
 
 </details>

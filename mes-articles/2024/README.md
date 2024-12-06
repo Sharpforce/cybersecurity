@@ -1,5 +1,9 @@
 # 2024
 
+### <mark style="background-color:blue;">Décembre</mark>
+
+* **06 Déc -** [xss-exploitation-tool-v0.6.0.md](decembre/xss-exploitation-tool-v0.6.0.md "mention")
+
 ### <mark style="background-color:blue;">Septembre</mark>
 
 * **23 Sept -** [myexpense-v1.4.md](septembre/myexpense-v1.4.md "mention")

@@ -1,5 +1,13 @@
 # 🏠 Home
 
+[xss-exploitation-tool-v0.6.0.md](mes-articles/2024/decembre/xss-exploitation-tool-v0.6.0.md "mention")
+
+La version 0.6.0 vient XET (XSS Exploitation Tool) est maintenant disponible : [https://github.com/Sharpforce/XSS-Exploitation-Tool/releases/tag/v0.6.0](https://github.com/Sharpforce/XSS-Exploitation-Tool/releases/tag/v0.6.0)
+
+:date: 06 Déc 2024 :open\_file\_folder:[XSS](mon-blog/categories.md#xss) :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling)
+
+***
+
 [cve-2020-26311.md](cve/2020/cve-2020-26311.md "mention")
 
 Je vous propose mon analyse de la **CVE-2020-26311**, qui est une vulnérabilité de type Regular expression Denial of Service (ReDoS) dans le projet Node.js useragent.
@@ -50,7 +58,7 @@ Un article reprenant le travail de [RyotaK](https://x.com/ryotkak) concernant le
 
 [dompurify-3.0.9-bypass-node-type-confusion.md](mes-articles/2024/mai/dompurify-3.0.9-bypass-node-type-confusion.md "mention")
 
-Un article reprenant le travail de [slonser](https://twitter.com/slonser\_) concernant le bypass de Dompurify dans sa version 3.0.9.
+Un article reprenant le travail de [slonser](https://twitter.com/slonser_) concernant le bypass de Dompurify dans sa version 3.0.9.
 
 :date: 03 Mai 2024 :open\_file\_folder:[Bypass](mon-blog/categories.md#bypass) :open\_file\_folder:[XSS](mon-blog/categories.md#xss)
 

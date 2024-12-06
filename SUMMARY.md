@@ -16,6 +16,8 @@
 ## Mes Articles
 
 * [2024](mes-articles/2024/README.md)
+  * [Décembre](mes-articles/2024/decembre/README.md)
+    * [XSS Exploitation Tool v0.6.0](mes-articles/2024/decembre/xss-exploitation-tool-v0.6.0.md)
   * [Septembre](mes-articles/2024/septembre/README.md)
     * [MyExpense v1.4](mes-articles/2024/septembre/myexpense-v1.4.md)
   * [Aout](mes-articles/2024/aout/README.md)
