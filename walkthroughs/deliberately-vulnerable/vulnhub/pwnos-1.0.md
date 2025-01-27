@@ -4,7 +4,7 @@
 
 **Nom :** pWnOS 1.0\
 **Date de sortie :** 27 Juin 2008\
-**Lien de téléchargement :** [http://pwnos.com/files/pWnOS\_v1.0.zip](http://pwnos.com/files/pWnOS\_v1.0.zip)\
+**Lien de téléchargement :** [http://pwnos.com/files/pWnOS\_v1.0.zip](http://pwnos.com/files/pWnOS_v1.0.zip)\
 **Niveau :** Facile\
 **Objectif(s) :** obtenir un accès "root"\
 **Description :** \
@@ -50,7 +50,7 @@ Je prends note de cela dans un coin et continue l'exploration du site web :
 
 ![](../../../.gitbook/assets/664faf4b57f285ddfde6d20b73cd8a71.png)
 
-Même si cela ne m'aide pas, je remarque ici que les deux paramètres de l'URL "name" et "level_"_ sont vulnérables à une faille XSS. Etant donné qu'il s'agit d'une XSS réfléchie, Chrome va bloquer son exploitation, il faudra donc utiliser Firefox à la place :
+Même si cela ne m'aide pas, je remarque ici que les deux paramètres de l'URL "name" et "leve&#x6C;_"_ sont vulnérables à une faille XSS. Etant donné qu'il s'agit d'une XSS réfléchie, Chrome va bloquer son exploitation, il faudra donc utiliser Firefox à la place :
 
 ![](../../../.gitbook/assets/47328ddf30811e23f179916c334b59e8.png)
 
@@ -68,7 +68,7 @@ Il indique également la présence de répertoire "/php" et m'avertis que le lis
 
 ![](../../../.gitbook/assets/5c61da7887b99d38cc38b627ed85a923.png)
 
-Il s'agit d'un PhpMyAdmin protégé par une authentification HTTP Basic_._ Le test d'un premier couple de login/mot de passe me conduis à une erreur mais j'obtiens ainsi sa version :
+Il s'agit d'un PhpMyAdmin protégé par une authentification HTTP Basi&#x63;_._ Le test d'un premier couple de login/mot de passe me conduis à une erreur mais j'obtiens ainsi sa version :
 
 ![](../../../.gitbook/assets/87c0c42a614b4a18306e24ace3f28117.png)
 
@@ -158,4 +158,4 @@ Machine plutôt facile grâce à l'accès à n'importe quel fichier via la vuln�
 
 L'élévation de privilèges à partir du compte "vmware" n'a pas posée de problème, l'exploit utilisé fonctionnant du premier coup.&#x20;
 
-Je me demande si en passant un peu plus de temps sur le service smb il n'y a pas moyen d'obtenir plus d'information. De mémoire il n'y a pas de vulnérabilité intéressante concernant le phpmyadmin mais j'avoue ne pas avoir creuser beaucoup cette piste. A noter qu'il y a également une vulnérabilité d'OpenSSL (voir [https://en.wikipedia.org/wiki/OpenSSL#Predictable\_private\_keys\_(Debian-specific)](https://en.wikipedia.org/wiki/OpenSSL#Predictable\_private\_keys\_\(Debian-specific\))) qui permet de se connecter en SSH en retrouvant certaines clés privées, mais je suis passé à côté de celle-ci.
+Je me demande si en passant un peu plus de temps sur le service smb il n'y a pas moyen d'obtenir plus d'information. De mémoire il n'y a pas de vulnérabilité intéressante concernant le phpmyadmin mais j'avoue ne pas avoir creuser beaucoup cette piste. A noter qu'il y a également une vulnérabilité d'OpenSSL (voir [https://en.wikipedia.org/wiki/OpenSSL#Predictable\_private\_keys\_(Debian-specific)](https://en.wikipedia.org/wiki/OpenSSL#Predictable_private_keys_\(Debian-specific\))) qui permet de se connecter en SSH en retrouvant certaines clés privées, mais je suis passé à côté de celle-ci.

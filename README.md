@@ -1,5 +1,13 @@
 # 🏠 Home
 
+[xss-exploitation-tool-v0.7.0.md](mes-articles/2025/janvier/xss-exploitation-tool-v0.7.0.md "mention")
+
+La version 0.7.0 vient XET (XSS Exploitation Tool) est maintenant disponible : [https://github.com/Sharpforce/XSS-Exploitation-Tool/releases/tag/v0.7.0](https://github.com/Sharpforce/XSS-Exploitation-Tool/releases/tag/v0.7.0)
+
+:date: 27 Jan 2025 :open\_file\_folder:[XSS](mon-blog/categories.md#xss) :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling)
+
+***
+
 [xss-exploitation-tool-v0.6.0.md](mes-articles/2024/decembre/xss-exploitation-tool-v0.6.0.md "mention")
 
 La version 0.6.0 vient XET (XSS Exploitation Tool) est maintenant disponible : [https://github.com/Sharpforce/XSS-Exploitation-Tool/releases/tag/v0.6.0](https://github.com/Sharpforce/XSS-Exploitation-Tool/releases/tag/v0.6.0)
