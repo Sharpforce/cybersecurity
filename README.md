@@ -1,5 +1,13 @@
 # 🏠 Home
 
+[cve-2023-42282.md](cve/2023/cve-2023-42282.md "mention")
+
+Analyse de la faiblesse **CVE-2023-42282**. Cette vulnérabilité de type Server-Side Request Forgery (SSRF) affecte la dépendance ip, ce qui a conduit à son archivage temporaire.
+
+:date: 10 Fév 2025 :open\_file\_folder:[SSRF](mon-blog/categories.md#ssrf) :open\_file\_folder:[CVE](mon-blog/categories.md#cve)
+
+***
+
 [xss-exploitation-tool-v0.7.0.md](mes-articles/2025/janvier/xss-exploitation-tool-v0.7.0.md "mention")
 
 La version 0.7.0 vient XET (XSS Exploitation Tool) est maintenant disponible : [https://github.com/Sharpforce/XSS-Exploitation-Tool/releases/tag/v0.7.0](https://github.com/Sharpforce/XSS-Exploitation-Tool/releases/tag/v0.7.0)

@@ -66,6 +66,8 @@
 
 <summary>CVE</summary>
 
+[cve-2023-42282.md](../cve/2023/cve-2023-42282.md "mention")
+
 [cve-2022-32442.md](../cve/2022/cve-2022-32442.md "mention")
 
 [cve-2022-32444.md](../cve/2022/cve-2022-32444.md "mention")
@@ -117,6 +119,14 @@
 <summary>ReDoS</summary>
 
 [cve-2020-26311.md](../cve/2020/cve-2020-26311.md "mention")
+
+</details>
+
+<details>
+
+<summary>SSRF</summary>
+
+[cve-2023-42282.md](../cve/2023/cve-2023-42282.md "mention")
 
 </details>
 
