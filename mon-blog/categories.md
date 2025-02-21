@@ -14,6 +14,8 @@
 
 <summary>Books</summary>
 
+[attacking-and-exploiting-modern-web-applications.md](../livres/2023/attacking-and-exploiting-modern-web-applications.md "mention")
+
 [devsecops-developpez-et-administrez-vos-services-en-toute-securite.md](../livres/2023/devsecops-developpez-et-administrez-vos-services-en-toute-securite.md "mention")
 
 [hacking-apis-breaking-web-application-programming-interfaces.md](../livres/2022/hacking-apis-breaking-web-application-programming-interfaces.md "mention")

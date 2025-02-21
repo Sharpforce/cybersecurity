@@ -1,6 +1,6 @@
 # Practical Web Penetration Testing
 
-> Mon retour sur le livre "Practical Web Penetration Testing" de Gus Khawaja, paru en 2018.
+> Mon avis personnel sur le livre _Practical Web Penetration Testing_ de Gus Khawaja, paru en 2018.
 
 ## Description du livre
 
@@ -23,17 +23,17 @@
 
 **Table des matières :**
 
-1. Building a Vulnerable Web Application Lab
-2. Kali Linux Installation
-3. Delving Deep into the Usage of Kali Linux
-4. All About Using Burp Suite
-5. Understanding Web Application Vulnerabilities
-6. Application Security Pre-Engagement
-7. Application Threat Modeling
-8. Source Code Review
-9. Network Penetration Testing
-10. Web Intrusion Tests
-11. Pentest Automation Using Python
+* Building a Vulnerable Web Application Lab
+* Kali Linux Installation
+* Delving Deep into the Usage of Kali Linux
+* All About Using Burp Suite
+* Understanding Web Application Vulnerabilities
+* Application Security Pre-Engagement
+* Application Threat Modeling
+* Source Code Review
+* Network Penetration Testing
+* Web Intrusion Tests
+* Pentest Automation Using Python
 
 ## Mon avis
 

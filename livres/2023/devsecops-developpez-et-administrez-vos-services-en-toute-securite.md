@@ -1,6 +1,6 @@
 # DevSecOps - Développez et administrez vos services en toute sécurité
 
-> Mon retour sur le livre "DevSecOps - Développez et administrez vos services en toute sécurité" de Jordan Assouline, paru en 2023
+> Mon avis personnel sur le livre _DevSecOps - Développez et administrez vos services en toute sécurité_ de Jordan Assouline, paru en 2023
 
 ## Description du livre
 
@@ -10,22 +10,22 @@
 **Auteur :** Jordan Assouline\
 **Dernière parution :** 22 mai 2023\
 **Langue :** Française\
-**Prix (minimum) :** 54,00 €\
+**Prix :** 54,00 €\
 **Lien :** [https://www.editions-eni.fr/livre/devsecops-developpez-et-administrez-vos-services-en-toute-securite-9782409039188](https://www.editions-eni.fr/livre/devsecops-developpez-et-administrez-vos-services-en-toute-securite-9782409039188)
 
 **Résumé / Présentation :** `Ce livre sur DevSecOps s'adresse à tous les membres des équipes IT ou de développement qui souhaitent intégrer la sécurité dans leur pratique quotidienne et sécuriser leurs développements à chaque étape du cycle de vie des services.`
 
 **Table des matières :**&#x20;
 
-1. Avant-propos
-2. Chapitre 1 - Introduction au DevSecOps
-3. Chapitre 2 - Intégration et déploiement continus (CI/CD)
-4. Chapitre 3 - Utilisation de Docker en DevSecOps
-5. Chapitre 4 - Utilisation de Kubernetes en DevSecOps
-6. Chapitre 5 - Culture et connaissances en cybersécurité
-7. Chapitre 6 - Sécurité du développement et bonnes pratiques
-8. Chapitre 7 - Implémenter le DevSecOps en entreprise
-9. Chapitre 8 - Analyse de sécurité en DevSecOps
+* Avant-propos
+* Chapitre 1 - Introduction au DevSecOps
+* Chapitre 2 - Intégration et déploiement continus (CI/CD)
+* Chapitre 3 - Utilisation de Docker en DevSecOps
+* Chapitre 4 - Utilisation de Kubernetes en DevSecOps
+* Chapitre 5 - Culture et connaissances en cybersécurité
+* Chapitre 6 - Sécurité du développement et bonnes pratiques
+* Chapitre 7 - Implémenter le DevSecOps en entreprise
+* Chapitre 8 - Analyse de sécurité en DevSecOps
 
 ## Mon avis
 

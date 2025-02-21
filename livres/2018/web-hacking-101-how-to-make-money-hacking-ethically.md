@@ -1,6 +1,6 @@
 # Web Hacking 101: How to Make Money Hacking Ethically
 
-> Mon retour sur le livre "Web Hacking 101: How to make Money Hacking Ethically" de Peter Yaworski, paru en 2018.
+> Mon avis personnel sur le livre _Web Hacking 101: How to make Money Hacking Ethically_ de Peter Yaworski, paru en 2018.
 
 ## Description du livre
 
@@ -10,7 +10,7 @@
 **Auteur :** Peter Yaworski\
 **Dernière parution :** 30 novembre 2018\
 **Langue :** Anglaise\
-**Prix (minimum) :** 9,99 $\
+**Prix :** 9,99 $\
 **Lien :** [https://leanpub.com/web-hacking-101](https://leanpub.com/web-hacking-101)
 
 **Résumé / Présentation :**`On December 22, 2015, Twitter paid over $14,000 to ethical hackers for exposing vulnerabilities. This wasn't a shakedown. Sites like Twitter, Shopify, Dropbox, Yahoo, Google, Facebook and more, ask ethical hackers to report security bugs and pay them. This book will teach you how you can get started with ethical hacking.`\
@@ -18,33 +18,33 @@
 
 **Table des matières :**
 
-1. Foreword
-2. Introduction
-3. Background
-4. Open Redirect Vulnerabilities
-5. HTTP Parameter Pollution
-6. Cross-Site Request Forgery
-7. HTML Injection
-8. CRLF Injection
-9. Cross-Site Scripting
-10. Template Injection
-11. SQL Injection
-12. Server Side Request Forgery
-13. XML External Entity Vulnerability
-14. Remote Code Execution
-15. Memory
-16. Sub Domain Takeover
-17. Race Conditions
-18. Insecure Direct Object References
-19. OAuth
-20. Application Logic Vulnerabilities
-21. Getting Started
-22. Vulnerability Reports
-23. Tools
-24. Resources
-25. Glossary
-26. Appendix A - Take Aways
-27. Appendix B - Web Hacking 101 Changelog
+* Foreword
+* Introduction
+* Background
+* Open Redirect Vulnerabilities
+* HTTP Parameter Pollution
+* Cross-Site Request Forgery
+* HTML Injection
+* CRLF Injection
+* Cross-Site Scripting
+* Template Injection
+* SQL Injection
+* Server Side Request Forgery
+* XML External Entity Vulnerability
+* Remote Code Execution
+* Memory
+* Sub Domain Takeover
+* Race Conditions
+* Insecure Direct Object References
+* OAuth
+* Application Logic Vulnerabilities
+* Getting Started
+* Vulnerability Reports
+* Tools
+* Resources
+* Glossary
+* Appendix A - Take Aways
+* Appendix B - Web Hacking 101 Changelog
 
 ## Mon avis
 

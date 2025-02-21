@@ -3,8 +3,12 @@
 ## Mon Blog
 
 * [🏠 Home](README.md)
-* [📧 A propos de moi](mon-blog/a-propos-de-moi.md)
+* [📦 Archives](mon-blog/archives/README.md)
+  * [2024](mon-blog/archives/2024.md)
+  * [2023](mon-blog/archives/2023.md)
+  * [2022](mon-blog/archives/2022.md)
 * [📂 Catégories](mon-blog/categories.md)
+* [📧 A propos de moi](mon-blog/a-propos-de-moi.md)
 
 ## Mes projets
 
@@ -73,6 +77,7 @@
 ## Livres
 
 * [2023](livres/2023/README.md)
+  * [Attacking and Exploiting Modern Web Applications](livres/2023/attacking-and-exploiting-modern-web-applications.md)
   * [DevSecOps - Développez et administrez vos services en toute sécurité](livres/2023/devsecops-developpez-et-administrez-vos-services-en-toute-securite.md)
 * [2022](livres/2022/README.md)
   * [Hacking APIs - Breaking Web Application Programming Interfaces](livres/2022/hacking-apis-breaking-web-application-programming-interfaces.md)

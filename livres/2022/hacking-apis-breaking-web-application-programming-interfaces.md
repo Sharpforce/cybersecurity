@@ -1,6 +1,6 @@
 # Hacking APIs - Breaking Web Application Programming Interfaces
 
-> Mon retour sur le livre "Hacking APIs - Breaking Web Application Programming Interfaces" de Corey J. Ball, paru en 2022
+> Mon avis personnel sur le livre _Hacking APIs - Breaking Web Application Programming Interfaces_ de Corey J. Ball, paru en 2022
 
 ## Description du livre
 
@@ -10,39 +10,39 @@
 **Auteur :** Corey J. Ball\
 **Dernière parution :** 12 juillet 2022\
 **Langue :** Anglaise\
-**Prix (minimum) :** 45,58 $\
+**Prix :** 45,58 $\
 **Lien :** [https://nostarch.com/hacking-apis](https://nostarch.com/hacking-apis)
 
 **Résumé / Présentation :** `An Application Programming Interface (API) is a software connection that allows applications to communicate and share services. Hacking APIs will teach you how to test web APIs for security vulnerabilities. You’ll learn how the common API types, REST, SOAP, and GraphQL, work in the wild. Then you’ll set up a streamlined API testing lab and perform common attacks, like those targeting an API’s authentication mechanisms, and the injection vulnerabilities commonly found in web applications.`
 
 **Table des matières :**&#x20;
 
-1. Foreword
-2. Acknowledgments
-3. Introduction
-4. PART I: HOW WEB API SECURITY WORKS
-5. Chapter 0: Preparing for Your Security Tests
-6. Chapter 1: How Web Applications Work
-7. Chapter 2: The Anatomy of Web APIs
-8. Chapter 3: Common API Vulnerabilities
-9. PART II: BUILDING AN API TESTING LAB
-10. Chapter 4: Your API Hacking System
-11. Chapter 5: Setting Up Vulnerable API Targets
-12. PART III: ATTACKING APIs
-13. Chapter 6: Discovery
-14. Chapter 7: Endpoint Analysis
-15. Chapter 8: Attacking Authentication
-16. Chapter 9: Fuzzing
-17. Chapter 10: Exploiting Authorization
-18. Chapter 11: Mass Assignment
-19. Chapter 12: Injection
-20. PART IV: REAL-WORLD API HACKING
-21. Chapter 13: Applying Evasive Techniques and Rate Limit Testing
-22. Chapter 14: Attacking GraphQL
-23. Chapter 15: Data Breaches and Bug Bounties
-24. Conclusion
-25. Appendix A: API Hacking Checklist
-26. Appendix B: Additional Resources Index
+* Foreword
+* Acknowledgments
+* Introduction
+* PART I: HOW WEB API SECURITY WORKS
+  * Chapter 0: Preparing for Your Security Tests
+  * Chapter 1: How Web Applications Work
+  * Chapter 2: The Anatomy of Web APIs
+  * Chapter 3: Common API Vulnerabilities
+* PART II: BUILDING AN API TESTING LAB
+  * Chapter 4: Your API Hacking System
+  * Chapter 5: Setting Up Vulnerable API Targets
+* PART III: ATTACKING APIs
+  * Chapter 6: Discovery
+  * Chapter 7: Endpoint Analysis
+  * Chapter 8: Attacking Authentication
+  * Chapter 9: Fuzzing
+  * Chapter 10: Exploiting Authorization
+  * Chapter 11: Mass Assignment
+  * Chapter 12: Injection
+* PART IV: REAL-WORLD API HACKING
+  * Chapter 13: Applying Evasive Techniques and Rate Limit Testing
+  * Chapter 14: Attacking GraphQL
+  * Chapter 15: Data Breaches and Bug Bounties
+* Conclusion
+* Appendix A: API Hacking Checklist
+* Appendix B: Additional Resources Index
 
 ## Mon avis
 
