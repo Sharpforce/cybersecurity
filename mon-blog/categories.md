@@ -68,6 +68,8 @@
 
 <summary>CVE</summary>
 
+[cve-2024-29415.md](../cve/2024/cve-2024-29415.md "mention")
+
 [cve-2023-42282.md](../cve/2023/cve-2023-42282.md "mention")
 
 [cve-2022-32442.md](../cve/2022/cve-2022-32442.md "mention")
@@ -127,6 +129,8 @@
 <details>
 
 <summary>SSRF</summary>
+
+[cve-2024-29415.md](../cve/2024/cve-2024-29415.md "mention")
 
 [cve-2023-42282.md](../cve/2023/cve-2023-42282.md "mention")
 

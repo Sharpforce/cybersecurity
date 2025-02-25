@@ -1,5 +1,13 @@
 # 🏠 Home
 
+[cve-2024-29415.md](cve/2024/cve-2024-29415.md "mention")
+
+La **CVE-2024-29415** est une vulnérabilité de type Server-Side Request Forgery (SSRF) qui découle de la **CVE-2023-42282** mais qui a pourtant comme un effet de déjà vu.
+
+:date: 25 Fév 2025 :open\_file\_folder:[SSRF](mon-blog/categories.md#ssrf) :open\_file\_folder:[CVE](mon-blog/categories.md#cve)
+
+***
+
 [attacking-and-exploiting-modern-web-applications.md](livres/2023/attacking-and-exploiting-modern-web-applications.md "mention")
 
 Mon analyse du livre _Attacking and Exploiting Modern Web Applications_ de Simone Onofri et Donato Onofri, publié en 2023.

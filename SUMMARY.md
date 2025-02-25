@@ -65,6 +65,8 @@
 
 ## Common Vulnerabilities and Exposures (CVE) <a href="#cve" id="cve"></a>
 
+* [2024](cve/2024/README.md)
+  * [CVE-2024-29415](cve/2024/cve-2024-29415.md)
 * [2023](cve/2023/README.md)
   * [CVE-2023-42282](cve/2023/cve-2023-42282.md)
 * [2022](cve/2022/README.md)
