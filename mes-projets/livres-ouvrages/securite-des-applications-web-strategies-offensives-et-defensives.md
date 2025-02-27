@@ -115,6 +115,6 @@ L'attaque XXE de type lol flow est correcte mais l'inclusion est effectuée par 
 Devient :&#x20;
 
 ```
-<!-- Inclusion malicieuse de l'entité lol6 -->
+<!-- Inclusion malicieuse de l'entité lol14 -->
 &lol14;
 ```
