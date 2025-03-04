@@ -142,6 +142,8 @@
 
 [exploitation-des-injections-sql-au-sein-de-la-clause-order-by.md](../mes-articles/2024/aout/exploitation-des-injections-sql-au-sein-de-la-clause-order-by.md "mention")
 
+[comment-les-requetes-preparees-prepared-stetement-protegent-elles-contre-les-injections-sql.md](../mes-articles/2025/mars/comment-les-requetes-preparees-prepared-stetement-protegent-elles-contre-les-injections-sql.md "mention")
+
 </details>
 
 <details>

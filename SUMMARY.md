@@ -12,14 +12,16 @@
 
 ## Mes projets
 
-* [Livres / ouvrages](mes-projets/livres-ouvrages/README.md)
-  * [Sécurité des applications web - Stratégies offensives et défensives](mes-projets/livres-ouvrages/securite-des-applications-web-strategies-offensives-et-defensives.md)
+* [Livres / publications](mes-projets/livres-publications/README.md)
+  * [Sécurité des applications web - Stratégies offensives et défensives](mes-projets/livres-publications/securite-des-applications-web-strategies-offensives-et-defensives.md)
 * [MyExpense](mes-projets/myexpense.md)
 * [XSS Exploitation Tool](mes-projets/xss-exploitation-tool.md)
 
 ## Mes Articles
 
 * [2025](mes-articles/2025/README.md)
+  * [Mars](mes-articles/2025/mars/README.md)
+    * [Comment les requêtes préparées (prepared stetement) protègent-elles contre les injections SQL ?](mes-articles/2025/mars/comment-les-requetes-preparees-prepared-stetement-protegent-elles-contre-les-injections-sql.md)
   * [Janvier](mes-articles/2025/janvier/README.md)
     * [XSS Exploitation Tool v0.7.0](mes-articles/2025/janvier/xss-exploitation-tool-v0.7.0.md)
 * [2024](mes-articles/2024/README.md)

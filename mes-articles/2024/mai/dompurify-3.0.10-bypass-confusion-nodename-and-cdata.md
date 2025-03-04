@@ -106,10 +106,12 @@ userContent.innerHTML = DOMPurify.sanitize("<![CDATA[ ><img src=x onerror=alert(
 
 A noter que la variante suivante semble fonctionner également :&#x20;
 
+{% code lineNumbers="true" %}
 ```javascript
 let userContent= document.getElementById('userContent');
 userContent.innerHTML = DOMPurify.sanitize("<![CDATA[ ><img src=x onerror=alert(1)>", {PARSER_MEDIA_TYPE: 'application/xhtml+xml'});
 ```
+{% endcode %}
 
 ```html
 <div id="userContent">

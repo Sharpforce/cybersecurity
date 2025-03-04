@@ -1,5 +1,13 @@
 # 🏠 Home
 
+[comment-les-requetes-preparees-prepared-stetement-protegent-elles-contre-les-injections-sql.md](mes-articles/2025/mars/comment-les-requetes-preparees-prepared-stetement-protegent-elles-contre-les-injections-sql.md "mention")
+
+Les injections SQL sont des vulnérabilités largement connues et souvent critiques, mais elles demeurent encore très répandues dans les applications web actuelles. La principale protection contre cette vulnérabilité repose sur l'utilisation des requêtes préparées, mais comment fonctionnent-elles exactement ?
+
+:date: 04 Mars 2025 :open\_file\_folder:[SQL Injection](mon-blog/categories.md#sql-injection)
+
+***
+
 [cve-2024-29415.md](cve/2024/cve-2024-29415.md "mention")
 
 La **CVE-2024-29415** est une vulnérabilité de type Server-Side Request Forgery (SSRF) qui découle de la **CVE-2023-42282** mais qui a pourtant comme un effet de déjà vu.
