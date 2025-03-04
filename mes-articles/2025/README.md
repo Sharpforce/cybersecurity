@@ -2,7 +2,7 @@
 
 ### <mark style="background-color:blue;">Mars</mark>
 
-* **04 Mars -** [comment-les-requetes-preparees-prepared-stetement-protegent-elles-contre-les-injections-sql.md](mars/comment-les-requetes-preparees-prepared-stetement-protegent-elles-contre-les-injections-sql.md "mention")
+* **04 Mars -** [comment-les-requetes-preparees-prepared-statement-protegent-elles-contre-les-injections-sql.md](mars/comment-les-requetes-preparees-prepared-statement-protegent-elles-contre-les-injections-sql.md "mention")
 
 ### <mark style="background-color:blue;">Janvier</mark>
 

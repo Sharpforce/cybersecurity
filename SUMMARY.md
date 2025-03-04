@@ -21,7 +21,7 @@
 
 * [2025](mes-articles/2025/README.md)
   * [Mars](mes-articles/2025/mars/README.md)
-    * [Comment les requêtes préparées (prepared stetement) protègent-elles contre les injections SQL ?](mes-articles/2025/mars/comment-les-requetes-preparees-prepared-stetement-protegent-elles-contre-les-injections-sql.md)
+    * [Comment les requêtes préparées (prepared statement) protègent-elles contre les injections SQL ?](mes-articles/2025/mars/comment-les-requetes-preparees-prepared-statement-protegent-elles-contre-les-injections-sql.md)
   * [Janvier](mes-articles/2025/janvier/README.md)
     * [XSS Exploitation Tool v0.7.0](mes-articles/2025/janvier/xss-exploitation-tool-v0.7.0.md)
 * [2024](mes-articles/2024/README.md)

@@ -1,6 +1,6 @@
 # 🏠 Home
 
-[comment-les-requetes-preparees-prepared-stetement-protegent-elles-contre-les-injections-sql.md](mes-articles/2025/mars/comment-les-requetes-preparees-prepared-stetement-protegent-elles-contre-les-injections-sql.md "mention")
+[comment-les-requetes-preparees-prepared-statement-protegent-elles-contre-les-injections-sql.md](mes-articles/2025/mars/comment-les-requetes-preparees-prepared-statement-protegent-elles-contre-les-injections-sql.md "mention")
 
 Les injections SQL sont des vulnérabilités largement connues et souvent critiques, mais elles demeurent encore très répandues dans les applications web actuelles. La principale protection contre cette vulnérabilité repose sur l'utilisation des requêtes préparées, mais comment fonctionnent-elles exactement ?
 
