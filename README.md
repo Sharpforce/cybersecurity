@@ -1,5 +1,13 @@
 # 🏠 Home
 
+[xss-exploitation-tool-v0.7.1.md](mes-articles/2025/juin/xss-exploitation-tool-v0.7.1.md "mention")
+
+La version 0.7.1 vient XET (XSS Exploitation Tool) est maintenant disponible : [https://github.com/Sharpforce/XSS-Exploitation-Tool/releases/tag/v0.7.1](https://github.com/Sharpforce/XSS-Exploitation-Tool/releases/tag/v0.7.1)
+
+:date: 16 Juin 2025 :open\_file\_folder:[XSS](mon-blog/categories.md#xss) :open\_file\_folder:[Tooling](mon-blog/categories.md#tooling)
+
+***
+
 [comment-les-requetes-preparees-prepared-statement-protegent-elles-contre-les-injections-sql.md](mes-articles/2025/mars/comment-les-requetes-preparees-prepared-statement-protegent-elles-contre-les-injections-sql.md "mention")
 
 Les injections SQL sont des vulnérabilités largement connues et souvent critiques, mais elles demeurent encore très répandues dans les applications web actuelles. La principale protection contre cette vulnérabilité repose sur l'utilisation des requêtes préparées, mais comment fonctionnent-elles exactement ?

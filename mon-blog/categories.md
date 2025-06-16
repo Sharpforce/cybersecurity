@@ -150,6 +150,8 @@
 
 <summary>Tooling</summary>
 
+[xss-exploitation-tool-v0.7.1.md](../mes-articles/2025/juin/xss-exploitation-tool-v0.7.1.md "mention")
+
 [sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md](../mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-debian.md "mention")
 
 [sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md](../mes-articles/2022/juillet/sast-php-codesniffer-oriente-securite-dans-visual-studio-sous-windows.md "mention")
@@ -177,6 +179,8 @@
 <details>
 
 <summary>XSS</summary>
+
+[xss-exploitation-tool-v0.7.1.md](../mes-articles/2025/juin/xss-exploitation-tool-v0.7.1.md "mention")
 
 [cross-site-scripting-xss-et-schema-duri-javascript.md](../mes-articles/2022/septembre/cross-site-scripting-xss-et-schema-duri-javascript.md "mention")
 
